@@ -1,35 +1,29 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
+using Sccg.Builtin.Develop;
 using Sccg.Builtin.Formatters;
-using Sccg.Builtin.Internal;
 using Sccg.Core;
-using Sccg.Utility;
 
 namespace Sccg.Builtin.Sources;
 
 public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, VimSyntaxGroupSource.Item>
 {
-    private readonly ObjectStore _store = new();
-    private readonly SingeLinkGraph _graph = new();
+    private readonly StdSourceImpl<Group> _impl = new();
 
     public override string Name => "VimSyntaxGroup";
 
     protected override IEnumerable<Item> CollectItems()
     {
-        var ids = StdImpl.Source.GatherIdListWithErrorHandle(
-            graph: _graph,
-            sourceName: Name
-        );
+        var ids = _impl.Graph.TopologicalOrderList();
 
         foreach (var id in ids)
         {
-            var data = _store.Load(id).data;
-            var next = _graph.GetLink(id);
+            var data = _impl.Store.Load(id).data;
+            var next = _impl.Graph.GetLink(id);
 
             if (data is Group fromGroup && next is not null)
             {
-                var to = _store.Load(next.Value).data;
+                var to = _impl.Store.Load(next.Value).data;
                 switch (to)
                 {
                     case Group toGroup:
@@ -43,19 +37,9 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
         }
     }
 
-    protected override void Set(Group group, Style style) => StdImpl.Source.Set(
-        store: _store,
-        graph: _graph,
-        group: group,
-        style: style
-    );
+    protected override void Set(Group group, Style style) => _impl.Set(group, style);
 
-    protected override void Link(Group from, Group to) => StdImpl.Source.Link(
-        store: _store,
-        graph: _graph,
-        from: from,
-        to: to
-    );
+    protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
     public sealed class Item : IVimSourceItem, INeovimSourceItem
     {

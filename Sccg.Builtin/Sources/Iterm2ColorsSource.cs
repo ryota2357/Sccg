@@ -2,10 +2,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Sccg.Builtin.Develop;
 using Sccg.Builtin.Formatters;
-using Sccg.Builtin.Internal;
 using Sccg.Core;
-using Sccg.Utility;
 
 namespace Sccg.Builtin.Sources;
 
@@ -13,25 +12,21 @@ namespace Sccg.Builtin.Sources;
 
 public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iterm2ColorsSource.Item>
 {
-    private readonly ObjectStore _store = new();
-    private readonly SingeLinkGraph _graph = new();
+    private readonly StdSourceImpl<Group> _impl = new();
 
     public override string Name => "ITermColors";
 
     protected override IEnumerable<Item> CollectItems()
     {
-        var ids = StdImpl.Source.GatherIdListWithErrorHandle(
-            graph: _graph,
-            sourceName: Name
-        );
+        var ids = _impl.Graph.TopologicalOrderList();
 
         Dictionary<int, Color> cache = new();
         foreach (var id in ids)
         {
-            if (!_store.TryLoad(id, out Group group)) continue;
-            if (!_graph.TryGetLink(id, out var next)) continue;
+            if (!_impl.Store.TryLoad(id, out Group group)) continue;
+            if (!_impl.Graph.TryGetLink(id, out var next)) continue;
 
-            if (cache.TryGetValue(next.Value, out var col) || _store.TryLoad(next.Value, out col))
+            if (cache.TryGetValue(next.Value, out var col) || _impl.Store.TryLoad(next.Value, out col))
             {
                 cache[id] = col;
                 yield return new Item(group, col);
@@ -45,9 +40,9 @@ public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iter
 
     protected void Set(Group group, Color color)
     {
-        var groupId = _store.Save(group);
-        var colorId = _store.Save(color);
-        var status = _graph.CreateLink(groupId, colorId);
+        var groupId = _impl.Store.Save(group);
+        var colorId = _impl.Store.Save(color);
+        var status = _impl.Graph.CreateLink(groupId, colorId);
         if (status == false)
         {
             Log.Warn($"Ignored duplicate. Set({group}, {color})");
@@ -59,12 +54,7 @@ public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iter
         Set(group, style.Foreground);
     }
 
-    protected override void Link(Group from, Group to) => StdImpl.Source.Link(
-        store: _store,
-        graph: _graph,
-        from: from,
-        to: to
-    );
+    protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
     public class Item : IIterm2SourceItem
     {
