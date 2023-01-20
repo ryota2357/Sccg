@@ -47,7 +47,7 @@ public sealed record Metadata(
         License: null,
         LastUpdated: DateTime.Now,
         Header: _ => null,
-        Footer: _ => new [] { $"Built with Sccg {__SccgVersion}" },
+        Footer: _ => new[] { $"Built with Sccg {__SccgVersion}" },
         Context: new MetadataContext()
     );
 }

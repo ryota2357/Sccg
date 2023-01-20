@@ -56,60 +56,60 @@ public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>, 
         var body = new List<string>();
         foreach (var item in items)
         {
-             var formattable = item.Extract();
-             var sb = new StringBuilder();
+            var formattable = item.Extract();
+            var sb = new StringBuilder();
 
-             void Set<T>(string name, T? value)
-             {
-                 if (value is null) return;
-                 switch (value)
-                 {
-                     case bool b:
-                         // NOTE: Because of using nvim_set_hl(), don't have to set false value. `false` is same as omitting.
-                         if (!b) return;
-                         sb.Append($"{name} = true, ");
-                         break;
-                     case Color c:
-                         if (c.IsDefault) return;
-                         var code = c.IsNone ? "NONE" : c.HexCode;
-                         sb.Append($"{name} = '{code}', ");
-                         break;
-                     case int i:
-                         sb.Append($"{name} = {i}, ");
-                         break;
-                     case string s:
-                         sb.Append($"{name} = '{s}', ");
-                         break;
-                     default:
-                         throw new NotSupportedException($"NeovimFormatter does not support type {typeof(T).Name}");
-                 }
-             }
+            void Set<T>(string name, T? value)
+            {
+                if (value is null) return;
+                switch (value)
+                {
+                    case bool b:
+                        // NOTE: Because of using nvim_set_hl(), don't have to set false value. `false` is same as omitting.
+                        if (!b) return;
+                        sb.Append($"{name} = true, ");
+                        break;
+                    case Color c:
+                        if (c.IsDefault) return;
+                        var code = c.IsNone ? "NONE" : c.HexCode;
+                        sb.Append($"{name} = '{code}', ");
+                        break;
+                    case int i:
+                        sb.Append($"{name} = {i}, ");
+                        break;
+                    case string s:
+                        sb.Append($"{name} = '{s}', ");
+                        break;
+                    default:
+                        throw new NotSupportedException($"NeovimFormatter does not support type {typeof(T).Name}");
+                }
+            }
 
-             sb.Append($"vim.api.nvim_set_hl({formattable.Id}, '{formattable.Name}', {{ ");
-             Set("fg", formattable.Style?.Foreground);
-             Set("bg", formattable.Style?.Background);
-             Set("sp", formattable.Style?.Special);
-             Set("blend", formattable.Blend);
-             Set("bold", formattable.Style?.Modifiers.Contains(Style.Modifier.Bold));
-             Set("standout", formattable.Standout);
-             Set("underline", formattable.Style?.Modifiers.Contains(Style.Modifier.Underline));
-             Set("undercurl", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineWaved));
-             Set("underdouble", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDouble));
-             Set("underdotted", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDotted));
-             Set("underdashed", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDashed));
-             Set("strikethrough", formattable.Style?.Modifiers.Contains(Style.Modifier.Strikethrough));
-             Set("italic", formattable.Style?.Modifiers.Contains(Style.Modifier.Italic));
-             Set("reverse", formattable.Reverse);
-             Set("nocombine", formattable.Nocombine);
-             Set("link", formattable.Link);
-             Set("default", formattable.Default);
-             Set("ctermfg", formattable.Style?.Foreground.TerminalColorCode);
-             Set("ctermbg", formattable.Style?.Background.TerminalColorCode);
-             Set("cterm", VimFormatter.CreateAttrList(formattable.Style?.Modifiers));
-             sb.Remove(sb.Length - 2, 2); // Remove last ", "
-             sb.Append(" })");
+            sb.Append($"vim.api.nvim_set_hl({formattable.Id}, '{formattable.Name}', {{ ");
+            Set("fg", formattable.Style?.Foreground);
+            Set("bg", formattable.Style?.Background);
+            Set("sp", formattable.Style?.Special);
+            Set("blend", formattable.Blend);
+            Set("bold", formattable.Style?.Modifiers.Contains(Style.Modifier.Bold));
+            Set("standout", formattable.Standout);
+            Set("underline", formattable.Style?.Modifiers.Contains(Style.Modifier.Underline));
+            Set("undercurl", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineWaved));
+            Set("underdouble", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDouble));
+            Set("underdotted", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDotted));
+            Set("underdashed", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDashed));
+            Set("strikethrough", formattable.Style?.Modifiers.Contains(Style.Modifier.Strikethrough));
+            Set("italic", formattable.Style?.Modifiers.Contains(Style.Modifier.Italic));
+            Set("reverse", formattable.Reverse);
+            Set("nocombine", formattable.Nocombine);
+            Set("link", formattable.Link);
+            Set("default", formattable.Default);
+            Set("ctermfg", formattable.Style?.Foreground.TerminalColorCode);
+            Set("ctermbg", formattable.Style?.Background.TerminalColorCode);
+            Set("cterm", VimFormatter.CreateAttrList(formattable.Style?.Modifiers));
+            sb.Remove(sb.Length - 2, 2); // Remove last ", "
+            sb.Append(" })");
 
-             body.Add(sb.ToString());
+            body.Add(sb.ToString());
         }
 
         var footer = Metadata.Footer(Metadata);

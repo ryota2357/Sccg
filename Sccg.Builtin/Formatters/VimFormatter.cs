@@ -57,44 +57,44 @@ public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>, IMetad
         var body = new List<string>();
         foreach (var item in items)
         {
-             var formattable = item.Extract();
+            var formattable = item.Extract();
 
-             if (formattable.Link is not null)
-             {
-                 body.Add($"hi link {formattable.Name} {formattable.Link}");
-                 continue;
-             }
+            if (formattable.Link is not null)
+            {
+                body.Add($"hi link {formattable.Name} {formattable.Link}");
+                continue;
+            }
 
-             var sb = new StringBuilder();
+            var sb = new StringBuilder();
 
-             void Set<T>(string name, T? value)
-             {
-                 if (value is null) return;
-                 switch (value)
-                 {
-                     case Color c:
-                         if (c.IsDefault) return;
-                         var code = c.IsNone ? "NONE" : c.HexCode;
-                         sb.Append($" {name}={code}");
-                         break;
-                     case string s:
-                         sb.Append($" {name}={s}");
-                         break;
-                     default:
-                         throw new NotSupportedException($"NeovimFormatter does not support type {typeof(T).Name}");
-                 }
-             }
+            void Set<T>(string name, T? value)
+            {
+                if (value is null) return;
+                switch (value)
+                {
+                    case Color c:
+                        if (c.IsDefault) return;
+                        var code = c.IsNone ? "NONE" : c.HexCode;
+                        sb.Append($" {name}={code}");
+                        break;
+                    case string s:
+                        sb.Append($" {name}={s}");
+                        break;
+                    default:
+                        throw new NotSupportedException($"NeovimFormatter does not support type {typeof(T).Name}");
+                }
+            }
 
-             sb.Append($"hi {formattable.Name}{(formattable.Default ? " default" : "")}");
-             Set("ctermfg", formattable.Style?.Foreground.TerminalColorCode);
-             Set("ctermbg", formattable.Style?.Background.TerminalColorCode);
-             Set("ctermul", formattable.Style?.Special.TerminalColorCode);
-             Set("cterm", CreateAttrList(formattable.Style?.Modifiers));
-             Set("guifg", formattable.Style?.Foreground);
-             Set("guibg", formattable.Style?.Background);
-             Set("guisp", formattable.Style?.Special);
-             Set("gui", CreateAttrList(formattable.Style?.Modifiers));
-             body.Add(sb.ToString());
+            sb.Append($"hi {formattable.Name}{(formattable.Default ? " default" : "")}");
+            Set("ctermfg", formattable.Style?.Foreground.TerminalColorCode);
+            Set("ctermbg", formattable.Style?.Background.TerminalColorCode);
+            Set("ctermul", formattable.Style?.Special.TerminalColorCode);
+            Set("cterm", CreateAttrList(formattable.Style?.Modifiers));
+            Set("guifg", formattable.Style?.Foreground);
+            Set("guibg", formattable.Style?.Background);
+            Set("guisp", formattable.Style?.Special);
+            Set("gui", CreateAttrList(formattable.Style?.Modifiers));
+            body.Add(sb.ToString());
         }
 
         var footer = Metadata.Footer(Metadata);
