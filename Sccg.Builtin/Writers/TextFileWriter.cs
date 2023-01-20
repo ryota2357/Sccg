@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.IO;
 using Sccg.Core;
 
-namespace Sccg.Builtin.ContentWriters;
+namespace Sccg.Builtin.Writers;
 
-public class TextFileContentWriter : ContentWriter<SingleTextContent>, IMetadataUser
+public class TextFileWriter : Writer<SingleTextContent>, IMetadataUser
 {
     public Metadata Metadata { get; set; } = Metadata.Empty;
 

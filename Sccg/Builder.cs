@@ -10,7 +10,7 @@ public class Builder
 {
     private readonly List<IFormatter> _formatters = new();
     private readonly List<ISource> _sources = new();
-    private readonly List<IContentWriter> _writers = new();
+    private readonly List<IWriter> _writers = new();
 
     public Metadata Metadata { get; init; } = Metadata.Empty;
 
@@ -61,7 +61,7 @@ public class Builder
             case ISource source:
                 _sources.Add(source);
                 break;
-            case IContentWriter writer:
+            case IWriter writer:
                 _writers.Add(writer);
                 break;
             default:

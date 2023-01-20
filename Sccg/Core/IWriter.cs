@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Sccg.Core;
 
-public interface IContentWriter
+public interface IWriter
 {
     /// <summary>
     /// TODO: doc

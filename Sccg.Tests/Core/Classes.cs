@@ -95,7 +95,7 @@ internal class TestFormatter : Formatter<TestSourceItem, TestContent>
     }
 }
 
-internal class TestContentWriter : ContentWriter<TestContent>
+internal class TestWriter : Writer<TestContent>
 {
     public List<string> Contents { get; } = new();
 

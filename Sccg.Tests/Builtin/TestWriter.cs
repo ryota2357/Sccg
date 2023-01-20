@@ -1,9 +1,9 @@
-using Sccg.Builtin.ContentWriters;
+using Sccg.Builtin.Writers;
 using Sccg.Core;
 
 namespace Sccg.Tests.Builtin;
 
-public class TestContentWriter : IContentWriter
+public class TestWriter : IWriter
 {
     public List<string> Output { get; } = new();
 

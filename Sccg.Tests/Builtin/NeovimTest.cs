@@ -6,7 +6,7 @@ namespace Sccg.Tests.Builtin;
 public class NeovimTest
 {
     private readonly Builder _builder;
-    private readonly TestContentWriter _writer;
+    private readonly TestWriter _writer;
 
     public NeovimTest()
     {
@@ -19,7 +19,7 @@ public class NeovimTest
                 Footer = _ => new[] { "Built with Sccg" }
             }
         };
-        _writer = new TestContentWriter();
+        _writer = new TestWriter();
 
         _builder.Use(_writer);
         _builder.Use<NeovimFormatter>();

@@ -6,7 +6,7 @@ namespace Sccg.Tests.Builtin;
 public class Iterm2Test
 {
     private readonly Builder _builder;
-    private readonly TestContentWriter _writer;
+    private readonly TestWriter _writer;
 
     public Iterm2Test()
     {
@@ -19,7 +19,7 @@ public class Iterm2Test
                 Footer = _ => new[] { "Built with Sccg" }
             }
         };
-        _writer = new TestContentWriter();
+        _writer = new TestWriter();
 
         _builder.Use(_writer);
         _builder.Use<Iterm2Formatter>();

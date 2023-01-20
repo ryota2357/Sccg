@@ -3,7 +3,7 @@ using System.Linq;
 using Sccg.Core;
 using Sccg.Utility;
 
-namespace Sccg.Builtin.ContentWriters;
+namespace Sccg.Builtin.Writers;
 
 public class SingleTextContent : IContent
 {

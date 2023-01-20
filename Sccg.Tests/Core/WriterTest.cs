@@ -3,7 +3,7 @@ using Sccg.Core;
 
 namespace Sccg.Tests.Core;
 
-public class ContentWriterTest
+public class WriterTest
 {
     [Fact]
     public void Test()
@@ -16,9 +16,9 @@ public class ContentWriterTest
             formatter.Format(source.CollectItems())
         };
 
-        IContentWriter writer = new TestContentWriter();
+        IWriter writer = new TestWriter();
         writer.Priority.Should().Be(0);
-        ((TestContentWriter)writer).Contents.Should().BeEmpty();
+        ((TestWriter)writer).Contents.Should().BeEmpty();
         var text = new StringBuilder()
                    .AppendLine("GroupA Style(fg:#019abf,bg:default,sp:default,default)")
                    .AppendLine("GroupB Style(fg:default,bg:#019abf,sp:default,default)")
@@ -26,9 +26,9 @@ public class ContentWriterTest
                    .ToString();
 
         writer.Write(contents);
-        ((TestContentWriter)writer).Contents.Should().BeEquivalentTo(new[] { text });
+        ((TestWriter)writer).Contents.Should().BeEquivalentTo(new[] { text });
         writer.Write(contents);
-        ((TestContentWriter)writer).Contents.Should().BeEquivalentTo(new[] { text, text });
+        ((TestWriter)writer).Contents.Should().BeEquivalentTo(new[] { text, text });
         writer.Priority.Should().Be(0);
     }
 }
