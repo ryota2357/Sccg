@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['metadata_650',['Metadata',['../classBuilder.html#aeed358702dbf9a97fb769b49283c751c',1,'Builder']]],
-  ['modifiers_651',['Modifiers',['../structStyle.html#a6a25949701120654595cdb3b7a92f648',1,'Style']]]
+  ['metadata_0',['Metadata',['../classSccg_1_1Builder.html#a8f24b6b07cb6e10115e3552eed13929b',1,'Sccg::Builder']]],
+  ['modifiers_1',['Modifiers',['../structSccg_1_1Style.html#a37aa1ddc8f221701dc34e5c0ecde5944',1,'Sccg::Style']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['builder_322',['Builder',['../classBuilder.html',1,'']]],
-  ['builderquery_323',['BuilderQuery',['../classBuilderQuery.html',1,'']]]
+  ['builder_0',['Builder',['../classSccg_1_1Builder.html',1,'Sccg']]],
+  ['builderquery_1',['BuilderQuery',['../classSccg_1_1BuilderQuery.html',1,'Sccg']]]
 ];

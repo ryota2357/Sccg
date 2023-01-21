@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['logfile_648',['LogFile',['../classBuilder.html#a3e1fb5d95a75e4c9d9df450a988063ce',1,'Builder']]],
-  ['loglevel_649',['LogLevel',['../classBuilder.html#a6aff44b981503ef60c222a1d9fd86bfd',1,'Builder']]]
+  ['logfile_0',['LogFile',['../classSccg_1_1Builder.html#af77f4b41916612a9c8b241b3d3df61d3',1,'Sccg::Builder']]],
+  ['loglevel_1',['LogLevel',['../classSccg_1_1Builder.html#ad6c9d41507f7d7ba8680d23d00ee0229',1,'Sccg::Builder']]]
 ];

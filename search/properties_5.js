@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isdefault_645',['IsDefault',['../structColor.html#afef4551aef9f51ac2cf8f8fa76f40beb',1,'Color']]],
-  ['isnone_646',['IsNone',['../structColor.html#a3cd08318a86819ce4832d951980647d7',1,'Color']]]
+  ['isdefault_0',['IsDefault',['../structSccg_1_1Color.html#a75aade6421b144bd53c1af700278be13',1,'Sccg::Color']]],
+  ['isnone_1',['IsNone',['../structSccg_1_1Color.html#acf46dae42a7c4bf401f792083ce7bce4',1,'Sccg::Color']]]
 ];

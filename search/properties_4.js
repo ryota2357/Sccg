@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hexcode_644',['HexCode',['../structColor.html#abf14150c267bc7266569bd7f142ffcb2',1,'Color']]]
+  ['hexcode_0',['HexCode',['../structSccg_1_1Color.html#aa23d8df4d612b2bfee32ff8ee4d8dbfa',1,'Sccg::Color']]]
 ];

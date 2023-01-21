@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loglevel_438',['LogLevel',['../LogLevel_8cs.html#aca1fd1d8935433e6ba2e3918214e07f9',1,'LogLevel.cs']]]
+  ['loglevel_0',['LogLevel',['../namespaceSccg.html#a760d4318b857c2c0af030f1f73bf9043',1,'Sccg']]]
 ];

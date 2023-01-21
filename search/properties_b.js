@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['special_655',['Special',['../structStyle.html#a9820127c8b08522f5c84d45e30b341b4',1,'Style']]]
+  ['special_0',['Special',['../structSccg_1_1Style.html#a18ae5b82d0b2f49ce3bdfd17f32a9b09',1,'Sccg::Style']]]
 ];

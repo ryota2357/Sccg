@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['build_391',['Build',['../classBuilder.html#aa14b9bfd794e5f1952d275433b5eb9a8',1,'Builder']]],
-  ['builder_392',['Builder',['../classBuilder.html#ac871c190bee222ef189cd79c85e484ec',1,'Builder.Builder()'],['../classBuilder.html#a6f0ec44c63f7ba8088847c2345d9d0e7',1,'Builder.Builder(Metadata metadata)']]]
+  ['build_0',['Build',['../classSccg_1_1Builder.html#a152c5735b879d1cdbf3aa7132fcb05ee',1,'Sccg::Builder']]],
+  ['builder_1',['Builder',['../classSccg_1_1Builder.html#ab3982912be970e6244d31ab6b7abf77a',1,'Sccg.Builder.Builder()'],['../classSccg_1_1Builder.html#acfd93c7d9c3e12506c53f72491353f2f',1,'Sccg.Builder.Builder(Metadata metadata)']]]
 ];
