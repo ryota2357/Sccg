@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['collectitems_393',['CollectItems',['../classSource.html#ac64803fee0173b72fb5d10a14a93d12c',1,'Source.CollectItems()'],['../classIterm2ColorsSource.html#ae1ad89a7a0f72577944e53a8626b2f87',1,'Iterm2ColorsSource.CollectItems()'],['../classNeovimEditorHighlightSource.html#a0af4d9495bdaabfb9e5b1fa9a8e71355',1,'NeovimEditorHighlightSource.CollectItems()'],['../classNeovimTreesitterHighlightSource.html#a24d60d2b2c67a1305ed2b548481fe5ad',1,'NeovimTreesitterHighlightSource.CollectItems()'],['../classVimEditorHighlightSource.html#a42c5664fcb43f518f3487c4035b42de6',1,'VimEditorHighlightSource.CollectItems()'],['../classVimSyntaxGroupSource.html#a2755cdc263a6e9a59e7ef1356525029b',1,'VimSyntaxGroupSource.CollectItems()'],['../interfaceISource.html#a5d4329e33dba9d9c570bfb59326f8f01',1,'ISource.CollectItems()']]],
+  ['color_394',['Color',['../structColor.html#af659683ae0c2aaa8314b34ddcda63966',1,'Color.Color(string hexCode, byte terminalColorCode)'],['../structColor.html#a1901e085292d805ee42483374bc0fcc0',1,'Color.Color(byte r, byte g, byte b, byte terminalColorCode)'],['../structColor.html#a457ab9de70d434c4c74425383f036993',1,'Color.Color(byte r, byte g, byte b)'],['../structColor.html#a7c2993e417031eb7a355dd7236631396',1,'Color.Color(string hexCode)']]],
+  ['containskey_395',['ContainsKey',['../classMetadataContext.html#a574729747d6fe0a4745077fe2a4cac52',1,'MetadataContext']]],
+  ['createattrlist_396',['CreateAttrList',['../classVimFormatter.html#af8b1562997d81236df6db2850b94a29b',1,'VimFormatter']]],
+  ['createlink_397',['CreateLink',['../classSingeLinkGraph.html#a3298ed99504f21b0a31271fff7836c0d',1,'SingeLinkGraph']]],
+  ['custom_398',['Custom',['../interfaceISource.html#add13d0f977cf4891f86720dc1a3e07c9',1,'ISource.Custom()'],['../classSource.html#a53635ca9f4d334b847ceaaaf297098f8',1,'Source.Custom()'],['../classSource.html#a71f9ff3d916208024f0c09098e88e6d4',1,'Source.Custom(BuilderQuery query)']]]
+];
