@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -6,8 +7,6 @@ namespace Sccg.Core;
 public abstract class Source<TGroup, TItem> : ISource
 {
     public abstract string Name { get; }
-
-    public abstract void Custom();
 
     /// <inheritdoc cref="ISource.CollectItems"/>
     protected abstract IEnumerable<TItem> CollectItems();
@@ -26,7 +25,17 @@ public abstract class Source<TGroup, TItem> : ISource
     /// <param name="to"></param>
     protected abstract void Link(TGroup from, TGroup to);
 
-    public virtual int Priority => 0;
+    public virtual int Priority => 10;
+
+    protected virtual void Custom()
+    {
+        throw new NotImplementedException("You must override Custom method.");
+    }
+
+    protected virtual void Custom(BuilderQuery query)
+    {
+        Custom();
+    }
 
     /// <summary>
     /// TODO: doc
@@ -75,8 +84,21 @@ public abstract class Source<TGroup, TItem> : ISource
         ));
     }
 
+    private bool _custom;
+    void ISource.Custom(BuilderQuery query)
+    {
+        if (_custom)
+        {
+            return;
+        }
+
+        Custom(query);
+        _custom = true;
+    }
+
+    private IEnumerable<ISourceItem>? _collectItems = null;
     IEnumerable<ISourceItem> ISource.CollectItems()
     {
-        return CollectItems().OfType<ISourceItem>();
+        return _collectItems ??= CollectItems().OfType<ISourceItem>();
     }
 }

@@ -100,7 +100,7 @@ public class Iterm2Test
 
 file class Colors : Iterm2ColorsSource
 {
-    public override void Custom()
+    protected override void Custom()
     {
         Set(Group.Ansi0, "000000");
         Set(Group.Ansi10, "#32C81E");

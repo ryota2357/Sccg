@@ -93,13 +93,3 @@ public sealed class MetadataContext : IEnumerable<KeyValuePair<string, object?>>
         return GetEnumerator();
     }
 }
-
-public interface IMetadataUser
-{
-    protected Metadata Metadata { get; set; }
-
-    internal void SetMetadata(Metadata metadata)
-    {
-        Metadata = metadata;
-    }
-}

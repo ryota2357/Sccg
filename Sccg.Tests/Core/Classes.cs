@@ -64,7 +64,7 @@ internal abstract class TestSourceBase : Source<TestSourceBase.Group, TestSource
 
 internal class TestSource : TestSourceBase
 {
-    public override void Custom()
+    protected override void Custom()
     {
         Set(Group.GroupA, new Style(fg: "019ABF"));
         Set(Group.GroupB, bg: "019ABF");

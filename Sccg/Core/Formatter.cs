@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,13 +10,22 @@ public abstract class Formatter<TSourceItem, TContent> : IFormatter
 {
     public abstract string Name { get; }
 
+    public virtual int Priority => 10;
+
     /// <inheritdoc cref="IFormatter.Format"/>
-    protected abstract TContent Format(IEnumerable<TSourceItem> items);
-
-    public virtual int Priority => 0;
-
-    IContent IFormatter.Format(IEnumerable<ISourceItem> items)
+    protected virtual TContent Format(IEnumerable<TSourceItem> items)
     {
-        return Format(items.OfType<TSourceItem>());
+        throw new NotImplementedException("You must override Format method.");
+    }
+
+    protected virtual TContent Format(IEnumerable<TSourceItem> items, BuilderQuery query)
+    {
+        return Format(items);
+    }
+
+    private IContent? _format = null;
+    IContent IFormatter.Format(IEnumerable<ISourceItem> items, BuilderQuery query)
+    {
+        return _format ??= Format(items.OfType<TSourceItem>(), query);
     }
 }

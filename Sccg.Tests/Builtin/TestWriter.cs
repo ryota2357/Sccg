@@ -9,7 +9,7 @@ public class TestWriter : IWriter
 
     public int Priority => 0;
 
-    public void Write(IEnumerable<IContent> contents)
+    public void Write(IEnumerable<IContent> contents, BuilderQuery query)
     {
         foreach (var content in contents)
         {

@@ -18,6 +18,7 @@ public interface IFormatter
     /// TODO: doc
     /// </summary>
     /// <param name="items"></param>
+    /// <param name="query"></param>
     /// <returns></returns>
-    public IContent Format(IEnumerable<ISourceItem> items);
+    public IContent Format(IEnumerable<ISourceItem> items, BuilderQuery query);
 }

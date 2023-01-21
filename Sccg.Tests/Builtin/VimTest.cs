@@ -60,7 +60,7 @@ public class VimTest
 
 file class EditorHighlight : VimEditorHighlightSource
 {
-    public override void Custom()
+    protected override void Custom()
     {
         Set(Group.Conceal, fg: "1234af");
         Set(Group.lCursor, bg: "1234af");
@@ -71,7 +71,7 @@ file class EditorHighlight : VimEditorHighlightSource
 
 file class SyntaxHighlight : VimSyntaxGroupSource
 {
-    public override void Custom()
+    protected override void Custom()
     {
         Set(Group.PreCondit, fg: "ff0000", italic: true, bold: true);
         Set(Group.Comment, bg: "00ff00");

@@ -23,6 +23,7 @@ public interface ISource
     /// <summary>
     /// You can set styles to source items (Group) here.
     /// </summary>
+    /// <param name="query">TODO: doc</param>
     /// <remarks>This method is for users, should not override in abstract Source class.</remarks>
-    public void Custom();
+    public void Custom(BuilderQuery query);
 }

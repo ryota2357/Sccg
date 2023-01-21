@@ -12,5 +12,5 @@ public interface IWriter
     /// <summary>
     /// TODO: doc
     /// </summary>
-    public void Write(IEnumerable<IContent> contents);
+    public void Write(IEnumerable<IContent> contents, BuilderQuery query);
 }

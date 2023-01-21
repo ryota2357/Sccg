@@ -8,16 +8,18 @@ public class WriterTest
     [Fact]
     public void Test()
     {
+        var query = BuilderQuery.Empty;
+
         ISource source = new TestSource();
         IFormatter formatter = new TestFormatter();
-        source.Custom();
+        source.Custom(query);
         var contents = new List<IContent>()
         {
-            formatter.Format(source.CollectItems())
+            formatter.Format(source.CollectItems(), query)
         };
 
         IWriter writer = new TestWriter();
-        writer.Priority.Should().Be(0);
+        writer.Priority.Should().Be(10);
         ((TestWriter)writer).Contents.Should().BeEmpty();
         var text = new StringBuilder()
                    .AppendLine("GroupA Style(fg:#019abf,bg:default,sp:default,default)")
@@ -25,10 +27,10 @@ public class WriterTest
                    .AppendLine("GroupC GroupA")
                    .ToString();
 
-        writer.Write(contents);
+        writer.Write(contents, query);
         ((TestWriter)writer).Contents.Should().BeEquivalentTo(new[] { text });
-        writer.Write(contents);
+        writer.Write(contents, query);
         ((TestWriter)writer).Contents.Should().BeEquivalentTo(new[] { text, text });
-        writer.Priority.Should().Be(0);
+        writer.Priority.Should().Be(10);
     }
 }

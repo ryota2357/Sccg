@@ -11,13 +11,11 @@ public interface IIterm2SourceItem : ISourceItem
     public Iterm2Formatter.Formattable Extract();
 }
 
-public class Iterm2Formatter : Formatter<IIterm2SourceItem, SingleTextContent>, IMetadataUser
+public class Iterm2Formatter : Formatter<IIterm2SourceItem, SingleTextContent>
 {
-    public Metadata Metadata { get; set; } = Metadata.Empty;
-
     public override string Name => "ITerm2";
 
-    protected override SingleTextContent Format(IEnumerable<IIterm2SourceItem> items)
+    protected override SingleTextContent Format(IEnumerable<IIterm2SourceItem> items, BuilderQuery query)
     {
         var sb = new StringBuilder();
         foreach (var item in items)
@@ -40,7 +38,7 @@ public class Iterm2Formatter : Formatter<IIterm2SourceItem, SingleTextContent>, 
             """);
         }
 
-        return new SingleTextContent($"{Metadata.ThemeName}.itermcolors",
+        return new SingleTextContent($"{query.GetMetadata().ThemeName}.itermcolors",
             """
             <?xml version="1.0" encoding="UTF-8"?>
             <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

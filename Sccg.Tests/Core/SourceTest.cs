@@ -7,13 +7,15 @@ public class SourceTest
     [Fact]
     public void Test()
     {
+        var query = BuilderQuery.Empty;
+
         ISource source = new TestSource();
-        source.Priority.Should().Be(0);
+        source.Priority.Should().Be(10);
         source.Name.Should().Be("Test");
         ((TestSource)source).Items.Should().BeEmpty();
 
-        source.Custom();
-        source.Priority.Should().Be(0);
+        source.Custom(query);
+        source.Priority.Should().Be(10);
         source.Name.Should().Be("Test");
         ((TestSource)source).Items.Should().BeEquivalentTo(new[]
         {
@@ -26,9 +28,11 @@ public class SourceTest
     [Fact]
     public void Set()
     {
+        var query = BuilderQuery.Empty;
+
         var source = new SetTestSource();
         source.Styles.Should().BeEmpty();
-        source.Custom();
+        ((ISource)source).Custom(query);
         source.Styles.Should().BeEquivalentTo(new[]
         {
             new Style(fg: "1a09bf"),
@@ -51,7 +55,7 @@ file class SetTestSource : Source<TestSourceBase.Group, TestSourceItem>
 {
     public List<Style> Styles { get; } = new();
 
-    public override void Custom()
+    protected override void Custom()
     {
         Set(TestSourceBase.Group.GroupA, fg: "1a09bf");
         Set(TestSourceBase.Group.GroupA, bg: "1a09bf");

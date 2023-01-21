@@ -8,16 +8,18 @@ public class FormatterTest
     [Fact]
     public void Test()
     {
+        var query = BuilderQuery.Empty;
+
         ISource source = new TestSource();
-        source.Custom();
+        source.Custom(query);
         var items = new List<ISourceItem> { null! };
         items.AddRange(source.CollectItems().ToList());
         items.Add(new TestDummySourceItem());
 
         IFormatter formatter = new TestFormatter();
-        formatter.Priority.Should().Be(0);
+        formatter.Priority.Should().Be(10);
 
-        var result = formatter.Format(items);
+        var result = formatter.Format(items, query);
         result.Should().BeOfType(typeof(TestContent));
         ((TestContent)result).Text.Should().Be(
             new StringBuilder()

@@ -8,11 +8,21 @@ namespace Sccg;
 
 public class Builder
 {
-    private readonly List<IFormatter> _formatters = new();
-    private readonly List<ISource> _sources = new();
-    private readonly List<IWriter> _writers = new();
+    private readonly BuilderQuery _query = new();
 
-    public Metadata Metadata { get; init; } = Metadata.Empty;
+    public Metadata Metadata
+    {
+        init => _query.RegisterMetadata(value);
+    }
+
+    public Builder()
+    {
+    }
+
+    public Builder(Metadata metadata)
+    {
+        _query.RegisterMetadata(metadata);
+    }
 
     public LogLevel LogLevel
     {
@@ -26,21 +36,12 @@ public class Builder
 
     public void Build()
     {
-        _sources.Sort((a, b) => a.Priority - b.Priority);
-        _formatters.Sort((a, b) => a.Priority - b.Priority);
-        _writers.Sort((a, b) => a.Priority - b.Priority);
-
         Log.Info("Build start");
 
-        var sourceItems = CollectItems();
-        Log.Info($"Collect {sourceItems.Count} items from {_sources.Count} sources.");
-
-        var contents = FormatItems(sourceItems);
-        Log.Info($"Format {contents.Count} content from {_formatters.Count} formatters.");
-
-        foreach (var writer in _writers)
+        var contents = _query.GetContents<IContent>();
+        foreach (var writer in _query.GetWriters<IWriter>())
         {
-            writer.Write(contents);
+            writer.Write(contents, _query);
         }
 
         Log.Info("Build completed.");
@@ -48,21 +49,16 @@ public class Builder
 
     public void Use<T>(T instance) where T : class
     {
-        if (instance is IMetadataUser metadataUser)
-        {
-            metadataUser.SetMetadata(Metadata);
-        }
-
         switch (instance)
         {
             case IFormatter formatter:
-                _formatters.Add(formatter);
+                _query.RegisterFormatter(formatter);
                 break;
             case ISource source:
-                _sources.Add(source);
+                _query.RegisterSource(source);
                 break;
             case IWriter writer:
-                _writers.Add(writer);
+                _query.RegisterWriter(writer);
                 break;
             default:
                 throw new ArgumentException("Invalid type", nameof(T));
@@ -81,48 +77,6 @@ public class Builder
     {
         var instance = CreateInstance<T>(args);
         Use(instance);
-    }
-
-    private List<ISourceItem> CollectItems()
-    {
-        var ret = new List<ISourceItem>();
-
-        foreach (var source in _sources)
-        {
-            IEnumerable<ISourceItem> items;
-            try
-            {
-                source.Custom();
-                items = source.CollectItems();
-            }
-            catch (Exception e)
-            {
-                throw new Exception($"Source {source.Name} failed.", e);
-            }
-            ret.AddRange(items);
-        }
-
-        return ret;
-    }
-
-    private List<IContent> FormatItems(IReadOnlyCollection<ISourceItem> sourceItems)
-    {
-        var ret = new List<IContent>();
-        foreach (var formatter in _formatters)
-        {
-            IContent content;
-            try
-            {
-                content = formatter.Format(sourceItems);
-            }
-            catch (Exception e)
-            {
-                throw new Exception($"Formatter {formatter.Name} failed.", e);
-            }
-            ret.Add(content);
-        }
-
-        return ret;
     }
 
     private static T CreateInstance<T>(params object[] args) where T : class

@@ -17,28 +17,28 @@ public interface IVimSourceItem : ISourceItem
     public VimFormatter.Formattable Extract();
 }
 
-public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>, IMetadataUser
+public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>
 {
-    public Metadata Metadata { get; set; } = Metadata.Empty;
-
     public override string Name => "Vim";
 
-    protected override SingleTextContent Format(IEnumerable<IVimSourceItem> items)
+    protected override SingleTextContent Format(IEnumerable<IVimSourceItem> items, BuilderQuery query)
     {
-        var header = Metadata.Header(Metadata);
+        var metadata = query.GetMetadata();
+
+        var header = metadata.Header(metadata);
         if (header is null)
         {
             var data = new[]
                 {
-                    ("Name", Metadata.ThemeName),
-                    ("Version", Metadata.Version),
-                    ("Author", Metadata.Author),
-                    ("Maintainer", Metadata.Maintainer),
-                    ("License", Metadata.License),
-                    ("Description", Metadata.Description),
-                    ("Homepage", Metadata.Homepage),
-                    ("Repository", Metadata.Repository),
-                    ("Last change", Metadata.LastUpdated?.ToString("yyyy-MM-dd dddd", System.Globalization.CultureInfo.CreateSpecificCulture("en-US")))
+                    ("Name", metadata.ThemeName),
+                    ("Version", metadata.Version),
+                    ("Author", metadata.Author),
+                    ("Maintainer", metadata.Maintainer),
+                    ("License", metadata.License),
+                    ("Description", metadata.Description),
+                    ("Homepage", metadata.Homepage),
+                    ("Repository", metadata.Repository),
+                    ("Last change", metadata.LastUpdated?.ToString("yyyy-MM-dd dddd", System.Globalization.CultureInfo.CreateSpecificCulture("en-US")))
                 }.Where(x => x.Item2 is not null)
                  .OfType<(string, string)>()
                  .ToArray();
@@ -97,20 +97,20 @@ public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>, IMetad
             body.Add(sb.ToString());
         }
 
-        var footer = Metadata.Footer(Metadata);
+        var footer = metadata.Footer(metadata);
         if (footer is null)
         {
             footer = new[] { $"Built with Sccg {Metadata.__SccgVersion}" };
         }
 
-        return new SingleTextContent($"colors/{Metadata.ThemeName}.vim",
+        return new SingleTextContent($"colors/{metadata.ThemeName}.vim",
             string.Join('\n', header.Select(x => $"\" {x}")),
             $"""
             hi clear
             if exists('syntax_on')
               syntax reset
             endif
-            let g:colors_name = '{Metadata.ThemeName ?? "sccg_default"}'
+            let g:colors_name = '{metadata.ThemeName ?? "sccg_default"}'
             """,
             string.Join('\n', body),
             string.Join('\n', footer.Select(x => $"\" {x}"))

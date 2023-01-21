@@ -4,13 +4,11 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Writers;
 
-public class TextFileWriter : Writer<SingleTextContent>, IMetadataUser
+public class TextFileWriter : Writer<SingleTextContent>
 {
-    public Metadata Metadata { get; set; } = Metadata.Empty;
-
-    protected override void Write(IEnumerable<SingleTextContent> contents)
+    protected override void Write(IEnumerable<SingleTextContent> contents, BuilderQuery query)
     {
-        var outputDirectory = Metadata.Context.Get("OutputDirectory", "build");
+        var outputDirectory = query.GetMetadata().Context.Get("OutputDirectory", "build");
         foreach (var content in contents)
         {
             var path = Path.Combine(outputDirectory, content.Filename);

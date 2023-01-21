@@ -62,7 +62,7 @@ public class NeovimTest
 
 file class EditorHighlight : NeovimEditorHighlightSource
 {
-    public override void Custom()
+    protected override void Custom()
     {
         Set(Group.lCursor, fg: "aaff00", bold: true);
         Set(Group.Title, bg: "000000");
@@ -73,7 +73,7 @@ file class EditorHighlight : NeovimEditorHighlightSource
 
 file class TreesitterHighlight : NeovimTreesitterHighlightSource
 {
-    public override void Custom()
+    protected override void Custom()
     {
         Set(Group.Attribute, fg: "ff0000");
         Set(Group.KeywordFunction, bg: "fffac9", italic: true);
