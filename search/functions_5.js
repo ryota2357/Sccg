@@ -1,13 +1,13 @@
 var searchData=
 [
   ['get_3c_20t_20_3e_0',['Get&lt; T &gt;',['../classSccg_1_1MetadataContext.html#ab6d96da512a2cfceac03b0b1c52dda01',1,'Sccg::MetadataContext']]],
-  ['getcontents_3c_20t_20_3e_1',['GetContents&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a8d9f774e2c0f4ea0e0ca159356cd7ce2',1,'Sccg.BuilderQuery.GetContents&lt; T &gt;(bool allowEmptyReturn=false)'],['../classSccg_1_1BuilderQuery.html#abd51f63ef70c0c387fee2c4d116b5610',1,'Sccg.BuilderQuery.GetContents&lt; T &gt;(Func&lt; T, bool &gt; predicate, bool allowEmptyReturn=false)']]],
+  ['getcontents_3c_20t_20_3e_1',['GetContents&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a8d9f774e2c0f4ea0e0ca159356cd7ce2',1,'Sccg::BuilderQuery']]],
   ['getenumerator_2',['GetEnumerator',['../classSccg_1_1MetadataContext.html#a24f1ddef6d180e151448858cbe2f720b',1,'Sccg::MetadataContext']]],
-  ['getformatters_3c_20t_20_3e_3',['GetFormatters&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#aa6a0b9aa619c3ced6afe05dde228f061',1,'Sccg.BuilderQuery.GetFormatters&lt; T &gt;(bool allowEmptyReturn=false)'],['../classSccg_1_1BuilderQuery.html#af752b9e537fa1ed554df964cb27348aa',1,'Sccg.BuilderQuery.GetFormatters&lt; T &gt;(Func&lt; T, bool &gt; predicate, bool allowEmptyReturn=false)']]],
+  ['getformatters_3c_20t_20_3e_3',['GetFormatters&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#aa6a0b9aa619c3ced6afe05dde228f061',1,'Sccg::BuilderQuery']]],
   ['gethashcode_4',['GetHashCode',['../structSccg_1_1Color.html#a43c776566fed369d1ec0f0b0820abc4a',1,'Sccg.Color.GetHashCode()'],['../structSccg_1_1Style.html#a63c9a3b8fe5a4dbc724d8514f2883021',1,'Sccg.Style.GetHashCode()']]],
   ['getlink_5',['GetLink',['../classSingeLinkGraph.html#a08381aa80a47240fe655032010af3525',1,'SingeLinkGraph']]],
   ['getmetadata_6',['GetMetadata',['../classSccg_1_1BuilderQuery.html#adcf97ab9667e39324d2cd972ecccaf6b',1,'Sccg::BuilderQuery']]],
-  ['getsourceitems_3c_20t_20_3e_7',['GetSourceItems&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a9c03b38b09fc82261f11b1e2614e4673',1,'Sccg.BuilderQuery.GetSourceItems&lt; T &gt;(bool allowEmptyReturn=false)'],['../classSccg_1_1BuilderQuery.html#a1533ac7574274313f972801de5221521',1,'Sccg.BuilderQuery.GetSourceItems&lt; T &gt;(Func&lt; T, bool &gt; predicate, bool allowEmptyReturn=false)']]],
-  ['getsources_3c_20t_20_3e_8',['GetSources&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a207fe1448c6c4923d415ff23136c20fc',1,'Sccg.BuilderQuery.GetSources&lt; T &gt;(bool allowEmptyReturn=false)'],['../classSccg_1_1BuilderQuery.html#ab0ad081c446a56af7696a5c04c5a97d5',1,'Sccg.BuilderQuery.GetSources&lt; T &gt;(Func&lt; T, bool &gt; predicate, bool allowEmptyReturn=false)']]],
-  ['getwriters_3c_20t_20_3e_9',['GetWriters&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#aa8a44506f4c0eccdefc0b2b0111935f3',1,'Sccg.BuilderQuery.GetWriters&lt; T &gt;()'],['../classSccg_1_1BuilderQuery.html#ad8855a5d7356e53da00396f77590075f',1,'Sccg.BuilderQuery.GetWriters&lt; T &gt;(Func&lt; T, bool &gt; predicate)']]]
+  ['getsourceitems_3c_20t_20_3e_7',['GetSourceItems&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a9c03b38b09fc82261f11b1e2614e4673',1,'Sccg::BuilderQuery']]],
+  ['getsources_3c_20t_20_3e_8',['GetSources&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a207fe1448c6c4923d415ff23136c20fc',1,'Sccg::BuilderQuery']]],
+  ['getwriters_3c_20t_20_3e_9',['GetWriters&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a448a883d375636b78c209064c42b3a36',1,'Sccg::BuilderQuery']]]
 ];

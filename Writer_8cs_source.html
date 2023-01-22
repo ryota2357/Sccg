@@ -84,29 +84,33 @@ $(function() {
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classWriter.html">    7</a></span><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="classWriter.html">Writer</a>&lt;TContent&gt; : <a class="code hl_interface" href="interfaceIWriter.html">IWriter</a> where TContent : <a class="code hl_interface" href="interfaceIContent.html">IContent</a></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classWriter.html#a5bb023c07d12caa5fe7ef8fe03a990bd">    9</a></span>    <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> Priority =&gt; 10;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classWriter.html#a419a973b7f876e3cb5c87f62b850e430">   11</a></span>    <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classWriter.html#a419a973b7f876e3cb5c87f62b850e430">Write</a>(IEnumerable&lt;TContent&gt; contents)</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> NotImplementedException(<span class="stringliteral">&quot;You must override Write method.&quot;</span>);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classWriter.html#aeb66a874fc3cce26e37b65f5f42a00fe">   16</a></span>    <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classWriter.html#aeb66a874fc3cce26e37b65f5f42a00fe">Write</a>(IEnumerable&lt;TContent&gt; contents, BuilderQuery query)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classWriter.html#a4d87d5a0ac6f42d552207ec9cf26e3f9">   10</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">string</span> Name { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classWriter.html#a5bb023c07d12caa5fe7ef8fe03a990bd">   13</a></span>    <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">int</span> Priority =&gt; 10;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">// TODO: doc</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classWriter.html#a419a973b7f876e3cb5c87f62b850e430">   16</a></span>    <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classWriter.html#a419a973b7f876e3cb5c87f62b850e430">Write</a>(IEnumerable&lt;TContent&gt; contents)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        Write(contents);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> NotImplementedException(<span class="stringliteral">&quot;You must override Write method.&quot;</span>);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_interface" href="interfaceIWriter.html">IWriter</a>.<a class="code hl_function" href="interfaceIWriter.html#ae6f542551082ce6f8d752e8a66f2fee4">Write</a>(IEnumerable&lt;IContent&gt; contents, BuilderQuery query)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        Write(contents.OfType&lt;TContent&gt;());</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">// TODO: doc</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classWriter.html#aeb66a874fc3cce26e37b65f5f42a00fe">   22</a></span>    <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classWriter.html#aeb66a874fc3cce26e37b65f5f42a00fe">Write</a>(IEnumerable&lt;TContent&gt; contents, BuilderQuery query)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        Write(contents);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_interface" href="interfaceIWriter.html">IWriter</a>.<a class="code hl_function" href="interfaceIWriter.html#ae6f542551082ce6f8d752e8a66f2fee4">Write</a>(IEnumerable&lt;IContent&gt; contents, BuilderQuery query)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        Write(contents.OfType&lt;TContent&gt;());</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 <div class="ttc" id="aclassWriter_html"><div class="ttname"><a href="classWriter.html">Writer</a></div><div class="ttdef"><b>Definition:</b> <a href="Writer_8cs_source.html#l00007">Writer.cs:8</a></div></div>
-<div class="ttc" id="aclassWriter_html_a419a973b7f876e3cb5c87f62b850e430"><div class="ttname"><a href="classWriter.html#a419a973b7f876e3cb5c87f62b850e430">Writer.Write</a></div><div class="ttdeci">virtual void Write(IEnumerable&lt; TContent &gt; contents)</div><div class="ttdef"><b>Definition:</b> <a href="Writer_8cs_source.html#l00011">Writer.cs:11</a></div></div>
-<div class="ttc" id="aclassWriter_html_aeb66a874fc3cce26e37b65f5f42a00fe"><div class="ttname"><a href="classWriter.html#aeb66a874fc3cce26e37b65f5f42a00fe">Writer.Write</a></div><div class="ttdeci">virtual void Write(IEnumerable&lt; TContent &gt; contents, BuilderQuery query)</div><div class="ttdef"><b>Definition:</b> <a href="Writer_8cs_source.html#l00016">Writer.cs:16</a></div></div>
+<div class="ttc" id="aclassWriter_html_a419a973b7f876e3cb5c87f62b850e430"><div class="ttname"><a href="classWriter.html#a419a973b7f876e3cb5c87f62b850e430">Writer.Write</a></div><div class="ttdeci">virtual void Write(IEnumerable&lt; TContent &gt; contents)</div><div class="ttdef"><b>Definition:</b> <a href="Writer_8cs_source.html#l00016">Writer.cs:16</a></div></div>
+<div class="ttc" id="aclassWriter_html_aeb66a874fc3cce26e37b65f5f42a00fe"><div class="ttname"><a href="classWriter.html#aeb66a874fc3cce26e37b65f5f42a00fe">Writer.Write</a></div><div class="ttdeci">virtual void Write(IEnumerable&lt; TContent &gt; contents, BuilderQuery query)</div><div class="ttdef"><b>Definition:</b> <a href="Writer_8cs_source.html#l00022">Writer.cs:22</a></div></div>
 <div class="ttc" id="ainterfaceIContent_html"><div class="ttname"><a href="interfaceIContent.html">IContent</a></div><div class="ttdef"><b>Definition:</b> <a href="IContent_8cs_source.html#l00003">IContent.cs:4</a></div></div>
 <div class="ttc" id="ainterfaceIWriter_html"><div class="ttname"><a href="interfaceIWriter.html">IWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="IWriter_8cs_source.html#l00005">IWriter.cs:6</a></div></div>
-<div class="ttc" id="ainterfaceIWriter_html_ae6f542551082ce6f8d752e8a66f2fee4"><div class="ttname"><a href="interfaceIWriter.html#ae6f542551082ce6f8d752e8a66f2fee4">IWriter.Write</a></div><div class="ttdeci">void Write(IEnumerable&lt; IContent &gt; contents, BuilderQuery query)</div><div class="ttdoc">TODO: doc</div></div>
+<div class="ttc" id="ainterfaceIWriter_html_ae6f542551082ce6f8d752e8a66f2fee4"><div class="ttname"><a href="interfaceIWriter.html#ae6f542551082ce6f8d752e8a66f2fee4">IWriter.Write</a></div><div class="ttdeci">void Write(IEnumerable&lt; IContent &gt; contents, BuilderQuery query)</div><div class="ttdoc">Writes the specified content.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

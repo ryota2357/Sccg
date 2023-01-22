@@ -88,16 +88,16 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4cfb60b5961bb30d81e525e3723766a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfaceIContent.html">IContent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceIFormatter.html#a4cfb60b5961bb30d81e525e3723766a9">Format</a> (IEnumerable&lt; <a class="el" href="interfaceISourceItem.html">ISourceItem</a> &gt; items, BuilderQuery query)</td></tr>
-<tr class="memdesc:a4cfb60b5961bb30d81e525e3723766a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: doc   <a href="interfaceIFormatter.html#a4cfb60b5961bb30d81e525e3723766a9">More...</a><br /></td></tr>
+<tr class="memdesc:a4cfb60b5961bb30d81e525e3723766a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats to <a class="el" href="interfaceIContent.html">IContent</a> from the collection of <a class="el" href="interfaceISourceItem.html">ISourceItem</a>.   <a href="interfaceIFormatter.html#a4cfb60b5961bb30d81e525e3723766a9">More...</a><br /></td></tr>
 <tr class="separator:a4cfb60b5961bb30d81e525e3723766a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a05fae3f33e043bd08fcbc4777e6c2181"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceIFormatter.html#a05fae3f33e043bd08fcbc4777e6c2181">Name</a><code> [get]</code></td></tr>
-<tr class="memdesc:a05fae3f33e043bd08fcbc4777e6c2181"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classSource.html">Source</a> name.   <a href="interfaceIFormatter.html#a05fae3f33e043bd08fcbc4777e6c2181">More...</a><br /></td></tr>
+<tr class="memdesc:a05fae3f33e043bd08fcbc4777e6c2181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the formatter name.   <a href="interfaceIFormatter.html#a05fae3f33e043bd08fcbc4777e6c2181">More...</a><br /></td></tr>
 <tr class="separator:a05fae3f33e043bd08fcbc4777e6c2181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e90b9ed9e8dc054b8673be23688ca29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceIFormatter.html#a3e90b9ed9e8dc054b8673be23688ca29">Priority</a><code> [get]</code></td></tr>
-<tr class="memdesc:a3e90b9ed9e8dc054b8673be23688ca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: doc   <a href="interfaceIFormatter.html#a3e90b9ed9e8dc054b8673be23688ca29">More...</a><br /></td></tr>
+<tr class="memdesc:a3e90b9ed9e8dc054b8673be23688ca29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the order in which the formatter is applied. The lower the number, the earlier the formatter is applied.   <a href="interfaceIFormatter.html#a3e90b9ed9e8dc054b8673be23688ca29">More...</a><br /></td></tr>
 <tr class="separator:a3e90b9ed9e8dc054b8673be23688ca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -130,15 +130,15 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>TODO: doc  </p>
+<p>Formats to <a class="el" href="interfaceIContent.html">IContent</a> from the collection of <a class="el" href="interfaceISourceItem.html">ISourceItem</a>.  </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">items</td><td></td></tr>
-    <tr><td class="paramname">query</td><td></td></tr>
+    <tr><td class="paramname">items</td><td>A collection of <a class="el" href="interfaceISourceItem.html">ISourceItem</a> collected from all sources.</td></tr>
+    <tr><td class="paramname">query</td><td>The means of accessing other formatters, etc.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>It is passed to <a class="el" href="interfaceIWriter.html">IWriter</a> to write some formatted content.</dd></dl>
 
 </div>
 </div>
@@ -163,7 +163,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classSource.html">Source</a> name.  </p>
+<p>Gets the formatter name.  </p>
 
 <p>Implemented in <a class="el" href="classFormatter.html#a9cc65008a3882d6e7b31038fcbfb1874">Formatter&lt; TSourceItem, TContent &gt;</a>.</p>
 
@@ -191,7 +191,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>TODO: doc  </p>
+<p>Gets the order in which the formatter is applied. The lower the number, the earlier the formatter is applied.  </p>
 
 <p>Implemented in <a class="el" href="classFormatter.html#a173587039cad987a46476d6191c66d87">Formatter&lt; TSourceItem, TContent &gt;</a>.</p>
 

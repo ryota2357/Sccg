@@ -91,16 +91,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af99f5b842fd04e778aa37a214d8b11e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects source items from the source.   <a href="interfaceISource.html#af99f5b842fd04e778aa37a214d8b11e5">More...</a><br /></td></tr>
 <tr class="separator:af99f5b842fd04e778aa37a214d8b11e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add13d0f977cf4891f86720dc1a3e07c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceISource.html#add13d0f977cf4891f86720dc1a3e07c9">Custom</a> (BuilderQuery query)</td></tr>
-<tr class="memdesc:add13d0f977cf4891f86720dc1a3e07c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can set styles to source items (Group) here.   <a href="interfaceISource.html#add13d0f977cf4891f86720dc1a3e07c9">More...</a><br /></td></tr>
+<tr class="memdesc:add13d0f977cf4891f86720dc1a3e07c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the source customization.   <a href="interfaceISource.html#add13d0f977cf4891f86720dc1a3e07c9">More...</a><br /></td></tr>
 <tr class="separator:add13d0f977cf4891f86720dc1a3e07c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a6cb00f4f0797cd6848abd105700220e2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceISource.html#a6cb00f4f0797cd6848abd105700220e2">Name</a><code> [get]</code></td></tr>
-<tr class="memdesc:a6cb00f4f0797cd6848abd105700220e2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classSource.html">Source</a> name.   <a href="interfaceISource.html#a6cb00f4f0797cd6848abd105700220e2">More...</a><br /></td></tr>
+<tr class="memdesc:a6cb00f4f0797cd6848abd105700220e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the source name.   <a href="interfaceISource.html#a6cb00f4f0797cd6848abd105700220e2">More...</a><br /></td></tr>
 <tr class="separator:a6cb00f4f0797cd6848abd105700220e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa80bb44040806085b09c5abcf4c90fcd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceISource.html#aa80bb44040806085b09c5abcf4c90fcd">Priority</a><code> [get]</code></td></tr>
-<tr class="memdesc:aa80bb44040806085b09c5abcf4c90fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: doc   <a href="interfaceISource.html#aa80bb44040806085b09c5abcf4c90fcd">More...</a><br /></td></tr>
+<tr class="memdesc:aa80bb44040806085b09c5abcf4c90fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the order in which the source is applied. The lower the number, the earlier the source is applied.   <a href="interfaceISource.html#aa80bb44040806085b09c5abcf4c90fcd">More...</a><br /></td></tr>
 <tr class="separator:aa80bb44040806085b09c5abcf4c90fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -123,7 +123,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Collects source items from the source.  </p>
-<dl class="section return"><dt>Returns</dt><dd>The collection of <a class="el" href="interfaceISourceItem.html">ISourceItem</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>It is passed to <a class="el" href="interfaceIFormatter.html">IFormatter</a> to format.</dd></dl>
 
 <p>Implemented in <a class="el" href="classSource.html#a0a4e811557921ab83a7767d25ee10bfe">Source&lt; TGroup, TItem &gt;</a>.</p>
 
@@ -145,14 +145,13 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>You can set styles to source items (Group) here.  </p>
+<p>Starts the source customization.  </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">query</td><td>TODO: doc</td></tr>
+    <tr><td class="paramname">query</td><td>The means of accessing other sources, etc.</td></tr>
   </table>
   </dd>
 </dl>
-<p >This method is for users, should not override in abstract <a class="el" href="classSource.html">Source</a> class.</p>
 
 <p>Implemented in <a class="el" href="classSource.html#a71f9ff3d916208024f0c09098e88e6d4">Source&lt; TGroup, TItem &gt;</a>.</p>
 
@@ -179,7 +178,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classSource.html">Source</a> name.  </p>
+<p>Gets the source name.  </p>
 
 <p>Implemented in <a class="el" href="classSource.html#ac0f2db963534479d4dac448a93fe32b8">Source&lt; TGroup, TItem &gt;</a>.</p>
 
@@ -207,7 +206,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>TODO: doc  </p>
+<p>Gets the order in which the source is applied. The lower the number, the earlier the source is applied.  </p>
 
 <p>Implemented in <a class="el" href="classSource.html#a45d2198df26b990088891e99e39ee8ca">Source&lt; TGroup, TItem &gt;</a>.</p>
 
