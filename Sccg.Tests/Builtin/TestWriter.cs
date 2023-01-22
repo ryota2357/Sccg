@@ -7,6 +7,8 @@ public class TestWriter : IWriter
 {
     public List<string> Output { get; } = new();
 
+    public string Name => "Test";
+
     public int Priority => 0;
 
     public void Write(IEnumerable<IContent> contents, BuilderQuery query)

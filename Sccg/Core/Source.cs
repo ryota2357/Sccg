@@ -6,53 +6,57 @@ namespace Sccg.Core;
 
 public abstract class Source<TGroup, TItem> : ISource
 {
+    /// <inheritdoc />
     public abstract string Name { get; }
 
-    /// <inheritdoc cref="ISource.CollectItems"/>
+    // TODO: doc
     protected abstract IEnumerable<TItem> CollectItems();
 
     /// <summary>
-    /// TODO: doc
+    /// Sets style to group.
     /// </summary>
-    /// <param name="group"></param>
-    /// <param name="style"></param>
+    /// <param name="group">A syntax/design group name.</param>
+    /// <param name="style">A style.</param>
     protected abstract void Set(TGroup group, Style style);
 
     /// <summary>
-    /// TODO: doc
+    /// Links style `from` group to `to` group.
     /// </summary>
-    /// <param name="from"></param>
-    /// <param name="to"></param>
+    /// <param name="from">A syntax/design group name.</param>
+    /// <param name="to">A syntax/design group name.</param>
     protected abstract void Link(TGroup from, TGroup to);
 
+    /// <inheritdoc />
     public virtual int Priority => 10;
 
+    // TODO: doc
     protected virtual void Custom()
     {
         throw new NotImplementedException("You must override Custom method.");
     }
 
+    // TODO: doc
     protected virtual void Custom(BuilderQuery query)
     {
         Custom();
     }
 
     /// <summary>
-    /// TODO: doc
+    /// Sets style to group.
     /// </summary>
-    /// <param name="group"></param>
-    /// <param name="fg"></param>
-    /// <param name="bg"></param>
-    /// <param name="sp"></param>
-    /// <param name="none"></param>
-    /// <param name="bold"></param>
-    /// <param name="italic"></param>
-    /// <param name="strikethrough"></param>
-    /// <param name="underline"></param>
-    /// <param name="underlineWaved"></param>
-    /// <param name="underlineDotted"></param>
-    /// <param name="underlineDashed"></param>
-    /// <param name="underlineDouble"></param>
+    /// <param name="group">A syntax/design group name.</param>
+    /// <param name="fg">Foreground color.</param>
+    /// <param name="bg">Background color.</param>
+    /// <param name="sp">Special color.</param>
+    /// <param name="none">Reset style decoration modifier.</param>
+    /// <param name="bold">Bold font style.</param>
+    /// <param name="italic">Italic font style.</param>
+    /// <param name="strikethrough">Strikethrough font style.</param>
+    /// <param name="underline">Underline font style.</param>
+    /// <param name="underlineWaved">Underline Waved font style.</param>
+    /// <param name="underlineDotted">Underline Dotted font style.</param>
+    /// <param name="underlineDashed">Underline Dashed font style.</param>
+    /// <param name="underlineDouble">Underline Double font style.</param>
     protected virtual void Set(
         TGroup group,
         Color? fg = null,
@@ -84,7 +88,10 @@ public abstract class Source<TGroup, TItem> : ISource
         ));
     }
 
+    // This cache is necessary to respect Priority.
     private bool _custom;
+    private IEnumerable<ISourceItem>? _collectItems = null;
+
     void ISource.Custom(BuilderQuery query)
     {
         if (_custom)
@@ -96,7 +103,6 @@ public abstract class Source<TGroup, TItem> : ISource
         _custom = true;
     }
 
-    private IEnumerable<ISourceItem>? _collectItems = null;
     IEnumerable<ISourceItem> ISource.CollectItems()
     {
         return _collectItems ??= CollectItems().OfType<ISourceItem>();

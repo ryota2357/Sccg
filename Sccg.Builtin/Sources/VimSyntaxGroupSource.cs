@@ -107,6 +107,11 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
         }
     }
 
+    /// <summary>
+    /// :h group-name (Vim/Neovim)
+    /// </summary>
+    /// https://github.com/vim/vim/blob/master/runtime/doc/syntax.txt#L211
+    /// https://github.com/neovim/neovim/blob/master/runtime/doc/syntax.txt#L184
     public enum Group
     {
         /// <summary>

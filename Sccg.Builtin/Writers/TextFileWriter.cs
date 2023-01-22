@@ -6,6 +6,8 @@ namespace Sccg.Builtin.Writers;
 
 public class TextFileWriter : Writer<SingleTextContent>
 {
+    public override string Name => "TextFile";
+
     protected override void Write(IEnumerable<SingleTextContent> contents, BuilderQuery query)
     {
         var outputDirectory = query.GetMetadata().Context.Get("OutputDirectory", "build");

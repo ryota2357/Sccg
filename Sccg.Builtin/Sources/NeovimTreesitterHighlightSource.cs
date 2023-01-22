@@ -96,6 +96,7 @@ public abstract partial class NeovimTreesitterHighlightSource
     /// <summary>
     /// https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
     /// </summary>
+    /// <remarks>Some groups are not supported by neovim.</remarks>
     public enum Group
     {
         /// <summary>

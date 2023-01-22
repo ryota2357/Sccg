@@ -97,6 +97,8 @@ internal class TestFormatter : Formatter<TestSourceItem, TestContent>
 
 internal class TestWriter : Writer<TestContent>
 {
+    public override string Name => "Test";
+
     public List<string> Contents { get; } = new();
 
     protected override void Write(IEnumerable<TestContent> contents)

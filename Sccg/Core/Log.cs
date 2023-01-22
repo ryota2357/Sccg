@@ -8,6 +8,10 @@ namespace Sccg.Core;
 
 public static class Log
 {
+    /// <summary>
+    /// Logs a debug message.
+    /// </summary>
+    /// <param name="msg">A message. If multiple messages are passed, they will be added line-break.</param>
     public static void Debug(params string[] msg)
     {
         if (LoggerConfig.Shared.Level >= LogLevel.Debug)
@@ -16,6 +20,10 @@ public static class Log
         }
     }
 
+    /// <summary>
+    /// Logs an information message.
+    /// </summary>
+    /// <param name="msg">A message. If multiple messages are passed, they will be added line-break.</param>
     public static void Info(params string[] msg)
     {
         if (LoggerConfig.Shared.Level >= LogLevel.Info)
@@ -24,6 +32,10 @@ public static class Log
         }
     }
 
+    /// <summary>
+    /// Logs a warning message.
+    /// </summary>
+    /// <param name="msg">A message. If multiple messages are passed, they will be added line-break.</param>
     public static void Warn(params string[] msg)
     {
         if (LoggerConfig.Shared.Level >= LogLevel.Warn)
@@ -50,7 +62,7 @@ public static class Log
 
 internal class LoggerConfig
 {
-    internal static LoggerConfig Shared = new();
+    internal static readonly LoggerConfig Shared = new();
 
     public LogLevel Level { get; set; } = LogLevel.Info;
 

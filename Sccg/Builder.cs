@@ -6,34 +6,40 @@ using Sccg.Core;
 
 namespace Sccg;
 
+/// <summary>
+/// The builder of color configuration.
+/// </summary>
 public class Builder
 {
     private readonly BuilderQuery _query = new();
 
+    /// <summary>
+    /// The metadata for all process.
+    /// </summary>
     public Metadata Metadata
     {
         init => _query.RegisterMetadata(value);
     }
 
-    public Builder()
-    {
-    }
-
-    public Builder(Metadata metadata)
-    {
-        _query.RegisterMetadata(metadata);
-    }
-
+    /// <summary>
+    /// The log level for <see cref="Build"/>.
+    /// </summary>
     public LogLevel LogLevel
     {
         init => LoggerConfig.Shared.Level = value;
     }
 
+    /// <summary>
+    /// The log file for <see cref="Build"/>.
+    /// </summary>
     public string? LogFile
     {
         init => LoggerConfig.Shared.File = value;
     }
 
+    /// <summary>
+    /// Starts to build the color configuration.
+    /// </summary>
     public void Build()
     {
         Log.Info("Build start");
@@ -47,15 +53,20 @@ public class Builder
         Log.Info("Build completed.");
     }
 
+    /// <summary>
+    /// Registers the Source, Formatter, Writer instance.
+    /// </summary>
+    /// <param name="instance">The instance of Source, Formatter, Writer.</param>
+    /// <typeparam name="T"><see cref="ISource"/>, <see cref="IFormatter"/>, <see cref="IWriter"/></typeparam>
     public void Use<T>(T instance) where T : class
     {
         switch (instance)
         {
-            case IFormatter formatter:
-                _query.RegisterFormatter(formatter);
-                break;
             case ISource source:
                 _query.RegisterSource(source);
+                break;
+            case IFormatter formatter:
+                _query.RegisterFormatter(formatter);
                 break;
             case IWriter writer:
                 _query.RegisterWriter(writer);
@@ -65,6 +76,11 @@ public class Builder
         }
     }
 
+    /// <summary>
+    /// Registers multiple the Source, Formatter, Writer.
+    /// </summary>
+    /// <param name="instances">The instances of Source, Formatter, Writer.</param>
+    /// <typeparam name="T"><see cref="ISource"/>, <see cref="IFormatter"/>, <see cref="IWriter"/></typeparam>
     public void Use<T>(IEnumerable<T> instances) where T : class
     {
         foreach (var instance in instances)
@@ -73,6 +89,11 @@ public class Builder
         }
     }
 
+    /// <summary>
+    /// Registers the Source, Formatter, Writer.
+    /// </summary>
+    /// <param name="args">The argument of its constructor.</param>
+    /// <typeparam name="T"><see cref="ISource"/>, <see cref="IFormatter"/>, <see cref="IWriter"/></typeparam>
     public void Use<T>(params object[] args) where T : class
     {
         var instance = CreateInstance<T>(args);

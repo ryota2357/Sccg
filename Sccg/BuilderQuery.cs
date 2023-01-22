@@ -5,7 +5,7 @@ using Sccg.Core;
 
 namespace Sccg;
 
-public class BuilderQuery
+public sealed class BuilderQuery
 {
     private readonly List<IFormatter> _formatters = new();
     private readonly List<ISource> _sources = new();
@@ -22,54 +22,54 @@ public class BuilderQuery
     }
 
     /// <summary>
-    /// TODO: doc
+    /// Gets sources by the specified type.
     /// </summary>
-    /// <param name="allowEmptyReturn"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public T[] GetFormatters<T>(bool allowEmptyReturn = false) where T : IFormatter
-    {
-        var formatters = _formatters.OfType<T>().ToArray() ?? Array.Empty<T>();
-        return allowEmptyReturn ? formatters : ThrowIfEmpty("Formatter", formatters);
-    }
-
-    /// <inheritdoc cref="GetFormatters{T}(bool)"/>
-    /// <param name="predicate"></param>
-    /// <param name="allowEmptyReturn"></param>
-    public T[] GetFormatters<T>(Func<T, bool> predicate, bool allowEmptyReturn = false) where T : IFormatter
-    {
-        var formatters = _formatters.OfType<T>().Where(predicate).ToArray();
-        return allowEmptyReturn ? formatters : ThrowIfEmpty("Formatter", formatters);
-    }
-
-    /// <summary>
-    /// TODO: doc
-    /// </summary>
-    /// <param name="allowEmptyReturn"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    /// <exception cref="InvalidOperationException"></exception>
+    /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
+    /// <typeparam name="T">A type of the source you want to get.</typeparam>
+    /// <returns>Array of source. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one source.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type source and <see cref="allowEmptyReturn"/> is false.</exception>
     public T[] GetSources<T>(bool allowEmptyReturn = false) where T : ISource
     {
         var source = _sources.OfType<T>().ToArray();
         return allowEmptyReturn ? source : ThrowIfEmpty("Source", source);
     }
 
-    /// <inheritdoc cref="GetSources{T}(bool)"/>
-    /// <param name="predicate"></param>
-    /// <param name="allowEmptyReturn"></param>
-    public T[] GetSources<T>(Func<T, bool> predicate, bool allowEmptyReturn = false) where T : ISource
+    /// <summary>
+    /// Gets formatters by the specified type.
+    /// </summary>
+    /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
+    /// <typeparam name="T">A type of the formatter you want to get.</typeparam>
+    /// <returns>Array of formatter. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one formatter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type formatter and <see cref="allowEmptyReturn"/> is false.</exception>
+    public T[] GetFormatters<T>(bool allowEmptyReturn = false) where T : IFormatter
     {
-        var source = _sources.OfType<T>().Where(predicate).ToArray();
-        return allowEmptyReturn ? source : ThrowIfEmpty("Source", source);
+        var formatters = _formatters.OfType<T>().ToArray();
+        return allowEmptyReturn ? formatters : ThrowIfEmpty("Formatter", formatters);
     }
 
     /// <summary>
-    /// TODO: doc
+    /// Gets writers by the specified type.
     /// </summary>
-    /// <param name="allowEmptyReturn"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
+    /// <typeparam name="T">A type of the writer you want to get.</typeparam>
+    /// <returns>Array of writer. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one writer.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type writer and <see cref="allowEmptyReturn"/> is false.</exception>
+    public T[] GetWriters<T>(bool allowEmptyReturn = false) where T : IWriter
+    {
+        var writer = _writers.OfType<T>().ToArray();
+        return allowEmptyReturn ? writer : ThrowIfEmpty("Writer", writer);
+    }
+
+    /// <summary>
+    /// Gets the metadata.
+    /// </summary>
+    /// <returns>Builder metadata.</returns>
+    public Metadata GetMetadata()
+    {
+        return _metadata;
+    }
+
+    // TODO: new impl
     public T[] GetSourceItems<T>(bool allowEmptyReturn = false) where T : ISourceItem
     {
         CacheSourceItems();
@@ -77,22 +77,7 @@ public class BuilderQuery
         return allowEmptyReturn ? sourceItems : ThrowIfEmpty("SourceItem", sourceItems);
     }
 
-    /// <inheritdoc cref="GetSourceItems{T}(bool)"/>
-    /// <param name="predicate"></param>
-    /// <param name="allowEmptyReturn"></param>
-    public T[] GetSourceItems<T>(Func<T, bool> predicate, bool allowEmptyReturn = false) where T : ISourceItem
-    {
-        CacheSourceItems();
-        var sourceItems = _sourceItemsCache!.OfType<T>().Where(predicate).ToArray();
-        return allowEmptyReturn ? sourceItems : ThrowIfEmpty("SourceItem", sourceItems);
-    }
-
-    /// <summary>
-    /// TODO: doc
-    /// </summary>
-    /// <param name="allowEmptyReturn"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    // TODO: new impl
     public T[] GetContents<T>(bool allowEmptyReturn = false) where T : IContent
     {
         CacheContents();
@@ -100,46 +85,10 @@ public class BuilderQuery
         return allowEmptyReturn ? contents : ThrowIfEmpty("Content", contents);
     }
 
-    /// <inheritdoc cref="GetContents{T}(bool)"/>
-    /// <param name="predicate"></param>
-    /// <param name="allowEmptyReturn"></param>
-    public T[] GetContents<T>(Func<T, bool> predicate, bool allowEmptyReturn = false) where T : IContent
-    {
-        CacheContents();
-        var contents = _contentsCache!.OfType<T>().Where(predicate).ToArray();
-        return allowEmptyReturn ? contents : ThrowIfEmpty("Content", contents);
-    }
-
     /// <summary>
-    /// TODO: doc
+    /// Registers the specified source to builder.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public T[] GetWriters<T>() where T : IWriter
-    {
-        var writer = _writers.OfType<T>().ToArray();
-        ThrowIfEmpty("Writer", writer);
-        return writer;
-    }
-
-    /// <inheritdoc cref="GetWriters{T}()"/>
-    /// <param name="predicate"></param>
-    public T[] GetWriters<T>(Func<T, bool> predicate) where T : IWriter
-    {
-        var writer = _writers.OfType<T>().Where(predicate).ToArray();
-        ThrowIfEmpty("Writer", writer);
-        return writer;
-    }
-
-    /// <summary>
-    /// TODO: doc
-    /// </summary>
-    /// <returns></returns>
-    public Metadata GetMetadata()
-    {
-        return _metadata;
-    }
-
+    /// <param name="source">A instance of source.</param>
     public void RegisterSource(ISource source)
     {
         _sources.Add(source);
@@ -147,6 +96,10 @@ public class BuilderQuery
         _sourceItemsCache = null;
     }
 
+    /// <summary>
+    /// Registers the specified formatter to builder.
+    /// </summary>
+    /// <param name="formatter">A instance of formatter.</param>
     public void RegisterFormatter(IFormatter formatter)
     {
         _formatters.Add(formatter);
@@ -154,6 +107,10 @@ public class BuilderQuery
         _contentsCache = null;
     }
 
+    /// <summary>
+    /// Registers the specified writer to builder.
+    /// </summary>
+    /// <param name="writer">A instance of writer.</param>
     public void RegisterWriter(IWriter writer)
     {
         _writers.Add(writer);

@@ -5,25 +5,24 @@ namespace Sccg.Core;
 public interface ISource
 {
     /// <summary>
-    /// Source name.
+    /// Gets the source name.
     /// </summary>
     public string Name { get; }
 
     /// <summary>
-    /// TODO: doc
+    /// Gets the order in which the source is applied. The lower the number, the earlier the source is applied.
     /// </summary>
     public int Priority { get; }
 
     /// <summary>
     /// Collects source items from the source.
     /// </summary>
-    /// <returns>The collection of <see cref="ISourceItem"/></returns>
+    /// <returns>It is passed to <see cref="IFormatter"/> to format.</returns>
     public IEnumerable<ISourceItem> CollectItems();
 
     /// <summary>
-    /// You can set styles to source items (Group) here.
+    /// Starts the source customization.
     /// </summary>
-    /// <param name="query">TODO: doc</param>
-    /// <remarks>This method is for users, should not override in abstract Source class.</remarks>
+    /// <param name="query">The means of accessing other sources, etc.</param>
     public void Custom(BuilderQuery query);
 }
