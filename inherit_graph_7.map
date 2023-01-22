@@ -1,11 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$interfaceISourceItem.html" title=" " alt="" coords="5,112,99,137"/>
-<area shape="rect" id="node2" href="$interfaceIIterm2SourceItem.html" title=" " alt="" coords="151,35,281,60"/>
-<area shape="rect" id="node4" href="$interfaceINeovimSourceItem.html" title=" " alt="" coords="147,112,285,137"/>
-<area shape="rect" id="node8" href="$interfaceIVimSourceItem.html" title=" " alt="" coords="158,169,274,195"/>
-<area shape="rect" id="node3" href="$classIterm2ColorsSource_1_1Item.html" title=" " alt="" coords="361,5,527,31"/>
-<area shape="rect" id="node5" href="$classNeovimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="333,55,555,80"/>
-<area shape="rect" id="node6" href="$classNeovimTreesitterHighlightSource_1_1Item.html" title=" " alt="" coords="357,105,531,145"/>
-<area shape="rect" id="node7" href="$classVimSyntaxGroupSource_1_1Item.html" title=" " alt="" coords="349,169,539,195"/>
-<area shape="rect" id="node9" href="$classVimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="345,219,543,244"/>
+<area shape="rect" id="node1" href="$classSccg_1_1Core_1_1Formatter.html" title=" " alt="" coords="5,5,159,60"/>
+<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Formatters_1_1NeovimFormatter.html" title=" " alt="" coords="207,13,367,53"/>
 </map>

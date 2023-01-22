@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['write_0',['Write',['../interfaceIWriter.html#ae6f542551082ce6f8d752e8a66f2fee4',1,'IWriter.Write()'],['../classWriter.html#a419a973b7f876e3cb5c87f62b850e430',1,'Writer.Write(IEnumerable&lt; TContent &gt; contents)'],['../classWriter.html#aeb66a874fc3cce26e37b65f5f42a00fe',1,'Writer.Write(IEnumerable&lt; TContent &gt; contents, BuilderQuery query)'],['../classTextFileWriter.html#a3f5801e1adcf4d175f8281fdc940498d',1,'TextFileWriter.Write()']]]
+  ['write_0',['Write',['../interfaceSccg_1_1Core_1_1IWriter.html#a37ce963638ad22ae23b74d0d772e1a1f',1,'Sccg.Core.IWriter.Write()'],['../classSccg_1_1Core_1_1Writer.html#a03a458540b55735f8a6587762429eed4',1,'Sccg.Core.Writer.Write(IEnumerable&lt; TContent &gt; contents)'],['../classSccg_1_1Core_1_1Writer.html#a364fe31bc2c966d606c4506fbcf90cb8',1,'Sccg.Core.Writer.Write(IEnumerable&lt; TContent &gt; contents, BuilderQuery query)'],['../classSccg_1_1Builtin_1_1Writers_1_1TextFileWriter.html#a34c4976132858aebe68aa59a676f63b4',1,'Sccg.Builtin.Writers.TextFileWriter.Write()']]]
 ];

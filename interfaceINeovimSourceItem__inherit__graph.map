@@ -1,7 +1,0 @@
-<map id="INeovimSourceItem" name="INeovimSourceItem">
-<area shape="rect" id="node1" title=" " alt="" coords="147,63,285,88"/>
-<area shape="rect" id="node3" href="$classNeovimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="333,5,555,31"/>
-<area shape="rect" id="node4" href="$classNeovimTreesitterHighlightSource_1_1Item.html" title=" " alt="" coords="357,55,531,95"/>
-<area shape="rect" id="node5" href="$classVimSyntaxGroupSource_1_1Item.html" title=" " alt="" coords="349,120,539,145"/>
-<area shape="rect" id="node2" href="$interfaceISourceItem.html" title=" " alt="" coords="5,63,99,88"/>
-</map>

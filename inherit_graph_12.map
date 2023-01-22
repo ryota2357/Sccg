@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSingeLinkGraph.html" title=" " alt="" coords="5,5,120,31"/>
+<area shape="rect" id="node1" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="5,109,161,134"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title=" " alt="" coords="209,69,369,109"/>
+<area shape="rect" id="node6" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" title=" " alt="" coords="209,133,369,173"/>
+<area shape="rect" id="node3" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="421,5,612,45"/>
+<area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" title=" " alt="" coords="417,69,616,109"/>
+<area shape="rect" id="node5" href="$classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" title=" " alt="" coords="433,133,601,173"/>
+<area shape="rect" id="node7" href="$classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="429,197,605,237"/>
 </map>

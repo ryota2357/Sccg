@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hexcode_0',['HexCode',['../structSccg_1_1Color.html#aa23d8df4d612b2bfee32ff8ee4d8dbfa',1,'Sccg::Color']]]
+  ['keys_0',['Keys',['../classSccg_1_1MetadataContext.html#a7ec733dfbe73698f7dfab223d881a185',1,'Sccg::MetadataContext']]]
 ];

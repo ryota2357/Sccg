@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isdefault_0',['IsDefault',['../structSccg_1_1Color.html#a75aade6421b144bd53c1af700278be13',1,'Sccg::Color']]],
-  ['isnone_1',['IsNone',['../structSccg_1_1Color.html#acf46dae42a7c4bf401f792083ce7bce4',1,'Sccg::Color']]]
+  ['logfile_0',['LogFile',['../classSccg_1_1Builder.html#af77f4b41916612a9c8b241b3d3df61d3',1,'Sccg::Builder']]],
+  ['loglevel_1',['LogLevel',['../classSccg_1_1Builder.html#ad6c9d41507f7d7ba8680d23d00ee0229',1,'Sccg::Builder']]]
 ];

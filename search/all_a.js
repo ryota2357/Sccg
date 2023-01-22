@@ -1,10 +1,18 @@
 var searchData=
 [
-  ['link_0',['Link',['../classSource.html#a50a5e878092444db7c8006d373227bee',1,'Source.Link()'],['../classStdSourceImpl.html#a68cfdb93df71630e59d377063f0ec31e',1,'StdSourceImpl.Link()'],['../classIterm2ColorsSource.html#a6281cf74d2907201c5fdf5dea02b303b',1,'Iterm2ColorsSource.Link()'],['../classNeovimEditorHighlightSource.html#aae8df8d33802b97c50418cfa04acad7a',1,'NeovimEditorHighlightSource.Link()'],['../classNeovimTreesitterHighlightSource.html#ae2912c06eadae1c665cb1b16ccf745a4',1,'NeovimTreesitterHighlightSource.Link()'],['../classVimEditorHighlightSource.html#ac660666293c54742636838f30e70779b',1,'VimEditorHighlightSource.Link()'],['../classVimSyntaxGroupSource.html#a1f81d631697be44e3117260e721f6fa6',1,'VimSyntaxGroupSource.Link()']]],
-  ['load_1',['Load',['../classObjectStore.html#ae91d2129c5eab2f9838843a51af31c23',1,'ObjectStore']]],
-  ['load_3c_20t_20_3e_2',['Load&lt; T &gt;',['../classObjectStore.html#abf376e33ed79c42274ee5ba3d3d87b21',1,'ObjectStore']]],
-  ['log_2ecs_3',['Log.cs',['../Log_8cs.html',1,'']]],
-  ['logfile_4',['LogFile',['../classSccg_1_1Builder.html#af77f4b41916612a9c8b241b3d3df61d3',1,'Sccg::Builder']]],
-  ['loglevel_5',['LogLevel',['../classSccg_1_1Builder.html#ad6c9d41507f7d7ba8680d23d00ee0229',1,'Sccg.Builder.LogLevel()'],['../namespaceSccg.html#a760d4318b857c2c0af030f1f73bf9043',1,'Sccg.LogLevel()']]],
-  ['loglevel_2ecs_6',['LogLevel.cs',['../LogLevel_8cs.html',1,'']]]
+  ['macro_0',['Macro',['../classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html#a7e48fad59659d439124ad7ae7a511053a4374cf34c5d58482ffae982196bd2114',1,'Sccg::Builtin::Sources::VimSyntaxGroupSource']]],
+  ['matchparen_1',['MatchParen',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98a0faa2f0c4f5326347326fa0d9f1e4d8f',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.MatchParen()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1ea0faa2f0c4f5326347326fa0d9f1e4d8f',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.MatchParen()']]],
+  ['menu_2',['Menu',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98ab61541208db7fa7dba42c85224405911',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.Menu()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1eab61541208db7fa7dba42c85224405911',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.Menu()']]],
+  ['messagewindow_3',['MessageWindow',['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1ea38fc9b83104772d47548c7003f9931e3',1,'Sccg::Builtin::Sources::VimEditorHighlightSource']]],
+  ['metadata_4',['Metadata',['../namespaceSccg.html#a299a607434e8a7869adc1385aaf49906',1,'Sccg.Metadata()'],['../classSccg_1_1Builder.html#a8f24b6b07cb6e10115e3552eed13929b',1,'Sccg.Builder.Metadata()']]],
+  ['metadata_2ecs_5',['Metadata.cs',['../Metadata_8cs.html',1,'']]],
+  ['metadatacontext_6',['MetadataContext',['../classSccg_1_1MetadataContext.html',1,'Sccg']]],
+  ['method_7',['Method',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043a4c3880bb027f159e801041b1021e88e8',1,'Sccg::Builtin::Sources::NeovimTreesitterHighlightSource']]],
+  ['methodcall_8',['MethodCall',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043a7c2cbf2ff48f2c1d2a4a19977b9a9a72',1,'Sccg::Builtin::Sources::NeovimTreesitterHighlightSource']]],
+  ['modemsg_9',['ModeMsg',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98a1e65f3c7bd500db91e1a7aa074c71494',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.ModeMsg()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1ea1e65f3c7bd500db91e1a7aa074c71494',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.ModeMsg()']]],
+  ['modifier_10',['Modifier',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbba',1,'Sccg::Style']]],
+  ['modifiers_11',['Modifiers',['../structSccg_1_1Style.html#a37aa1ddc8f221701dc34e5c0ecde5944',1,'Sccg::Style']]],
+  ['moremsg_12',['MoreMsg',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98a3f8c9020cdb2fda946d75f76566087c5',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.MoreMsg()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1ea3f8c9020cdb2fda946d75f76566087c5',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.MoreMsg()']]],
+  ['msgarea_13',['MsgArea',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98adcb92f0e511004cd7332d27707399977',1,'Sccg::Builtin::Sources::NeovimEditorHighlightSource']]],
+  ['msgseparator_14',['MsgSeparator',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98a4f0110a118b5e8a40746db6a7eb436d0',1,'Sccg::Builtin::Sources::NeovimEditorHighlightSource']]]
 ];

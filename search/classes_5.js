@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['neovimeditorhighlightsource_0',['NeovimEditorHighlightSource',['../classNeovimEditorHighlightSource.html',1,'']]],
-  ['neovimformatter_1',['NeovimFormatter',['../classNeovimFormatter.html',1,'']]],
-  ['neovimtreesitterhighlightsource_2',['NeovimTreesitterHighlightSource',['../classNeovimTreesitterHighlightSource.html',1,'']]]
+  ['objectstore_0',['ObjectStore',['../classSccg_1_1Utility_1_1ObjectStore.html',1,'Sccg::Utility']]]
 ];

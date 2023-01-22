@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['name_0',['Name',['../interfaceISource.html#a6cb00f4f0797cd6848abd105700220e2',1,'ISource.Name()'],['../classNeovimTreesitterHighlightSource.html#ac490e48aec879db0a6477090436292b2',1,'NeovimTreesitterHighlightSource.Name()'],['../classNeovimEditorHighlightSource.html#a0987c78c7870aec82cfb007389b64318',1,'NeovimEditorHighlightSource.Name()'],['../classIterm2ColorsSource.html#a8940656e4a0f93b2a971c27b7aa06956',1,'Iterm2ColorsSource.Name()'],['../classVimFormatter.html#ae9ba7a9c44ab583829c874ada6b00cf9',1,'VimFormatter.Name()'],['../classNeovimFormatter.html#ac4f850f88961c33983e015ce7ec15bfa',1,'NeovimFormatter.Name()'],['../classWriter.html#a4d87d5a0ac6f42d552207ec9cf26e3f9',1,'Writer.Name()'],['../classSource.html#ac0f2db963534479d4dac448a93fe32b8',1,'Source.Name()'],['../interfaceIWriter.html#aa2abc25f2067f2ab4daea36b5794eb13',1,'IWriter.Name()'],['../interfaceIFormatter.html#a05fae3f33e043bd08fcbc4777e6c2181',1,'IFormatter.Name()'],['../classFormatter.html#a9cc65008a3882d6e7b31038fcbfb1874',1,'Formatter.Name()'],['../classVimEditorHighlightSource.html#adca4257830194385de912ffb2df6cc27',1,'VimEditorHighlightSource.Name()'],['../classVimSyntaxGroupSource.html#a1d7a2f3ceee53baa82a06b6312e2182e',1,'VimSyntaxGroupSource.Name()'],['../classTextFileWriter.html#a447e28fe2ee5368cafeb718b8127cae5',1,'TextFileWriter.Name()']]],
-  ['neovimeditorhighlightsource_1',['NeovimEditorHighlightSource',['../classNeovimEditorHighlightSource.html',1,'']]],
-  ['neovimeditorhighlightsource_2ecs_2',['NeovimEditorHighlightSource.cs',['../NeovimEditorHighlightSource_8cs.html',1,'']]],
-  ['neovimformatter_3',['NeovimFormatter',['../classNeovimFormatter.html',1,'']]],
-  ['neovimformatter_2ecs_4',['NeovimFormatter.cs',['../NeovimFormatter_8cs.html',1,'']]],
-  ['neovimtreesitterhighlightsource_5',['NeovimTreesitterHighlightSource',['../classNeovimTreesitterHighlightSource.html',1,'']]],
-  ['neovimtreesitterhighlightsource_2ecs_6',['NeovimTreesitterHighlightSource.cs',['../NeovimTreesitterHighlightSource_8cs.html',1,'']]],
-  ['none_7',['None',['../structSccg_1_1Color.html#a4a6e34b684f2f7257e618acdead326bb',1,'Sccg::Color']]]
+  ['objectstore_0',['ObjectStore',['../classSccg_1_1Utility_1_1ObjectStore.html',1,'Sccg::Utility']]],
+  ['objectstore_2ecs_1',['ObjectStore.cs',['../ObjectStore_8cs.html',1,'']]],
+  ['operator_2',['Operator',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043ae1b3ec89ead7f83a9245ed5c9cacfdbf',1,'Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Operator()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html#a7e48fad59659d439124ad7ae7a511053ae1b3ec89ead7f83a9245ed5c9cacfdbf',1,'Sccg.Builtin.Sources.VimSyntaxGroupSource.Operator()']]],
+  ['operator_21_3d_3',['operator!=',['../structSccg_1_1Style.html#a822438e392ac9b98ac5d43c6b54dd67f',1,'Sccg::Style']]],
+  ['operator_3d_3d_4',['operator==',['../structSccg_1_1Style.html#adf499e9138045f0e89ea896cafcd8a27',1,'Sccg::Style']]]
 ];
