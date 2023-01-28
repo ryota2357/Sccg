@@ -1,5 +1,8 @@
 # Sccg
 
+[![GitHub Pages](https://github.com/ryota2357/Sccg/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/ryota2357/Sccg/actions/workflows/gh-pages.yml)
+[![Test](https://github.com/ryota2357/Sccg/actions/workflows/dotnet-test.yml/badge.svg)](https://github.com/ryota2357/Sccg/actions/workflows/dotnet-test.yml)
+
 > **S**criptable **C**olor **C**onfiguration **G**enerator.
 
 Sccg is a tool to generate color schemes for your terminal, editor, etc.
