@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using Sccg.Core;
 
@@ -11,15 +13,23 @@ namespace Sccg;
 /// </summary>
 public class Builder
 {
-    private readonly BuilderQuery _query = new();
+    private readonly Container<ISource> _sources = new(ContainerType.Source);
+    private readonly Container<IFormatter> _formatters = new(ContainerType.Formatter);
+    private readonly Container<IWriter> _writers = new(ContainerType.Writer);
+    private readonly List<ISourceItem> _sourceItems = new();
+    private readonly List<IContent> _contents = new();
+    private readonly BuilderQuery _query;
+    private State _state = State.NotStarted;
+
+    public Builder()
+    {
+        _query = new BuilderQuery(this);
+    }
 
     /// <summary>
     /// The metadata for all process.
     /// </summary>
-    public Metadata Metadata
-    {
-        init => _query.RegisterMetadata(value);
-    }
+    public Metadata Metadata { init; get; } = Metadata.Empty;
 
     /// <summary>
     /// The log level for <see cref="Build"/>.
@@ -42,14 +52,52 @@ public class Builder
     /// </summary>
     public void Build()
     {
+        _state = State.Started;
         Log.Info("Build start");
 
-        var contents = _query.GetContents<IContent>();
-        foreach (var writer in _query.GetWriters<IWriter>())
+        _state = State.CollectingSourceItems;
+        while (_sources.TryPop(out var source))
         {
-            writer.Write(contents, _query);
+            try
+            {
+                source.Custom(_query);
+                var items = source.CollectItems();
+                _sourceItems.AddRange(items);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Source {source.Name} failed.", e);
+            }
         }
 
+        _state = State.FormattingSourceItems;
+        while (_formatters.TryPop(out var formatter))
+        {
+            try
+            {
+                var content = formatter.Format(_sourceItems, _query);
+                _contents.Add(content);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Formatter {formatter.Name} failed.", e);
+            }
+        }
+
+        _state = State.WritingContents;
+        while (_writers.TryPop(out var writer))
+        {
+            try
+            {
+                writer.Write(_contents, _query);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Writer {writer.Name} failed.", e);
+            }
+        }
+
+        _state = State.Completed;
         Log.Info("Build completed.");
     }
 
@@ -58,18 +106,38 @@ public class Builder
     /// </summary>
     /// <param name="instance">The instance of Source, Formatter, Writer.</param>
     /// <typeparam name="T"><see cref="ISource"/>, <see cref="IFormatter"/>, <see cref="IWriter"/></typeparam>
+    /// <exception cref="InvalidOperationException">
+    ///   <list type="bullet">
+    ///     <item>Added source after collecting source items.</item>
+    ///     <item>Added formatter after formatting source items.</item>
+    ///     <item>Added writer after writing contents.</item>
+    ///   </list>
+    /// </exception>
+    /// <exception cref="ArgumentException">Argument is not <see cref="ISource"/> or <see cref="IFormatter"/> or <see cref="IWriter"/></exception>
     public void Use<T>(T instance) where T : class
     {
         switch (instance)
         {
             case ISource source:
-                _query.RegisterSource(source);
+                if (_state > State.CollectingSourceItems)
+                {
+                    throw new InvalidOperationException("Cannot add source after collecting source items.");
+                }
+                _sources.Push(source, source.Priority, source.Name);
                 break;
             case IFormatter formatter:
-                _query.RegisterFormatter(formatter);
+                if (_state > State.FormattingSourceItems)
+                {
+                    throw new InvalidOperationException("Cannot add formatter after formatting source items.");
+                }
+                _formatters.Push(formatter, formatter.Priority, formatter.Name);
                 break;
             case IWriter writer:
-                _query.RegisterWriter(writer);
+                if (_state > State.WritingContents)
+                {
+                    throw new InvalidOperationException("Cannot add writer after writing contents.");
+                }
+                _writers.Push(writer, writer.Priority, writer.Name);
                 break;
             default:
                 throw new ArgumentException("Invalid type", nameof(T));
@@ -81,8 +149,10 @@ public class Builder
     /// </summary>
     /// <param name="instances">The instances of Source, Formatter, Writer.</param>
     /// <typeparam name="T"><see cref="ISource"/>, <see cref="IFormatter"/>, <see cref="IWriter"/></typeparam>
-    public void Use<T>(IEnumerable<T> instances) where T : class
+    public void Use<T>(T[] instances) where T : class
     {
+        // NOTE: The argument type is T[], not IEnumerable<T>.
+        //       If the argument type is IEnumerable<T>, this method is not called, call Use<T>(T instance)
         foreach (var instance in instances)
         {
             Use(instance);
@@ -99,6 +169,16 @@ public class Builder
         var instance = CreateInstance<T>(args);
         Use(instance);
     }
+
+    internal IEnumerable<ISource> GetSources() => _sources.Items;
+
+    internal IEnumerable<IFormatter> GetFormatters() => _formatters.Items;
+
+    internal IEnumerable<IWriter> GetWriters() => _writers.Items;
+
+    internal IEnumerable<ISourceItem> GetSourceItems() => _sourceItems.AsReadOnly();
+
+    internal IEnumerable<IContent> GetContents() => _contents.AsReadOnly();
 
     private static T CreateInstance<T>(params object[] args) where T : class
     {
@@ -127,5 +207,54 @@ public class Builder
         }
 
         throw new ConstraintException($"Created instance is null: {typeof(T).Name} with args: {args}");
+    }
+
+    private enum State
+    {
+        NotStarted = 0,
+        Started = 1,
+        CollectingSourceItems = 2,
+        FormattingSourceItems = 3,
+        WritingContents = 4,
+        Completed = 5,
+    }
+
+    private enum ContainerType
+    {
+        Source,
+        Formatter,
+        Writer,
+    }
+
+    private sealed class Container<T>
+    {
+        private readonly List<T> _items = new();
+        private readonly PriorityQueue<T, int> _queue = new();
+        private readonly HashSet<string> _names = new();
+        private readonly ContainerType _containerType;
+
+        public ReadOnlyCollection<T> Items { get; }
+
+        public Container(ContainerType containerType)
+        {
+            _containerType = containerType;
+            Items = new ReadOnlyCollection<T>(_items);
+        }
+
+        public void Push(T item, int priority, string name)
+        {
+            if (_names.Contains(name))
+            {
+                throw new ArgumentException($"Duplicate {_containerType.ToString()}: {name}");
+            }
+            _items.Add(item);
+            _queue.Enqueue(item, priority);
+            _names.Add(name);
+        }
+
+        public bool TryPop([MaybeNullWhen(false)] out T item)
+        {
+            return _queue.TryDequeue(out item, out _);
+        }
     }
 }

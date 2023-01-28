@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using Sccg.Core;
 
@@ -7,18 +8,11 @@ namespace Sccg;
 
 public sealed class BuilderQuery
 {
-    private readonly List<IFormatter> _formatters = new();
-    private readonly List<ISource> _sources = new();
-    private readonly List<IWriter> _writers = new();
-    private Metadata _metadata = Metadata.Empty;
+    private readonly Builder _builder;
 
-    private List<ISourceItem>? _sourceItemsCache = null;
-    private List<IContent>? _contentsCache = null;
-
-    internal static BuilderQuery Empty => new();
-
-    internal BuilderQuery()
+    internal BuilderQuery(Builder builder)
     {
+        _builder = builder;
     }
 
     /// <summary>
@@ -28,9 +22,9 @@ public sealed class BuilderQuery
     /// <typeparam name="T">A type of the source you want to get.</typeparam>
     /// <returns>Array of source. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one source.</returns>
     /// <exception cref="InvalidOperationException">Not found the specified type source and <see cref="allowEmptyReturn"/> is false.</exception>
-    public T[] GetSources<T>(bool allowEmptyReturn = false) where T : ISource
+    public ReadOnlyCollection<T> GetSources<T>(bool allowEmptyReturn = false) where T : ISource
     {
-        var source = _sources.OfType<T>().ToArray();
+        var source = _builder.GetSources().TypeFilterExt<ISource, T>();
         return allowEmptyReturn ? source : ThrowIfEmpty("Source", source);
     }
 
@@ -41,9 +35,9 @@ public sealed class BuilderQuery
     /// <typeparam name="T">A type of the formatter you want to get.</typeparam>
     /// <returns>Array of formatter. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one formatter.</returns>
     /// <exception cref="InvalidOperationException">Not found the specified type formatter and <see cref="allowEmptyReturn"/> is false.</exception>
-    public T[] GetFormatters<T>(bool allowEmptyReturn = false) where T : IFormatter
+    public ReadOnlyCollection<T> GetFormatters<T>(bool allowEmptyReturn = false) where T : IFormatter
     {
-        var formatters = _formatters.OfType<T>().ToArray();
+        var formatters = _builder.GetFormatters().TypeFilterExt<IFormatter, T>();
         return allowEmptyReturn ? formatters : ThrowIfEmpty("Formatter", formatters);
     }
 
@@ -54,9 +48,9 @@ public sealed class BuilderQuery
     /// <typeparam name="T">A type of the writer you want to get.</typeparam>
     /// <returns>Array of writer. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one writer.</returns>
     /// <exception cref="InvalidOperationException">Not found the specified type writer and <see cref="allowEmptyReturn"/> is false.</exception>
-    public T[] GetWriters<T>(bool allowEmptyReturn = false) where T : IWriter
+    public ReadOnlyCollection<T> GetWriters<T>(bool allowEmptyReturn = false) where T : IWriter
     {
-        var writer = _writers.OfType<T>().ToArray();
+        var writer = _builder.GetWriters().TypeFilterExt<IWriter, T>();
         return allowEmptyReturn ? writer : ThrowIfEmpty("Writer", writer);
     }
 
@@ -66,22 +60,20 @@ public sealed class BuilderQuery
     /// <returns>Builder metadata.</returns>
     public Metadata GetMetadata()
     {
-        return _metadata;
+        return _builder.Metadata;
     }
 
-    // TODO: new impl
-    public T[] GetSourceItems<T>(bool allowEmptyReturn = false) where T : ISourceItem
+    // TODO: doc
+    public ReadOnlyCollection<T> GetSourceItems<T>(bool allowEmptyReturn = false) where T : ISourceItem
     {
-        CacheSourceItems();
-        var sourceItems = _sourceItemsCache!.OfType<T>().ToArray();
+        var sourceItems = _builder.GetSourceItems().TypeFilterExt<ISourceItem, T>();
         return allowEmptyReturn ? sourceItems : ThrowIfEmpty("SourceItem", sourceItems);
     }
 
-    // TODO: new impl
-    public T[] GetContents<T>(bool allowEmptyReturn = false) where T : IContent
+    // TODO: doc
+    public ReadOnlyCollection<T> GetContents<T>(bool allowEmptyReturn = false) where T : IContent
     {
-        CacheContents();
-        var contents = _contentsCache!.OfType<T>().ToArray();
+        var contents = _builder.GetContents().TypeFilterExt<IContent, T>();
         return allowEmptyReturn ? contents : ThrowIfEmpty("Content", contents);
     }
 
@@ -91,9 +83,7 @@ public sealed class BuilderQuery
     /// <param name="source">A instance of source.</param>
     public void RegisterSource(ISource source)
     {
-        _sources.Add(source);
-        _sources.Sort((a, b) => a.Priority.CompareTo(b.Priority));
-        _sourceItemsCache = null;
+         _builder.Use(source);
     }
 
     /// <summary>
@@ -102,9 +92,7 @@ public sealed class BuilderQuery
     /// <param name="formatter">A instance of formatter.</param>
     public void RegisterFormatter(IFormatter formatter)
     {
-        _formatters.Add(formatter);
-        _formatters.Sort((a, b) => a.Priority.CompareTo(b.Priority));
-        _contentsCache = null;
+        _builder.Use(formatter);
     }
 
     /// <summary>
@@ -113,71 +101,23 @@ public sealed class BuilderQuery
     /// <param name="writer">A instance of writer.</param>
     public void RegisterWriter(IWriter writer)
     {
-        _writers.Add(writer);
-        _writers.Sort((a, b) => a.Priority.CompareTo(b.Priority));
+        _builder.Use(writer);
     }
 
-    internal void RegisterMetadata(Metadata metadata)
+    private static ReadOnlyCollection<T> ThrowIfEmpty<T>(string type, in ReadOnlyCollection<T> value)
     {
-        _metadata = metadata;
-    }
-
-    private void CacheSourceItems()
-    {
-        if (_sourceItemsCache is not null)
+        if (value.Count == 0)
         {
-            return;
-        }
-
-        _sourceItemsCache = new List<ISourceItem>();
-        foreach (var source in _sources)
-        {
-            IEnumerable<ISourceItem> items;
-            try
-            {
-                source.Custom(this);
-                items = source.CollectItems();
-            }
-            catch (Exception e)
-            {
-                throw new Exception($"Source {source.Name} failed.", e);
-            }
-            _sourceItemsCache.AddRange(items);
-        }
-    }
-
-    private void CacheContents()
-    {
-        if (_contentsCache is not null)
-        {
-            return;
-        }
-
-        CacheSourceItems();
-
-        _contentsCache = new List<IContent>();
-        foreach (var formatter in _formatters)
-        {
-            IContent content;
-            try
-            {
-                // NOTE: _sourceItemsCache is not null here because CacheSourceItems() is called before
-                content = formatter.Format(_sourceItemsCache!, this);
-            }
-            catch (Exception e)
-            {
-                throw new Exception($"Formatter {formatter.Name} failed.", e);
-            }
-            _contentsCache.Add(content);
-        }
-    }
-
-    private static T[] ThrowIfEmpty<T>(string type, in T[] value)
-    {
-        if (value.Length == 0)
-        {
-            throw new InvalidOperationException($"No ${type} of type {typeof(T).Name} was found.");
+            throw new InvalidOperationException($"No {type} of type {typeof(T).Name} was found.");
         }
         return value;
+    }
+}
+
+file static class Ext
+{
+    public static ReadOnlyCollection<TResult> TypeFilterExt<TSource, TResult>(this IEnumerable<TSource> source)
+    {
+        return source.OfType<TResult>().ToList().AsReadOnly();
     }
 }

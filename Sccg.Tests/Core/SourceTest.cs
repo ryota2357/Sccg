@@ -7,9 +7,9 @@ public class SourceTest
     [Fact]
     public void Test()
     {
-        var query = BuilderQuery.Empty;
-
         ISource source = new TestSource();
+        var query = new BuilderQuery(new Builder());
+
         source.Priority.Should().Be(10);
         source.Name.Should().Be("Test");
         ((TestSource)source).Items.Should().BeEmpty();
@@ -28,9 +28,9 @@ public class SourceTest
     [Fact]
     public void Set()
     {
-        var query = BuilderQuery.Empty;
-
         var source = new SetTestSource();
+        var query = new BuilderQuery(new Builder());
+
         source.Styles.Should().BeEmpty();
         ((ISource)source).Custom(query);
         source.Styles.Should().BeEquivalentTo(new[]
@@ -49,41 +49,94 @@ public class SourceTest
             new Style(underlineDouble: true)
         });
     }
-}
 
-file class SetTestSource : Source<TestSourceBase.Group, TestSourceItem>
-{
-    public List<Style> Styles { get; } = new();
-
-    protected override void Custom()
+    private class TestSourceItem : ISourceItem
     {
-        Set(TestSourceBase.Group.GroupA, fg: "1a09bf");
-        Set(TestSourceBase.Group.GroupA, bg: "1a09bf");
-        Set(TestSourceBase.Group.GroupA, sp: "1a09bf");
-        Set(TestSourceBase.Group.GroupA, none: true);
-        Set(TestSourceBase.Group.GroupA, bold: true);
-        Set(TestSourceBase.Group.GroupA, italic: true);
-        Set(TestSourceBase.Group.GroupA, strikethrough: true);
-        Set(TestSourceBase.Group.GroupA, underline: true);
-        Set(TestSourceBase.Group.GroupA, underlineWaved: true);
-        Set(TestSourceBase.Group.GroupA, underlineDotted: true);
-        Set(TestSourceBase.Group.GroupA, underlineDashed: true);
-        Set(TestSourceBase.Group.GroupA, underlineDouble: true);
+        public string Name { get; }
+
+        public Style? Style { get; }
+
+        public string? Link { get; }
+
+        public TestSourceItem(string name, Style? style = null, string? link = null)
+        {
+            Name = name;
+            Style = style;
+            Link = link;
+        }
     }
 
-    protected override void Set(TestSourceBase.Group group, Style style)
+    private class TestSource : Source<Group, TestSourceItem>
     {
-        Styles.Add(style);
+        public List<TestSourceItem> Items { get; } = new();
+
+        protected override void Custom()
+        {
+            Set(Group.GroupA, new Style(fg: "019ABF"));
+            Set(Group.GroupB, bg: "019ABF");
+            Link(Group.GroupC, Group.GroupA);
+        }
+
+        public override string Name => "Test";
+
+        protected override IEnumerable<TestSourceItem> CollectItems()
+        {
+            return Items;
+        }
+
+        protected override void Set(Group group, Style style)
+        {
+            Items.Add(new TestSourceItem(group.ToString(), style));
+        }
+
+        protected override void Link(Group from, Group to)
+        {
+            Items.Add(new TestSourceItem(from.ToString(), link: to.ToString()));
+        }
     }
 
-    public override string Name => throw new NotImplementedException();
+    private class SetTestSource : Source<Group, TestSourceItem>
+    {
+        public List<Style> Styles { get; } = new();
 
-    protected override void Link(TestSourceBase.Group from, TestSourceBase.Group to)
-    {
-        throw new NotImplementedException();
+        protected override void Custom()
+        {
+            Set(Group.GroupA, fg: "1a09bf");
+            Set(Group.GroupA, bg: "1a09bf");
+            Set(Group.GroupA, sp: "1a09bf");
+            Set(Group.GroupA, none: true);
+            Set(Group.GroupA, bold: true);
+            Set(Group.GroupA, italic: true);
+            Set(Group.GroupA, strikethrough: true);
+            Set(Group.GroupA, underline: true);
+            Set(Group.GroupA, underlineWaved: true);
+            Set(Group.GroupA, underlineDotted: true);
+            Set(Group.GroupA, underlineDashed: true);
+            Set(Group.GroupA, underlineDouble: true);
+        }
+
+        protected override void Set(Group group, Style style)
+        {
+            Styles.Add(style);
+        }
+
+        public override string Name => throw new NotImplementedException();
+
+        protected override void Link(Group from, Group to)
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override IEnumerable<TestSourceItem> CollectItems()
+        {
+            throw new NotImplementedException();
+        }
     }
-    protected override IEnumerable<TestSourceItem> CollectItems()
+
+    private enum Group
     {
-        throw new NotImplementedException();
+        GroupA,
+        GroupB,
+        GroupC
     }
 }
