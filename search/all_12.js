@@ -6,6 +6,7 @@ var searchData=
   ['underlinedotted_3',['UnderlineDotted',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbbaa7e19610410ec0b78d2af01622d04e1ba',1,'Sccg::Style']]],
   ['underlinedouble_4',['UnderlineDouble',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbbaaaf47b40e28fbfec981bf1aea3463e64b',1,'Sccg::Style']]],
   ['underlinewaved_5',['UnderlineWaved',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbbaa509bf95ff4fa1b674f0ba326bd651a2d',1,'Sccg::Style']]],
-  ['use_3c_20t_20_3e_6',['Use&lt; T &gt;',['../classSccg_1_1Builder.html#a829c12c3c707ffdb449cc9c0bfd0f48b',1,'Sccg.Builder.Use&lt; T &gt;(T instance)'],['../classSccg_1_1Builder.html#a75532312ec4028b329a4395231266a02',1,'Sccg.Builder.Use&lt; T &gt;(IEnumerable&lt; T &gt; instances)'],['../classSccg_1_1Builder.html#a51d2f245c6a744cb86f921c96af6304e',1,'Sccg.Builder.Use&lt; T &gt;(params object[] args)']]],
-  ['utilityextensions_2ecs_7',['UtilityExtensions.cs',['../UtilityExtensions_8cs.html',1,'']]]
+  ['uplicate_6',['uplicate',['../Builder_8cs.html#a0501fe939bec664c3456bef52879cb8e',1,'Builder.cs']]],
+  ['use_3c_20t_20_3e_7',['Use&lt; T &gt;',['../classSccg_1_1Builder.html#a829c12c3c707ffdb449cc9c0bfd0f48b',1,'Sccg.Builder.Use&lt; T &gt;(T instance)'],['../classSccg_1_1Builder.html#a64ce2e6ff2645d4eae012782444de55b',1,'Sccg.Builder.Use&lt; T &gt;(T[] instances)'],['../classSccg_1_1Builder.html#a51d2f245c6a744cb86f921c96af6304e',1,'Sccg.Builder.Use&lt; T &gt;(params object[] args)']]],
+  ['utilityextensions_2ecs_8',['UtilityExtensions.cs',['../UtilityExtensions_8cs.html',1,'']]]
 ];

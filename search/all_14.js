@@ -8,7 +8,7 @@ var searchData=
   ['winbarnc_5',['WinBarNC',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98a6796ed1614f0d60d632b954f818e2dd2',1,'Sccg::Builtin::Sources::NeovimEditorHighlightSource']]],
   ['winseparator_6',['WinSeparator',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98ad9e02bfd8d20bd03f63a9d416da518cc',1,'Sccg::Builtin::Sources::NeovimEditorHighlightSource']]],
   ['write_7',['Write',['../interfaceSccg_1_1Core_1_1IWriter.html#a37ce963638ad22ae23b74d0d772e1a1f',1,'Sccg.Core.IWriter.Write()'],['../classSccg_1_1Core_1_1Writer.html#a03a458540b55735f8a6587762429eed4',1,'Sccg.Core.Writer.Write(IEnumerable&lt; TContent &gt; contents)'],['../classSccg_1_1Core_1_1Writer.html#a364fe31bc2c966d606c4506fbcf90cb8',1,'Sccg.Core.Writer.Write(IEnumerable&lt; TContent &gt; contents, BuilderQuery query)'],['../classSccg_1_1Builtin_1_1Writers_1_1TextFileWriter.html#a34c4976132858aebe68aa59a676f63b4',1,'Sccg.Builtin.Writers.TextFileWriter.Write()']]],
-  ['writer_8',['Writer',['../classSccg_1_1Core_1_1Writer.html',1,'Sccg::Core']]],
+  ['writer_8',['Writer',['../classSccg_1_1Core_1_1Writer.html',1,'Sccg.Core.Writer&lt; TContent &gt;'],['../Builder_8cs.html#aae37b7d6a39f6ae9eead020e042db5dc',1,'Writer():&#160;Builder.cs']]],
   ['writer_2ecs_9',['Writer.cs',['../Writer_8cs.html',1,'']]],
   ['writer_3c_20singletextcontent_20_3e_10',['Writer&lt; SingleTextContent &gt;',['../classSccg_1_1Core_1_1Writer.html',1,'Sccg::Core']]]
 ];
