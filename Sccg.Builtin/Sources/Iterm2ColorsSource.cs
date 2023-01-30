@@ -40,13 +40,7 @@ public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iter
 
     protected void Set(Group group, Color color)
     {
-        var groupId = _impl.Store.Save(group);
-        var colorId = _impl.Store.Save(color);
-        var status = _impl.Graph.CreateLink(groupId, colorId);
-        if (status == false)
-        {
-            Log.Warn($"Ignored duplicate. Set({group}, {color})");
-        }
+        _impl.Set(group, color);
     }
 
     protected override void Set(Group group, Style style)
@@ -54,7 +48,10 @@ public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iter
         Set(group, style.Foreground);
     }
 
-    protected override void Link(Group from, Group to) => _impl.Link(from, to);
+    protected override void Link(Group from, Group to)
+    {
+        _impl.Link(from, to);
+    }
 
     public class Item : IIterm2SourceItem
     {

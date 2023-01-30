@@ -89,7 +89,7 @@ public abstract class Source<TGroup, TItem> : ISource
     }
 
     // This cache is necessary to respect Priority.
-    private bool _custom;
+    private bool _custom = false;
     private IEnumerable<ISourceItem>? _collectItems = null;
 
     void ISource.Custom(BuilderQuery query)

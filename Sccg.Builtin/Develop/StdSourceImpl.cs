@@ -20,6 +20,17 @@ public class StdSourceImpl<TGroup>
         }
     }
 
+    public void Set(TGroup group, Color color)
+    {
+        var groupId = Store.Save(group);
+        var styleId = Store.Save(color);
+        var status = Graph.CreateLink(groupId, styleId);
+        if (status == false)
+        {
+            Log.Warn($"Ignored duplicate. Set({group}, {color})");
+        }
+    }
+
     public void Link(TGroup from, TGroup to)
     {
         var fromId = Store.Save(from);

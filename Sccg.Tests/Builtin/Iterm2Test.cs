@@ -29,6 +29,7 @@ public class Iterm2Test
     public void Test()
     {
         _builder.Use<Colors>();
+        _builder.Use<Ansi16Colors>();
         _builder.Build();
 
         _writer.Output.Should().HaveCount(1);
@@ -40,6 +41,19 @@ public class Iterm2Test
             <plist version="1.0">
             <dict>
             {'\t'}<key>Ansi 0 Color</key>
+            {'\t'}<dict>
+            {'\t'}{'\t'}<key>Color Space</key>
+            {'\t'}{'\t'}<string>sRGB</string>
+            {'\t'}{'\t'}<key>Alpha Component</key>
+            {'\t'}{'\t'}<real>1</real>
+            {'\t'}{'\t'}<key>Red Component</key>
+            {'\t'}{'\t'}<real>0.0000000000000000</real>
+            {'\t'}{'\t'}<key>Green Component</key>
+            {'\t'}{'\t'}<real>0.0000000000000000</real>
+            {'\t'}{'\t'}<key>Blue Component</key>
+            {'\t'}{'\t'}<real>0.0000000000000000</real>
+            {'\t'}</dict>
+            {'\t'}<key>Ansi 8 Color</key>
             {'\t'}<dict>
             {'\t'}{'\t'}<key>Color Space</key>
             {'\t'}{'\t'}<string>sRGB</string>
@@ -100,11 +114,28 @@ public class Iterm2Test
 
 file class Colors : Iterm2ColorsSource
 {
+    protected override void Custom(BuilderQuery query)
+    {
+        var ansi16Colors = query.GetSourceItems<Ansi16ColorSource.Item>();
+        var ansi8 = ansi16Colors.Where(x => x.IsAnsi(8))
+                                .Select(x => x.Color)
+                                .FirstOrDefault("#123456");
+        var ansi10 = ansi16Colors.Where(x => x.IsAnsi(10))
+                                 .Select(x => x.Color)
+                                 .FirstOrDefault("#32C81E");
+        Set(Group.Ansi0, "000000");
+        Set(Group.Ansi8, ansi8); // #000000
+        Set(Group.Ansi10, ansi10); // #32C81E
+        Link(Group.Background, Group.Ansi0);
+        Set(Group.CursorGuide, "f1fff0");
+    }
+}
+
+file class Ansi16Colors : Ansi16ColorSource
+{
     protected override void Custom()
     {
         Set(Group.Ansi0, "000000");
-        Set(Group.Ansi10, "#32C81E");
-        Link(Group.Background, Group.Ansi0);
-        Set(Group.CursorGuide, "f1fff0");
+        Link(Group.Ansi8, Group.Ansi0);
     }
 }
