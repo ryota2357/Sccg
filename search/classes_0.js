@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['builder_0',['Builder',['../classSccg_1_1Builder.html',1,'Sccg']]],
-  ['builderquery_1',['BuilderQuery',['../classSccg_1_1BuilderQuery.html',1,'Sccg']]]
+  ['ansi16colorsource_0',['Ansi16ColorSource',['../classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource.html',1,'Sccg::Builtin::Sources']]]
 ];
