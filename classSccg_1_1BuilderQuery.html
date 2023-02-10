@@ -91,6 +91,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a187e5322252848e9457c1f218c8e63a2"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1BuilderQuery.html#a187e5322252848e9457c1f218c8e63a2">GetWriters&lt; T &gt;</a> (bool allowEmptyReturn=false)</td></tr>
 <tr class="memdesc:a187e5322252848e9457c1f218c8e63a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets writers by the specified type.  <br /></td></tr>
 <tr class="separator:a187e5322252848e9457c1f218c8e63a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d41b874d03d11841a20b0da57f8abd"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1BuilderQuery.html#af8d41b874d03d11841a20b0da57f8abd">GetSourceItemConverters&lt; T &gt;</a> (bool allowEmptyReturn=false)</td></tr>
+<tr class="memdesc:af8d41b874d03d11841a20b0da57f8abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets source item converters by the specified type.  <br /></td></tr>
+<tr class="separator:af8d41b874d03d11841a20b0da57f8abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39050c1a8518920cc344d09565c64399"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1BuilderQuery.html#a39050c1a8518920cc344d09565c64399">GetContentConverters&lt; T &gt;</a> (bool allowEmptyReturn=false)</td></tr>
+<tr class="memdesc:a39050c1a8518920cc344d09565c64399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets content converters by the specified type.  <br /></td></tr>
+<tr class="separator:a39050c1a8518920cc344d09565c64399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcf97ab9667e39324d2cd972ecccaf6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSccg.html#a299a607434e8a7869adc1385aaf49906">Metadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1BuilderQuery.html#adcf97ab9667e39324d2cd972ecccaf6b">GetMetadata</a> ()</td></tr>
 <tr class="memdesc:adcf97ab9667e39324d2cd972ecccaf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the metadata.  <br /></td></tr>
 <tr class="separator:adcf97ab9667e39324d2cd972ecccaf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,11 +113,74 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aff2b27217e45b9a5b2da0a25c7eaeb69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1BuilderQuery.html#aff2b27217e45b9a5b2da0a25c7eaeb69">RegisterWriter</a> (<a class="el" href="interfaceSccg_1_1Core_1_1IWriter.html">IWriter</a> writer)</td></tr>
 <tr class="memdesc:aff2b27217e45b9a5b2da0a25c7eaeb69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the specified writer to builder.  <br /></td></tr>
 <tr class="separator:aff2b27217e45b9a5b2da0a25c7eaeb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f6e326f8eb0d024d97b9d69b6914dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1BuilderQuery.html#a32f6e326f8eb0d024d97b9d69b6914dc">RegisterSourceItemConverter</a> (<a class="el" href="interfaceSccg_1_1Core_1_1ISourceItemConverter.html">ISourceItemConverter</a> sourceItemConverter)</td></tr>
+<tr class="memdesc:a32f6e326f8eb0d024d97b9d69b6914dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the specified source item converter to builder.  <br /></td></tr>
+<tr class="separator:a32f6e326f8eb0d024d97b9d69b6914dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c97fe5177e1170970a691cce5159ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1BuilderQuery.html#ad6c97fe5177e1170970a691cce5159ca">RegisterContentConverter</a> (<a class="el" href="interfaceSccg_1_1Core_1_1IContentConverter.html">IContentConverter</a> contentConverter)</td></tr>
+<tr class="memdesc:ad6c97fe5177e1170970a691cce5159ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the specified content converter to builder.  <br /></td></tr>
+<tr class="separator:ad6c97fe5177e1170970a691cce5159ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00009">9</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a39050c1a8518920cc344d09565c64399" name="a39050c1a8518920cc344d09565c64399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39050c1a8518920cc344d09565c64399">&#9670;&#160;</a></span>GetContentConverters&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadOnlyCollection&lt; T &gt; Sccg.BuilderQuery.GetContentConverters&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowEmptyReturn</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets content converters by the specified type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">allowEmptyReturn</td><td>If true, the return value array is allowed to be empty.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>A type of the content converter you want to get.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of content converter. If allowEmptyReturn is false, the array will contain at least one converter.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>Not found the specified type content converter and allowEmptyReturn is false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IContentConverter</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00077">77</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+
+</div>
+</div>
 <a id="aca23822a737b77446af5be9f5f6c2b3e" name="aca23822a737b77446af5be9f5f6c2b3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca23822a737b77446af5be9f5f6c2b3e">&#9670;&#160;</a></span>GetContents&lt; T &gt;()</h2>
 
@@ -144,7 +213,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00074">74</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00100">100</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
 
 </div>
 </div>
@@ -231,7 +300,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets the metadata. </p>
 <dl class="section return"><dt>Returns</dt><dd>Builder metadata.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00061">61</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00087">87</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -240,6 +309,63 @@ Public Member Functions</h2></td></tr>
 <div class="center"><iframe scrolling="no" frameborder="0" src="classSccg_1_1BuilderQuery_adcf97ab9667e39324d2cd972ecccaf6b_icgraph.svg" width="432" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="af8d41b874d03d11841a20b0da57f8abd" name="af8d41b874d03d11841a20b0da57f8abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d41b874d03d11841a20b0da57f8abd">&#9670;&#160;</a></span>GetSourceItemConverters&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadOnlyCollection&lt; T &gt; Sccg.BuilderQuery.GetSourceItemConverters&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowEmptyReturn</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets source item converters by the specified type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">allowEmptyReturn</td><td>If true, the return value array is allowed to be empty.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>A type of the source item converter you want to get.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of source item converter. If allowEmptyReturn is false, the array will contain at least one converter.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>Not found the specified type source item converter and allowEmptyReturn is false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>ISourceItemConverter</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00064">64</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
 
 </div>
 </div>
@@ -275,7 +401,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00067">67</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00093">93</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
 
 </div>
 </div>
@@ -393,6 +519,42 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad6c97fe5177e1170970a691cce5159ca" name="ad6c97fe5177e1170970a691cce5159ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c97fe5177e1170970a691cce5159ca">&#9670;&#160;</a></span>RegisterContentConverter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sccg.BuilderQuery.RegisterContentConverter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceSccg_1_1Core_1_1IContentConverter.html">IContentConverter</a>&#160;</td>
+          <td class="paramname"><em>contentConverter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers the specified content converter to builder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">contentConverter</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00146">146</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+
+</div>
+</div>
 <a id="a703b046209a08a162aab0585500d5e45" name="a703b046209a08a162aab0585500d5e45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a703b046209a08a162aab0585500d5e45">&#9670;&#160;</a></span>RegisterFormatter()</h2>
 
@@ -425,7 +587,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00093">93</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00119">119</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
 
 </div>
 </div>
@@ -461,7 +623,43 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00084">84</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00110">110</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+
+</div>
+</div>
+<a id="a32f6e326f8eb0d024d97b9d69b6914dc" name="a32f6e326f8eb0d024d97b9d69b6914dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f6e326f8eb0d024d97b9d69b6914dc">&#9670;&#160;</a></span>RegisterSourceItemConverter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sccg.BuilderQuery.RegisterSourceItemConverter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceSccg_1_1Core_1_1ISourceItemConverter.html">ISourceItemConverter</a>&#160;</td>
+          <td class="paramname"><em>sourceItemConverter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers the specified source item converter to builder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceItemConverter</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00137">137</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
 
 </div>
 </div>
@@ -497,7 +695,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00102">102</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BuilderQuery_8cs_source.html#l00128">128</a> of file <a class="el" href="BuilderQuery_8cs_source.html">BuilderQuery.cs</a>.</p>
 
 </div>
 </div>
