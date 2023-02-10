@@ -55,6 +55,32 @@ public sealed class BuilderQuery
     }
 
     /// <summary>
+    /// Gets source item converters by the specified type.
+    /// </summary>
+    /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
+    /// <typeparam name="T">A type of the source item converter you want to get.</typeparam>
+    /// <returns>Array of source item converter. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type source item converter and <see cref="allowEmptyReturn"/> is false.</exception>
+    public ReadOnlyCollection<T> GetSourceItemConverters<T>(bool allowEmptyReturn = false) where T : ISourceItemConverter
+    {
+        var sourceItemConverter = _builder.GetSourceItemConverters().TypeFilterExt<ISourceItemConverter, T>();
+        return allowEmptyReturn ? sourceItemConverter : ThrowIfEmpty("SourceItemConverter", sourceItemConverter);
+    }
+
+    /// <summary>
+    /// Gets content converters by the specified type.
+    /// </summary>
+    /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
+    /// <typeparam name="T">A type of the content converter you want to get.</typeparam>
+    /// <returns>Array of content converter. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type content converter and <see cref="allowEmptyReturn"/> is false.</exception>
+    public ReadOnlyCollection<T> GetContentConverters<T>(bool allowEmptyReturn = false) where T : IContentConverter
+    {
+        var contentConverter = _builder.GetContentConverters().TypeFilterExt<IContentConverter, T>();
+        return allowEmptyReturn ? contentConverter : ThrowIfEmpty("ContentConverter", contentConverter);
+    }
+
+    /// <summary>
     /// Gets the metadata.
     /// </summary>
     /// <returns>Builder metadata.</returns>
@@ -102,6 +128,24 @@ public sealed class BuilderQuery
     public void RegisterWriter(IWriter writer)
     {
         _builder.Use(writer);
+    }
+
+    /// <summary>
+    /// Registers the specified source item converter to builder.
+    /// </summary>
+    /// <param name="sourceItemConverter"></param>
+    public void RegisterSourceItemConverter(ISourceItemConverter sourceItemConverter)
+    {
+        _builder.Use(sourceItemConverter);
+    }
+
+    /// <summary>
+    /// Registers the specified content converter to builder.
+    /// </summary>
+    /// <param name="contentConverter"></param>
+    public void RegisterContentConverter(IContentConverter contentConverter)
+    {
+        _builder.Use(contentConverter);
     }
 
     private static ReadOnlyCollection<T> ThrowIfEmpty<T>(string type, in ReadOnlyCollection<T> value)

@@ -16,6 +16,8 @@ public class Builder
     private readonly Container<ISource> _sources = new(ContainerType.Source);
     private readonly Container<IFormatter> _formatters = new(ContainerType.Formatter);
     private readonly Container<IWriter> _writers = new(ContainerType.Writer);
+    private readonly Container<ISourceItemConverter> _sourceItemConverters = new(ContainerType.SourceItemConverter);
+    private readonly Container<IContentConverter> _contentConverters = new(ContainerType.ContentConverter);
     private readonly List<ISourceItem> _sourceItems = new();
     private readonly List<IContent> _contents = new();
     private readonly BuilderQuery _query;
@@ -70,6 +72,21 @@ public class Builder
             }
         }
 
+        _state = State.ConvertingSourceItems;
+        while (_sourceItemConverters.TryPop(out var converter))
+        {
+            try
+            {
+                var items = converter.Convert(_sourceItems, _query);
+                _sourceItems.Clear();
+                _sourceItems.AddRange(items);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Source item converter {converter.Name} failed.", e);
+            }
+        }
+
         _state = State.FormattingSourceItems;
         while (_formatters.TryPop(out var formatter))
         {
@@ -81,6 +98,21 @@ public class Builder
             catch (Exception e)
             {
                 throw new Exception($"Formatter {formatter.Name} failed.", e);
+            }
+        }
+
+        _state = State.ConvertingContents;
+        while (_contentConverters.TryPop(out var converter))
+        {
+            try
+            {
+                var contents = converter.Convert(_contents, _query);
+                _contents.Clear();
+                _contents.AddRange(contents);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Content converter {converter.Name} failed.", e);
             }
         }
 
@@ -111,6 +143,8 @@ public class Builder
     ///     <item>Added source after collecting source items.</item>
     ///     <item>Added formatter after formatting source items.</item>
     ///     <item>Added writer after writing contents.</item>
+    ///     <item>Added source item converter after converting source items.</item>
+    ///     <item>Added content converter after converting content.</item>
     ///   </list>
     /// </exception>
     /// <exception cref="ArgumentException">Argument is not <see cref="ISource"/> or <see cref="IFormatter"/> or <see cref="IWriter"/></exception>
@@ -138,6 +172,20 @@ public class Builder
                     throw new InvalidOperationException("Cannot add writer after writing contents.");
                 }
                 _writers.Push(writer, writer.Priority, writer.Name);
+                break;
+            case ISourceItemConverter sourceItemConverter:
+                if (_state > State.ConvertingSourceItems)
+                {
+                    throw new InvalidOperationException("Cannot add source item converter after converting source items.");
+                }
+                _sourceItemConverters.Push(sourceItemConverter, sourceItemConverter.Priority, sourceItemConverter.Name);
+                break;
+            case IContentConverter contentConverter:
+                if (_state > State.ConvertingContents)
+                {
+                    throw new InvalidOperationException("Cannot add content converter after converting content.");
+                }
+                _contentConverters.Push(contentConverter, contentConverter.Priority, contentConverter.Name);
                 break;
             default:
                 throw new ArgumentException("Invalid type", nameof(T));
@@ -175,6 +223,10 @@ public class Builder
     internal IEnumerable<IFormatter> GetFormatters() => _formatters.Items;
 
     internal IEnumerable<IWriter> GetWriters() => _writers.Items;
+
+    internal IEnumerable<ISourceItemConverter> GetSourceItemConverters() => _sourceItemConverters.Items;
+
+    internal IEnumerable<IContentConverter> GetContentConverters() => _contentConverters.Items;
 
     internal IEnumerable<ISourceItem> GetSourceItems() => _sourceItems.AsReadOnly();
 
@@ -214,9 +266,11 @@ public class Builder
         NotStarted = 0,
         Started = 1,
         CollectingSourceItems = 2,
-        FormattingSourceItems = 3,
-        WritingContents = 4,
-        Completed = 5,
+        ConvertingSourceItems = 3,
+        FormattingSourceItems = 4,
+        ConvertingContents = 5,
+        WritingContents = 6,
+        Completed = 7,
     }
 
     private enum ContainerType
@@ -224,6 +278,8 @@ public class Builder
         Source,
         Formatter,
         Writer,
+        SourceItemConverter,
+        ContentConverter,
     }
 
     private sealed class Container<T>
