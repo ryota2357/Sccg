@@ -5,13 +5,13 @@ namespace Sccg;
 
 public readonly partial struct Style : IEquatable<Style>
 {
-    public Color Foreground { get; }
+    public Color Foreground { get; init; }
 
-    public Color Background { get; }
+    public Color Background { get; init; }
 
-    public Color Special { get; }
+    public Color Special { get; init; }
 
-    public Modifier Modifiers { get; }
+    public Modifier Modifiers { get; init; }
 
     public static Style Default => new();
 
