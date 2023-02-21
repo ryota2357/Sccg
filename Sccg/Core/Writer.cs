@@ -26,6 +26,6 @@ public abstract class Writer<TContent> : IWriter where TContent : IContent
 
     void IWriter.Write(IEnumerable<IContent> contents, BuilderQuery query)
     {
-        Write(contents.OfType<TContent>());
+        Write(contents.OfType<TContent>(), query);
     }
 }
