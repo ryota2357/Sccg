@@ -15,7 +15,7 @@ public class TextFileWriter : Writer<SingleTextContent>
         {
             var path = Path.Combine(outputDirectory, content.Filename);
             var directory = Path.GetDirectoryName(path);
-            if (directory is not null && Directory.Exists(directory))
+            if (directory is not null && Directory.Exists(directory) == false)
             {
                 Directory.CreateDirectory(directory);
             }
