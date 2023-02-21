@@ -44,22 +44,23 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
     public sealed class Item : IVimSourceItem, INeovimSourceItem
     {
         private readonly Kind _kind;
-        private readonly Group _group;
-        private readonly Style? _style;
-        private readonly Group? _link;
+
+        public readonly Group Group;
+        public readonly Style? Style;
+        public readonly Group? Link;
 
         public Item(Group group, Style style)
         {
             _kind = Kind.Set;
-            _group = group;
-            _style = style;
+            Group = group;
+            Style = style;
         }
 
         public Item(Group group, Group link)
         {
             _kind = Kind.Link;
-            _group = group;
-            _link = link;
+            Group = group;
+            Link = link;
         }
 
         VimFormatter.Formattable IVimSourceItem.Extract()
@@ -68,13 +69,13 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
             {
                 Kind.Link => new VimFormatter.Formattable
                 {
-                    Name = _group.ToString(),
-                    Link = _link.ToString()
+                    Name = Group.ToString(),
+                    Link = Link.ToString()
                 },
                 Kind.Set => new VimFormatter.Formattable
                 {
-                    Name = _group.ToString(),
-                    Style = _style
+                    Name = Group.ToString(),
+                    Style = Style
                 },
                 _ => throw new ArgumentOutOfRangeException()
             };
@@ -86,15 +87,15 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
             {
                 Kind.Set => new NeovimFormatter.Formattable
                 {
-                    Name = _group.ToString(),
+                    Name = Group.ToString(),
                     Id = 0,
-                    Style = _style
+                    Style = Style
                 },
                 Kind.Link => new NeovimFormatter.Formattable
                 {
-                    Name = _group.ToString(),
+                    Name = Group.ToString(),
                     Id = 0,
-                    Link = _link!.Value.ToString()
+                    Link = Link!.Value.ToString()
                 },
                 _ => throw new ArgumentOutOfRangeException()
             };

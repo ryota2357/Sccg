@@ -55,18 +55,18 @@ public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iter
 
     public class Item : IIterm2SourceItem
     {
-        private readonly Group _group;
-        private readonly Color _color;
+        public readonly Group Group;
+        public readonly Color Color;
 
         public Item(Group group, Color color)
         {
-            _group = group;
-            _color = color;
+            Group = group;
+            Color = color;
         }
 
         public Iterm2Formatter.Formattable Extract()
         {
-            var key = _group.ToString()
+            var key = Group.ToString()
                             .Aggregate(new List<StringBuilder>() { new() }, (list, next) =>
                             {
                                 if (list[^1].Length == 0)
@@ -90,7 +90,7 @@ public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iter
             return new Iterm2Formatter.Formattable
             {
                 Key = key,
-                Color = _color
+                Color = Color
             };
         }
     }

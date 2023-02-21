@@ -45,24 +45,25 @@ public abstract class NeovimEditorHighlightSource
     public class Item : INeovimSourceItem
     {
         private readonly Kind _kind;
-        private readonly Group _fromGroup;
-        private readonly Style? _style;
-        private readonly Group? _toGroup;
+
+        public readonly Group FromGroup;
+        public readonly Style? Style;
+        public readonly Group? ToGroup;
 
         public Item(Group group, Style style)
         {
             _kind = Kind.Set;
-            _fromGroup = group;
-            _style = style;
-            _toGroup = null;
+            FromGroup = group;
+            Style = style;
+            ToGroup = null;
         }
 
         public Item(Group from, Group to)
         {
             _kind = Kind.Link;
-            _fromGroup = from;
-            _style = null;
-            _toGroup = to;
+            FromGroup = from;
+            Style = null;
+            ToGroup = to;
         }
 
         public NeovimFormatter.Formattable Extract()
@@ -71,15 +72,15 @@ public abstract class NeovimEditorHighlightSource
             {
                 Kind.Set => new NeovimFormatter.Formattable
                 {
-                    Name = _fromGroup.ToString(),
+                    Name = FromGroup.ToString(),
                     Id = 0,
-                    Style = _style
+                    Style = Style
                 },
                 Kind.Link => new NeovimFormatter.Formattable
                 {
-                    Name = _fromGroup.ToString(),
+                    Name = FromGroup.ToString(),
                     Id = 0,
-                    Link = _toGroup!.Value.ToString()
+                    Link = ToGroup!.Value.ToString()
                 },
                 _ => throw new ArgumentOutOfRangeException()
             };

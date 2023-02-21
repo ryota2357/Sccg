@@ -44,22 +44,23 @@ public abstract class VimEditorHighlightSource : Source<VimEditorHighlightSource
     public sealed class Item : IVimSourceItem
     {
         private readonly Kind _kind;
-        private readonly Group _group;
-        private readonly Style? _style;
-        private readonly Group? _link;
+
+        public readonly Group Group;
+        public readonly Style? Style;
+        public readonly Group? Link;
 
         public Item(Group group, Style style)
         {
             _kind = Kind.Set;
-            _group = group;
-            _style = style;
+            Group = group;
+            Style = style;
         }
 
         public Item(Group group, Group link)
         {
             _kind = Kind.Link;
-            _group = group;
-            _link = link;
+            Group = group;
+            Link = link;
         }
 
         public VimFormatter.Formattable Extract()
@@ -68,13 +69,13 @@ public abstract class VimEditorHighlightSource : Source<VimEditorHighlightSource
             {
                 Kind.Link => new VimFormatter.Formattable
                 {
-                    Name = _group.ToString(),
-                    Link = _link.ToString()
+                    Name = Group.ToString(),
+                    Link = Link.ToString()
                 },
                 Kind.Set => new VimFormatter.Formattable
                 {
-                    Name = _group.ToString(),
-                    Style = _style
+                    Name = Group.ToString(),
+                    Style = Style
                 },
                 _ => throw new ArgumentOutOfRangeException()
             };

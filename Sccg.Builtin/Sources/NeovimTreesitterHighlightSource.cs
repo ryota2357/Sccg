@@ -46,24 +46,25 @@ public abstract partial class NeovimTreesitterHighlightSource
     public class Item : INeovimSourceItem
     {
         private readonly Kind _kind;
-        private readonly Group _fromGroup;
-        private readonly Style? _style;
-        private readonly Group? _toGroup;
+
+        public readonly Group FromGroup;
+        public readonly Style? Style;
+        public readonly Group? ToGroup;
 
         public Item(Group group, Style style)
         {
             _kind = Kind.Set;
-            _fromGroup = group;
-            _style = style;
-            _toGroup = null;
+            FromGroup = group;
+            Style = style;
+            ToGroup = null;
         }
 
         public Item(Group from, Group to)
         {
             _kind = Kind.Link;
-            _fromGroup = from;
-            _style = null;
-            _toGroup = to;
+            FromGroup = from;
+            Style = null;
+            ToGroup = to;
         }
 
         public NeovimFormatter.Formattable Extract()
@@ -72,15 +73,15 @@ public abstract partial class NeovimTreesitterHighlightSource
             {
                 Kind.Set => new NeovimFormatter.Formattable
                 {
-                    Name = CreateGroupString(_fromGroup),
+                    Name = CreateGroupString(FromGroup),
                     Id = 0,
-                    Style = _style
+                    Style = Style
                 },
                 Kind.Link => new NeovimFormatter.Formattable
                 {
-                    Name = CreateGroupString(_fromGroup),
+                    Name = CreateGroupString(FromGroup),
                     Id = 0,
-                    Link = CreateGroupString(_toGroup!.Value)
+                    Link = CreateGroupString(ToGroup!.Value)
                 },
                 _ => throw new ArgumentOutOfRangeException()
             };

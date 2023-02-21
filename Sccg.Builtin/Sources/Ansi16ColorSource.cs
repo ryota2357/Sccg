@@ -81,8 +81,8 @@ public abstract class Ansi16ColorSource : ISource
 
     public sealed class Item : ISourceItem
     {
-        public Group Group { get; }
-        public Color Color { get; }
+        public readonly Group Group;
+        public readonly Color Color;
 
         public Item(Group group, Color color)
         {
