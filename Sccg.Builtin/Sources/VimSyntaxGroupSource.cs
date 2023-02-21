@@ -274,10 +274,12 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
         /// </summary>
         Underlined,
 
+        /*
         /// <summary>
         /// left blank, hidden  |hl-Ignore|
         /// </summary>
         Ignore,
+        */
 
         /// <summary>
         /// any erroneous construct
