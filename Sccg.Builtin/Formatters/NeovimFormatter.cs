@@ -24,66 +24,99 @@ public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>
     protected override SingleTextContent Format(IEnumerable<INeovimSourceItem> items, BuilderQuery query)
     {
         var metadata = query.GetMetadata();
+        var header = CreateHeader(metadata).Select(x => x is null ? "" : $"-- {x}");
+        var footer = CreateFooter(metadata).Select(x => x is null ? "" : $"-- {x}");
+        var body = CreateBody(items);
+
+        return new SingleTextContent($"colors/{metadata.ThemeName}.lua",
+            string.Join('\n', header),
+            $"""
+            vim.cmd [[
+              highlight clear
+              if exists('syntax_on')
+                syntax reset
+              endif
+            ]]
+            vim.g.colors_name = '{metadata.ThemeName ?? "sccg_default"}'
+            """,
+            string.Join("\n", body),
+            string.Join('\n', footer)
+        );
+    }
+
+    private static string?[] CreateHeader(Metadata metadata)
+    {
         var header = metadata.Header(metadata);
-        if (header is null)
+        if (header is not null)
         {
-            var data = new[]
-                {
-                    ("Name", metadata.ThemeName),
-                    ("Version", metadata.Version),
-                    ("Author", metadata.Author),
-                    ("Maintainer", metadata.Maintainer),
-                    ("License", metadata.License),
-                    ("Description", metadata.Description),
-                    ("Homepage", metadata.Homepage),
-                    ("Repository", metadata.Repository),
-                    ("Last change", metadata.LastUpdated?.ToString("yyyy-MM-dd dddd", System.Globalization.CultureInfo.CreateSpecificCulture("en-US")))
-                }.Where(x => x.Item2 is not null)
-                 .OfType<(string, string)>()
-                 .ToArray();
-            if (data.Length != 0)
+            return header;
+        }
+
+        var data = new[]
             {
-                var maxLen = data.Max(x => x.Item1.Length);
-                header = data.Select(x => $"{(x.Item1 + ":").PadRight(maxLen + 1, ' ')} {x.Item2}").ToArray();
-            }
-            else
+                ("Name", metadata.ThemeName),
+                ("Version", metadata.Version),
+                ("Author", metadata.Author),
+                ("Maintainer", metadata.Maintainer),
+                ("License", metadata.License),
+                ("Description", metadata.Description),
+                ("Homepage", metadata.Homepage),
+                ("Repository", metadata.Repository),
+                ("Last change",
+                    metadata.LastUpdated?.ToString("yyyy-MM-dd dddd",
+                        System.Globalization.CultureInfo.CreateSpecificCulture("en-US")))
+            }.Where(x => x.Item2 is not null)
+             .OfType<(string, string)>()
+             .ToArray();
+        if (data.Length != 0)
+        {
+            var maxLen = data.Max(x => x.Item1.Length);
+            header = data.Select(x => $"{(x.Item1 + ":").PadRight(maxLen + 1, ' ')} {x.Item2}").ToArray();
+        }
+        else
+        {
+            header = Array.Empty<string>();
+        }
+
+        return header;
+    }
+
+
+    private static IEnumerable<string> CreateBody(IEnumerable<INeovimSourceItem> items)
+    {
+        var sb = new StringBuilder();
+
+        void Set<T>(string name, T? value)
+        {
+            if (value is null) return;
+            switch (value)
             {
-                header = Array.Empty<string>();
+                case bool b:
+                    // NOTE: Because of using nvim_set_hl(), don't have to set false value. `false` is same as omitting.
+                    if (!b) return;
+                    sb.Append($"{name} = true, ");
+                    break;
+                case Color c:
+                    if (c.IsDefault) return;
+                    var code = c.IsNone ? "NONE" : c.HexCode;
+                    sb.Append($"{name} = '{code}', ");
+                    break;
+                case int i:
+                    sb.Append($"{name} = {i}, ");
+                    break;
+                case string s:
+                    sb.Append($"{name} = '{s}', ");
+                    break;
+                default:
+                    throw new NotSupportedException($"NeovimFormatter does not support type {typeof(T).Name}");
             }
         }
 
-        var body = new List<string>();
         foreach (var item in items)
         {
             var formattable = item.Extract();
-            var sb = new StringBuilder();
 
-            void Set<T>(string name, T? value)
-            {
-                if (value is null) return;
-                switch (value)
-                {
-                    case bool b:
-                        // NOTE: Because of using nvim_set_hl(), don't have to set false value. `false` is same as omitting.
-                        if (!b) return;
-                        sb.Append($"{name} = true, ");
-                        break;
-                    case Color c:
-                        if (c.IsDefault) return;
-                        var code = c.IsNone ? "NONE" : c.HexCode;
-                        sb.Append($"{name} = '{code}', ");
-                        break;
-                    case int i:
-                        sb.Append($"{name} = {i}, ");
-                        break;
-                    case string s:
-                        sb.Append($"{name} = '{s}', ");
-                        break;
-                    default:
-                        throw new NotSupportedException($"NeovimFormatter does not support type {typeof(T).Name}");
-                }
-            }
-
+            sb.Clear();
             sb.Append($"vim.api.nvim_set_hl({formattable.Id}, '{formattable.Name}', {{ ");
             Set("fg", formattable.Style?.Foreground);
             Set("bg", formattable.Style?.Background);
@@ -108,29 +141,13 @@ public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>
             sb.Remove(sb.Length - 2, 2); // Remove last ", "
             sb.Append(" })");
 
-            body.Add(sb.ToString());
+            yield return sb.ToString();
         }
+    }
 
-        var footer = metadata.Footer(metadata);
-        if (footer is null)
-        {
-            footer = new[] { $"Built with Sccg {Metadata.__SccgVersion}" };
-        }
-
-        return new SingleTextContent($"colors/{metadata.ThemeName}.lua",
-            string.Join('\n', header.Select(x => $"-- {x}")),
-            $"""
-            vim.cmd [[
-              highlight clear
-              if exists('syntax_on')
-                syntax reset
-              endif
-            ]]
-            vim.g.colors_name = '{metadata.ThemeName ?? "sccg_default"}'
-            """,
-            string.Join("\n", body),
-            string.Join('\n', footer.Select(x => $"-- {x}"))
-        );
+    private static string?[] CreateFooter(Metadata metadata)
+    {
+        return metadata.Footer(metadata) ?? new[] { $"Built with Sccg {Metadata.__SccgVersion}" };
     }
 
     public readonly record struct Formattable(
@@ -152,7 +169,7 @@ public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>
             init =>
                 _blend = value switch
                 {
-                    < 0 or > 100 => throw new System.ArgumentOutOfRangeException(nameof(value),
+                    < 0 or > 100 => throw new ArgumentOutOfRangeException(nameof(value),
                         "Blend must be between 0 and 100"),
                     _ => value
                 };

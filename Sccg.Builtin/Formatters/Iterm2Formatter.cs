@@ -45,7 +45,7 @@ public class Iterm2Formatter : Formatter<IIterm2SourceItem, SingleTextContent>
             <plist version="1.0">
             <dict>
             """,
-            sb.ToString()[..^1], // remove last newline
+            sb.ToString()[..^1], // remove last line break
             """
             </dict>
             </plist>
