@@ -78,7 +78,6 @@ var menudata={children:[
 {text:"c",url:"functions_prop.html#index_c"},
 {text:"d",url:"functions_prop.html#index_d"},
 {text:"f",url:"functions_prop.html#index_f"},
-{text:"g",url:"functions_prop.html#index_g"},
 {text:"k",url:"functions_prop.html#index_k"},
 {text:"l",url:"functions_prop.html#index_l"},
 {text:"m",url:"functions_prop.html#index_m"},
@@ -90,4 +89,5 @@ var menudata={children:[
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html"}]}]}]}
+{text:"All",url:"globals.html"},
+{text:"Variables",url:"globals_vars.html"}]}]}]}

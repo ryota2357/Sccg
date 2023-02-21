@@ -1,6 +1,8 @@
 <map id="Sccg.Builtin.Sources.VimSyntaxGroupSource.Item" name="Sccg.Builtin.Sources.VimSyntaxGroupSource.Item">
-<area shape="rect" id="node1" title=" " alt="" coords="55,152,223,192"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" title=" " alt="" coords="5,79,121,104"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="93,5,186,31"/>
-<area shape="rect" id="node4" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title=" " alt="" coords="146,79,285,104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="131,168,299,208"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" title=" " alt="" coords="5,80,121,105"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="150,5,243,31"/>
+<area shape="rect" id="node4" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title=" " alt="" coords="146,80,285,105"/>
+<area shape="rect" id="node5" href="$structSccg_1_1Style.html" title=" " alt="" coords="309,80,393,105"/>
+<area shape="rect" id="node6" title=" " alt="" coords="284,5,419,31"/>
 </map>

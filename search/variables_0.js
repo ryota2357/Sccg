@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_0',['data',['../classSccg_1_1Utility_1_1ObjectStore.html#ac1d3d5a39c5c27f54d3bd8bd2787d39a',1,'Sccg::Utility::ObjectStore']]]
+  ['_24_0',['$',['../NeovimFormatter_8cs.html#a58859d93c30e635814dc980ed86e3f84',1,'NeovimFormatter.cs']]]
 ];

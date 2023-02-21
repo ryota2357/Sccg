@@ -1,5 +1,7 @@
 <map id="Sccg.Builtin.Sources.VimEditorHighlightSource.Item" name="Sccg.Builtin.Sources.VimEditorHighlightSource.Item">
-<area shape="rect" id="node1" title=" " alt="" coords="5,152,181,192"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" title=" " alt="" coords="35,79,151,104"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="47,5,140,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="37,168,213,208"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" title=" " alt="" coords="5,80,121,105"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="13,5,106,31"/>
+<area shape="rect" id="node4" href="$structSccg_1_1Style.html" title=" " alt="" coords="152,80,236,105"/>
+<area shape="rect" id="node5" title=" " alt="" coords="131,5,265,31"/>
 </map>

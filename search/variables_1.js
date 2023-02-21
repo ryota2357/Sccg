@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graph_0',['Graph',['../classSccg_1_1Builtin_1_1Develop_1_1StdSourceImpl.html#a2a731cecb7f8f363fb70c07133ed975e',1,'Sccg::Builtin::Develop::StdSourceImpl']]]
+  ['color_0',['Color',['../classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html#a6c9a780b1f9acd1163366f89b5ca0121',1,'Sccg.Builtin.Sources.Ansi16ColorSource.Item.Color()'],['../classSccg_1_1Builtin_1_1Sources_1_1Iterm2ColorsSource_1_1Item.html#a15e73667c8af267f140aebecd5fb2996',1,'Sccg.Builtin.Sources.Iterm2ColorsSource.Item.Color()']]]
 ];
