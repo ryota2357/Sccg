@@ -109,7 +109,7 @@ public sealed class BuilderQuery
     /// <param name="source">A instance of source.</param>
     public void RegisterSource(ISource source)
     {
-         _builder.Use(source);
+        _builder.Use(source);
     }
 
     /// <summary>

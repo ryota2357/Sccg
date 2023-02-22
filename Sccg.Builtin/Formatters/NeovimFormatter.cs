@@ -6,27 +6,36 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Sccg.Builtin.Sources.Internal;
 using Sccg.Builtin.Writers;
 using Sccg.Core;
 using Sccg.Utility;
 
 namespace Sccg.Builtin.Formatters;
 
-public interface INeovimSourceItem : ISourceItem
+public interface INeovimSourceItem : INeovimSourceItemBase
 {
     public NeovimFormatter.Formattable Extract();
 }
 
-public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>
+public interface INeovimVariableSourceItem : INeovimSourceItemBase
+{
+    public NeovimFormatter.FormattableVariable Extract();
+}
+
+/// <summary>
+/// Create a Neovim color scheme with Lua.
+/// </summary>
+public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextContent>
 {
     public override string Name => "Neovim";
 
-    protected override SingleTextContent Format(IEnumerable<INeovimSourceItem> items, BuilderQuery query)
+    protected override SingleTextContent Format(IEnumerable<INeovimSourceItemBase> items, BuilderQuery query)
     {
         var metadata = query.GetMetadata();
         var header = CreateHeader(metadata).Select(x => x is null ? "" : $"-- {x}");
         var footer = CreateFooter(metadata).Select(x => x is null ? "" : $"-- {x}");
-        var body = CreateBody(items);
+        var body = CreateBody(items.ToArray());
 
         return new SingleTextContent($"colors/{metadata.ThemeName}.lua",
             string.Join('\n', header),
@@ -82,7 +91,7 @@ public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>
     }
 
 
-    private static IEnumerable<string> CreateBody(IEnumerable<INeovimSourceItem> items)
+    private static IEnumerable<string> CreateBody(INeovimSourceItemBase[] items)
     {
         var sb = new StringBuilder();
 
@@ -112,7 +121,8 @@ public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>
             }
         }
 
-        foreach (var item in items)
+        // vim.api.nvim_set_hl
+        foreach (var item in items.OfType<INeovimSourceItem>())
         {
             var formattable = item.Extract();
 
@@ -142,6 +152,13 @@ public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>
             sb.Append(" })");
 
             yield return sb.ToString();
+        }
+
+        // vim.g.* = { *, *, ...}
+        var variableItem = items.OfType<INeovimVariableSourceItem>().Select(x => x.Extract());
+        foreach (var (name, value) in variableItem)
+        {
+            yield return $"vim.g.{name} = '{value}'";
         }
     }
 
@@ -175,4 +192,9 @@ public class NeovimFormatter : Formatter<INeovimSourceItem, SingleTextContent>
                 };
         }
     }
+
+    public readonly record struct FormattableVariable(
+        string Name,
+        string Value
+    );
 }

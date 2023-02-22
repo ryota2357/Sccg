@@ -58,6 +58,38 @@ public class NeovimTest
             """
         );
     }
+
+    [Fact]
+    public void Ansi16Test()
+    {
+        _builder.Use<Ansi16Color>();
+        _builder.Build();
+
+        _writer.Output.Should().HaveCount(1);
+        var output = _writer.Output.First();
+        output.Should().Be(
+            """
+            -- Version:     1.0.0
+            -- Author:      ryota2357
+            -- Last change: 2023-01-23 Monday
+            vim.cmd [[
+              highlight clear
+              if exists('syntax_on')
+                syntax reset
+              endif
+            ]]
+            vim.g.colors_name = 'sccg_default'
+            vim.g.terminal_ansi_colors_0 = '#073642'
+            vim.g.terminal_ansi_colors_2 = '#859900'
+            vim.g.terminal_ansi_colors_3 = '#b58900'
+            vim.g.terminal_ansi_colors_7 = '#eee8d5'
+            vim.g.terminal_ansi_colors_8 = '#002b36'
+            vim.g.terminal_ansi_colors_10 = '#586e75'
+            vim.g.terminal_ansi_colors_15 = '#fdf6e3'
+            -- Built with Sccg
+            """
+        );
+    }
 }
 
 file class EditorHighlight : NeovimEditorHighlightSource
@@ -79,5 +111,19 @@ file class TreesitterHighlight : NeovimTreesitterHighlightSource
         Set(Group.KeywordFunction, bg: "fffac9", italic: true);
         Set(Group.TextEnvironmentName, bold: true, underline: true);
         Link(Group.Character, Group.KeywordFunction);
+    }
+}
+
+file class Ansi16Color : Ansi16ColorSource
+{
+    protected override void Custom()
+    {
+        Set(Group.Ansi0, "#073642");
+        Set(Group.Ansi2, "#859900");
+        Set(Group.Ansi3, "#b58900");
+        Set(Group.Ansi7, "#eee8d5");
+        Set(Group.Ansi8, "#002b36");
+        Set(Group.Ansi10, "#586e75");
+        Set(Group.Ansi15, "#fdf6e3");
     }
 }

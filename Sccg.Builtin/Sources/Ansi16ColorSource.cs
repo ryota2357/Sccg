@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Sccg.Builtin.Develop;
+using Sccg.Builtin.Formatters;
 using Sccg.Core;
 
 namespace Sccg.Builtin.Sources;
@@ -79,7 +80,7 @@ public abstract class Ansi16ColorSource : ISource
         }
     }
 
-    public sealed class Item : ISourceItem
+    public sealed class Item : IVimArrayVariableSourceItem, INeovimVariableSourceItem
     {
         public readonly Group Group;
         public readonly Color Color;
@@ -98,6 +99,25 @@ public abstract class Ansi16ColorSource : ISource
             }
             return code == (int)Group;
         }
+
+        VimFormatter.FormattableArrayVariable IVimArrayVariableSourceItem.Extract()
+        {
+            return new VimFormatter.FormattableArrayVariable(
+                Name: "terminal_ansi_colors",
+                Value: Color.HexCode,
+                Index: (int)Group,
+                Length: 16
+            );
+        }
+
+        NeovimFormatter.FormattableVariable INeovimVariableSourceItem.Extract()
+        {
+            return new NeovimFormatter.FormattableVariable(
+                Name: $"terminal_ansi_colors_{(int)Group}",
+                Value: Color.HexCode
+            );
+        }
+
     }
 
     public enum Group

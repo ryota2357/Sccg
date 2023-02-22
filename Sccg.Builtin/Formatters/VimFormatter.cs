@@ -4,29 +4,36 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using Sccg.Builtin.Sources.Internal;
 using Sccg.Builtin.Writers;
 using Sccg.Core;
 using Sccg.Utility;
 
 namespace Sccg.Builtin.Formatters;
 
-public interface IVimSourceItem : ISourceItem
+public interface IVimSourceItem : IVimSourceItemBase
 {
     public VimFormatter.Formattable Extract();
 }
 
-public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>
+public interface IVimArrayVariableSourceItem : IVimSourceItemBase
+{
+    public VimFormatter.FormattableArrayVariable Extract();
+}
+
+public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
 {
     public override string Name => "Vim";
 
-    protected override SingleTextContent Format(IEnumerable<IVimSourceItem> items, BuilderQuery query)
+    protected override SingleTextContent Format(IEnumerable<IVimSourceItemBase> items, BuilderQuery query)
     {
         var metadata = query.GetMetadata();
         var header = CreateHeader(metadata).Select(x => x is null ? "" : $"\" {x}");
         var footer = CreateFooter(metadata).Select(x => x is null ? "" : $"\" {x}");
-        var body = CreateBody(items);
+        var body = CreateBody(items.ToArray());
 
         return new SingleTextContent($"colors/{metadata.ThemeName}.vim",
             string.Join('\n', header),
@@ -42,7 +49,7 @@ public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>
         );
     }
 
-    private static IEnumerable<string> CreateBody(IEnumerable<IVimSourceItem> items)
+    private static IEnumerable<string> CreateBody(IVimSourceItemBase[] items)
     {
         var sb = new StringBuilder();
 
@@ -64,7 +71,8 @@ public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>
             }
         }
 
-        foreach (var item in items)
+        // :hi
+        foreach (var item in items.OfType<IVimSourceItem>())
         {
             var formattable = item.Extract();
 
@@ -86,6 +94,32 @@ public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>
             Set("gui", CreateAttrList(formattable.Style?.Modifiers));
 
             yield return sb.ToString();
+        }
+
+        // let g:* = []
+        var arrayItem = items.OfType<IVimArrayVariableSourceItem>()
+                             .Select(x => x.Extract())
+                             .GroupBy(x => x.Name);
+        foreach (var one in arrayItem)
+        {
+            var name = one.Key;
+            var data = one.OrderBy(x => x.Index)
+                          .Select(x => (x.Value, x.Index, x.Length))
+                          .ToArray();
+
+            if (data.Select(x => x.Length).Distinct().Count() != 1)
+            {
+                throw new InvalidDataException($"Vim-array: {name} has different length.");
+            }
+
+            var idx = data.Select(x => x.Index).Distinct().ToArray();
+            if (idx.Length != data.Length || idx.First() != 0 || idx.Last() != data.Length - 1)
+            {
+                throw new InvalidDataException("Vim-array: Index is not unique.");
+            }
+
+            var formattedValues = string.Join(", ", data.Select(x => $"'{x.Value}'"));
+            yield return $"let g:{name} = [{formattedValues}]";
         }
     }
 
@@ -135,6 +169,13 @@ public class VimFormatter : Formatter<IVimSourceItem, SingleTextContent>
         Style? Style,
         string? Link,
         bool Default = false
+    );
+
+    public readonly record struct FormattableArrayVariable(
+        string Name,
+        string Value,
+        int Index,
+        int Length
     );
 
     public static string? CreateAttrList(Style.Modifier? modifier)
