@@ -41,10 +41,12 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
             string.Join('\n', header),
             $"""
             vim.cmd [[
+              set background={(metadata.ThemeType == ThemeType.Light ? "light" : "dark")}
               highlight clear
               if exists('syntax_on')
                 syntax reset
               endif
+              set t_Co=256
             ]]
             vim.g.colors_name = '{metadata.ThemeName ?? "sccg_default"}'
             """,
@@ -128,27 +130,49 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
 
             sb.Clear();
             sb.Append($"vim.api.nvim_set_hl({formattable.Id}, '{formattable.Name}', {{ ");
-            Set("fg", formattable.Style?.Foreground);
-            Set("bg", formattable.Style?.Background);
-            Set("sp", formattable.Style?.Special);
-            Set("blend", formattable.Blend);
-            Set("bold", formattable.Style?.Modifiers.Contains(Style.Modifier.Bold));
-            Set("standout", formattable.Standout);
-            Set("underline", formattable.Style?.Modifiers.Contains(Style.Modifier.Underline));
-            Set("undercurl", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineWaved));
-            Set("underdouble", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDouble));
-            Set("underdotted", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDotted));
-            Set("underdashed", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDashed));
-            Set("strikethrough", formattable.Style?.Modifiers.Contains(Style.Modifier.Strikethrough));
-            Set("italic", formattable.Style?.Modifiers.Contains(Style.Modifier.Italic));
-            Set("reverse", formattable.Reverse);
-            Set("nocombine", formattable.Nocombine);
-            Set("link", formattable.Link);
-            Set("default", formattable.Default);
-            Set("ctermfg", formattable.Style?.Foreground.TerminalColorCode);
-            Set("ctermbg", formattable.Style?.Background.TerminalColorCode);
-            Set("cterm", VimFormatter.CreateAttrList(formattable.Style?.Modifiers));
-            sb.Remove(sb.Length - 2, 2); // Remove last ", "
+            if (formattable.Link is not null)
+            {
+                sb.Append($"link = '{formattable.Link}'");
+            }
+            else
+            {
+                Set("fg", formattable.Style?.Foreground);
+                Set("bg", formattable.Style?.Background);
+                Set("sp", formattable.Style?.Special);
+                Set("blend", formattable.Blend);
+                Set("bold", formattable.Style?.Modifiers.Contains(Style.Modifier.Bold));
+                Set("standout", formattable.Standout);
+                Set("underline", formattable.Style?.Modifiers.Contains(Style.Modifier.Underline));
+                Set("undercurl", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineWaved));
+                Set("underdouble", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDouble));
+                Set("underdotted", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDotted));
+                Set("underdashed", formattable.Style?.Modifiers.Contains(Style.Modifier.UnderlineDashed));
+                Set("strikethrough", formattable.Style?.Modifiers.Contains(Style.Modifier.Strikethrough));
+                Set("italic", formattable.Style?.Modifiers.Contains(Style.Modifier.Italic));
+                Set("reverse", formattable.Reverse);
+                Set("nocombine", formattable.Nocombine);
+                Set("default", formattable.Default);
+                Set("ctermfg", formattable.Style?.Foreground.TerminalColorCode);
+                Set("ctermbg", formattable.Style?.Background.TerminalColorCode);
+
+                if (formattable.Style?.Modifiers.Contains(Style.Modifier.Default) == true)
+                {
+                    sb.Remove(sb.Length - 2, 2); // Remove last ", "
+                }
+                else
+                {
+                    sb.Append("cterm = {");
+                    var ctermListStr = VimFormatter.CreateAttrList(formattable.Style?.Modifiers);
+                    if (ctermListStr is not null && ctermListStr != "NONE")
+                    {
+                        var ctermList = ctermListStr.Split(",").Select(x => $"{x} = true");
+                        sb.Append(' ');
+                        sb.Append(ctermList.Aggregate((a, b) => $"{a}, {b}"));
+                        sb.Append(' ');
+                    }
+                    sb.Append('}');
+                }
+            }
             sb.Append(" })");
 
             yield return sb.ToString();

@@ -6,6 +6,7 @@ namespace Sccg;
 
 public sealed record Metadata(
     string? ThemeName,
+    ThemeType? ThemeType,
     string? Version,
     string? Author,
     string? Maintainer,
@@ -23,6 +24,7 @@ public sealed record Metadata(
 
     public static Metadata Empty => new(
         ThemeName: null,
+        ThemeType: null,
         Version: null,
         Author: null,
         Maintainer: null,
@@ -38,6 +40,7 @@ public sealed record Metadata(
 
     public static Metadata Default => new(
         ThemeName: null,
+        ThemeType: null,
         Version: "1.0.0",
         Author: null,
         Maintainer: null,
@@ -50,6 +53,12 @@ public sealed record Metadata(
         Footer: _ => new[] { $"Built with Sccg {__SccgVersion}" },
         Context: new MetadataContext()
     );
+}
+
+public enum ThemeType
+{
+    Light,
+    Dark
 }
 
 public sealed class MetadataContext : IEnumerable<KeyValuePair<string, object?>>

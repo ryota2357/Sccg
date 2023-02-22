@@ -38,10 +38,12 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
         return new SingleTextContent($"colors/{metadata.ThemeName}.vim",
             string.Join('\n', header),
             $"""
-            hi clear
+            set background={(metadata.ThemeType == ThemeType.Light ? "light" : "dark")}
+            highlight clear
             if exists('syntax_on')
               syntax reset
             endif
+            set t_Co=256
             let g:colors_name = '{metadata.ThemeName ?? "sccg_default"}'
             """,
             string.Join('\n', body),

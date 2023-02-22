@@ -39,10 +39,12 @@ public class VimTest
             " Version:     1.0.0
             " Author:      ryota2357
             " Last change: 2023-01-23 Monday
-            hi clear
+            set background=dark
+            highlight clear
             if exists('syntax_on')
               syntax reset
             endif
+            set t_Co=256
             let g:colors_name = 'sccg_default'
             hi Conceal guifg=#1234af
             hi lCursor guibg=#1234af
@@ -70,10 +72,12 @@ public class VimTest
             " Version:     1.0.0
             " Author:      ryota2357
             " Last change: 2023-01-23 Monday
-            hi clear
+            set background=dark
+            highlight clear
             if exists('syntax_on')
               syntax reset
             endif
+            set t_Co=256
             let g:colors_name = 'sccg_default'
             let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', '#2aa198', '#eee8d5', '#002b36', '#cb4b16', '#586e75', '#657b83', '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
             " Built with Sccg
