@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_24_0',['$',['../NeovimFormatter_8cs.html#a58859d93c30e635814dc980ed86e3f84',1,'NeovimFormatter.cs']]]
+  ['color_0',['Color',['../classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html#a6c9a780b1f9acd1163366f89b5ca0121',1,'Sccg.Builtin.Sources.Ansi16ColorSource.Item.Color()'],['../classSccg_1_1Builtin_1_1Sources_1_1Iterm2ColorsSource_1_1Item.html#a15e73667c8af267f140aebecd5fb2996',1,'Sccg.Builtin.Sources.Iterm2ColorsSource.Item.Color()']]]
 ];

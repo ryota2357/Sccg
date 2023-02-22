@@ -1,4 +1,8 @@
 <map id="Sccg.Builtin.Sources.Ansi16ColorSource.Item" name="Sccg.Builtin.Sources.Ansi16ColorSource.Item">
-<area shape="rect" id="node1" title=" " alt="" coords="5,79,191,119"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="51,5,145,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="116,225,301,265"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html" title=" " alt="" coords="5,152,199,177"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" title=" " alt="" coords="45,79,191,104"/>
+<area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="162,5,255,31"/>
+<area shape="rect" id="node6" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title=" " alt="" coords="223,79,391,104"/>
+<area shape="rect" id="node5" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" title=" " alt="" coords="223,152,408,177"/>
 </map>

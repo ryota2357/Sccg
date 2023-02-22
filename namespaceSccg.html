@@ -109,11 +109,15 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceSccg.html#a760d4318b857c2c0af030f1f73bf9043a902b0d55fddef6f8d651fe1035b7d4bd">Error</a> = 3
  }</td></tr>
 <tr class="separator:a760d4318b857c2c0af030f1f73bf9043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb10cabb446fc64d149b5f5542f69e9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSccg.html#afb10cabb446fc64d149b5f5542f69e9d">ThemeType</a> { <a class="el" href="namespaceSccg.html#afb10cabb446fc64d149b5f5542f69e9da9914a0ce04a7b7b6a8e39bec55064b82">Light</a>
+, <a class="el" href="namespaceSccg.html#afb10cabb446fc64d149b5f5542f69e9daa18366b217ebf811ad1886e4f4f865b2">Dark</a>
+ }</td></tr>
+<tr class="separator:afb10cabb446fc64d149b5f5542f69e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a299a607434e8a7869adc1385aaf49906"><td class="memItemLeft" align="right" valign="top">sealed record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSccg.html#a299a607434e8a7869adc1385aaf49906">Metadata</a> (string? ThemeName, string? Version, string? Author, string? Maintainer, string? Homepage, string? Repository, string? Description, string? License, DateTime? LastUpdated, Func&lt; Metadata, string?[]?&gt; Header, Func&lt; Metadata, string?[]?&gt; Footer, <a class="el" href="classSccg_1_1MetadataContext.html">MetadataContext</a> Context)</td></tr>
-<tr class="separator:a299a607434e8a7869adc1385aaf49906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d41a9deb2f00293d0328d3f74300668"><td class="memItemLeft" align="right" valign="top">sealed record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSccg.html#a9d41a9deb2f00293d0328d3f74300668">Metadata</a> (string? ThemeName, <a class="el" href="namespaceSccg.html#afb10cabb446fc64d149b5f5542f69e9d">ThemeType</a>? <a class="el" href="namespaceSccg.html#afb10cabb446fc64d149b5f5542f69e9d">ThemeType</a>, string? Version, string? Author, string? Maintainer, string? Homepage, string? Repository, string? Description, string? License, DateTime? LastUpdated, Func&lt; Metadata, string?[]?&gt; Header, Func&lt; Metadata, string?[]?&gt; Footer, <a class="el" href="classSccg_1_1MetadataContext.html">MetadataContext</a> Context)</td></tr>
+<tr class="separator:a9d41a9deb2f00293d0328d3f74300668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a760d4318b857c2c0af030f1f73bf9043" name="a760d4318b857c2c0af030f1f73bf9043"></a>
@@ -138,9 +142,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afb10cabb446fc64d149b5f5542f69e9d" name="afb10cabb446fc64d149b5f5542f69e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb10cabb446fc64d149b5f5542f69e9d">&#9670;&#160;</a></span>ThemeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceSccg.html#afb10cabb446fc64d149b5f5542f69e9d">Sccg.ThemeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afb10cabb446fc64d149b5f5542f69e9da9914a0ce04a7b7b6a8e39bec55064b82" name="afb10cabb446fc64d149b5f5542f69e9da9914a0ce04a7b7b6a8e39bec55064b82"></a>Light&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afb10cabb446fc64d149b5f5542f69e9daa18366b217ebf811ad1886e4f4f865b2" name="afb10cabb446fc64d149b5f5542f69e9daa18366b217ebf811ad1886e4f4f865b2"></a>Dark&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="Metadata_8cs_source.html#l00058">58</a> of file <a class="el" href="Metadata_8cs_source.html">Metadata.cs</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a299a607434e8a7869adc1385aaf49906" name="a299a607434e8a7869adc1385aaf49906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a299a607434e8a7869adc1385aaf49906">&#9670;&#160;</a></span>Metadata()</h2>
+<a id="a9d41a9deb2f00293d0328d3f74300668" name="a9d41a9deb2f00293d0328d3f74300668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d41a9deb2f00293d0328d3f74300668">&#9670;&#160;</a></span>Metadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,6 +174,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">string?&#160;</td>
           <td class="paramname"><em>ThemeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceSccg.html#afb10cabb446fc64d149b5f5542f69e9d">ThemeType</a>?&#160;</td>
+          <td class="paramname"><em>ThemeType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -231,7 +261,7 @@ Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceSccg_a299a607434e8a7869adc1385aaf49906_cgraph.svg" width="120" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceSccg_a9d41a9deb2f00293d0328d3f74300668_cgraph.svg" width="120" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -239,7 +269,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceSccg_a299a607434e8a7869adc1385aaf49906_icgraph.svg" width="120" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceSccg_a9d41a9deb2f00293d0328d3f74300668_icgraph.svg" width="120" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

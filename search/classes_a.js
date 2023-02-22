@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['writer_0',['Writer',['../classSccg_1_1Core_1_1Writer.html',1,'Sccg::Core']]],
-  ['writer_3c_20singletextcontent_20_3e_1',['Writer&lt; SingleTextContent &gt;',['../classSccg_1_1Core_1_1Writer.html',1,'Sccg::Core']]]
+  ['vimeditorhighlightsource_0',['VimEditorHighlightSource',['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html',1,'Sccg::Builtin::Sources']]],
+  ['vimformatter_1',['VimFormatter',['../classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html',1,'Sccg::Builtin::Formatters']]],
+  ['vimsyntaxgroupsource_2',['VimSyntaxGroupSource',['../classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html',1,'Sccg::Builtin::Sources']]]
 ];

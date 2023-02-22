@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['underline_0',['Underline',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbbaa852721aa5fc738dfedff2945d71da439',1,'Sccg.Style.Underline()'],['../classSccg_1_1Builtin_1_1Sources_1_1Iterm2ColorsSource.html#aadf824a0232a927ef912d0bf421d168ea852721aa5fc738dfedff2945d71da439',1,'Sccg.Builtin.Sources.Iterm2ColorsSource.Underline()']]],
-  ['underlined_1',['Underlined',['../classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html#a7e48fad59659d439124ad7ae7a511053aefbed21c7db81f58e97c79ae9e73c714',1,'Sccg::Builtin::Sources::VimSyntaxGroupSource']]],
-  ['underlinedashed_2',['UnderlineDashed',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbbaa2520b0ac8905f48561dd93272fafd056',1,'Sccg::Style']]],
-  ['underlinedotted_3',['UnderlineDotted',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbbaa7e19610410ec0b78d2af01622d04e1ba',1,'Sccg::Style']]],
-  ['underlinedouble_4',['UnderlineDouble',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbbaaaf47b40e28fbfec981bf1aea3463e64b',1,'Sccg::Style']]],
-  ['underlinewaved_5',['UnderlineWaved',['../structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbbaa509bf95ff4fa1b674f0ba326bd651a2d',1,'Sccg::Style']]],
-  ['uplicate_6',['uplicate',['../Builder_8cs.html#a0501fe939bec664c3456bef52879cb8e',1,'Builder.cs']]],
-  ['use_3c_20t_20_3e_7',['Use&lt; T &gt;',['../classSccg_1_1Builder.html#a829c12c3c707ffdb449cc9c0bfd0f48b',1,'Sccg.Builder.Use&lt; T &gt;(T instance)'],['../classSccg_1_1Builder.html#a64ce2e6ff2645d4eae012782444de55b',1,'Sccg.Builder.Use&lt; T &gt;(T[] instances)'],['../classSccg_1_1Builder.html#a51d2f245c6a744cb86f921c96af6304e',1,'Sccg.Builder.Use&lt; T &gt;(params object[] args)']]],
-  ['utilityextensions_2ecs_8',['UtilityExtensions.cs',['../UtilityExtensions_8cs.html',1,'']]]
+  ['values_0',['Values',['../classSccg_1_1MetadataContext.html#a5e43f219f762fc951134bb68d76c0130',1,'Sccg::MetadataContext']]],
+  ['variable_1',['Variable',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043a47c14840d8e15331fa420b9b2f757cd9',1,'Sccg::Builtin::Sources::NeovimTreesitterHighlightSource']]],
+  ['variablebuiltin_2',['VariableBuiltin',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043a0718804efab6d588b89d6aa40ad1afae',1,'Sccg::Builtin::Sources::NeovimTreesitterHighlightSource']]],
+  ['vertsplit_3',['VertSplit',['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1eaa6f8d9699b00cb290a9448de9848ee59',1,'Sccg::Builtin::Sources::VimEditorHighlightSource']]],
+  ['vimeditorhighlightsource_4',['VimEditorHighlightSource',['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html',1,'Sccg::Builtin::Sources']]],
+  ['vimeditorhighlightsource_2ecs_5',['VimEditorHighlightSource.cs',['../VimEditorHighlightSource_8cs.html',1,'']]],
+  ['vimformatter_6',['VimFormatter',['../classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html',1,'Sccg::Builtin::Formatters']]],
+  ['vimformatter_2ecs_7',['VimFormatter.cs',['../VimFormatter_8cs.html',1,'']]],
+  ['vimsyntaxgroupsource_8',['VimSyntaxGroupSource',['../classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html',1,'Sccg::Builtin::Sources']]],
+  ['vimsyntaxgroupsource_2ecs_9',['VimSyntaxGroupSource.cs',['../VimSyntaxGroupSource_8cs.html',1,'']]],
+  ['visual_10',['Visual',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98a4557e77491fe3dbd9a6055aeb0ed00d7',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.Visual()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1ea4557e77491fe3dbd9a6055aeb0ed00d7',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.Visual()']]],
+  ['visualnos_11',['VisualNOS',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98aa42c87af908dca2dfee2f4da876f457b',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.VisualNOS()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1eaa42c87af908dca2dfee2f4da876f457b',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.VisualNOS()']]]
 ];

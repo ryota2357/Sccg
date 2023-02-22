@@ -1,0 +1,9 @@
+<map id="Sccg.Builtin.Sources.Internal.IVimSourceItemBase" name="Sccg.Builtin.Sources.Internal.IVimSourceItemBase">
+<area shape="rect" id="node1" title=" " alt="" coords="147,37,337,77"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html" title=" " alt="" coords="385,5,579,45"/>
+<area shape="rect" id="node5" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" title=" " alt="" coords="402,69,562,109"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="5,45,99,70"/>
+<area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" title=" " alt="" coords="627,5,812,45"/>
+<area shape="rect" id="node6" href="$classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="631,69,807,109"/>
+<area shape="rect" id="node7" href="$classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" title=" " alt="" coords="635,133,803,173"/>
+</map>
