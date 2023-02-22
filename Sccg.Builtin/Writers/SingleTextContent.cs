@@ -25,4 +25,13 @@ public class SingleTextContent : IContent
         : this(filename, string.Join('\n', texts.WhereNotNull().DefaultIfEmpty("")))
     {
     }
+
+    public override string ToString()
+    {
+        return $"""
+                Class: {GetType().Name}
+                Filename: {Filename}
+                Text: {Text}
+                """;
+    }
 }
