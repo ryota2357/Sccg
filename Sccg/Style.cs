@@ -11,7 +11,55 @@ public readonly partial struct Style : IEquatable<Style>
 
     public Color Special { get; init; }
 
-    public Modifier Modifiers { get; init; }
+    public Modifier Modifiers { get; private init; }
+
+    /// <inheritdoc cref="Style.Modifier.Bold"/>
+    public bool Bold
+    {
+        init => Modifiers = value ? (Modifiers | Modifier.Bold) : (Modifiers & ~Modifier.Bold);
+    }
+
+    /// <inheritdoc cref="Style.Modifier.Italic"/>
+    public bool Italic
+    {
+        init => Modifiers = value ? (Modifiers | Modifier.Italic) : (Modifiers & ~Modifier.Italic);
+    }
+
+    /// <inheritdoc cref="Style.Modifier.Strikethrough"/>
+    public bool Strikethrough
+    {
+        init => Modifiers = value ? (Modifiers | Modifier.Strikethrough) : (Modifiers & ~Modifier.Strikethrough);
+    }
+
+    /// <inheritdoc cref="Style.Modifier.Underline"/>
+    public bool Underline
+    {
+        init => Modifiers = value ? (Modifiers | Modifier.Underline) : (Modifiers & ~Modifier.Underline);
+    }
+
+    /// <inheritdoc cref="Style.Modifier.UnderlineWaved"/>
+    public bool UnderlineWaved
+    {
+        init => Modifiers = value ? (Modifiers | Modifier.UnderlineWaved) : (Modifiers & ~Modifier.UnderlineWaved);
+    }
+
+    /// <inheritdoc cref="Style.Modifier.UnderlineDotted"/>
+    public bool UnderlineDotted
+    {
+        init => Modifiers = value ? (Modifiers | Modifier.UnderlineDotted) : (Modifiers & ~Modifier.UnderlineDotted);
+    }
+
+    /// <inheritdoc cref="Style.Modifier.UnderlineDashed"/>
+    public bool UnderlineDashed
+    {
+        init => Modifiers = value ? (Modifiers | Modifier.UnderlineDashed) : (Modifiers & ~Modifier.UnderlineDashed);
+    }
+
+    /// <inheritdoc cref="Style.Modifier.UnderlineDouble"/>
+    public bool UnderlineDouble
+    {
+        init => Modifiers = value ? (Modifiers | Modifier.UnderlineDouble) : (Modifiers & ~Modifier.UnderlineDouble);
+    }
 
     public static Style Default => new();
 
@@ -48,14 +96,14 @@ public readonly partial struct Style : IEquatable<Style>
         }
 
         Modifiers = Modifier.Default;
-        Modifiers |= bold ? Modifier.Bold : 0;
-        Modifiers |= italic ? Modifier.Italic : 0;
-        Modifiers |= strikethrough ? Modifier.Strikethrough : 0;
-        Modifiers |= underline ? Modifier.Underline : 0;
-        Modifiers |= underlineWaved ? Modifier.UnderlineWaved : 0;
-        Modifiers |= underlineDotted ? Modifier.UnderlineDotted : 0;
-        Modifiers |= underlineDashed ? Modifier.UnderlineDashed : 0;
-        Modifiers |= underlineDouble ? Modifier.UnderlineDouble : 0;
+        Bold = bold;
+        Italic = italic;
+        Strikethrough = strikethrough;
+        Underline = underline;
+        UnderlineWaved = underlineWaved;
+        UnderlineDotted = underlineDotted;
+        UnderlineDashed = underlineDashed;
+        UnderlineDouble = underlineDouble;
     }
 
     public override string ToString()
