@@ -57,6 +57,7 @@ public class NeovimTest
             vim.api.nvim_set_hl(0, '@keyword.function', { bg = '#fffac9', italic = true, cterm = { italic = true } })
             vim.api.nvim_set_hl(0, '@text.environment.name', { bold = true, underline = true, cterm = { bold = true, underline = true } })
             vim.api.nvim_set_hl(0, '@character', { link = '@keyword.function' })
+            vim.api.nvim_set_hl(0, '@constant', { })
             -- Built with Sccg
             """
         );
@@ -117,6 +118,7 @@ file class TreesitterHighlight : NeovimTreesitterHighlightSource
         Set(Group.KeywordFunction, bg: "fffac9", italic: true);
         Set(Group.TextEnvironmentName, bold: true, underline: true);
         Link(Group.Character, Group.KeywordFunction);
+        Set(Group.Constant, Style.Default);
     }
 }
 

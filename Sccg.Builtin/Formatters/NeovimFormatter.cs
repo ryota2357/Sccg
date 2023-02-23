@@ -105,18 +105,18 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
                 case bool b:
                     // NOTE: Because of using nvim_set_hl(), don't have to set false value. `false` is same as omitting.
                     if (!b) return;
-                    sb.Append($"{name} = true, ");
+                    sb.Append($" {name} = true,");
                     break;
                 case Color c:
                     if (c.IsDefault) return;
                     var code = c.IsNone ? "NONE" : c.HexCode;
-                    sb.Append($"{name} = '{code}', ");
+                    sb.Append($" {name} = '{code}',");
                     break;
                 case int i:
-                    sb.Append($"{name} = {i}, ");
+                    sb.Append($" {name} = {i},");
                     break;
                 case string s:
-                    sb.Append($"{name} = '{s}', ");
+                    sb.Append($" {name} = '{s}',");
                     break;
                 default:
                     throw new NotSupportedException($"NeovimFormatter does not support type {typeof(T).Name}");
@@ -129,10 +129,10 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
             var formattable = item.Extract();
 
             sb.Clear();
-            sb.Append($"vim.api.nvim_set_hl({formattable.Id}, '{formattable.Name}', {{ ");
+            sb.Append($"vim.api.nvim_set_hl({formattable.Id}, '{formattable.Name}', {{");
             if (formattable.Link is not null)
             {
-                sb.Append($"link = '{formattable.Link}'");
+                sb.Append($" link = '{formattable.Link}'");
             }
             else
             {
@@ -155,13 +155,9 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
                 Set("ctermfg", formattable.Style?.Foreground.TerminalColorCode);
                 Set("ctermbg", formattable.Style?.Background.TerminalColorCode);
 
-                if (formattable.Style?.Modifiers.Contains(Style.Modifier.Default) == true)
+                if (formattable.Style?.Modifiers.Contains(Style.Modifier.Default) == false)
                 {
-                    sb.Remove(sb.Length - 2, 2); // Remove last ", "
-                }
-                else
-                {
-                    sb.Append("cterm = {");
+                    sb.Append(" cterm = {");
                     var ctermListStr = VimFormatter.CreateAttrList(formattable.Style?.Modifiers);
                     if (ctermListStr is not null && ctermListStr != "NONE")
                     {
@@ -173,9 +169,13 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
                     sb.Append('}');
                 }
             }
-            sb.Append(" })");
 
-            yield return sb.ToString();
+            var str = sb.ToString();
+            if (str.EndsWith(","))
+            {
+                str = str[..^1];
+            }
+            yield return $"{str} }})";
         }
 
         // vim.g.* = { *, *, ...}
