@@ -1,10 +1,11 @@
 <map id="Sccg.Builtin.Sources.Internal.INeovimSourceItemBase" name="Sccg.Builtin.Sources.Internal.INeovimSourceItemBase">
 <area shape="rect" id="node1" title=" " alt="" coords="147,165,337,205"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title=" " alt="" coords="398,101,558,141"/>
-<area shape="rect" id="node7" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" title=" " alt="" coords="385,197,571,237"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title=" " alt="" coords="398,133,558,173"/>
+<area shape="rect" id="node8" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" title=" " alt="" coords="385,229,571,269"/>
 <area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="5,173,99,198"/>
-<area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="623,5,813,45"/>
-<area shape="rect" id="node5" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" title=" " alt="" coords="619,69,817,109"/>
-<area shape="rect" id="node6" href="$classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" title=" " alt="" coords="634,133,802,173"/>
-<area shape="rect" id="node8" href="$classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" title=" " alt="" coords="625,197,811,237"/>
+<area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="637,5,827,45"/>
+<area shape="rect" id="node5" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" title=" " alt="" coords="619,69,845,109"/>
+<area shape="rect" id="node6" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" title=" " alt="" coords="633,133,831,173"/>
+<area shape="rect" id="node7" href="$classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" title=" " alt="" coords="648,197,816,237"/>
+<area shape="rect" id="node9" href="$classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" title=" " alt="" coords="639,261,825,301"/>
 </map>

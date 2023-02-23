@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['text_0',['Text',['../classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html#ad2717074dd5ab61ba89ebf6eb40f17fe',1,'Sccg::Builtin::Writers::SingleTextContent']]]
+  ['special_0',['Special',['../structSccg_1_1Style.html#a18ae5b82d0b2f49ce3bdfd17f32a9b09',1,'Sccg::Style']]],
+  ['strikethrough_1',['Strikethrough',['../structSccg_1_1Style.html#a2b4d9f5963c250ca0c21111d5c902ae8',1,'Sccg::Style']]]
 ];
