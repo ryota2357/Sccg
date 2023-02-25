@@ -3,10 +3,30 @@
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <Version>0.0.1</Version>
+        <Title>Sccg</Title>
+        <Authors>ryota2357</Authors>
+        <PackageProjectUrl>https://sccg.ryota2357.com/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/ryota2357/Sccg</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Company>ryota2357</Company>
+        <Description>Scriptable Color Configuration Generator.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DocumentationFile>bin\Release\net7.0\Sccg.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Kokuban" Version="0.2.0" />
+        <PackageReference Include="Kokuban" Version="0.2.0"/>
+        <None Include="../README.md" Pack="true" PackagePath="/"/>
+        <None Include="../LICENSE" Pack="true" PackagePath=""/>
     </ItemGroup>
 
 </Project>

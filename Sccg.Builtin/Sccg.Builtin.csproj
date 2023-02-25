@@ -3,10 +3,30 @@
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <Version>0.0.1</Version>
+        <Title>Sccg Builtin Library</Title>
+        <Authors>ryota2357</Authors>
+        <PackageProjectUrl>https://sccg.ryota2357.com/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/ryota2357/Sccg</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Company>ryota2357</Company>
+        <Description>Sccg builtin Source/Formatter/Converter/Writer library.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DocumentationFile>bin\Release\net7.0\Sccg.Builtin.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
     </PropertyGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Sccg\Sccg.csproj" />
+        <None Include="../README.md" Pack="true" PackagePath="/"/>
+        <None Include="../LICENSE" Pack="true" PackagePath=""/>
     </ItemGroup>
 
 </Project>
