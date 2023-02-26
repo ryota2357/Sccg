@@ -7,51 +7,19 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Sources;
 
-public abstract class Ansi16ColorSource : ISource
+public abstract class Ansi16ColorSource : SourceColorOnly<Ansi16ColorSource.Group, Ansi16ColorSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
-    // cache
-    private bool _isCustomCalled = false;
-    private IEnumerable<Item>? _items = null;
+    public override string Name => "Ansi16Color";
 
-    public string Name => "Ansi16Color";
+    public override int Priority => 0;
 
-    public int Priority => 0;
+    protected override void Set(Group group, Color color) => _impl.Set(group, color);
 
-    void ISource.Custom(BuilderQuery query)
-    {
-        if (_isCustomCalled) return;
-        Custom(query);
-        _isCustomCalled = true;
-    }
+    protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
-    IEnumerable<ISourceItem> ISource.CollectItems()
-    {
-        return _items ??= CollectItems();
-    }
-
-    protected virtual void Custom(BuilderQuery query)
-    {
-        Custom();
-    }
-
-    protected virtual void Custom()
-    {
-        throw new NotImplementedException("You must override Custom method.");
-    }
-
-    protected void Set(Group group, Color color)
-    {
-        _impl.Set(group, color);
-    }
-
-    protected void Link(Group from, Group to)
-    {
-        _impl.Link(from, to);
-    }
-
-    private IEnumerable<Item> CollectItems()
+    protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
         Dictionary<int, Color> cache = new();

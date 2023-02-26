@@ -10,11 +10,11 @@ namespace Sccg.Builtin.Sources;
 
 // ITermColorsSource looks like interface...
 
-public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iterm2ColorsSource.Item>
+public abstract class Iterm2ColorsSource : SourceColorOnly<Iterm2ColorsSource.Group, Iterm2ColorsSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
-    public override string Name => "ITermColors";
+    public override string Name => "ITerm2Colors";
 
     protected override IEnumerable<Item> CollectItems()
     {
@@ -38,20 +38,9 @@ public abstract class Iterm2ColorsSource : Source<Iterm2ColorsSource.Group, Iter
         }
     }
 
-    protected void Set(Group group, Color color)
-    {
-        _impl.Set(group, color);
-    }
+    protected override void Set(Group group, Color color) => _impl.Set(group, color);
 
-    protected override void Set(Group group, Style style)
-    {
-        Set(group, style.Foreground);
-    }
-
-    protected override void Link(Group from, Group to)
-    {
-        _impl.Link(from, to);
-    }
+    protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
     public class Item : IIterm2SourceItem
     {

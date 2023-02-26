@@ -108,3 +108,61 @@ public abstract class Source<TGroup, TItem> : ISource
         return _collectItems ??= CollectItems().OfType<ISourceItem>();
     }
 }
+
+public abstract class SourceColorOnly<TGroup, TItem> : ISource
+{
+    /// <inheritdoc />
+    public abstract string Name { get; }
+
+    // TODO: doc
+    protected abstract IEnumerable<TItem> CollectItems();
+
+    /// <summary>
+    /// Sets style to group.
+    /// </summary>
+    /// <param name="group">A syntax/design group name.</param>
+    /// <param name="color">A color.</param>
+    protected abstract void Set(TGroup group, Color color);
+
+    /// <summary>
+    /// Links style `from` group to `to` group.
+    /// </summary>
+    /// <param name="from">A syntax/design group name.</param>
+    /// <param name="to">A syntax/design group name.</param>
+    protected abstract void Link(TGroup from, TGroup to);
+
+    /// <inheritdoc />
+    public virtual int Priority => 10;
+
+    // TODO: doc
+    protected virtual void Custom()
+    {
+        throw new NotImplementedException("You must override Custom method.");
+    }
+
+    // TODO: doc
+    protected virtual void Custom(BuilderQuery query)
+    {
+        Custom();
+    }
+
+    // This cache is necessary to respect Priority.
+    private bool _custom = false;
+    private IEnumerable<ISourceItem>? _collectItems = null;
+
+    void ISource.Custom(BuilderQuery query)
+    {
+        if (_custom)
+        {
+            return;
+        }
+
+        Custom(query);
+        _custom = true;
+    }
+
+    IEnumerable<ISourceItem> ISource.CollectItems()
+    {
+        return _collectItems ??= CollectItems().OfType<ISourceItem>();
+    }
+}
