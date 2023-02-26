@@ -85,220 +85,180 @@ $(function() {
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using </span>System.IO;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using </span>System.Linq;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">using </span>System.Text;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Builtin_1_1Sources_1_1Internal.html">Sccg.Builtin.Sources.Internal</a>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Builtin_1_1Writers.html">Sccg.Builtin.Writers</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Core.html">Sccg.Core</a>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Utility.html">Sccg.Utility</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceSccg_1_1Builtin_1_1Formatters.html">Sccg.Builtin.Formatters</a>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html">   17</a></span><span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html">IVimSourceItem</a> : <a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html">IVimSourceItemBase</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html#a879715377b5255b96153a8c49400113b">   19</a></span>    <span class="keyword">public</span> VimFormatter.Formattable <a class="code hl_function" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html#a879715377b5255b96153a8c49400113b">Extract</a>();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html">   22</a></span><span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html">IVimArrayVariableSourceItem</a> : <a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html">IVimSourceItemBase</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html#a905cc30e2164380d9e66cb1c2613e4cd">   24</a></span>    <span class="keyword">public</span> VimFormatter.FormattableArrayVariable <a class="code hl_function" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html#a905cc30e2164380d9e66cb1c2613e4cd">Extract</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html">   27</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html">VimFormatter</a> : <a class="code hl_class" href="classSccg_1_1Core_1_1Formatter.html">Formatter</a>&lt;IVimSourceItemBase, SingleTextContent&gt;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">   29</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">Name</a> =&gt; <span class="stringliteral">&quot;Vim&quot;</span>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9">   31</a></span>    <span class="keyword">protected</span> <span class="keyword">override</span> <a class="code hl_class" href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html">SingleTextContent</a> <a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9">Format</a>(IEnumerable&lt;IVimSourceItemBase&gt; items, <a class="code hl_class" href="classSccg_1_1BuilderQuery.html">BuilderQuery</a> query)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        var metadata = query.<a class="code hl_function" href="classSccg_1_1BuilderQuery.html#adcf97ab9667e39324d2cd972ecccaf6b">GetMetadata</a>();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        var header = CreateHeader(metadata).Select(x =&gt; x is <span class="keyword">null</span> ? <span class="stringliteral">&quot;&quot;</span> : $<span class="stringliteral">&quot;\&quot; {x}&quot;</span>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        var footer = CreateFooter(metadata).Select(x =&gt; x is <span class="keyword">null</span> ? <span class="stringliteral">&quot;&quot;</span> : $<span class="stringliteral">&quot;\&quot; {x}&quot;</span>);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        var body = CreateBody(items.ToArray());</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html">SingleTextContent</a>($<span class="stringliteral">&quot;colors/{metadata.ThemeName}.vim&quot;</span>,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordtype">string</span>.Join(<span class="charliteral">&#39;\n&#39;</span>, header),</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            $<span class="stringliteral">&quot;&quot;</span><span class="stringliteral">&quot;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="stringliteral">            set background={(metadata.ThemeType == ThemeType.Light ? &quot;</span>light<span class="stringliteral">&quot; : &quot;</span>dark<span class="stringliteral">&quot;)}</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="stringliteral">            highlight clear</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="stringliteral">            if exists(&#39;syntax_on&#39;)</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="stringliteral">              syntax reset</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="stringliteral">            endif</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="stringliteral">            set t_Co=256</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="stringliteral">            let g:colors_name = &#39;{metadata.ThemeName ?? &quot;</span>sccg_default<span class="stringliteral">&quot;}&#39;</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="stringliteral">            &quot;</span><span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordtype">string</span>.Join(<span class="charliteral">&#39;\n&#39;</span>, body),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordtype">string</span>.Join(<span class="charliteral">&#39;\n&#39;</span>, footer)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        );</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">private</span> <span class="keyword">static</span> IEnumerable&lt;string&gt; CreateBody(<a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html">IVimSourceItemBase</a>[] items)</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        var sb = <span class="keyword">new</span> StringBuilder();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordtype">void</span> Set&lt;T&gt;(<span class="keywordtype">string</span> name, T? value)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (value is <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">switch</span> (value)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">case</span> Color c:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    <span class="keywordflow">if</span> (c.IsDefault) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    var code = c.IsNone ? <span class="stringliteral">&quot;NONE&quot;</span> : c.HexCode;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    sb.Append($<span class="stringliteral">&quot; {name}={code}&quot;</span>);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="keywordflow">case</span> <span class="keywordtype">string</span> s:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    sb.Append($<span class="stringliteral">&quot; {name}={s}&quot;</span>);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NotSupportedException($<span class="stringliteral">&quot;NeovimFormatter does not support type {typeof(T).Name}&quot;</span>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="comment">// :hi</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> items.OfType&lt;IVimSourceItem&gt;())</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            var formattable = item.Extract();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> (formattable.Link is not <span class="keyword">null</span>)</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                yield <span class="keywordflow">return</span> $<span class="stringliteral">&quot;hi link {formattable.Name} {formattable.Link}&quot;</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            sb.Clear();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            sb.Append($<span class="stringliteral">&quot;hi {formattable.Name}{(formattable.Default ? &quot;</span> <span class="keywordflow">default</span><span class="stringliteral">&quot; : &quot;</span><span class="stringliteral">&quot;)}&quot;</span>);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            Set(<span class="stringliteral">&quot;ctermfg&quot;</span>, formattable.Style?.Foreground.TerminalColorCode);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            Set(<span class="stringliteral">&quot;ctermbg&quot;</span>, formattable.Style?.Background.TerminalColorCode);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            Set(<span class="stringliteral">&quot;ctermul&quot;</span>, formattable.Style?.Special.TerminalColorCode);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            Set(<span class="stringliteral">&quot;cterm&quot;</span>, <a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">CreateAttrList</a>(formattable.Style?.Modifiers));</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            Set(<span class="stringliteral">&quot;guifg&quot;</span>, formattable.Style?.Foreground);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            Set(<span class="stringliteral">&quot;guibg&quot;</span>, formattable.Style?.Background);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            Set(<span class="stringliteral">&quot;guisp&quot;</span>, formattable.Style?.Special);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            Set(<span class="stringliteral">&quot;gui&quot;</span>, <a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">CreateAttrList</a>(formattable.Style?.Modifiers));</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            yield <span class="keywordflow">return</span> sb.ToString();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">// let g:* = []</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        var arrayItem = items.OfType&lt;IVimArrayVariableSourceItem&gt;()</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                             .Select(x =&gt; x.Extract())</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                             .GroupBy(x =&gt; x.Name);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">foreach</span> (var one <span class="keywordflow">in</span> arrayItem)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            var name = one.Key;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            var data = one.OrderBy(x =&gt; x.Index)</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                          .Select(x =&gt; (x.Value, x.Index, x.Length))</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                          .ToArray();</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordflow">if</span> (data.Select(x =&gt; x.Length).Distinct().Count() != 1)</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException($<span class="stringliteral">&quot;Vim-array: {name} has different length.&quot;</span>);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            }</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            var idx = data.Select(x =&gt; x.Index).Distinct().ToArray();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">if</span> (idx.Length != data.Length || idx.First() != 0 || idx.Last() != data.Length - 1)</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            {</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException(<span class="stringliteral">&quot;Vim-array: Index is not unique.&quot;</span>);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            var formattedValues = <span class="keywordtype">string</span>.Join(<span class="stringliteral">&quot;, &quot;</span>, data.Select(x =&gt; $<span class="stringliteral">&quot;&#39;{x.Value}&#39;&quot;</span>));</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            yield <span class="keywordflow">return</span> $<span class="stringliteral">&quot;let g:{name} = [{formattedValues}]&quot;</span>;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">string</span>?[] CreateHeader(<a class="code hl_function" href="namespaceSccg.html#a9d41a9deb2f00293d0328d3f74300668">Metadata</a> metadata)</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        var header = metadata.Header(metadata);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">if</span> (header is not <span class="keyword">null</span>)</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keywordflow">return</span> header;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        var data = <span class="keyword">new</span>[]</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            {</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                (<span class="stringliteral">&quot;Name&quot;</span>, metadata.ThemeName),</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                (<span class="stringliteral">&quot;Version&quot;</span>, metadata.Version),</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                (<span class="stringliteral">&quot;Author&quot;</span>, metadata.Author),</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                (<span class="stringliteral">&quot;Maintainer&quot;</span>, metadata.Maintainer),</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                (<span class="stringliteral">&quot;License&quot;</span>, metadata.License),</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                (<span class="stringliteral">&quot;Description&quot;</span>, metadata.Description),</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                (<span class="stringliteral">&quot;Homepage&quot;</span>, metadata.Homepage),</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                (<span class="stringliteral">&quot;Repository&quot;</span>, metadata.Repository),</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                (<span class="stringliteral">&quot;Last change&quot;</span>,</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                    metadata.LastUpdated?.ToString(<span class="stringliteral">&quot;yyyy-MM-dd dddd&quot;</span>,</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                        System.Globalization.CultureInfo.CreateSpecificCulture(<span class="stringliteral">&quot;en-US&quot;</span>)))</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            }.Where(x =&gt; x.Item2 is not <span class="keyword">null</span>)</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>             .OfType&lt;(string, string)&gt;()</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>             .ToArray();</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">if</span> (data.Length != 0)</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            var maxLen = data.Max(x =&gt; x.Item1.Length);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            header = data.Select(x =&gt; $<span class="stringliteral">&quot;{(x.Item1 + &quot;</span>:<span class="stringliteral">&quot;).PadRight(maxLen + 1, &#39; &#39;)} {x.Item2}&quot;</span>)</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                         .ToArray();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            header = Array.Empty&lt;<span class="keywordtype">string</span>&gt;();</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">return</span> header;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">string</span>?[] CreateFooter(<a class="code hl_function" href="namespaceSccg.html#a9d41a9deb2f00293d0328d3f74300668">Metadata</a> metadata)</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    {</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">return</span> metadata.Footer(metadata) ?? <span class="keyword">new</span>[] { $<span class="stringliteral">&quot;Built with Sccg {Metadata.__SccgVersion}&quot;</span> };</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a4daba0150f1ec50288ebacaaace7b441">  169</a></span>    <span class="keyword">public</span> readonly record <span class="keyword">struct </span><a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a4daba0150f1ec50288ebacaaace7b441">Formattable</a>(</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        string <a class="code hl_property" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">Name</a>,</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <a class="code hl_struct" href="structSccg_1_1Style.html">Style</a>? <a class="code hl_struct" href="structSccg_1_1Style.html">Style</a>,</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        string? Link,</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        bool Default = false</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    );</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ac59aab832a5b9589a5c8aad5fe6e130b">  176</a></span>    <span class="keyword">public</span> readonly record <span class="keyword">struct </span><a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ac59aab832a5b9589a5c8aad5fe6e130b">FormattableArrayVariable</a>(</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        string <a class="code hl_property" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">Name</a>,</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        string Value,</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        int Index,</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        int Length</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    );</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">  183</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>? <a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">CreateAttrList</a>(<a class="code hl_struct" href="structSccg_1_1Style.html">Style</a>.<a class="code hl_enumeration" href="structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbba">Modifier</a>? modifier)</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    {</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">return</span> modifier?.DivideSingles()</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                       .Select(x =&gt; x <span class="keywordflow">switch</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                       {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                           Style.Modifier.Bold =&gt; <span class="stringliteral">&quot;bold&quot;</span>,</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                           Style.Modifier.Italic =&gt; <span class="stringliteral">&quot;italic&quot;</span>,</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                           Style.Modifier.Underline =&gt; <span class="stringliteral">&quot;underline&quot;</span>,</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                           Style.Modifier.UnderlineWaved =&gt; <span class="stringliteral">&quot;undercurl&quot;</span>,</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                           Style.Modifier.UnderlineDotted =&gt; <span class="stringliteral">&quot;underdot&quot;</span>,</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                           Style.Modifier.UnderlineDashed =&gt; <span class="stringliteral">&quot;underdash&quot;</span>,</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                           Style.Modifier.Strikethrough =&gt; <span class="stringliteral">&quot;strikethrough&quot;</span>,</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                           Style.Modifier.None =&gt; <span class="stringliteral">&quot;NONE&quot;</span>,</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                           _ =&gt; <span class="keyword">null</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                       })</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                       .WhereNotNull()</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                       .DefaultIfEmpty(<span class="keyword">null</span>)</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                       .Aggregate((x, y) =&gt; $<span class="stringliteral">&quot;{x},{y}&quot;</span>);</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    }</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>}</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Builtin_1_1Develop.html">Sccg.Builtin.Develop</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Builtin_1_1Sources_1_1Internal.html">Sccg.Builtin.Sources.Internal</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Builtin_1_1Writers.html">Sccg.Builtin.Writers</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Core.html">Sccg.Core</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using </span><a class="code hl_namespace" href="namespaceSccg_1_1Utility.html">Sccg.Utility</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceSccg_1_1Builtin_1_1Formatters.html">Sccg.Builtin.Formatters</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html">   18</a></span><span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html">IVimSourceItem</a> : <a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html">IVimSourceItemBase</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html#a879715377b5255b96153a8c49400113b">   20</a></span>    <span class="keyword">public</span> VimFormatter.Formattable <a class="code hl_function" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html#a879715377b5255b96153a8c49400113b">Extract</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html">   23</a></span><span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html">IVimArrayVariableSourceItem</a> : <a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html">IVimSourceItemBase</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html#a905cc30e2164380d9e66cb1c2613e4cd">   25</a></span>    <span class="keyword">public</span> VimFormatter.FormattableArrayVariable <a class="code hl_function" href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html#a905cc30e2164380d9e66cb1c2613e4cd">Extract</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html">   28</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html">VimFormatter</a> : <a class="code hl_class" href="classSccg_1_1Core_1_1Formatter.html">Formatter</a>&lt;IVimSourceItemBase, SingleTextContent&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">   30</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">Name</a> =&gt; <span class="stringliteral">&quot;Vim&quot;</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9">   32</a></span>    <span class="keyword">protected</span> <span class="keyword">override</span> <a class="code hl_class" href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html">SingleTextContent</a> <a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9">Format</a>(IEnumerable&lt;IVimSourceItemBase&gt; items, <a class="code hl_class" href="classSccg_1_1BuilderQuery.html">BuilderQuery</a> query)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        var metadata = query.<a class="code hl_function" href="classSccg_1_1BuilderQuery.html#adcf97ab9667e39324d2cd972ecccaf6b">GetMetadata</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        var header = StdFormatterImpl.CreateHeader(metadata, <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        var footer = StdFormatterImpl.CreateFooter(metadata, <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        var body = CreateBody(items.ToArray());</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html">SingleTextContent</a>($<span class="stringliteral">&quot;colors/{metadata.ThemeName}.vim&quot;</span>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">string</span>.Join(<span class="charliteral">&#39;\n&#39;</span>, header),</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            $<span class="stringliteral">&quot;&quot;</span><span class="stringliteral">&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="stringliteral">            set background={(metadata.ThemeType == ThemeType.Light ? &quot;</span>light<span class="stringliteral">&quot; : &quot;</span>dark<span class="stringliteral">&quot;)}</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="stringliteral">            highlight clear</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="stringliteral">            if exists(&#39;syntax_on&#39;)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="stringliteral">              syntax reset</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="stringliteral">            endif</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="stringliteral">            set t_Co=256</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="stringliteral">            let g:colors_name = &#39;{metadata.ThemeName ?? &quot;</span>sccg_default<span class="stringliteral">&quot;}&#39;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="stringliteral">            &quot;</span><span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordtype">string</span>.Join(<span class="charliteral">&#39;\n&#39;</span>, body),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordtype">string</span>.Join(<span class="charliteral">&#39;\n&#39;</span>, footer)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="VimFormatter_8cs.html#ababe49c39f60f854c7a1787b29b982ed">   55</a></span>    <span class="keyword">private</span> <span class="keyword">static</span> IEnumerable&lt;string&gt; CreateBody(<a class="code hl_interface" href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html">IVimSourceItemBase</a>[] items)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        var sb = <span class="keyword">new</span> StringBuilder();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span> Set&lt;T&gt;(<span class="keywordtype">string</span> name, T? value)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">if</span> (value is <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">switch</span> (value)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">case</span> Color c:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    <span class="keywordflow">if</span> (c.IsDefault) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    var code = c.IsNone ? <span class="stringliteral">&quot;NONE&quot;</span> : c.HexCode;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    sb.Append($<span class="stringliteral">&quot; {name}={code}&quot;</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">case</span> <span class="keywordtype">string</span> s:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    sb.Append($<span class="stringliteral">&quot; {name}={s}&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NotSupportedException($<span class="stringliteral">&quot;NeovimFormatter does not support type {typeof(T).Name}&quot;</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="comment">// :hi</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> items.OfType&lt;IVimSourceItem&gt;())</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            var formattable = item.Extract();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">if</span> (formattable.Link is not <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                yield <span class="keywordflow">return</span> $<span class="stringliteral">&quot;hi link {formattable.Name} {formattable.Link}&quot;</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            sb.Clear();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            sb.Append($<span class="stringliteral">&quot;hi {formattable.Name}{(formattable.Default ? &quot;</span> <span class="keywordflow">default</span><span class="stringliteral">&quot; : &quot;</span><span class="stringliteral">&quot;)}&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            Set(<span class="stringliteral">&quot;ctermfg&quot;</span>, formattable.Style?.Foreground.TerminalColorCode);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            Set(<span class="stringliteral">&quot;ctermbg&quot;</span>, formattable.Style?.Background.TerminalColorCode);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            Set(<span class="stringliteral">&quot;ctermul&quot;</span>, formattable.Style?.Special.TerminalColorCode);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            Set(<span class="stringliteral">&quot;cterm&quot;</span>, <a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">CreateAttrList</a>(formattable.Style?.Modifiers));</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            Set(<span class="stringliteral">&quot;guifg&quot;</span>, formattable.Style?.Foreground);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            Set(<span class="stringliteral">&quot;guibg&quot;</span>, formattable.Style?.Background);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            Set(<span class="stringliteral">&quot;guisp&quot;</span>, formattable.Style?.Special);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            Set(<span class="stringliteral">&quot;gui&quot;</span>, <a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">CreateAttrList</a>(formattable.Style?.Modifiers));</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            yield <span class="keywordflow">return</span> sb.ToString();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="comment">// let g:* = []</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        var arrayItem = items.OfType&lt;IVimArrayVariableSourceItem&gt;()</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                             .Select(x =&gt; x.Extract())</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                             .GroupBy(x =&gt; x.Name);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">foreach</span> (var one <span class="keywordflow">in</span> arrayItem)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            var name = one.Key;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            var data = one.OrderBy(x =&gt; x.Index)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                          .Select(x =&gt; (x.Value, x.Index, x.Length))</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                          .ToArray();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">if</span> (data.Select(x =&gt; x.Length).Distinct().Count() != 1)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException($<span class="stringliteral">&quot;Vim-array: {name} has different length.&quot;</span>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            var idx = data.Select(x =&gt; x.Index).Distinct().ToArray();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">if</span> (idx.Length != data.Length || idx.First() != 0 || idx.Last() != data.Length - 1)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException(<span class="stringliteral">&quot;Vim-array: Index is not unique.&quot;</span>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            var formattedValues = <span class="keywordtype">string</span>.Join(<span class="stringliteral">&quot;, &quot;</span>, data.Select(x =&gt; $<span class="stringliteral">&quot;&#39;{x.Value}&#39;&quot;</span>));</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            yield <span class="keywordflow">return</span> $<span class="stringliteral">&quot;let g:{name} = [{formattedValues}]&quot;</span>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a4daba0150f1ec50288ebacaaace7b441">  129</a></span>    <span class="keyword">public</span> readonly record <span class="keyword">struct </span><a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a4daba0150f1ec50288ebacaaace7b441">Formattable</a>(</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        string <a class="code hl_property" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">Name</a>,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_struct" href="structSccg_1_1Style.html">Style</a>? <a class="code hl_struct" href="structSccg_1_1Style.html">Style</a>,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        string? Link,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        bool Default = false</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    );</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ac59aab832a5b9589a5c8aad5fe6e130b">  136</a></span>    <span class="keyword">public</span> readonly record <span class="keyword">struct </span><a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ac59aab832a5b9589a5c8aad5fe6e130b">FormattableArrayVariable</a>(</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        string <a class="code hl_property" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">Name</a>,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        string Value,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        int Index,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        int Length</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    );</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">  143</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>? <a class="code hl_function" href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">CreateAttrList</a>(<a class="code hl_struct" href="structSccg_1_1Style.html">Style</a>.<a class="code hl_enumeration" href="structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbba">Modifier</a>? modifier)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">return</span> modifier?.DivideSingles()</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                       .Select(x =&gt; x <span class="keywordflow">switch</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                       {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                           Style.Modifier.Bold =&gt; <span class="stringliteral">&quot;bold&quot;</span>,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                           Style.Modifier.Italic =&gt; <span class="stringliteral">&quot;italic&quot;</span>,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                           Style.Modifier.Underline =&gt; <span class="stringliteral">&quot;underline&quot;</span>,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                           Style.Modifier.UnderlineWaved =&gt; <span class="stringliteral">&quot;undercurl&quot;</span>,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                           Style.Modifier.UnderlineDotted =&gt; <span class="stringliteral">&quot;underdot&quot;</span>,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                           Style.Modifier.UnderlineDashed =&gt; <span class="stringliteral">&quot;underdash&quot;</span>,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                           Style.Modifier.Strikethrough =&gt; <span class="stringliteral">&quot;strikethrough&quot;</span>,</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                           Style.Modifier.None =&gt; <span class="stringliteral">&quot;NONE&quot;</span>,</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                           _ =&gt; <span class="keyword">null</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                       })</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                       .WhereNotNull()</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                       .DefaultIfEmpty(<span class="keyword">null</span>)</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                       .Aggregate((x, y) =&gt; $<span class="stringliteral">&quot;{x},{y}&quot;</span>);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
 <div class="ttc" id="aclassSccg_1_1BuilderQuery_html"><div class="ttname"><a href="classSccg_1_1BuilderQuery.html">Sccg.BuilderQuery</a></div><div class="ttdef"><b>Definition:</b> <a href="BuilderQuery_8cs_source.html#l00009">BuilderQuery.cs:10</a></div></div>
 <div class="ttc" id="aclassSccg_1_1BuilderQuery_html_adcf97ab9667e39324d2cd972ecccaf6b"><div class="ttname"><a href="classSccg_1_1BuilderQuery.html#adcf97ab9667e39324d2cd972ecccaf6b">Sccg.BuilderQuery.GetMetadata</a></div><div class="ttdeci">Metadata GetMetadata()</div><div class="ttdoc">Gets the metadata.</div><div class="ttdef"><b>Definition:</b> <a href="BuilderQuery_8cs_source.html#l00087">BuilderQuery.cs:87</a></div></div>
-<div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html">Sccg.Builtin.Formatters.VimFormatter</a></div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00027">VimFormatter.cs:28</a></div></div>
+<div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html">Sccg.Builtin.Formatters.VimFormatter</a></div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00028">VimFormatter.cs:29</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html_a4daba0150f1ec50288ebacaaace7b441"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a4daba0150f1ec50288ebacaaace7b441">Sccg.Builtin.Formatters.VimFormatter.Formattable</a></div><div class="ttdeci">readonly record struct Formattable(string Name, Style? Style, string? Link, bool Default=false)</div></div>
-<div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html_a72cde1514368c9b205db05b9c1c4655c"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">Sccg.Builtin.Formatters.VimFormatter.Name</a></div><div class="ttdeci">override string Name</div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00029">VimFormatter.cs:29</a></div></div>
-<div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html_a8b77f0d86f6cc179b1997007c6b646e9"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9">Sccg.Builtin.Formatters.VimFormatter.Format</a></div><div class="ttdeci">override SingleTextContent Format(IEnumerable&lt; IVimSourceItemBase &gt; items, BuilderQuery query)</div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00031">VimFormatter.cs:31</a></div></div>
+<div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html_a72cde1514368c9b205db05b9c1c4655c"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a72cde1514368c9b205db05b9c1c4655c">Sccg.Builtin.Formatters.VimFormatter.Name</a></div><div class="ttdeci">override string Name</div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00030">VimFormatter.cs:30</a></div></div>
+<div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html_a8b77f0d86f6cc179b1997007c6b646e9"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9">Sccg.Builtin.Formatters.VimFormatter.Format</a></div><div class="ttdeci">override SingleTextContent Format(IEnumerable&lt; IVimSourceItemBase &gt; items, BuilderQuery query)</div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00032">VimFormatter.cs:32</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html_ac59aab832a5b9589a5c8aad5fe6e130b"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ac59aab832a5b9589a5c8aad5fe6e130b">Sccg.Builtin.Formatters.VimFormatter.FormattableArrayVariable</a></div><div class="ttdeci">readonly record struct FormattableArrayVariable(string Name, string Value, int Index, int Length)</div></div>
-<div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html_ad061407e6ec14d27be9579645b6d0908"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">Sccg.Builtin.Formatters.VimFormatter.CreateAttrList</a></div><div class="ttdeci">static ? string CreateAttrList(Style.Modifier? modifier)</div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00183">VimFormatter.cs:183</a></div></div>
+<div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html_ad061407e6ec14d27be9579645b6d0908"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ad061407e6ec14d27be9579645b6d0908">Sccg.Builtin.Formatters.VimFormatter.CreateAttrList</a></div><div class="ttdeci">static ? string CreateAttrList(Style.Modifier? modifier)</div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00143">VimFormatter.cs:143</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Builtin_1_1Writers_1_1SingleTextContent_html"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html">Sccg.Builtin.Writers.SingleTextContent</a></div><div class="ttdef"><b>Definition:</b> <a href="SingleTextContent_8cs_source.html#l00008">SingleTextContent.cs:9</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Core_1_1Formatter_html"><div class="ttname"><a href="classSccg_1_1Core_1_1Formatter.html">Sccg.Core.Formatter</a></div><div class="ttdef"><b>Definition:</b> <a href="Formatter_8cs_source.html#l00007">Formatter.cs:10</a></div></div>
-<div class="ttc" id="ainterfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem_html"><div class="ttname"><a href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html">Sccg.Builtin.Formatters.IVimArrayVariableSourceItem</a></div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00022">VimFormatter.cs:23</a></div></div>
+<div class="ttc" id="ainterfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem_html"><div class="ttname"><a href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html">Sccg.Builtin.Formatters.IVimArrayVariableSourceItem</a></div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00023">VimFormatter.cs:24</a></div></div>
 <div class="ttc" id="ainterfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem_html_a905cc30e2164380d9e66cb1c2613e4cd"><div class="ttname"><a href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html#a905cc30e2164380d9e66cb1c2613e4cd">Sccg.Builtin.Formatters.IVimArrayVariableSourceItem.Extract</a></div><div class="ttdeci">VimFormatter.FormattableArrayVariable Extract()</div></div>
-<div class="ttc" id="ainterfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem_html"><div class="ttname"><a href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html">Sccg.Builtin.Formatters.IVimSourceItem</a></div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00017">VimFormatter.cs:18</a></div></div>
+<div class="ttc" id="ainterfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem_html"><div class="ttname"><a href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html">Sccg.Builtin.Formatters.IVimSourceItem</a></div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00018">VimFormatter.cs:19</a></div></div>
 <div class="ttc" id="ainterfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem_html_a879715377b5255b96153a8c49400113b"><div class="ttname"><a href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html#a879715377b5255b96153a8c49400113b">Sccg.Builtin.Formatters.IVimSourceItem.Extract</a></div><div class="ttdeci">VimFormatter.Formattable Extract()</div></div>
 <div class="ttc" id="ainterfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase_html"><div class="ttname"><a href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html">Sccg.Builtin.Sources.Internal.IVimSourceItemBase</a></div><div class="ttdef"><b>Definition:</b> <a href="IVimSourceItemBase_8cs_source.html#l00005">IVimSourceItemBase.cs:6</a></div></div>
-<div class="ttc" id="anamespaceSccg_1_1Builtin_1_1Formatters_html"><div class="ttname"><a href="namespaceSccg_1_1Builtin_1_1Formatters.html">Sccg.Builtin.Formatters</a></div><div class="ttdef"><b>Definition:</b> <a href="NeovimFormatter_8cs_source.html#l00014">NeovimFormatter.cs:14</a></div></div>
+<div class="ttc" id="anamespaceSccg_1_1Builtin_1_1Develop_html"><div class="ttname"><a href="namespaceSccg_1_1Builtin_1_1Develop.html">Sccg.Builtin.Develop</a></div><div class="ttdef"><b>Definition:</b> <a href="StdFormatterImpl_8cs_source.html#l00005">StdFormatterImpl.cs:5</a></div></div>
+<div class="ttc" id="anamespaceSccg_1_1Builtin_1_1Formatters_html"><div class="ttname"><a href="namespaceSccg_1_1Builtin_1_1Formatters.html">Sccg.Builtin.Formatters</a></div><div class="ttdef"><b>Definition:</b> <a href="NeovimFormatter_8cs_source.html#l00015">NeovimFormatter.cs:15</a></div></div>
 <div class="ttc" id="anamespaceSccg_1_1Builtin_1_1Sources_1_1Internal_html"><div class="ttname"><a href="namespaceSccg_1_1Builtin_1_1Sources_1_1Internal.html">Sccg.Builtin.Sources.Internal</a></div><div class="ttdef"><b>Definition:</b> <a href="INeovimSourceItemBase_8cs_source.html#l00003">INeovimSourceItemBase.cs:3</a></div></div>
 <div class="ttc" id="anamespaceSccg_1_1Builtin_1_1Writers_html"><div class="ttname"><a href="namespaceSccg_1_1Builtin_1_1Writers.html">Sccg.Builtin.Writers</a></div><div class="ttdef"><b>Definition:</b> <a href="ConsoleWriter_8cs_source.html#l00005">ConsoleWriter.cs:5</a></div></div>
 <div class="ttc" id="anamespaceSccg_1_1Core_html"><div class="ttname"><a href="namespaceSccg_1_1Core.html">Sccg.Core</a></div><div class="ttdef"><b>Definition:</b> <a href="Formatter_8cs_source.html#l00005">Formatter.cs:5</a></div></div>
 <div class="ttc" id="anamespaceSccg_1_1Utility_html"><div class="ttname"><a href="namespaceSccg_1_1Utility.html">Sccg.Utility</a></div><div class="ttdef"><b>Definition:</b> <a href="ObjectStore_8cs_source.html#l00005">ObjectStore.cs:5</a></div></div>
-<div class="ttc" id="anamespaceSccg_html_a9d41a9deb2f00293d0328d3f74300668"><div class="ttname"><a href="namespaceSccg.html#a9d41a9deb2f00293d0328d3f74300668">Sccg.Metadata</a></div><div class="ttdeci">sealed record Metadata(string? ThemeName, ThemeType? ThemeType, string? Version, string? Author, string? Maintainer, string? Homepage, string? Repository, string? Description, string? License, DateTime? LastUpdated, Func&lt; Metadata, string?[]?&gt; Header, Func&lt; Metadata, string?[]?&gt; Footer, MetadataContext Context)</div><div class="ttdef"><b>Definition:</b> <a href="Metadata_8cs_source.html#l00007">Metadata.cs:7</a></div></div>
 <div class="ttc" id="astructSccg_1_1Style_html"><div class="ttname"><a href="structSccg_1_1Style.html">Sccg.Style</a></div><div class="ttdef"><b>Definition:</b> <a href="Style_8cs_source.html#l00006">Style.cs:7</a></div></div>
 <div class="ttc" id="astructSccg_1_1Style_html_a03d7f4815bec4c14bea5b5a86c8fbbba"><div class="ttname"><a href="structSccg_1_1Style.html#a03d7f4815bec4c14bea5b5a86c8fbbba">Sccg.Style.Modifier</a></div><div class="ttdeci">Modifier</div><div class="ttdef"><b>Definition:</b> <a href="Style_8cs_source.html#l00149">Style.cs:150</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

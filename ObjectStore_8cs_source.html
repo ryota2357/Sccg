@@ -92,7 +92,7 @@ $(function() {
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classSccg_1_1Utility_1_1ObjectStore.html#a06da64733dd49f82e10804407346c6ef">   15</a></span>    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classSccg_1_1Utility_1_1ObjectStore.html#a06da64733dd49f82e10804407346c6ef">Save</a>(in <span class="keywordtype">object</span> obj)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        var objId = obj.ToString() + obj.GetHashCode();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        var objId = obj.GetType() + obj.ToString() + obj.GetHashCode();</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        var objType = obj.GetType();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classSccg_1_1Utility_1_1ObjectStore.html#a06da64733dd49f82e10804407346c6ef">Save</a>(obj, objId, objType);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>

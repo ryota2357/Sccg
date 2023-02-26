@@ -9,5 +9,5 @@ var searchData=
   ['builder_2ecs_6',['Builder.cs',['../Builder_8cs.html',1,'']]],
   ['builderquery_7',['BuilderQuery',['../classSccg_1_1BuilderQuery.html',1,'Sccg']]],
   ['builderquery_2ecs_8',['BuilderQuery.cs',['../BuilderQuery_8cs.html',1,'']]],
-  ['builtwithsccg_9',['BuiltwithSccg',['../VimFormatter_8cs.html#a76f7a4a8dbee42855b52c73fe7cd60e5',1,'VimFormatter.cs']]]
+  ['builtwithsccg_9',['BuiltwithSccg',['../StdFormatterImpl_8cs.html#a76f7a4a8dbee42855b52c73fe7cd60e5',1,'StdFormatterImpl.cs']]]
 ];

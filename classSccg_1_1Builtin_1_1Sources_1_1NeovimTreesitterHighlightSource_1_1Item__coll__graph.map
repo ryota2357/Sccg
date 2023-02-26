@@ -1,8 +1,10 @@
 <map id="Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item" name="Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item">
-<area shape="rect" id="node1" title=" " alt="" coords="82,243,281,283"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title=" " alt="" coords="45,155,184,180"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title=" " alt="" coords="5,80,173,105"/>
-<area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="43,5,136,31"/>
-<area shape="rect" id="node5" href="$structSccg_1_1Style.html" title=" " alt="" coords="218,155,302,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="198,80,333,105"/>
+<area shape="rect" id="node1" title=" " alt="" coords="772,47,971,87"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title=" " alt="" coords="455,5,593,31"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title=" " alt="" coords="185,5,353,31"/>
+<area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="5,5,99,31"/>
+<area shape="rect" id="node5" href="$structSccg_1_1Style.html" title=" " alt="" coords="482,55,566,80"/>
+<area shape="rect" id="node6" title=" " alt="" coords="202,55,337,80"/>
+<area shape="rect" id="node7" href="$classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html" title=" " alt="" coords="440,105,608,145"/>
+<area shape="rect" id="node8" href="$classSccg_1_1Core_1_1Source.html" title=" " alt="" coords="148,105,391,145"/>
 </map>
