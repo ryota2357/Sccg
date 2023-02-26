@@ -14,7 +14,7 @@ public class ObjectStore
 
     public int Save(in object obj)
     {
-        var objId = obj.ToString() + obj.GetHashCode();
+        var objId = obj.GetType() + obj.ToString() + obj.GetHashCode();
         var objType = obj.GetType();
         return Save(obj, objId, objType);
     }

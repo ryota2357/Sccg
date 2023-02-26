@@ -34,6 +34,9 @@ public abstract partial class NeovimTreesitterHighlightSource
                     case Style style:
                         yield return new Item(fromGroup, style);
                         break;
+                    case VimSyntaxGroupSource.Group vimSyntaxGroup:
+                        yield return new Item(fromGroup, vimSyntaxGroup);
+                        break;
                 }
             }
         }
@@ -43,6 +46,18 @@ public abstract partial class NeovimTreesitterHighlightSource
 
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
+    /// <inheritdoc cref="Link(Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group)"/>
+    protected void Link(Group from, VimSyntaxGroupSource.Group to)
+    {
+        var fromId = _impl.Store.Save(from);
+        var toId = _impl.Store.Save(to);
+        var status = _impl.Graph.CreateLink(fromId, toId);
+        if (status == false)
+        {
+            Log.Warn($"Ignored duplicate. Link({from}, {to})");
+        }
+    }
+
     public class Item : INeovimSourceItem
     {
         private readonly Kind _kind;
@@ -50,6 +65,7 @@ public abstract partial class NeovimTreesitterHighlightSource
         public readonly Group FromGroup;
         public readonly Style? Style;
         public readonly Group? ToGroup;
+        public readonly VimSyntaxGroupSource.Group? ToVimSyntaxGroup;
 
         public Item(Group group, Style style)
         {
@@ -65,6 +81,15 @@ public abstract partial class NeovimTreesitterHighlightSource
             FromGroup = from;
             Style = null;
             ToGroup = to;
+        }
+
+        public Item(Group from, VimSyntaxGroupSource.Group to)
+        {
+            _kind = Kind.VimSyntaxLink;
+            FromGroup = from;
+            Style = null;
+            ToGroup = null;
+            ToVimSyntaxGroup = to;
         }
 
         public NeovimFormatter.Formattable Extract()
@@ -83,6 +108,12 @@ public abstract partial class NeovimTreesitterHighlightSource
                     Id = 0,
                     Link = CreateGroupString(ToGroup!.Value)
                 },
+                Kind.VimSyntaxLink => new NeovimFormatter.Formattable
+                {
+                    Name = CreateGroupString(FromGroup),
+                    Id = 0,
+                    Link = ToVimSyntaxGroup!.Value.ToString()
+                },
                 _ => throw new ArgumentOutOfRangeException()
             };
         }
@@ -90,7 +121,8 @@ public abstract partial class NeovimTreesitterHighlightSource
         private enum Kind
         {
             Set,
-            Link
+            Link,
+            VimSyntaxLink,
         }
     }
 
