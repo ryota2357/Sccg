@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Sccg.Builtin.Develop;
 using Sccg.Builtin.Sources.Internal;
 using Sccg.Builtin.Writers;
 using Sccg.Core;
@@ -31,8 +32,8 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
     protected override SingleTextContent Format(IEnumerable<IVimSourceItemBase> items, BuilderQuery query)
     {
         var metadata = query.GetMetadata();
-        var header = CreateHeader(metadata).Select(x => x is null ? "" : $"\" {x}");
-        var footer = CreateFooter(metadata).Select(x => x is null ? "" : $"\" {x}");
+        var header = StdFormatterImpl.CreateHeader(metadata, "\"");
+        var footer = StdFormatterImpl.CreateFooter(metadata, "\"");
         var body = CreateBody(items.ToArray());
 
         return new SingleTextContent($"colors/{metadata.ThemeName}.vim",
@@ -123,47 +124,6 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
             var formattedValues = string.Join(", ", data.Select(x => $"'{x.Value}'"));
             yield return $"let g:{name} = [{formattedValues}]";
         }
-    }
-
-    private static string?[] CreateHeader(Metadata metadata)
-    {
-        var header = metadata.Header(metadata);
-        if (header is not null)
-        {
-            return header;
-        }
-        var data = new[]
-            {
-                ("Name", metadata.ThemeName),
-                ("Version", metadata.Version),
-                ("Author", metadata.Author),
-                ("Maintainer", metadata.Maintainer),
-                ("License", metadata.License),
-                ("Description", metadata.Description),
-                ("Homepage", metadata.Homepage),
-                ("Repository", metadata.Repository),
-                ("Last change",
-                    metadata.LastUpdated?.ToString("yyyy-MM-dd dddd",
-                        System.Globalization.CultureInfo.CreateSpecificCulture("en-US")))
-            }.Where(x => x.Item2 is not null)
-             .OfType<(string, string)>()
-             .ToArray();
-        if (data.Length != 0)
-        {
-            var maxLen = data.Max(x => x.Item1.Length);
-            header = data.Select(x => $"{(x.Item1 + ":").PadRight(maxLen + 1, ' ')} {x.Item2}")
-                         .ToArray();
-        }
-        else
-        {
-            header = Array.Empty<string>();
-        }
-        return header;
-    }
-
-    private static string?[] CreateFooter(Metadata metadata)
-    {
-        return metadata.Footer(metadata) ?? new[] { $"Built with Sccg {Metadata.__SccgVersion}" };
     }
 
     public readonly record struct Formattable(
