@@ -163,7 +163,7 @@ public abstract partial class NeovimTreesitterHighlightSource
         Operator,
 
         /// <summary>
-        /// delimiters (e.g. `
+        /// delimiters (e.g. `;` / `.` / `,`)
         /// </summary>
         PunctuationDelimiter,
 
@@ -288,7 +288,7 @@ public abstract partial class NeovimTreesitterHighlightSource
         Conditional,
 
         /// <summary>
-        /// Ternary operator: condition ? 1 : 2
+        /// ternary operator (e.g. `?` / `:`)
         /// </summary>
         ConditionalTernary,
 
@@ -338,7 +338,7 @@ public abstract partial class NeovimTreesitterHighlightSource
         TypeQualifier,
 
         /// <summary>
-        /// visibility/life-time modifiers
+        /// modifiers that affect storage in memory or life-time
         /// </summary>
         Storageclass,
 
@@ -516,7 +516,6 @@ public abstract partial class NeovimTreesitterHighlightSource
         /// for defining regions that should NOT be spellchecked
         /// </summary>
         Nospell
-
     }
 
     private static string CreateGroupString(Group group)

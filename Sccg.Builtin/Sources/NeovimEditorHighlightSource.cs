@@ -285,6 +285,12 @@ public abstract class NeovimEditorHighlightSource
         NormalFloat,
 
         /// <summary>
+        /// Floating window border.
+        /// </summary>
+        /// <remarks>This group is not documented in the help file.</remarks>
+        FloatBorder,
+
+        /// <summary>
         /// Normal text in non-current windows.
         /// </summary>
         NormalNC,
