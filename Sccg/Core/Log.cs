@@ -14,7 +14,7 @@ public static class Log
     /// <param name="msg">A message. If multiple messages are passed, they will be added line-break.</param>
     public static void Debug(params string[] msg)
     {
-        if (LoggerConfig.Shared.Level >= LogLevel.Debug)
+        if (LoggerConfig.Shared.Level <= LogLevel.Debug)
         {
             PrintLine(Chalk.Blue["Debug"], 5, msg);
         }
@@ -26,7 +26,7 @@ public static class Log
     /// <param name="msg">A message. If multiple messages are passed, they will be added line-break.</param>
     public static void Info(params string[] msg)
     {
-        if (LoggerConfig.Shared.Level >= LogLevel.Info)
+        if (LoggerConfig.Shared.Level <= LogLevel.Info)
         {
             PrintLine(Chalk.Green["Info"], 4, msg);
         }
@@ -38,7 +38,7 @@ public static class Log
     /// <param name="msg">A message. If multiple messages are passed, they will be added line-break.</param>
     public static void Warn(params string[] msg)
     {
-        if (LoggerConfig.Shared.Level >= LogLevel.Warn)
+        if (LoggerConfig.Shared.Level <= LogLevel.Warn)
         {
             PrintLine(Chalk.Yellow["Warn"], 4, msg);
         }
