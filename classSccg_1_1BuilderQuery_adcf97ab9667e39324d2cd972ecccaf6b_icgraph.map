@@ -1,5 +1,6 @@
 <map id="Sccg.BuilderQuery.GetMetadata" name="Sccg.BuilderQuery.GetMetadata">
-<area shape="rect" id="node1" title="Gets the metadata." alt="" coords="216,45,423,70"/>
-<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9" title=" " alt="" coords="7,5,167,45"/>
-<area shape="rect" id="node3" href="$classSccg_1_1Builtin_1_1Writers_1_1TextFileWriter.html#a34c4976132858aebe68aa59a676f63b4" title=" " alt="" coords="5,69,168,109"/>
+<area shape="rect" id="node1" title="Gets the metadata." alt="" coords="223,77,429,102"/>
+<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Formatters_1_1AlacrittyFormatter.html#acd909019cbea9ab15d827f68f9f8198d" title=" " alt="" coords="5,5,175,45"/>
+<area shape="rect" id="node3" href="$classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9" title=" " alt="" coords="10,69,170,109"/>
+<area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Writers_1_1TextFileWriter.html#a34c4976132858aebe68aa59a676f63b4" title=" " alt="" coords="9,133,171,173"/>
 </map>

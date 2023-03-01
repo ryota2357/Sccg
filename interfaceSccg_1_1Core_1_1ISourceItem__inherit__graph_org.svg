@@ -12,214 +12,246 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="117,-96.5 0,-96.5 0,-77.5 117,-77.5 117,-96.5"/>
-<text text-anchor="middle" x="58.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.ISourceItem</text>
+<polygon fill="#999999" stroke="#666666" points="117,-202.5 0,-202.5 0,-183.5 117,-183.5 117,-202.5"/>
+<text text-anchor="middle" x="58.5" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.ISourceItem</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="296,-126 153,-126 153,-96 296,-96 296,-126"/>
-<text text-anchor="start" x="161" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Internal.</text>
-<text text-anchor="middle" x="224.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItemBase</text>
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IAlacrittySourceItem.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="284.5,-257 164.5,-257 164.5,-227 284.5,-227 284.5,-257"/>
+<text text-anchor="start" x="172.5" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
+<text text-anchor="middle" x="224.5" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">IAlacrittySourceItem</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#63b8ff" d="M128.49,-97.1C136.49,-98.27 144.66,-99.46 152.69,-100.64"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="129.22,-93.67 118.82,-95.68 128.21,-100.59 129.22,-93.67"/>
+<path fill="none" stroke="#63b8ff" d="M103.54,-206.16C124.51,-212.42 149.74,-219.96 171.63,-226.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="104.72,-202.86 94.14,-203.35 102.72,-209.57 104.72,-202.86"/>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="296,-78 153,-78 153,-48 296,-48 296,-78"/>
-<text text-anchor="start" x="161" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Internal.</text>
-<text text-anchor="middle" x="224.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItemBase</text>
+<!-- Node4 -->
+<g id="node4" class="node">
+<title>Node4</title>
+<g id="a_node4"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="296,-154 153,-154 153,-124 296,-124 296,-154"/>
+<text text-anchor="start" x="161" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Internal.</text>
+<text text-anchor="middle" x="224.5" y="-131" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItemBase</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node10 -->
-<g id="edge9" class="edge">
-<title>Node1&#45;&gt;Node10</title>
-<path fill="none" stroke="#63b8ff" d="M128.49,-76.9C136.49,-75.73 144.66,-74.54 152.69,-73.36"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="128.21,-73.41 118.82,-78.32 129.22,-80.33 128.21,-73.41"/>
+<!-- Node1&#45;&gt;Node4 -->
+<g id="edge3" class="edge">
+<title>Node1&#45;&gt;Node4</title>
+<path fill="none" stroke="#63b8ff" d="M100.41,-179.53C123.52,-171.92 152.5,-162.38 176.54,-154.46"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="99.42,-176.17 91.02,-182.62 101.61,-182.82 99.42,-176.17"/>
+</g>
+<!-- Node12 -->
+<g id="node12" class="node">
+<title>Node12</title>
+<g id="a_node12"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="296,-208 153,-208 153,-178 296,-178 296,-208"/>
+<text text-anchor="start" x="161" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Internal.</text>
+<text text-anchor="middle" x="224.5" y="-185" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItemBase</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node12 -->
+<g id="edge11" class="edge">
+<title>Node1&#45;&gt;Node12</title>
+<path fill="none" stroke="#63b8ff" d="M128.76,-193C136.68,-193 144.75,-193 152.69,-193"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="128.83,-189.5 118.83,-193 128.83,-196.5 128.83,-189.5"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="464.5,-174 344.5,-174 344.5,-144 464.5,-144 464.5,-174"/>
-<text text-anchor="start" x="352.5" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
-<text text-anchor="middle" x="404.5" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItem</text>
+<g id="a_node3"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1AlacrittyColorsSource_1_1Item.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="476.5,-269 332.5,-269 332.5,-239 476.5,-239 476.5,-269"/>
+<text text-anchor="start" x="340.5" y="-257" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Alacritty</text>
+<text text-anchor="middle" x="404.5" y="-246" font-family="Helvetica,sans-Serif" font-size="10.00">ColorsSource.Item</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#63b8ff" d="M293.48,-129.33C310.91,-134.03 329.48,-139.04 346.31,-143.58"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="294.83,-126.07 284.26,-126.85 293.01,-132.83 294.83,-126.07"/>
-</g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="474,-78 335,-78 335,-48 474,-48 474,-78"/>
-<text text-anchor="start" x="343" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
-<text text-anchor="middle" x="404.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimVariableSourceItem</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
-<title>Node2&#45;&gt;Node8</title>
-<path fill="none" stroke="#63b8ff" d="M293.48,-92.67C310.91,-87.97 329.48,-82.96 346.31,-78.42"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="293.01,-89.17 284.26,-95.15 294.83,-95.93 293.01,-89.17"/>
-</g>
-<!-- Node4 -->
-<g id="node4" class="node">
-<title>Node4</title>
-<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="669.5,-270 526.5,-270 526.5,-240 669.5,-240 669.5,-270"/>
-<text text-anchor="start" x="534.5" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
-<text text-anchor="middle" x="598" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">EditorHighlightSource.Item</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
-<title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#63b8ff" d="M433.16,-181.06C454.06,-196.83 484.02,-217.56 513,-231 519.88,-234.19 527.28,-237.05 534.73,-239.59"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="435.49,-178.44 425.42,-175.13 431.23,-183.99 435.49,-178.44"/>
+<path fill="none" stroke="#63b8ff" d="M295.99,-246.75C307.88,-247.55 320.22,-248.39 332.12,-249.19"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="296.49,-243.28 286.28,-246.1 296.02,-250.26 296.49,-243.28"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="683,-222 513,-222 513,-192 683,-192 683,-222"/>
-<text text-anchor="start" x="521" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
-<text text-anchor="middle" x="598" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">LspDiagnosticHighlightSource.Item</text>
+<g id="a_node5"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="464.5,-154 344.5,-154 344.5,-124 464.5,-124 464.5,-154"/>
+<text text-anchor="start" x="352.5" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
+<text text-anchor="middle" x="404.5" y="-131" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItem</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node5 -->
+<!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
-<title>Node3&#45;&gt;Node5</title>
-<path fill="none" stroke="#63b8ff" d="M475.76,-176.61C495.3,-181.51 516.35,-186.79 535.35,-191.55"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="476.8,-173.26 466.25,-174.23 475.1,-180.05 476.8,-173.26"/>
+<title>Node4&#45;&gt;Node5</title>
+<path fill="none" stroke="#63b8ff" d="M307.58,-139C319.87,-139 332.35,-139 344.05,-139"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="307.88,-135.5 297.88,-139 307.88,-142.5 307.88,-135.5"/>
+</g>
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="474,-54 335,-54 335,-24 474,-24 474,-54"/>
+<text text-anchor="start" x="343" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
+<text text-anchor="middle" x="404.5" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimVariableSourceItem</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node10 -->
+<g id="edge9" class="edge">
+<title>Node4&#45;&gt;Node10</title>
+<path fill="none" stroke="#63b8ff" d="M253.55,-117.01C274.37,-101.39 303.91,-80.66 332,-66 340.12,-61.76 349.05,-57.85 357.78,-54.39"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="251.68,-114.04 245.83,-122.87 255.91,-119.61 251.68,-114.04"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="672.5,-174 523.5,-174 523.5,-144 672.5,-144 672.5,-174"/>
-<text text-anchor="start" x="531.5" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
-<text text-anchor="middle" x="598" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">TreesitterHighlightSource.Item</text>
+<g id="a_node6"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="669.5,-174 526.5,-174 526.5,-144 669.5,-144 669.5,-174"/>
+<text text-anchor="start" x="534.5" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
+<text text-anchor="middle" x="598" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">EditorHighlightSource.Item</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node6 -->
+<!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
-<title>Node3&#45;&gt;Node6</title>
-<path fill="none" stroke="#63b8ff" d="M476.26,-159C491.54,-159 507.74,-159 523.14,-159"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="476.29,-155.5 466.29,-159 476.29,-162.5 476.29,-155.5"/>
+<title>Node5&#45;&gt;Node6</title>
+<path fill="none" stroke="#63b8ff" d="M475.94,-146.36C492.34,-148.07 509.81,-149.89 526.23,-151.61"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="476.6,-142.91 466.29,-145.35 475.87,-149.87 476.6,-142.91"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="661,-126 535,-126 535,-96 661,-96 661,-126"/>
-<text text-anchor="start" x="543" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
-<text text-anchor="middle" x="598" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">SyntaxGroupSource.Item</text>
+<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="683,-126 513,-126 513,-96 683,-96 683,-126"/>
+<text text-anchor="start" x="521" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
+<text text-anchor="middle" x="598" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">LspDiagnosticHighlightSource.Item</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node7 -->
+<!-- Node5&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
-<title>Node3&#45;&gt;Node7</title>
-<path fill="none" stroke="#63b8ff" d="M475.76,-141.39C495.3,-136.49 516.35,-131.21 535.35,-126.45"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="475.1,-137.95 466.25,-143.77 476.8,-144.74 475.1,-137.95"/>
+<title>Node5&#45;&gt;Node7</title>
+<path fill="none" stroke="#63b8ff" d="M476.02,-128.69C487.95,-126.94 500.44,-125.12 512.68,-123.33"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="475.67,-125.2 466.28,-130.11 476.68,-132.13 475.67,-125.2"/>
+</g>
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="672.5,-78 523.5,-78 523.5,-48 672.5,-48 672.5,-78"/>
+<text text-anchor="start" x="531.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
+<text text-anchor="middle" x="598" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">TreesitterHighlightSource.Item</text>
+</a>
+</g>
+</g>
+<!-- Node5&#45;&gt;Node8 -->
+<g id="edge7" class="edge">
+<title>Node5&#45;&gt;Node8</title>
+<path fill="none" stroke="#63b8ff" d="M466.37,-119.19C470.02,-117.55 473.59,-115.82 477,-114 494.65,-104.59 495.09,-95.9 513,-87 519.52,-83.76 526.55,-80.89 533.67,-78.37"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="465.22,-115.88 457.35,-122.97 467.93,-122.33 465.22,-115.88"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node9"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="661,-222 535,-222 535,-192 661,-192 661,-222"/>
+<text text-anchor="start" x="543" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
+<text text-anchor="middle" x="598" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">SyntaxGroupSource.Item</text>
+</a>
+</g>
+</g>
+<!-- Node5&#45;&gt;Node9 -->
+<g id="edge8" class="edge">
+<title>Node5&#45;&gt;Node9</title>
+<path fill="none" stroke="#63b8ff" d="M450.93,-158.89C469.93,-166.87 492.36,-175.85 513,-183 521.6,-185.98 530.78,-188.88 539.8,-191.57"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="452.44,-155.73 441.86,-155.05 449.7,-162.17 452.44,-155.73"/>
+</g>
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="667.5,-30 528.5,-30 528.5,0 667.5,0 667.5,-30"/>
 <text text-anchor="start" x="536.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Ansi16</text>
 <text text-anchor="middle" x="598" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ColorSource.Item</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
-<g id="edge8" class="edge">
-<title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="#63b8ff" d="M478.11,-44.8C497.01,-40.06 517.2,-35 535.47,-30.42"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="477.46,-41.35 468.61,-47.18 479.16,-48.14 477.46,-41.35"/>
-</g>
-<!-- Node11 -->
-<g id="node11" class="node">
-<title>Node11</title>
-<g id="a_node11"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="477,-30 332,-30 332,0 477,0 477,-30"/>
-<text text-anchor="start" x="340" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
-<text text-anchor="middle" x="404.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">IVimArrayVariableSourceItem</text>
-</a>
-</g>
-</g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="#63b8ff" d="M293.48,-44.67C310.91,-39.97 329.48,-34.96 346.31,-30.42"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="293.01,-41.17 284.26,-47.15 294.83,-47.93 293.01,-41.17"/>
-</g>
-<!-- Node12 -->
-<g id="node12" class="node">
-<title>Node12</title>
-<g id="a_node12"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="464.5,-126 344.5,-126 344.5,-96 464.5,-96 464.5,-126"/>
-<text text-anchor="start" x="352.5" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
-<text text-anchor="middle" x="404.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItem</text>
-</a>
-</g>
-</g>
-<!-- Node10&#45;&gt;Node12 -->
-<g id="edge12" class="edge">
-<title>Node10&#45;&gt;Node12</title>
-<path fill="none" stroke="#63b8ff" d="M293.48,-81.33C310.91,-86.03 329.48,-91.04 346.31,-95.58"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="294.83,-78.07 284.26,-78.85 293.01,-84.83 294.83,-78.07"/>
-</g>
-<!-- Node11&#45;&gt;Node9 -->
-<g id="edge11" class="edge">
-<title>Node11&#45;&gt;Node9</title>
-<path fill="none" stroke="#63b8ff" d="M488.81,-15C501.97,-15 515.45,-15 528.24,-15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="488.87,-11.5 478.87,-15 488.87,-18.5 488.87,-11.5"/>
-</g>
-<!-- Node12&#45;&gt;Node7 -->
-<g id="edge14" class="edge">
-<title>Node12&#45;&gt;Node7</title>
-<path fill="none" stroke="#63b8ff" d="M476.19,-111C495.38,-111 516,-111 534.69,-111"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="476.29,-107.5 466.29,-111 476.29,-114.5 476.29,-107.5"/>
+<path fill="none" stroke="#63b8ff" d="M485.58,-28.96C499.71,-27.19 514.31,-25.36 528.1,-23.63"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="485.35,-25.46 475.87,-30.18 486.22,-32.41 485.35,-25.46"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="664,-78 532,-78 532,-48 664,-48 664,-78"/>
-<text text-anchor="start" x="540" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
-<text text-anchor="middle" x="598" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">EditorHighlightSource.Item</text>
+<g id="a_node13"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="477,-105 332,-105 332,-75 477,-75 477,-105"/>
+<text text-anchor="start" x="340" y="-93" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
+<text text-anchor="middle" x="404.5" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">IVimArrayVariableSourceItem</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
-<g id="edge13" class="edge">
+<g id="edge12" class="edge">
 <title>Node12&#45;&gt;Node13</title>
-<path fill="none" stroke="#63b8ff" d="M475.76,-93.39C495.3,-88.49 516.35,-83.21 535.35,-78.45"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="475.1,-89.95 466.25,-95.77 476.8,-96.74 475.1,-89.95"/>
+<path fill="none" stroke="#63b8ff" d="M281.48,-172.51C286.6,-169.67 291.53,-166.5 296,-163 316.99,-146.55 310.48,-130.75 332,-115 336.99,-111.35 342.55,-108.2 348.32,-105.48"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="280.14,-169.27 272.81,-176.91 283.31,-175.51 280.14,-169.27"/>
+</g>
+<!-- Node14 -->
+<g id="node14" class="node">
+<title>Node14</title>
+<g id="a_node14"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="464.5,-221 344.5,-221 344.5,-191 464.5,-191 464.5,-221"/>
+<text text-anchor="start" x="352.5" y="-209" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
+<text text-anchor="middle" x="404.5" y="-198" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItem</text>
+</a>
+</g>
+</g>
+<!-- Node12&#45;&gt;Node14 -->
+<g id="edge14" class="edge">
+<title>Node12&#45;&gt;Node14</title>
+<path fill="none" stroke="#63b8ff" d="M307.58,-198.99C319.87,-199.89 332.35,-200.8 344.05,-201.66"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="308.1,-195.52 297.87,-198.29 307.59,-202.5 308.1,-195.52"/>
+</g>
+<!-- Node13&#45;&gt;Node11 -->
+<g id="edge13" class="edge">
+<title>Node13&#45;&gt;Node11</title>
+<path fill="none" stroke="#63b8ff" d="M461.45,-70.29C466.78,-67.99 472.04,-65.55 477,-63 494.1,-54.21 495.55,-47.07 513,-39 519.88,-35.82 527.28,-32.96 534.73,-30.43"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="460.49,-66.9 452.58,-73.95 463.16,-73.37 460.49,-66.9"/>
+</g>
+<!-- Node14&#45;&gt;Node9 -->
+<g id="edge16" class="edge">
+<title>Node14&#45;&gt;Node9</title>
+<path fill="none" stroke="#63b8ff" d="M476.19,-206.37C495.38,-206.47 516,-206.58 534.69,-206.67"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="476.31,-202.87 466.29,-206.32 476.28,-209.87 476.31,-202.87"/>
+</g>
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="664,-270 532,-270 532,-240 664,-240 664,-270"/>
+<text text-anchor="start" x="540" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
+<text text-anchor="middle" x="598" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">EditorHighlightSource.Item</text>
+</a>
+</g>
+</g>
+<!-- Node14&#45;&gt;Node15 -->
+<g id="edge15" class="edge">
+<title>Node14&#45;&gt;Node15</title>
+<path fill="none" stroke="#63b8ff" d="M475.7,-223.96C495.71,-229.08 517.32,-234.61 536.68,-239.57"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="476.8,-220.63 466.25,-221.54 475.07,-227.41 476.8,-220.63"/>
 </g>
 </g>
 </svg>

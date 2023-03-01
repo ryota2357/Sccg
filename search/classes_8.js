@@ -9,9 +9,10 @@ var searchData=
   ['source_3c_20vimeditorhighlightsource_2egroup_2c_20vimeditorhighlightsource_2eitem_20_3e_6',['Source&lt; VimEditorHighlightSource.Group, VimEditorHighlightSource.Item &gt;',['../classSccg_1_1Core_1_1Source.html',1,'Sccg::Core']]],
   ['source_3c_20vimsyntaxgroupsource_2egroup_2c_20vimsyntaxgroupsource_2eitem_20_3e_7',['Source&lt; VimSyntaxGroupSource.Group, VimSyntaxGroupSource.Item &gt;',['../classSccg_1_1Core_1_1Source.html',1,'Sccg::Core']]],
   ['sourcecoloronly_8',['SourceColorOnly',['../classSccg_1_1Core_1_1SourceColorOnly.html',1,'Sccg::Core']]],
-  ['sourcecoloronly_3c_20ansi16colorsource_2egroup_2c_20ansi16colorsource_2eitem_20_3e_9',['SourceColorOnly&lt; Ansi16ColorSource.Group, Ansi16ColorSource.Item &gt;',['../classSccg_1_1Core_1_1SourceColorOnly.html',1,'Sccg::Core']]],
-  ['sourcecoloronly_3c_20iterm2colorssource_2egroup_2c_20iterm2colorssource_2eitem_20_3e_10',['SourceColorOnly&lt; Iterm2ColorsSource.Group, Iterm2ColorsSource.Item &gt;',['../classSccg_1_1Core_1_1SourceColorOnly.html',1,'Sccg::Core']]],
-  ['stdsourceimpl_11',['StdSourceImpl',['../classSccg_1_1Builtin_1_1Develop_1_1StdSourceImpl.html',1,'Sccg::Builtin::Develop']]],
-  ['stdsourceimpl_3c_20group_20_3e_12',['StdSourceImpl&lt; Group &gt;',['../classSccg_1_1Builtin_1_1Develop_1_1StdSourceImpl.html',1,'Sccg::Builtin::Develop']]],
-  ['style_13',['Style',['../structSccg_1_1Style.html',1,'Sccg']]]
+  ['sourcecoloronly_3c_20alacrittycolorssource_2egroup_2c_20alacrittycolorssource_2eitem_20_3e_9',['SourceColorOnly&lt; AlacrittyColorsSource.Group, AlacrittyColorsSource.Item &gt;',['../classSccg_1_1Core_1_1SourceColorOnly.html',1,'Sccg::Core']]],
+  ['sourcecoloronly_3c_20ansi16colorsource_2egroup_2c_20ansi16colorsource_2eitem_20_3e_10',['SourceColorOnly&lt; Ansi16ColorSource.Group, Ansi16ColorSource.Item &gt;',['../classSccg_1_1Core_1_1SourceColorOnly.html',1,'Sccg::Core']]],
+  ['sourcecoloronly_3c_20iterm2colorssource_2egroup_2c_20iterm2colorssource_2eitem_20_3e_11',['SourceColorOnly&lt; Iterm2ColorsSource.Group, Iterm2ColorsSource.Item &gt;',['../classSccg_1_1Core_1_1SourceColorOnly.html',1,'Sccg::Core']]],
+  ['stdsourceimpl_12',['StdSourceImpl',['../classSccg_1_1Builtin_1_1Develop_1_1StdSourceImpl.html',1,'Sccg::Builtin::Develop']]],
+  ['stdsourceimpl_3c_20group_20_3e_13',['StdSourceImpl&lt; Group &gt;',['../classSccg_1_1Builtin_1_1Develop_1_1StdSourceImpl.html',1,'Sccg::Builtin::Develop']]],
+  ['style_14',['Style',['../structSccg_1_1Style.html',1,'Sccg']]]
 ];
