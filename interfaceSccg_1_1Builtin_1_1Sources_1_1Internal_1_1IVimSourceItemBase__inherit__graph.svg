@@ -57,7 +57,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Base SourceItem for Vim.">
 <polygon fill="#999999" stroke="#666666" points="249,-102 106,-102 106,-72 249,-72 249,-102"/>
 <text text-anchor="start" x="114" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Internal.</text>
 <text text-anchor="middle" x="177.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItemBase</text>
@@ -67,7 +67,7 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html" target="_top" xlink:title="SourceItem for Vim color scheme.">
 <polygon fill="white" stroke="#666666" points="430,-126 285,-126 285,-96 430,-96 430,-126"/>
 <text text-anchor="start" x="293" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="357.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">IVimArrayVariableSourceItem</text>
@@ -83,7 +83,7 @@ var sectionId = 'dynsection-0';
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" target="_top" xlink:title="SourceItem for Vim color scheme.">
 <polygon fill="white" stroke="#666666" points="417.5,-78 297.5,-78 297.5,-48 417.5,-48 417.5,-78"/>
 <text text-anchor="start" x="305.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="357.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItem</text>
@@ -99,7 +99,7 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title="Represents a source item.">
 <polygon fill="white" stroke="#666666" points="70,-96.5 0,-96.5 0,-77.5 70,-77.5 70,-96.5"/>
 <text text-anchor="middle" x="35" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISourceItem</text>
 </a>

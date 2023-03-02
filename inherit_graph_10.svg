@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="interfaceSccg_1_1Core_1_1IContentConverter.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="interfaceSccg_1_1Core_1_1IContentConverter.html" target="_top" xlink:title="Represents a converter that converts a IContent.">
 <polygon fill="white" stroke="#666666" points="143,-19 0,-19 0,0 143,0 143,-19"/>
 <text text-anchor="middle" x="71.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.IContentConverter</text>
 </a>

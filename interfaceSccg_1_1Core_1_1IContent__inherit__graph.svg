@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Represents a content.">
 <polygon fill="#999999" stroke="#666666" points="116,-85 15,-85 15,-66 116,-66 116,-85"/>
 <text text-anchor="middle" x="65.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.IContent</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html" target="_top" xlink:title="Represents a single file text content.">
 <polygon fill="white" stroke="#666666" points="131,-30 0,-30 0,0 131,0 131,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Writers.Single</text>
 <text text-anchor="middle" x="65.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">TextContent</text>

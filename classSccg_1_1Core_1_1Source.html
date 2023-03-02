@@ -80,6 +80,9 @@ $(function() {
   <div class="headertitle"><div class="title">Sccg.Core.Source&lt; TGroup, TItem &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The base class of the ISource. This class provides some helper methods and standard implementation of ISource.  
+ <a href="classSccg_1_1Core_1_1Source.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Sccg.Core.Source&lt; TGroup, TItem &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -109,9 +112,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a28f4e517fd2efebeece56c2c213a4892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links style <code>from</code> group to <code>to</code> group.  <br /></td></tr>
 <tr class="separator:a28f4e517fd2efebeece56c2c213a4892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79fa66a3d3b925abd9f21a56c3f694c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Source.html#a79fa66a3d3b925abd9f21a56c3f694c5">Custom</a> ()</td></tr>
+<tr class="memdesc:a79fa66a3d3b925abd9f21a56c3f694c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can customize your theme here.  <br /></td></tr>
 <tr class="separator:a79fa66a3d3b925abd9f21a56c3f694c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a728dfeffe4d357ec71540c514fdcb89a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Source.html#a728dfeffe4d357ec71540c514fdcb89a">Custom</a> (<a class="el" href="classSccg_1_1BuilderQuery.html">BuilderQuery</a> query)</td></tr>
-<tr class="memdesc:a728dfeffe4d357ec71540c514fdcb89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the source customization.  <br /></td></tr>
+<tr class="memdesc:a728dfeffe4d357ec71540c514fdcb89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the source customization.<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>The means of accessing other sources, etc.</td></tr>
+  </table>
+  </dd>
+</dl>
+  <br /></td></tr>
 <tr class="separator:a728dfeffe4d357ec71540c514fdcb89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7f48ed9b298486065040ac36c1c07f6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Source.html#ab7f48ed9b298486065040ac36c1c07f6">Set</a> (TGroup group, Color? fg=null, Color? bg=null, Color? sp=null, bool none=false, bool bold=false, bool italic=false, bool strikethrough=false, bool underline=false, bool underlineWaved=false, bool underlineDotted=false, bool underlineDashed=false, bool underlineDouble=false)</td></tr>
 <tr class="memdesc:ab7f48ed9b298486065040ac36c1c07f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets style to group.  <br /></td></tr>
@@ -143,8 +153,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a91e29b2cfc76a182fc27f4f4a23bc7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00007">7</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
+<div class="textblock"><p>The base class of the ISource. This class provides some helper methods and standard implementation of ISource. </p>
+
+<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00010">10</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa2ae4caee7ef4476206b30b23e8bfe48" name="aa2ae4caee7ef4476206b30b23e8bfe48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2ae4caee7ef4476206b30b23e8bfe48">&#9670;&#160;</a></span>CollectItems()</h2>
@@ -170,7 +181,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Collects source items from the source. </p>
-<dl class="section return"><dt>Returns</dt><dd>It is passed to IFormatter to format.</dd></dl>
+<p>This method is called only once.</p>
 
 <p>Implements <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html#a208690ba90e8346c49bc063d99e78328">Sccg.Core.ISource</a>.</p>
 
@@ -201,7 +212,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00033">33</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
+<p>You can customize your theme here. </p>
+<p>This method is called only once.</p>
+
+<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00042">42</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -237,17 +251,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Starts the source customization. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Starts the source customization.<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">query</td><td>The means of accessing other sources, etc.</td></tr>
   </table>
   </dd>
 </dl>
+ </p>
 
 <p>Implements <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html#a91e29b2cfc76a182fc27f4f4a23bc7ff">Sccg.Core.ISource</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00039">39</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00049">49</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -424,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00060">60</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00070">70</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -514,7 +528,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html#a6cf1cc9559ca3031496704e1591a605b">Sccg.Core.ISource</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00010">10</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00013">13</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
 
 </div>
 </div>
@@ -542,7 +556,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html#ac316b67a98ba170c2d66b700edf38287">Sccg.Core.ISource</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00030">30</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Source_8cs_source.html#l00036">36</a> of file <a class="el" href="Source_8cs_source.html">Source.cs</a>.</p>
 
 </div>
 </div>

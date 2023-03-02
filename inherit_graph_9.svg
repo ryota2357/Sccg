@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="interfaceSccg_1_1Core_1_1IContent.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="interfaceSccg_1_1Core_1_1IContent.html" target="_top" xlink:title="Represents a content.">
 <polygon fill="white" stroke="#666666" points="101,-24.5 0,-24.5 0,-5.5 101,-5.5 101,-24.5"/>
 <text text-anchor="middle" x="50.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.IContent</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html" target="_top" xlink:title="Represents a single file text content.">
 <polygon fill="white" stroke="#666666" points="268,-30 137,-30 137,0 268,0 268,-30"/>
 <text text-anchor="start" x="145" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Writers.Single</text>
 <text text-anchor="middle" x="202.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">TextContent</text>

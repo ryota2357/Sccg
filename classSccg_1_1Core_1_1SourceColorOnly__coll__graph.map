@@ -1,4 +1,4 @@
 <map id="Sccg.Core.SourceColorOnly&lt; TGroup, TItem &gt;" name="Sccg.Core.SourceColorOnly&lt; TGroup, TItem &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,79,188,119"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISource.html" title=" " alt="" coords="63,5,130,31"/>
+<area shape="rect" id="node1" title="The base class of the ISource. This class provides some helper methods and standard implementation of..." alt="" coords="5,79,188,119"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISource.html" title="Represents a source that provides source items." alt="" coords="63,5,130,31"/>
 </map>

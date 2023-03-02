@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html" target="_top" xlink:title="Neovim Treesitter Highlight Source.">
 <polygon fill="white" stroke="#666666" points="372,-35.5 229,-35.5 229,-5.5 372,-5.5 372,-35.5"/>
 <text text-anchor="start" x="237" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
 <text text-anchor="middle" x="300.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">TreesitterHighlightSource</text>

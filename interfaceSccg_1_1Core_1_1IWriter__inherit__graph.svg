@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Represents a writer that writes the content to some form.">
 <polygon fill="#999999" stroke="#666666" points="195.5,-85 103.5,-85 103.5,-66 195.5,-66 195.5,-85"/>
 <text text-anchor="middle" x="149.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.IWriter</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Writers_1_1ConsoleWriter.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Writers_1_1ConsoleWriter.html" target="_top" xlink:title="A writer that writes to the console.">
 <polygon fill="white" stroke="#666666" points="139,-30 0,-30 0,0 139,0 139,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Writers.Console</text>
 <text text-anchor="middle" x="69.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Writer</text>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classSccg_1_1Core_1_1Writer.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classSccg_1_1Core_1_1Writer.html" target="_top" xlink:title="The base class of IContent.">
 <polygon fill="white" stroke="#666666" points="303.5,-24.5 157.5,-24.5 157.5,-5.5 303.5,-5.5 303.5,-24.5"/>
 <text text-anchor="middle" x="230.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.Writer&lt; TContent &gt;</text>
 </a>

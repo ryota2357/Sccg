@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title="SourceItem for Neovim color scheme.">
 <polygon fill="white" stroke="#666666" points="441,-104.5 337,-104.5 337,-85.5 441,-85.5 441,-104.5"/>
 <text text-anchor="middle" x="389" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItem</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title="Base SourceItem for Neovim.">
 <polygon fill="white" stroke="#666666" points="261,-104.5 135,-104.5 135,-85.5 261,-85.5 261,-104.5"/>
 <text text-anchor="middle" x="198" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItemBase</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title="Represents a source item.">
 <polygon fill="white" stroke="#666666" points="70,-104.5 0,-104.5 0,-85.5 70,-85.5 70,-104.5"/>
 <text text-anchor="middle" x="35" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISourceItem</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="structSccg_1_1Style.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="structSccg_1_1Style.html" target="_top" xlink:title="Represents a style of text.">
 <polygon fill="white" stroke="#666666" points="420.5,-67.5 357.5,-67.5 357.5,-48.5 420.5,-48.5 420.5,-67.5"/>
 <text text-anchor="middle" x="389" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Style</text>
 </a>

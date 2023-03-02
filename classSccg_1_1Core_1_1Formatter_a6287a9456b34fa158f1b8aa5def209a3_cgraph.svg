@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Formats to TContent &#160;from the collection of TSourceItem .">
 <polygon fill="#999999" stroke="#666666" points="139,-19 0,-19 0,0 139,0 139,-19"/>
 <text text-anchor="middle" x="69.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.Formatter.Format</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Core_1_1Formatter.html#a9dd24757fc25189ddcd2c381b82b812d" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Core_1_1Formatter.html#a9dd24757fc25189ddcd2c381b82b812d" target="_top" xlink:title="Formats to TContent &#160;from the collection of TSourceItem .">
 <polygon fill="white" stroke="#666666" points="314,-19 175,-19 175,0 314,0 314,-19"/>
 <text text-anchor="middle" x="244.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.Formatter.Format</text>
 </a>

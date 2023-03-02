@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IAlacrittySourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IAlacrittySourceItem.html" target="_top" xlink:title="SourceItem for Alacritty config.">
 <polygon fill="white" stroke="#666666" points="124.5,-85 19.5,-85 19.5,-66 124.5,-66 124.5,-85"/>
 <text text-anchor="middle" x="72" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">IAlacrittySourceItem</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title="Represents a source item.">
 <polygon fill="white" stroke="#666666" points="107,-140 37,-140 37,-121 107,-121 107,-140"/>
 <text text-anchor="middle" x="72" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00">ISourceItem</text>
 </a>

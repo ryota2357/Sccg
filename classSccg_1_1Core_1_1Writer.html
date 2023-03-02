@@ -80,6 +80,9 @@ $(function() {
   <div class="headertitle"><div class="title">Sccg.Core.Writer&lt; TContent &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The base class of IContent.  
+ <a href="classSccg_1_1Core_1_1Writer.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Sccg.Core.Writer&lt; TContent &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -100,6 +103,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a03a458540b55735f8a6587762429eed4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Writer.html#a03a458540b55735f8a6587762429eed4">Write</a> (IEnumerable&lt; TContent &gt; contents)</td></tr>
+<tr class="memdesc:a03a458540b55735f8a6587762429eed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the specified content.  <br /></td></tr>
 <tr class="separator:a03a458540b55735f8a6587762429eed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364fe31bc2c966d606c4506fbcf90cb8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Writer.html#a364fe31bc2c966d606c4506fbcf90cb8">Write</a> (IEnumerable&lt; TContent &gt; contents, <a class="el" href="classSccg_1_1BuilderQuery.html">BuilderQuery</a> query)</td></tr>
 <tr class="separator:a364fe31bc2c966d606c4506fbcf90cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +131,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a37ce963638ad22ae23b74d0d772e1a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="typeconstraint">
+<div class="textblock"><p>The base class of IContent. </p>
+<div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em>TContent</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="interfaceSccg_1_1Core_1_1IContent.html">IContent</a></em></td><td>&#160;</td></tr>
@@ -136,7 +141,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00007">7</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00010">10</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a03a458540b55735f8a6587762429eed4" name="a03a458540b55735f8a6587762429eed4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03a458540b55735f8a6587762429eed4">&#9670;&#160;</a></span>Write() <span class="overload">[1/2]</span></h2>
@@ -162,7 +167,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00016">16</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
+<p>Writes the specified content. </p>
+<p>This method is called only once.</p>
+
+<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00022">22</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -208,7 +216,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00022">22</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
+<p></p>
+
+<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00028">28</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -245,7 +255,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="interfaceSccg_1_1Core_1_1IWriter.html#ab89299b029eb394f86a4f49745cb7180">Sccg.Core.IWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00010">10</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00013">13</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
 
 </div>
 </div>
@@ -273,7 +283,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="interfaceSccg_1_1Core_1_1IWriter.html#ad70be423aa2111644b03877970db3e2f">Sccg.Core.IWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00013">13</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Writer_8cs_source.html#l00016">16</a> of file <a class="el" href="Writer_8cs_source.html">Writer.cs</a>.</p>
 
 </div>
 </div>

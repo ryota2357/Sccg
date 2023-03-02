@@ -57,7 +57,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Base SourceItem for Neovim.">
 <polygon fill="#999999" stroke="#666666" points="249,-102 106,-102 106,-72 249,-72 249,-102"/>
 <text text-anchor="start" x="114" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Internal.</text>
 <text text-anchor="middle" x="177.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItemBase</text>
@@ -67,7 +67,7 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title="SourceItem for Neovim color scheme.">
 <polygon fill="white" stroke="#666666" points="414.5,-126 294.5,-126 294.5,-96 414.5,-96 414.5,-126"/>
 <text text-anchor="start" x="302.5" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="354.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItem</text>
@@ -83,7 +83,7 @@ var sectionId = 'dynsection-0';
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" target="_top" xlink:title="SourceItem for Neovim color scheme.">
 <polygon fill="white" stroke="#666666" points="424,-54 285,-54 285,-24 424,-24 424,-54"/>
 <text text-anchor="start" x="293" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="354.5" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimVariableSourceItem</text>
@@ -99,7 +99,7 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title="Represents a source item.">
 <polygon fill="white" stroke="#666666" points="70,-96.5 0,-96.5 0,-77.5 70,-77.5 70,-96.5"/>
 <text text-anchor="middle" x="35" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISourceItem</text>
 </a>

@@ -1,6 +1,6 @@
 <map id="Sccg.Builtin.Formatters.INeovimVariableSourceItem" name="Sccg.Builtin.Formatters.INeovimVariableSourceItem">
-<area shape="rect" id="node1" title=" " alt="" coords="5,152,191,192"/>
+<area shape="rect" id="node1" title="SourceItem for Neovim color scheme." alt="" coords="5,152,191,192"/>
 <area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" title=" " alt="" coords="5,240,191,280"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title=" " alt="" coords="14,79,182,104"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="51,5,145,31"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title="Base SourceItem for Neovim." alt="" coords="14,79,182,104"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="51,5,145,31"/>
 </map>

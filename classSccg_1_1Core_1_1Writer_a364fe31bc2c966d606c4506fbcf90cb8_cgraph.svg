@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Core_1_1Writer.html#a03a458540b55735f8a6587762429eed4" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Core_1_1Writer.html#a03a458540b55735f8a6587762429eed4" target="_top" xlink:title="Writes the specified content.">
 <polygon fill="white" stroke="#666666" points="264,-19 150,-19 150,0 264,0 264,-19"/>
 <text text-anchor="middle" x="207" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.Writer.Write</text>
 </a>

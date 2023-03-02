@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Formatters_1_1AlacrittyFormatter.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Builtin_1_1Formatters_1_1AlacrittyFormatter.html" target="_top" xlink:title="Alacritty config with YAML. This formatter formats IAlacrittySourceItem.">
 <polygon fill="white" stroke="#666666" points="272,-35.5 152,-35.5 152,-5.5 272,-5.5 272,-35.5"/>
 <text text-anchor="start" x="160" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="212" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">AlacrittyFormatter</text>

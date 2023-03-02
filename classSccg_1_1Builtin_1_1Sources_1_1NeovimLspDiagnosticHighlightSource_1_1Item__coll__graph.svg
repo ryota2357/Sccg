@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title="SourceItem for Neovim color scheme.">
 <polygon fill="white" stroke="#666666" points="134,-96 30,-96 30,-77 134,-77 134,-96"/>
 <text text-anchor="middle" x="82" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItem</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title="Base SourceItem for Neovim.">
 <polygon fill="white" stroke="#666666" points="126,-152 0,-152 0,-133 126,-133 126,-152"/>
 <text text-anchor="middle" x="63" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItemBase</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title="Represents a source item.">
 <polygon fill="white" stroke="#666666" points="98,-208 28,-208 28,-189 98,-189 98,-208"/>
 <text text-anchor="middle" x="63" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00">ISourceItem</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="structSccg_1_1Style.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="structSccg_1_1Style.html" target="_top" xlink:title="Represents a style of text.">
 <polygon fill="white" stroke="#666666" points="222.5,-96 159.5,-96 159.5,-77 222.5,-77 222.5,-96"/>
 <text text-anchor="middle" x="191" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Style</text>
 </a>

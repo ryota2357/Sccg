@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title="Represents a source item.">
 <polygon fill="white" stroke="#666666" points="117,-202.5 0,-202.5 0,-183.5 117,-183.5 117,-202.5"/>
 <text text-anchor="middle" x="58.5" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.ISourceItem</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IAlacrittySourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IAlacrittySourceItem.html" target="_top" xlink:title="SourceItem for Alacritty config.">
 <polygon fill="white" stroke="#666666" points="284.5,-257 164.5,-257 164.5,-227 284.5,-227 284.5,-257"/>
 <text text-anchor="start" x="172.5" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="224.5" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">IAlacrittySourceItem</text>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title="Base SourceItem for Neovim.">
 <polygon fill="white" stroke="#666666" points="296,-154 153,-154 153,-124 296,-124 296,-154"/>
 <text text-anchor="start" x="161" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Internal.</text>
 <text text-anchor="middle" x="224.5" y="-131" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItemBase</text>
@@ -52,7 +52,7 @@
 <!-- Node11 -->
 <g id="node12" class="node">
 <title>Node11</title>
-<g id="a_node12"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" target="_top" xlink:title=" ">
+<g id="a_node12"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" target="_top" xlink:title="Base SourceItem for Vim.">
 <polygon fill="white" stroke="#666666" points="296,-208 153,-208 153,-178 296,-178 296,-208"/>
 <text text-anchor="start" x="161" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Internal.</text>
 <text text-anchor="middle" x="224.5" y="-185" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItemBase</text>
@@ -84,7 +84,7 @@
 <!-- Node4 -->
 <g id="node5" class="node">
 <title>Node4</title>
-<g id="a_node5"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title="SourceItem for Neovim color scheme.">
 <polygon fill="white" stroke="#666666" points="464.5,-154 344.5,-154 344.5,-124 464.5,-124 464.5,-154"/>
 <text text-anchor="start" x="352.5" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="404.5" y="-131" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItem</text>
@@ -100,7 +100,7 @@
 <!-- Node14 -->
 <g id="node10" class="node">
 <title>Node14</title>
-<g id="a_node10"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node10"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" target="_top" xlink:title="SourceItem for Neovim color scheme.">
 <polygon fill="white" stroke="#666666" points="474,-54 335,-54 335,-24 474,-24 474,-54"/>
 <text text-anchor="start" x="343" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="404.5" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimVariableSourceItem</text>
@@ -196,7 +196,7 @@
 <!-- Node12 -->
 <g id="node13" class="node">
 <title>Node12</title>
-<g id="a_node13"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node13"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimArrayVariableSourceItem.html" target="_top" xlink:title="SourceItem for Vim color scheme.">
 <polygon fill="white" stroke="#666666" points="477,-105 332,-105 332,-75 477,-75 477,-105"/>
 <text text-anchor="start" x="340" y="-93" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="404.5" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">IVimArrayVariableSourceItem</text>
@@ -212,7 +212,7 @@
 <!-- Node9 -->
 <g id="node14" class="node">
 <title>Node9</title>
-<g id="a_node14"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node14"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" target="_top" xlink:title="SourceItem for Vim color scheme.">
 <polygon fill="white" stroke="#666666" points="464.5,-221 344.5,-221 344.5,-191 464.5,-191 464.5,-221"/>
 <text text-anchor="start" x="352.5" y="-209" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Formatters.</text>
 <text text-anchor="middle" x="404.5" y="-198" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItem</text>

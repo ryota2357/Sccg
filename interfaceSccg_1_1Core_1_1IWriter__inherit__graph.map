@@ -1,5 +1,5 @@
 <map id="Sccg.Core.IWriter" name="Sccg.Core.IWriter">
-<area shape="rect" id="node1" title=" " alt="" coords="143,5,266,31"/>
-<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Writers_1_1ConsoleWriter.html" title=" " alt="" coords="5,79,191,119"/>
-<area shape="rect" id="node3" href="$classSccg_1_1Core_1_1Writer.html" title=" " alt="" coords="215,86,410,111"/>
+<area shape="rect" id="node1" title="Represents a writer that writes the content to some form." alt="" coords="143,5,266,31"/>
+<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Writers_1_1ConsoleWriter.html" title="A writer that writes to the console." alt="" coords="5,79,191,119"/>
+<area shape="rect" id="node3" href="$classSccg_1_1Core_1_1Writer.html" title="The base class of IContent." alt="" coords="215,86,410,111"/>
 </map>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="The base class of the ISource. This class provides some helper methods and standard implementation of...">
 <polygon fill="#999999" stroke="#666666" points="138,-30 0,-30 0,0 138,0 138,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Core.Source&lt; TGroup,</text>
 <text text-anchor="middle" x="69" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> TItem &gt;</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Core_1_1ISource.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Core_1_1ISource.html" target="_top" xlink:title="Represents a source that provides source items.">
 <polygon fill="white" stroke="#666666" points="94,-85 44,-85 44,-66 94,-66 94,-85"/>
 <text text-anchor="middle" x="69" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">ISource</text>
 </a>

@@ -1,9 +1,9 @@
 <map id="Sccg.Builtin.Formatters.INeovimSourceItem" name="Sccg.Builtin.Formatters.INeovimSourceItem">
-<area shape="rect" id="node1" title=" " alt="" coords="363,101,523,141"/>
+<area shape="rect" id="node1" title="SourceItem for Neovim color scheme." alt="" coords="363,101,523,141"/>
 <area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" title=" " alt="" coords="589,5,779,45"/>
 <area shape="rect" id="node5" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" title=" " alt="" coords="571,69,797,109"/>
 <area shape="rect" id="node6" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" title=" " alt="" coords="585,133,783,173"/>
 <area shape="rect" id="node7" href="$classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" title=" " alt="" coords="600,197,768,237"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title=" " alt="" coords="147,109,315,134"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title=" " alt="" coords="5,109,99,134"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title="Base SourceItem for Neovim." alt="" coords="147,109,315,134"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="5,109,99,134"/>
 </map>

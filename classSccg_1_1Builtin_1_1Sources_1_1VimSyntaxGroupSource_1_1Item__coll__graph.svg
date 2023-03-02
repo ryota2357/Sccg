@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" target="_top" xlink:title="SourceItem for Vim color scheme.">
 <polygon fill="white" stroke="#666666" points="115.5,-96 28.5,-96 28.5,-77 115.5,-77 115.5,-96"/>
 <text text-anchor="middle" x="72" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItem</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" target="_top" xlink:title="Base SourceItem for Vim.">
 <polygon fill="white" stroke="#666666" points="110,-152 0,-152 0,-133 110,-133 110,-152"/>
 <text text-anchor="middle" x="55" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00">IVimSourceItemBase</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="interfaceSccg_1_1Core_1_1ISourceItem.html" target="_top" xlink:title="Represents a source item.">
 <polygon fill="white" stroke="#666666" points="157,-208 87,-208 87,-189 157,-189 157,-208"/>
 <text text-anchor="middle" x="122" y="-196" font-family="Helvetica,sans-Serif" font-size="10.00">ISourceItem</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" target="_top" xlink:title="Base SourceItem for Neovim.">
 <polygon fill="white" stroke="#666666" points="254,-152 128,-152 128,-133 254,-133 254,-152"/>
 <text text-anchor="middle" x="191" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItemBase</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" target="_top" xlink:title="SourceItem for Neovim color scheme.">
 <polygon fill="white" stroke="#666666" points="243,-96 139,-96 139,-77 243,-77 243,-96"/>
 <text text-anchor="middle" x="191" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">INeovimSourceItem</text>
 </a>
@@ -102,7 +102,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="structSccg_1_1Style.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="structSccg_1_1Style.html" target="_top" xlink:title="Represents a style of text.">
 <polygon fill="white" stroke="#666666" points="339.5,-96 276.5,-96 276.5,-77 339.5,-77 339.5,-96"/>
 <text text-anchor="middle" x="308" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Style</text>
 </a>

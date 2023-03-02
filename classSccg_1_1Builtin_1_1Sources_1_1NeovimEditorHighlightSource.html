@@ -198,7 +198,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3c3f00609e03f192279fdaa7f89df94d"><td class="memItemLeft" align="right" valign="top">override IEnumerable&lt; <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a3c3f00609e03f192279fdaa7f89df94d">CollectItems</a> ()</td></tr>
-<tr class="memdesc:a3c3f00609e03f192279fdaa7f89df94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects source items from the source.  <br /></td></tr>
+<tr class="memdesc:a3c3f00609e03f192279fdaa7f89df94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects source items from the source.This method is called only once.  <br /></td></tr>
 <tr class="separator:a3c3f00609e03f192279fdaa7f89df94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a176f3b6dc561004c4d9eee7c69ae44cd"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a176f3b6dc561004c4d9eee7c69ae44cd">Set</a> (<a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98">Group</a> group, <a class="el" href="structSccg_1_1Style.html">Style</a> style)</td></tr>
 <tr class="separator:a176f3b6dc561004c4d9eee7c69ae44cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,9 +218,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a28f4e517fd2efebeece56c2c213a4892 inherit pro_methods_classSccg_1_1Core_1_1Source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links style <code>from</code> group to <code>to</code> group.  <br /></td></tr>
 <tr class="separator:a28f4e517fd2efebeece56c2c213a4892 inherit pro_methods_classSccg_1_1Core_1_1Source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79fa66a3d3b925abd9f21a56c3f694c5 inherit pro_methods_classSccg_1_1Core_1_1Source"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Source.html#a79fa66a3d3b925abd9f21a56c3f694c5">Custom</a> ()</td></tr>
+<tr class="memdesc:a79fa66a3d3b925abd9f21a56c3f694c5 inherit pro_methods_classSccg_1_1Core_1_1Source"><td class="mdescLeft">&#160;</td><td class="mdescRight">You can customize your theme here.  <br /></td></tr>
 <tr class="separator:a79fa66a3d3b925abd9f21a56c3f694c5 inherit pro_methods_classSccg_1_1Core_1_1Source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a728dfeffe4d357ec71540c514fdcb89a inherit pro_methods_classSccg_1_1Core_1_1Source"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Source.html#a728dfeffe4d357ec71540c514fdcb89a">Custom</a> (<a class="el" href="classSccg_1_1BuilderQuery.html">BuilderQuery</a> query)</td></tr>
-<tr class="memdesc:a728dfeffe4d357ec71540c514fdcb89a inherit pro_methods_classSccg_1_1Core_1_1Source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the source customization.  <br /></td></tr>
 <tr class="separator:a728dfeffe4d357ec71540c514fdcb89a inherit pro_methods_classSccg_1_1Core_1_1Source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
@@ -389,7 +389,7 @@ Properties</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="NeovimEditorHighlightSource_8cs_source.html#l00100">100</a> of file <a class="el" href="NeovimEditorHighlightSource_8cs_source.html">NeovimEditorHighlightSource.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="NeovimEditorHighlightSource_8cs_source.html#l00103">103</a> of file <a class="el" href="NeovimEditorHighlightSource_8cs_source.html">NeovimEditorHighlightSource.cs</a>.</p>
 
 </div>
 </div>
@@ -417,12 +417,11 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Collects source items from the source. </p>
-<dl class="section return"><dt>Returns</dt><dd>It is passed to IFormatter to format.</dd></dl>
+<p>Collects source items from the source.This method is called only once. </p>
 
 <p>Implements <a class="el" href="classSccg_1_1Core_1_1Source.html#aa2ae4caee7ef4476206b30b23e8bfe48">Sccg.Core.Source&lt; NeovimEditorHighlightSource.Group, NeovimEditorHighlightSource.Item &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="NeovimEditorHighlightSource_8cs_source.html#l00016">16</a> of file <a class="el" href="NeovimEditorHighlightSource_8cs_source.html">NeovimEditorHighlightSource.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="NeovimEditorHighlightSource_8cs_source.html#l00017">17</a> of file <a class="el" href="NeovimEditorHighlightSource_8cs_source.html">NeovimEditorHighlightSource.cs</a>.</p>
 
 </div>
 </div>
@@ -460,6 +459,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p></p>
+
 </div>
 </div>
 <a id="a176f3b6dc561004c4d9eee7c69ae44cd" name="a176f3b6dc561004c4d9eee7c69ae44cd"></a>
@@ -495,6 +496,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
 
 </div>
 </div>
