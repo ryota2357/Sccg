@@ -4,10 +4,14 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Writers;
 
+/// <summary>
+/// A writer that writes text files (<see cref="SingleTextContent"/>).
+/// </summary>
 public class TextFileWriter : Writer<SingleTextContent>
 {
     public override string Name => "TextFile";
 
+    /// <inheritdoc />
     protected override void Write(IEnumerable<SingleTextContent> contents, BuilderQuery query)
     {
         var outputDirectory = query.GetMetadata().Context.Get("OutputDirectory", "build");

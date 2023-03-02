@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace Sccg.Core;
 
+/// <summary>
+/// Represents a converter that converts a <see cref="IContent"/>.
+/// </summary>
 public interface IContentConverter
 {
     /// <summary>

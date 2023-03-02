@@ -13,12 +13,16 @@ public abstract class Ansi16ColorSource : SourceColorOnly<Ansi16ColorSource.Grou
 
     public override string Name => "Ansi16Color";
 
+    /// <inheritdoc />
     public override int Priority => 0;
 
+    /// <inheritdoc />
     protected override void Set(Group group, Color color) => _impl.Set(group, color);
 
+    /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
+    /// <inheritdoc />
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();

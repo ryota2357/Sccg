@@ -5,6 +5,9 @@ using System.Text.RegularExpressions;
 
 namespace Sccg;
 
+/// <summary>
+/// Represents a hex color.
+/// </summary>
 public readonly partial struct Color : IEquatable<Color>
 {
     private const string _default = "__DEFAULT__";
@@ -49,6 +52,11 @@ public readonly partial struct Color : IEquatable<Color>
     /// <returns>ture if it is <see cref="None">Color.None</see>.</returns>
     public bool IsNone => HexCode == _none;
 
+    /// <summary>
+    /// Initialize a new instance of <see cref="Color"/> with the specified hex code.
+    /// </summary>
+    /// <param name="hexCode">3 or 6 hex digits (with or without # as the first character).</param>.
+    /// <exception cref="ArgumentException"><paramref name="hexCode"/> is invalid hex code style.</exception>
     public Color(string hexCode)
     {
         if (hexCode is _default or _none)
@@ -81,34 +89,57 @@ public readonly partial struct Color : IEquatable<Color>
         throw new ArgumentException("Invalid hex code.", nameof(hexCode));
     }
 
+    /// <summary>
+    /// Initialize a new instance of <see cref="Color"/> with the specified hex code and terminal color code.
+    /// </summary>
+    /// <param name="hexCode">3 or 6 hex digits (with or without # as the first character).</param>.
+    /// <param name="terminalColorCode">Optional terminal code.</param>
     public Color(string hexCode, byte terminalColorCode)
         : this(hexCode)
     {
         TerminalColorCode = terminalColorCode;
     }
 
+    /// <summary>
+    /// Initialize a new instance of <see cref="Color"/> with the specified RGB values.
+    /// </summary>
+    /// <param name="r">Red value.</param>
+    /// <param name="g">Green value.</param>
+    /// <param name="b">Blue value.</param>
     public Color(byte r, byte g, byte b)
     {
         HexCode = $"#{r:x2}{g:x2}{b:x2}";
     }
 
+    /// <summary>
+    /// Initialize a new instance of <see cref="Color"/> with the specified RGB values and terminal color code.
+    /// </summary>
+    /// <param name="r">Red value.</param>
+    /// <param name="g">Green value.</param>
+    /// <param name="b">Blue value.</param>
+    /// <param name="terminalColorCode">Optional terminal code.</param>
     public Color(byte r, byte g, byte b, byte terminalColorCode)
         : this(r, g, b)
     {
         TerminalColorCode = terminalColorCode;
     }
 
+    /// <inheritdoc cref="Color(string)"/>
     public static implicit operator Color(string color)
     {
         return new Color(color);
     }
 
+    /// <inheritdoc cref="Color(byte, byte, byte)"/>
     public static implicit operator Color((byte, byte, byte) rgb)
     {
         var (r, g, b) = rgb;
         return new Color(r, g, b);
     }
 
+    /// <summary>
+    /// Converts this <see cref="Color"/> structure to a human-readable string.
+    /// </summary>
     public override string ToString()
     {
         var sb = new StringBuilder("Color(");
@@ -124,16 +155,25 @@ public readonly partial struct Color : IEquatable<Color>
         return sb.ToString();
     }
 
+    /// <summary>
+    /// Indicates whether the current object is equal to another object of the same type
+    /// </summary>
+    /// <param name="other">An object to compare with this object.</param>
     public bool Equals(Color other)
     {
         return HexCode == other.HexCode;
     }
 
+    /// <summary>
+    /// Tests whether the specified object is a <see cref="Color"/> structure and is equivalent to this <see cref="Color"/> structure.
+    /// </summary>
+    /// <param name="obj">The object to test.</param>
     public override bool Equals(object? obj)
     {
         return obj is Color other && Equals(other);
     }
 
+    /// <inheritdoc />
     public override int GetHashCode()
     {
         if (HexCode == Default) return -1;
@@ -144,11 +184,17 @@ public readonly partial struct Color : IEquatable<Color>
         return (r << 16) + (g << 8) + b;
     }
 
+    /// <summary>
+    /// Tests whether two specified <see cref="Color"/> structures are equivalent.
+    /// </summary>
     public static bool operator ==(in Color left, in Color right)
     {
         return left.Equals(right);
     }
 
+    /// <summary>
+    /// Tests whether two specified <see cref="Color"/> structures are different.
+    /// </summary>
     public static bool operator !=(in Color left, in Color right)
     {
         return !(left == right);

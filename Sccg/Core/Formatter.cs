@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace Sccg.Core;
 
+/// <summary>
+/// The base class of <see cref="IFormatter"/>.
+/// </summary>
 public abstract class Formatter<TSourceItem, TContent> : IFormatter
     where TSourceItem : ISourceItem
     where TContent : IContent
@@ -14,13 +17,22 @@ public abstract class Formatter<TSourceItem, TContent> : IFormatter
     /// <inheritdoc />
     public virtual int Priority => 10;
 
-    // TODO: doc
+    /// <summary>
+    /// Formats to <typeparamref name="TContent"/> from the collection of <typeparamref name="TSourceItem"/>.
+    /// </summary>
+    /// <param name="items">A collection of <typeparamref name="TSourceItem"/> collected from all sources.</param>
+    /// <returns>It is passed to <see cref="IWriter"/> to write some formatted content.</returns>
     protected virtual TContent Format(IEnumerable<TSourceItem> items)
     {
         throw new NotImplementedException("You must override Format method.");
     }
 
-    // TODO: doc
+    /// <summary>
+    /// Formats to <typeparamref name="TContent"/> from the collection of <typeparamref name="TSourceItem"/>.
+    /// </summary>
+    /// <param name="items">A collection of <typeparamref name="TSourceItem"/> collected from all sources.</param>
+    /// <param name="query">The means of accessing other formatters, etc.</param>
+    /// <returns>It is passed to <see cref="IWriter"/> to write some formatted content.</returns>
     protected virtual TContent Format(IEnumerable<TSourceItem> items, BuilderQuery query)
     {
         return Format(items);

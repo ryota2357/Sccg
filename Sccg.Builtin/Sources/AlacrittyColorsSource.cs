@@ -15,6 +15,7 @@ public abstract partial class AlacrittyColorsSource : SourceColorOnly<AlacrittyC
 
     public override string Name => "AlacrittyColors";
 
+    /// <inheritdoc />
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
@@ -37,8 +38,10 @@ public abstract partial class AlacrittyColorsSource : SourceColorOnly<AlacrittyC
         }
     }
 
+    /// <inheritdoc />
     protected override void Set(Group group, Color color) => _impl.Set(group, color);
 
+    /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
     public partial class Item : IAlacrittySourceItem

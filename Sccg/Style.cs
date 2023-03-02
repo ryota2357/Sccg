@@ -3,14 +3,29 @@ using System.Text.RegularExpressions;
 
 namespace Sccg;
 
+/// <summary>
+/// Represents a style of text.
+/// </summary>
 public readonly partial struct Style : IEquatable<Style>
 {
+    /// <summary>
+    /// Foreground color.
+    /// </summary>
     public Color Foreground { get; init; }
 
+    /// <summary>
+    /// Background color.
+    /// </summary>
     public Color Background { get; init; }
 
+    /// <summary>
+    /// Special color.
+    /// </summary>
     public Color Special { get; init; }
 
+    /// <summary>
+    /// Modifiers.
+    /// </summary>
     public Modifier Modifiers { get; private init; }
 
     /// <inheritdoc cref="Style.Modifier.Bold"/>
@@ -61,8 +76,14 @@ public readonly partial struct Style : IEquatable<Style>
         init => Modifiers = value ? (Modifiers | Modifier.UnderlineDouble) : (Modifiers & ~Modifier.UnderlineDouble);
     }
 
+    /// <summary>
+    /// Gets a value indicating whether this style is the default style.
+    /// </summary>
     public static Style Default => new();
 
+    /// <summary>
+    /// Initializes a new instance of the default <see cref="Style"/> struct.
+    /// </summary>
     public Style()
     {
         Foreground = Color.Default;
@@ -71,6 +92,9 @@ public readonly partial struct Style : IEquatable<Style>
         Modifiers = Modifier.Default;
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Style"/> struct.
+    /// </summary>
     public Style(
         Color? fg = null,
         Color? bg = null,
@@ -106,6 +130,9 @@ public readonly partial struct Style : IEquatable<Style>
         UnderlineDouble = underlineDouble;
     }
 
+    /// <summary>
+    /// Converts this <see cref="Style"/> structure to a human-readable string.
+    /// </summary>
     public override string ToString()
     {
         // 0123456...^1
@@ -117,6 +144,7 @@ public readonly partial struct Style : IEquatable<Style>
         return $"Style(fg:{fg},bg:{bg},sp:{sp},{mod})";
     }
 
+    /// <inheritdoc />
     public bool Equals(Style other)
     {
         return Foreground.Equals(other.Foreground) &&
@@ -125,26 +153,37 @@ public readonly partial struct Style : IEquatable<Style>
                Modifiers == other.Modifiers;
     }
 
+    /// <inheritdoc />
     public override bool Equals(object? obj)
     {
         return obj is Style other && Equals(other);
     }
 
+    /// <inheritdoc />
     public override int GetHashCode()
     {
         return HashCode.Combine(Foreground, Background, Special, (int)Modifiers);
     }
 
+    /// <summary>
+    /// Tests whether two specified <see cref="Style"/> structures are equivalent.
+    /// </summary>
     public static bool operator ==(Style left, Style right)
     {
         return left.Equals(right);
     }
 
+    /// <summary>
+    /// Tests whether two specified <see cref="Style"/> structures are different.
+    /// </summary>
     public static bool operator !=(Style left, Style right)
     {
         return !(left == right);
     }
 
+    /// <summary>
+    /// Sets of decorations.
+    /// </summary>
     [Flags]
     public enum Modifier
     {

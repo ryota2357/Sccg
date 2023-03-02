@@ -6,6 +6,9 @@ using Kokuban.AnsiEscape;
 
 namespace Sccg.Core;
 
+/// <summary>
+/// The logger class.
+/// </summary>
 public static class Log
 {
     /// <summary>

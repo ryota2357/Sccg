@@ -16,6 +16,7 @@ public abstract class Iterm2ColorsSource : SourceColorOnly<Iterm2ColorsSource.Gr
 
     public override string Name => "ITerm2Colors";
 
+    /// <inheritdoc />
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
@@ -38,8 +39,10 @@ public abstract class Iterm2ColorsSource : SourceColorOnly<Iterm2ColorsSource.Gr
         }
     }
 
+    /// <inheritdoc />
     protected override void Set(Group group, Color color) => _impl.Set(group, color);
 
+    /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
     public class Item : IIterm2SourceItem

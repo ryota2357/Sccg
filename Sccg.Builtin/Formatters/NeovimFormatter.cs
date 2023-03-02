@@ -14,23 +14,30 @@ using Sccg.Utility;
 
 namespace Sccg.Builtin.Formatters;
 
+/// <summary>
+/// SourceItem for Neovim color scheme.
+/// </summary>
 public interface INeovimSourceItem : INeovimSourceItemBase
 {
     public NeovimFormatter.Formattable Extract();
 }
 
+/// <summary>
+/// SourceItem for Neovim color scheme.
+/// </summary>
 public interface INeovimVariableSourceItem : INeovimSourceItemBase
 {
     public NeovimFormatter.FormattableVariable Extract();
 }
 
 /// <summary>
-/// Create a Neovim color scheme with Lua.
+/// Neovim color scheme with Lua.
 /// </summary>
 public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextContent>
 {
     public override string Name => "Neovim";
 
+    /// <inheritdoc />
     protected override SingleTextContent Format(IEnumerable<INeovimSourceItemBase> items, BuilderQuery query)
     {
         var metadata = query.GetMetadata();

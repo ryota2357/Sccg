@@ -7,6 +7,9 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Sources;
 
+/// <summary>
+/// Neovim Treesitter Highlight Source.
+/// </summary>
 public abstract partial class NeovimTreesitterHighlightSource
     : Source<NeovimTreesitterHighlightSource.Group, NeovimTreesitterHighlightSource.Item>
 {
@@ -14,6 +17,7 @@ public abstract partial class NeovimTreesitterHighlightSource
 
     public override string Name => "NeovimTreesitterHighlight";
 
+    /// <inheritdoc />
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
@@ -42,8 +46,10 @@ public abstract partial class NeovimTreesitterHighlightSource
         }
     }
 
+    /// <inheritdoc />
     protected override void Set(Group group, Style style) => _impl.Set(group, style);
 
+    /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
     /// <inheritdoc cref="Link(Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group)"/>
@@ -132,390 +138,391 @@ public abstract partial class NeovimTreesitterHighlightSource
     /// <remarks>Some groups are not supported by neovim.</remarks>
     public enum Group
     {
+
         /// <summary>
-        /// line and block comments
+        /// @comment ; line and block comments
         /// </summary>
         Comment,
 
         /// <summary>
-        /// syntax/parser errors
+        /// @error ; syntax/parser errors
         /// </summary>
         Error,
 
         /// <summary>
-        /// completely disable the highlight
+        /// @none ; completely disable the highlight
         /// </summary>
         None,
 
         /// <summary>
-        /// various preprocessor directives & shebangs
+        /// @preproc ; various preprocessor directives & shebangs
         /// </summary>
         Preproc,
 
         /// <summary>
-        /// preprocessor definition directives
+        /// @define ; preprocessor definition directives
         /// </summary>
         Define,
 
         /// <summary>
-        /// symbolic operators (e.g. `+` / `*`)
+        /// @operator ; symbolic operators (e.g. `+` / `*`)
         /// </summary>
         Operator,
 
         /// <summary>
-        /// delimiters (e.g. `;` / `.` / `,`)
+        /// @punctuation.delimiter ; delimiters (e.g. `;` / `.` / `,`)
         /// </summary>
         PunctuationDelimiter,
 
         /// <summary>
-        /// brackets (e.g. `()` / `{}` / `[]`)
+        /// @punctuation.bracket ; brackets (e.g. `()` / `{}` / `[]`)
         /// </summary>
         PunctuationBracket,
 
         /// <summary>
-        /// special symbols (e.g. `{}` in string interpolation)
+        /// @punctuation.special ; special symbols (e.g. `{}` in string interpolation)
         /// </summary>
         PunctuationSpecial,
 
         /// <summary>
-        /// string literals
+        /// @string ; string literals
         /// </summary>
         String,
 
         /// <summary>
-        /// regular expressions
+        /// @string.regex ; regular expressions
         /// </summary>
         StringRegex,
 
         /// <summary>
-        /// escape sequences
+        /// @string.escape ; escape sequences
         /// </summary>
         StringEscape,
 
         /// <summary>
-        /// other special strings (e.g. dates)
+        /// @string.special ; other special strings (e.g. dates)
         /// </summary>
         StringSpecial,
 
         /// <summary>
-        /// character literals
+        /// @character ; character literals
         /// </summary>
         Character,
 
         /// <summary>
-        /// special characters (e.g. wildcards)
+        /// @character.special ; special characters (e.g. wildcards)
         /// </summary>
         CharacterSpecial,
 
         /// <summary>
-        /// boolean literals
+        /// @boolean ; boolean literals
         /// </summary>
         Boolean,
 
         /// <summary>
-        /// numeric literals
+        /// @number ; numeric literals
         /// </summary>
         Number,
 
         /// <summary>
-        /// floating-point number literals
+        /// @float ; floating-point number literals
         /// </summary>
         Float,
 
         /// <summary>
-        /// function definitions
+        /// @function ; function definitions
         /// </summary>
         Function,
 
         /// <summary>
-        /// built-in functions
+        /// @function.builtin ; built-in functions
         /// </summary>
         FunctionBuiltin,
 
         /// <summary>
-        /// function calls
+        /// @function.call ; function calls
         /// </summary>
         FunctionCall,
 
         /// <summary>
-        /// preprocessor macros
+        /// @function.macro ; preprocessor macros
         /// </summary>
         FunctionMacro,
 
         /// <summary>
-        /// method definitions
+        /// @method ; method definitions
         /// </summary>
         Method,
 
         /// <summary>
-        /// method calls
+        /// @method.call ; method calls
         /// </summary>
         MethodCall,
 
         /// <summary>
-        /// constructor calls and definitions
+        /// @constructor ; constructor calls and definitions
         /// </summary>
         Constructor,
 
         /// <summary>
-        /// parameters of a function
+        /// @parameter ; parameters of a function
         /// </summary>
         Parameter,
 
         /// <summary>
-        /// various keywords
+        /// @keyword ; various keywords
         /// </summary>
         Keyword,
 
         /// <summary>
-        /// keywords that define a function (e.g. `func` in Go, `def` in Python)
+        /// @keyword.function ; keywords that define a function (e.g. `func` in Go, `def` in Python)
         /// </summary>
         KeywordFunction,
 
         /// <summary>
-        /// operators that are English words (e.g. `and` / `or`)
+        /// @keyword.operator ; operators that are English words (e.g. `and` / `or`)
         /// </summary>
         KeywordOperator,
 
         /// <summary>
-        /// keywords like `return` and `yield`
+        /// @keyword.return ; keywords like `return` and `yield`
         /// </summary>
         KeywordReturn,
 
         /// <summary>
-        /// keywords related to conditionals (e.g. `if` / `else`)
+        /// @conditional ; keywords related to conditionals (e.g. `if` / `else`)
         /// </summary>
         Conditional,
 
         /// <summary>
-        /// ternary operator (e.g. `?` / `:`)
+        /// @conditional.ternary ; ternary operator (e.g. `?` / `:`)
         /// </summary>
         ConditionalTernary,
 
         /// <summary>
-        /// keywords related to loops (e.g. `for` / `while`)
+        /// @repeat ; keywords related to loops (e.g. `for` / `while`)
         /// </summary>
         Repeat,
 
         /// <summary>
-        /// keywords related to debugging
+        /// @debug ; keywords related to debugging
         /// </summary>
         Debug,
 
         /// <summary>
-        /// GOTO and other labels (e.g. `label:` in C)
+        /// @label ; GOTO and other labels (e.g. `label:` in C)
         /// </summary>
         Label,
 
         /// <summary>
-        /// keywords for including modules (e.g. `import` / `from` in Python)
+        /// @include ; keywords for including modules (e.g. `import` / `from` in Python)
         /// </summary>
         Include,
 
         /// <summary>
-        /// keywords related to exceptions (e.g. `throw` / `catch`)
+        /// @exception ; keywords related to exceptions (e.g. `throw` / `catch`)
         /// </summary>
         Exception,
 
         /// <summary>
-        /// type or class definitions and annotations
+        /// @type ; type or class definitions and annotations
         /// </summary>
         Type,
 
         /// <summary>
-        /// built-in types
+        /// @type.builtin ; built-in types
         /// </summary>
         TypeBuiltin,
 
         /// <summary>
-        /// type definitions (e.g. `typedef` in C)
+        /// @type.definition ; type definitions (e.g. `typedef` in C)
         /// </summary>
         TypeDefinition,
 
         /// <summary>
-        /// type qualifiers (e.g. `const`)
+        /// @type.qualifier ; type qualifiers (e.g. `const`)
         /// </summary>
         TypeQualifier,
 
         /// <summary>
-        /// modifiers that affect storage in memory or life-time
+        /// @storageclass ; modifiers that affect storage in memory or life-time
         /// </summary>
         Storageclass,
 
         /// <summary>
-        /// attribute annotations (e.g. Python decorators)
+        /// @attribute ; attribute annotations (e.g. Python decorators)
         /// </summary>
         Attribute,
 
         /// <summary>
-        /// object and struct fields
+        /// @field ; object and struct fields
         /// </summary>
         Field,
 
         /// <summary>
-        /// similar to `@field`
+        /// @property ; similar to `@field`
         /// </summary>
         Property,
 
         /// <summary>
-        /// various variable names
+        /// @variable ; various variable names
         /// </summary>
         Variable,
 
         /// <summary>
-        /// built-in variable names (e.g. `this`)
+        /// @variable.builtin ; built-in variable names (e.g. `this`)
         /// </summary>
         VariableBuiltin,
 
         /// <summary>
-        /// constant identifiers
+        /// @constant ; constant identifiers
         /// </summary>
         Constant,
 
         /// <summary>
-        /// built-in constant values
+        /// @constant.builtin ; built-in constant values
         /// </summary>
         ConstantBuiltin,
 
         /// <summary>
-        /// constants defined by the preprocessor
+        /// @constant.macro ; constants defined by the preprocessor
         /// </summary>
         ConstantMacro,
 
         /// <summary>
-        /// modules or namespaces
+        /// @namespace ; modules or namespaces
         /// </summary>
         Namespace,
 
         /// <summary>
-        /// symbols or atoms
+        /// @symbol ; symbols or atoms
         /// </summary>
         Symbol,
 
         /// <summary>
-        /// non-structured text
+        /// @text ; non-structured text
         /// </summary>
         Text,
 
         /// <summary>
-        /// bold text
+        /// @text.strong ; bold text
         /// </summary>
         TextStrong,
 
         /// <summary>
-        /// text with emphasis
+        /// @text.emphasis ; text with emphasis
         /// </summary>
         TextEmphasis,
 
         /// <summary>
-        /// underlined text
+        /// @text.underline ; underlined text
         /// </summary>
         TextUnderline,
 
         /// <summary>
-        /// strikethrough text
+        /// @text.strike ; strikethrough text
         /// </summary>
         TextStrike,
 
         /// <summary>
-        /// text that is part of a title
+        /// @text.title ; text that is part of a title
         /// </summary>
         TextTitle,
 
         /// <summary>
-        /// literal or verbatim text (e.g., inline code)
+        /// @text.literal ; literal or verbatim text (e.g., inline code)
         /// </summary>
         TextLiteral,
 
         /// <summary>
-        /// text quotations
+        /// @text.quote ; text quotations
         /// </summary>
         TextQuote,
 
         /// <summary>
-        /// URIs (e.g. hyperlinks)
+        /// @text.uri ; URIs (e.g. hyperlinks)
         /// </summary>
         TextUri,
 
         /// <summary>
-        /// math environments (e.g. `$ ... $` in LaTeX)
+        /// @text.math ; math environments (e.g. `$ ... $` in LaTeX)
         /// </summary>
         TextMath,
 
         /// <summary>
-        /// text environments of markup languages
+        /// @text.environment ; text environments of markup languages
         /// </summary>
         TextEnvironment,
 
         /// <summary>
-        /// text indicating the type of an environment
+        /// @text.environment.name ; text indicating the type of an environment
         /// </summary>
         TextEnvironmentName,
 
         /// <summary>
-        /// text references, footnotes, citations, etc.
+        /// @text.reference ; text references, footnotes, citations, etc.
         /// </summary>
         TextReference,
 
         /// <summary>
-        /// todo notes
+        /// @text.todo ; todo notes
         /// </summary>
         TextTodo,
 
         /// <summary>
-        /// info notes
+        /// @text.note ; info notes
         /// </summary>
         TextNote,
 
         /// <summary>
-        /// warning notes
+        /// @text.warning ; warning notes
         /// </summary>
         TextWarning,
 
         /// <summary>
-        /// danger/error notes
+        /// @text.danger ; danger/error notes
         /// </summary>
         TextDanger,
 
         /// <summary>
-        /// added text (for diff files)
+        /// @text.diff.add ; added text (for diff files)
         /// </summary>
         TextDiffAdd,
 
         /// <summary>
-        /// deleted text (for diff files)
+        /// @text.diff.delete ; deleted text (for diff files)
         /// </summary>
         TextDiffDelete,
 
         /// <summary>
-        /// XML tag names
+        /// @tag ; XML tag names
         /// </summary>
         Tag,
 
         /// <summary>
-        /// XML tag attributes
+        /// @tag.attribute ; XML tag attributes
         /// </summary>
         TagAttribute,
 
         /// <summary>
-        /// XML tag delimiters
+        /// @tag.delimiter ; XML tag delimiters
         /// </summary>
         TagDelimiter,
 
         /// <summary>
-        /// for captures that are only used for concealing
+        /// @conceal ; for captures that are only used for concealing
         /// </summary>
         Conceal,
 
         /// <summary>
-        /// for defining regions to be spellchecked
+        /// @spell ; for defining regions to be spellchecked
         /// </summary>
         Spell,
 
         /// <summary>
-        /// for defining regions that should NOT be spellchecked
+        /// @nospell ; for defining regions that should NOT be spellchecked
         /// </summary>
-        Nospell
+        Nospell,
     }
 
     private static string CreateGroupString(Group group)

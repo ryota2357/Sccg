@@ -13,6 +13,7 @@ public abstract class NeovimEditorHighlightSource
 
     public override string Name => "NeovimEditorHighlight";
 
+    /// <inheritdoc />
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
@@ -38,8 +39,10 @@ public abstract class NeovimEditorHighlightSource
         }
     }
 
+    /// <inheritdoc />
     protected override void Set(Group group, Style style) => _impl.Set(group, style);
 
+    /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
     public class Item : INeovimSourceItem

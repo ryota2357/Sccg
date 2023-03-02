@@ -6,6 +6,9 @@ using Sccg.Core;
 
 namespace Sccg;
 
+/// <summary>
+/// A query class for <see cref="Builder"/>.
+/// </summary>
 public sealed class BuilderQuery
 {
     private readonly Builder _builder;
@@ -61,7 +64,8 @@ public sealed class BuilderQuery
     /// <typeparam name="T">A type of the source item converter you want to get.</typeparam>
     /// <returns>Array of source item converter. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
     /// <exception cref="InvalidOperationException">Not found the specified type source item converter and <see cref="allowEmptyReturn"/> is false.</exception>
-    public ReadOnlyCollection<T> GetSourceItemConverters<T>(bool allowEmptyReturn = false) where T : ISourceItemConverter
+    public ReadOnlyCollection<T> GetSourceItemConverters<T>(bool allowEmptyReturn = false)
+        where T : ISourceItemConverter
     {
         var sourceItemConverter = _builder.GetSourceItemConverters().TypeFilterExt<ISourceItemConverter, T>();
         return allowEmptyReturn ? sourceItemConverter : ThrowIfEmpty("SourceItemConverter", sourceItemConverter);
@@ -81,7 +85,7 @@ public sealed class BuilderQuery
     }
 
     /// <summary>
-    /// Gets the metadata.
+    /// Gets the metadata of the builder.
     /// </summary>
     /// <returns>Builder metadata.</returns>
     public Metadata GetMetadata()
@@ -89,14 +93,26 @@ public sealed class BuilderQuery
         return _builder.Metadata;
     }
 
-    // TODO: doc
+    /// <summary>
+    /// Gets the source items of the builder.
+    /// </summary>
+    /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
+    /// <typeparam name="T">A type of the source item you want to get.</typeparam>
+    /// <returns>Array of source item. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type source item and <see cref="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetSourceItems<T>(bool allowEmptyReturn = false) where T : ISourceItem
     {
         var sourceItems = _builder.GetSourceItems().TypeFilterExt<ISourceItem, T>();
         return allowEmptyReturn ? sourceItems : ThrowIfEmpty("SourceItem", sourceItems);
     }
 
-    // TODO: doc
+    /// <summary>
+    /// Gets the contents of the builder.
+    /// </summary>
+    /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
+    /// <typeparam name="T">A type of the content you want to get.</typeparam>
+    /// <returns>Array of content. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type content and <see cref="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetContents<T>(bool allowEmptyReturn = false) where T : IContent
     {
         var contents = _builder.GetContents().TypeFilterExt<IContent, T>();

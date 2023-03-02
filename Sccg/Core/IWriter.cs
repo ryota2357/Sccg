@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace Sccg.Core;
 
+/// <summary>
+/// Represents a writer that writes the content to some form.
+/// </summary>
 public interface IWriter
 {
     /// <summary>

@@ -23,6 +23,9 @@ public class Builder
     private readonly BuilderQuery _query;
     private State _state = State.NotStarted;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Builder"/> class.
+    /// </summary>
     public Builder()
     {
         _query = new BuilderQuery(this);
@@ -176,7 +179,8 @@ public class Builder
             case ISourceItemConverter sourceItemConverter:
                 if (_state > State.ConvertingSourceItems)
                 {
-                    throw new InvalidOperationException("Cannot add source item converter after converting source items.");
+                    throw new InvalidOperationException(
+                        "Cannot add source item converter after converting source items.");
                 }
                 _sourceItemConverters.Push(sourceItemConverter, sourceItemConverter.Priority, sourceItemConverter.Name);
                 break;

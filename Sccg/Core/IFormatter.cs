@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace Sccg.Core;
 
+/// <summary>
+/// Represents a formatter for <see cref="ISource"/>.
+/// </summary>
 public interface IFormatter
 {
     /// <summary>

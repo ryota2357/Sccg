@@ -15,20 +15,30 @@ using Sccg.Utility;
 
 namespace Sccg.Builtin.Formatters;
 
+/// <summary>
+/// SourceItem for Vim color scheme.
+/// </summary>
 public interface IVimSourceItem : IVimSourceItemBase
 {
     public VimFormatter.Formattable Extract();
 }
 
+/// <summary>
+/// SourceItem for Vim color scheme.
+/// </summary>
 public interface IVimArrayVariableSourceItem : IVimSourceItemBase
 {
     public VimFormatter.FormattableArrayVariable Extract();
 }
 
+/// <summary>
+/// Vim color scheme with Vim script.
+/// </summary>
 public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
 {
     public override string Name => "Vim";
 
+    /// <inheritdoc />
     protected override SingleTextContent Format(IEnumerable<IVimSourceItemBase> items, BuilderQuery query)
     {
         var metadata = query.GetMetadata();

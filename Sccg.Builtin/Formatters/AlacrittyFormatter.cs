@@ -9,15 +9,22 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Formatters;
 
+/// <summary>
+/// SourceItem for Alacritty config.
+/// </summary>
 public interface IAlacrittySourceItem : ISourceItem
 {
     public AlacrittyFormatter.Formattable Extract();
 }
 
+/// <summary>
+/// Alacritty config with YAML. This formatter formats <see cref="IAlacrittySourceItem"/>.
+/// </summary>
 public class AlacrittyFormatter : Formatter<IAlacrittySourceItem, SingleTextContent>
 {
     public override string Name => "Alacritty";
 
+    /// <inheritdoc />
     protected override SingleTextContent Format(IEnumerable<IAlacrittySourceItem> items, BuilderQuery query)
     {
         var metadata = query.GetMetadata();

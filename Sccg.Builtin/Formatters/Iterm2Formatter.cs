@@ -6,15 +6,22 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Formatters;
 
+/// <summary>
+/// SourceItem for iTerm2 color theme.
+/// </summary>
 public interface IIterm2SourceItem : ISourceItem
 {
     public Iterm2Formatter.Formattable Extract();
 }
 
+/// <summary>
+/// iTerm2 color theme with XML.
+/// </summary>
 public class Iterm2Formatter : Formatter<IIterm2SourceItem, SingleTextContent>
 {
     public override string Name => "ITerm2";
 
+    /// <inheritdoc />
     protected override SingleTextContent Format(IEnumerable<IIterm2SourceItem> items, BuilderQuery query)
     {
         var sb = new StringBuilder();

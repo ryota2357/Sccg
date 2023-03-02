@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace Sccg.Core;
 
+/// <summary>
+/// Represents a source that provides  source items.
+/// </summary>
 public interface ISource
 {
     /// <summary>

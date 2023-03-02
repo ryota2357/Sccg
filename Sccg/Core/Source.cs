@@ -4,12 +4,18 @@ using System.Collections.Generic;
 
 namespace Sccg.Core;
 
+/// <summary>
+/// The base class of the <see cref="ISource"/>. This class provides some helper methods and standard implementation of <see cref="ISource"/>.
+/// </summary>
 public abstract class Source<TGroup, TItem> : ISource
 {
     /// <inheritdoc />
     public abstract string Name { get; }
 
-    // TODO: doc
+    /// <summary>
+    /// Collects source items from the source.
+    /// </summary>
+    /// <remarks>This method is called only once.</remarks>
     protected abstract IEnumerable<TItem> CollectItems();
 
     /// <summary>
@@ -29,13 +35,17 @@ public abstract class Source<TGroup, TItem> : ISource
     /// <inheritdoc />
     public virtual int Priority => 10;
 
-    // TODO: doc
+    /// <summary>
+    /// You can customize your theme here.
+    /// </summary>
+    /// <remarks>This method is called only once.</remarks>
     protected virtual void Custom()
     {
         throw new NotImplementedException("You must override Custom method.");
     }
 
-    // TODO: doc
+
+    /// <inheritdoc cref="Custom()"/>
     protected virtual void Custom(BuilderQuery query)
     {
         Custom();
@@ -109,12 +119,16 @@ public abstract class Source<TGroup, TItem> : ISource
     }
 }
 
+/// <summary>
+/// The base class of the <see cref="ISource"/>. This class provides some helper methods and standard implementation of <see cref="ISource"/>.
+/// </summary>
+/// <remarks>Unlike <see cref="Source{TGroup,TItem}"/>, This class does not have Set(TGroup, Style), but has <see cref="Set"/></remarks>
 public abstract class SourceColorOnly<TGroup, TItem> : ISource
 {
     /// <inheritdoc />
     public abstract string Name { get; }
 
-    // TODO: doc
+    /// <inheritdoc cref="Source{TGroup,TItem}.CollectItems()"/>
     protected abstract IEnumerable<TItem> CollectItems();
 
     /// <summary>
@@ -134,13 +148,13 @@ public abstract class SourceColorOnly<TGroup, TItem> : ISource
     /// <inheritdoc />
     public virtual int Priority => 10;
 
-    // TODO: doc
+    /// <inheritdoc cref="Source{TGroup,TItem}.Custom()"/>
     protected virtual void Custom()
     {
         throw new NotImplementedException("You must override Custom method.");
     }
 
-    // TODO: doc
+    /// <inheritdoc cref="Source{TGroup,TItem}.Custom(BuilderQuery)"/>
     protected virtual void Custom(BuilderQuery query)
     {
         Custom();

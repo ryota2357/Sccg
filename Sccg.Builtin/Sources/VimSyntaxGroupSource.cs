@@ -12,6 +12,7 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
 
     public override string Name => "VimSyntaxGroup";
 
+    /// <inheritdoc />
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
@@ -37,8 +38,10 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
         }
     }
 
+    /// <inheritdoc />
     protected override void Set(Group group, Style style) => _impl.Set(group, style);
 
+    /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
     public sealed class Item : IVimSourceItem, INeovimSourceItem
