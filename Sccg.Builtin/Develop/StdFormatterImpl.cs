@@ -1,11 +1,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Sccg.Core;
 
 namespace Sccg.Builtin.Develop;
 
+/// <summary>
+/// A standard implementation of <see cref="IFormatter"/>.
+/// </summary>
 public static class StdFormatterImpl
 {
+    /// <summary>
+    /// Creates a header comment from the specified metadata.
+    /// </summary>
     public static IEnumerable<string> CreateHeader(Metadata metadata, string? commentPrefix)
     {
         var header = metadata.Header(metadata);
@@ -45,6 +52,9 @@ public static class StdFormatterImpl
         return AddCommentPrefix(header, commentPrefix);
     }
 
+    /// <summary>
+    /// Creates a footer comment from the specified metadata.
+    /// </summary>
     public static IEnumerable<string> CreateFooter(Metadata metadata, string? commentPrefix)
     {
         var footer = metadata.Footer(metadata) ?? new[] { $"Built with Sccg {Metadata.__SccgVersion}" };

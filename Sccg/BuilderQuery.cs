@@ -23,8 +23,8 @@ public sealed class BuilderQuery
     /// </summary>
     /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
     /// <typeparam name="T">A type of the source you want to get.</typeparam>
-    /// <returns>Array of source. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one source.</returns>
-    /// <exception cref="InvalidOperationException">Not found the specified type source and <see cref="allowEmptyReturn"/> is false.</exception>
+    /// <returns>Array of source. If <paramref name="allowEmptyReturn"/> is false, the array will contain at least one source.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type source and <paramref name="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetSources<T>(bool allowEmptyReturn = false) where T : ISource
     {
         var source = _builder.GetSources().TypeFilterExt<ISource, T>();
@@ -36,8 +36,8 @@ public sealed class BuilderQuery
     /// </summary>
     /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
     /// <typeparam name="T">A type of the formatter you want to get.</typeparam>
-    /// <returns>Array of formatter. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one formatter.</returns>
-    /// <exception cref="InvalidOperationException">Not found the specified type formatter and <see cref="allowEmptyReturn"/> is false.</exception>
+    /// <returns>Array of formatter. If <paramref name="allowEmptyReturn"/> is false, the array will contain at least one formatter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type formatter and <paramref name="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetFormatters<T>(bool allowEmptyReturn = false) where T : IFormatter
     {
         var formatters = _builder.GetFormatters().TypeFilterExt<IFormatter, T>();
@@ -49,8 +49,8 @@ public sealed class BuilderQuery
     /// </summary>
     /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
     /// <typeparam name="T">A type of the writer you want to get.</typeparam>
-    /// <returns>Array of writer. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one writer.</returns>
-    /// <exception cref="InvalidOperationException">Not found the specified type writer and <see cref="allowEmptyReturn"/> is false.</exception>
+    /// <returns>Array of writer. If <paramref name="allowEmptyReturn"/> is false, the array will contain at least one writer.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type writer and <paramref name="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetWriters<T>(bool allowEmptyReturn = false) where T : IWriter
     {
         var writer = _builder.GetWriters().TypeFilterExt<IWriter, T>();
@@ -62,8 +62,8 @@ public sealed class BuilderQuery
     /// </summary>
     /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
     /// <typeparam name="T">A type of the source item converter you want to get.</typeparam>
-    /// <returns>Array of source item converter. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
-    /// <exception cref="InvalidOperationException">Not found the specified type source item converter and <see cref="allowEmptyReturn"/> is false.</exception>
+    /// <returns>Array of source item converter. If <paramref name="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type source item converter and <paramref name="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetSourceItemConverters<T>(bool allowEmptyReturn = false)
         where T : ISourceItemConverter
     {
@@ -76,8 +76,8 @@ public sealed class BuilderQuery
     /// </summary>
     /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
     /// <typeparam name="T">A type of the content converter you want to get.</typeparam>
-    /// <returns>Array of content converter. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
-    /// <exception cref="InvalidOperationException">Not found the specified type content converter and <see cref="allowEmptyReturn"/> is false.</exception>
+    /// <returns>Array of content converter. If <paramref name="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type content converter and <paramref name="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetContentConverters<T>(bool allowEmptyReturn = false) where T : IContentConverter
     {
         var contentConverter = _builder.GetContentConverters().TypeFilterExt<IContentConverter, T>();
@@ -98,8 +98,8 @@ public sealed class BuilderQuery
     /// </summary>
     /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
     /// <typeparam name="T">A type of the source item you want to get.</typeparam>
-    /// <returns>Array of source item. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
-    /// <exception cref="InvalidOperationException">Not found the specified type source item and <see cref="allowEmptyReturn"/> is false.</exception>
+    /// <returns>Array of source item. If <paramref name="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type source item and <paramref name="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetSourceItems<T>(bool allowEmptyReturn = false) where T : ISourceItem
     {
         var sourceItems = _builder.GetSourceItems().TypeFilterExt<ISourceItem, T>();
@@ -111,8 +111,8 @@ public sealed class BuilderQuery
     /// </summary>
     /// <param name="allowEmptyReturn">If true, the return value array is allowed to be empty.</param>
     /// <typeparam name="T">A type of the content you want to get.</typeparam>
-    /// <returns>Array of content. If <see cref="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
-    /// <exception cref="InvalidOperationException">Not found the specified type content and <see cref="allowEmptyReturn"/> is false.</exception>
+    /// <returns>Array of content. If <paramref name="allowEmptyReturn"/> is false, the array will contain at least one converter.</returns>
+    /// <exception cref="InvalidOperationException">Not found the specified type content and <paramref name="allowEmptyReturn"/> is false.</exception>
     public ReadOnlyCollection<T> GetContents<T>(bool allowEmptyReturn = false) where T : IContent
     {
         var contents = _builder.GetContents().TypeFilterExt<IContent, T>();

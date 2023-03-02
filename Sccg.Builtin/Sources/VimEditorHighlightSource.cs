@@ -6,10 +6,14 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Sources;
 
+/// <summary>
+/// Source for Vim editor highlight.
+/// </summary>
 public abstract class VimEditorHighlightSource : Source<VimEditorHighlightSource.Group, VimEditorHighlightSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
+    /// <inheritdoc />
     public override string Name => "VimEditorHighlight";
 
     /// <inheritdoc />
@@ -51,14 +55,31 @@ public abstract class VimEditorHighlightSource : Source<VimEditorHighlightSource
     /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
+    /// <summary>
+    /// SourceItem for Vim editor highlight.
+    /// </summary>
     public sealed class Item : IVimSourceItem
     {
         private readonly Kind _kind;
 
+        /// <summary>
+        /// Gets the group to set.
+        /// </summary>
         public readonly Group Group;
+
+        /// <summary>
+        /// Gets the style to set.
+        /// </summary>
         public readonly Style? Style;
+
+        /// <summary>
+        /// Gets the group to link.
+        /// </summary>
         public readonly Group? Link;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Style style)
         {
             _kind = Kind.Set;
@@ -66,6 +87,9 @@ public abstract class VimEditorHighlightSource : Source<VimEditorHighlightSource
             Style = style;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Group link, Style? style = null)
         {
             _kind = Kind.Link;
@@ -74,6 +98,7 @@ public abstract class VimEditorHighlightSource : Source<VimEditorHighlightSource
             Style = style;
         }
 
+        /// <inheritdoc />
         public VimFormatter.Formattable Extract()
         {
             return _kind switch
@@ -252,7 +277,7 @@ public abstract class VimEditorHighlightSource : Source<VimEditorHighlightSource
         MoreMsg,
 
         /// <summary>
-        /// '@' at the end of the window, "<<<" at the start of the window for 'smoothscroll', characters from 'showbreak' and other characters that do not really exist in the text, such as the ">" displayed when a double-wide character doesn't fit at the end of the line.
+        /// '@' at the end of the window, "&lt;&lt;&lt;" at the start of the window for 'smoothscroll', characters from 'showbreak' and other characters that do not really exist in the text, such as the ">" displayed when a double-wide character doesn't fit at the end of the line.
         /// </summary>
         NonText,
 

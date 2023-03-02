@@ -24,9 +24,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Kokuban" Version="0.2.0"/>
-        <None Include="../README.md" Pack="true" PackagePath="/"/>
-        <None Include="../LICENSE" Pack="true" PackagePath=""/>
+        <PackageReference Include="Kokuban" Version="0.2.0" />
+        <None Include="../README.md" Pack="true" PackagePath="/" />
+        <None Include="../LICENSE" Pack="true" PackagePath="" />
     </ItemGroup>
 
 </Project>

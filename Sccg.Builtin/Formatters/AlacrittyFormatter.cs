@@ -15,6 +15,9 @@ namespace Sccg.Builtin.Formatters;
 /// </summary>
 public interface IAlacrittySourceItem : ISourceItem
 {
+    /// <summary>
+    /// Extract <see cref="AlacrittyFormatter.Formattable"/> from this item.
+    /// </summary>
     public AlacrittyFormatter.Formattable? Extract();
 }
 
@@ -23,6 +26,7 @@ public interface IAlacrittySourceItem : ISourceItem
 /// </summary>
 public class AlacrittyFormatter : Formatter<IAlacrittySourceItem, SingleTextContent>
 {
+    /// <inheritdoc />
     public override string Name => "Alacritty";
 
     /// <inheritdoc />
@@ -73,11 +77,15 @@ public class AlacrittyFormatter : Formatter<IAlacrittySourceItem, SingleTextCont
     }
 
 
+    /// <summary>
+    /// Formattable item for Alacritty config.
+    /// </summary>
     public readonly record struct Formattable(
         ReadOnlyCollection<string> Keys,
         string Value
     )
     {
+        /// <inheritdoc cref="Formattable"/>
         public Formattable(IEnumerable<string> keys, string value) : this(keys.ToList().AsReadOnly(), value)
         {
         }

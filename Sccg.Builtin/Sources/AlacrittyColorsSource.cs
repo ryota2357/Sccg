@@ -10,10 +10,14 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Sources;
 
+/// <summary>
+/// Source for Alacritty colors.
+/// </summary>
 public abstract partial class AlacrittyColorsSource : SourceColorOnly<AlacrittyColorsSource.Group, AlacrittyColorsSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
+    /// <inheritdoc />
     public override string Name => "AlacrittyColors";
 
     /// <inheritdoc />
@@ -45,18 +49,32 @@ public abstract partial class AlacrittyColorsSource : SourceColorOnly<AlacrittyC
     /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
+    /// <summary>
+    /// SourceItem for Alacritty.
+    /// </summary>
     public partial class Item : IAlacrittySourceItem
     {
+        /// <summary>
+        /// Gets the group.
+        /// </summary>
         public readonly Group Group;
+
+        /// <summary>
+        /// Gets the color.
+        /// </summary>
         public readonly Color Color;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Color color)
         {
             Group = group;
             Color = color;
         }
 
-        AlacrittyFormatter.Formattable? IAlacrittySourceItem.Extract()
+        /// <inheritdoc />
+        public AlacrittyFormatter.Formattable? Extract()
         {
             return new AlacrittyFormatter.Formattable(
                 Keys: CreateKeys(Group),

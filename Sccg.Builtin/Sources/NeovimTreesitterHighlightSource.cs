@@ -8,13 +8,14 @@ using Sccg.Core;
 namespace Sccg.Builtin.Sources;
 
 /// <summary>
-/// Neovim Treesitter Highlight Source.
+/// Source for Neovim Treesitter highlight.
 /// </summary>
 public abstract partial class NeovimTreesitterHighlightSource
     : Source<NeovimTreesitterHighlightSource.Group, NeovimTreesitterHighlightSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
+    /// <inheritdoc />
     public override string Name => "NeovimTreesitterHighlight";
 
     /// <inheritdoc />
@@ -71,61 +72,89 @@ public abstract partial class NeovimTreesitterHighlightSource
         }
     }
 
+    /// <summary>
+    /// SourceItem for Neovim Treesitter highlight.
+    /// </summary>
     public class Item : INeovimSourceItem
     {
         private readonly Kind _kind;
 
-        public readonly Group FromGroup;
-        public readonly Style? Style;
-        public readonly Group? ToGroup;
-        public readonly VimSyntaxGroupSource.Group? ToVimSyntaxGroup;
+        /// <summary>
+        /// Gets the group to set.
+        /// </summary>
+        public readonly Group Group;
 
+        /// <summary>
+        /// Gets the style to set.
+        /// </summary>
+        public readonly Style? Style;
+
+        /// <summary>
+        /// Gets the group to link.
+        /// </summary>
+        public readonly Group? Link;
+
+        /// <summary>
+        /// Gets the vim syntax group to link.
+        /// </summary>
+        public readonly VimSyntaxGroupSource.Group? LinkVimSyntaxGroup;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Style style)
         {
             _kind = Kind.Set;
-            FromGroup = group;
+            Group = group;
             Style = style;
-            ToGroup = null;
+            Link = null;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group from, Group to, Style? style = null)
         {
             _kind = Kind.Link;
-            FromGroup = from;
+            Group = from;
             Style = style;
-            ToGroup = to;
+            Link = to;
         }
 
-        public Item(Group from, VimSyntaxGroupSource.Group to)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
+        public Item(Group from, VimSyntaxGroupSource.Group link)
         {
             _kind = Kind.VimSyntaxLink;
-            FromGroup = from;
+            Group = from;
             Style = null;
-            ToGroup = null;
-            ToVimSyntaxGroup = to;
+            Link = null;
+            LinkVimSyntaxGroup = link;
         }
 
+        /// <inheritdoc />
         public NeovimFormatter.Formattable Extract()
         {
             return _kind switch
             {
                 Kind.Set => new NeovimFormatter.Formattable
                 {
-                    Name = CreateGroupString(FromGroup),
+                    Name = CreateGroupString(Group),
                     Id = 0,
                     Style = Style
                 },
                 Kind.Link => new NeovimFormatter.Formattable
                 {
-                    Name = CreateGroupString(FromGroup),
+                    Name = CreateGroupString(Group),
                     Id = 0,
-                    Link = CreateGroupString(ToGroup!.Value)
+                    Link = CreateGroupString(Link!.Value)
                 },
                 Kind.VimSyntaxLink => new NeovimFormatter.Formattable
                 {
-                    Name = CreateGroupString(FromGroup),
+                    Name = CreateGroupString(Group),
                     Id = 0,
-                    Link = ToVimSyntaxGroup!.Value.ToString()
+                    Link = LinkVimSyntaxGroup!.Value.ToString()
                 },
                 _ => throw new ArgumentOutOfRangeException()
             };
@@ -162,7 +191,7 @@ public abstract partial class NeovimTreesitterHighlightSource
         None,
 
         /// <summary>
-        /// @preproc ; various preprocessor directives & shebangs
+        /// @preproc ; various preprocessor directives &amp; shebangs
         /// </summary>
         Preproc,
 

@@ -9,6 +9,7 @@ namespace Sccg.Builtin.Writers;
 /// </summary>
 public class TextFileWriter : Writer<SingleTextContent>
 {
+    /// <inheritdoc />
     public override string Name => "TextFile";
 
     /// <inheritdoc />

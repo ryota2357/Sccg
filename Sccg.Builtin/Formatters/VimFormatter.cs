@@ -20,6 +20,9 @@ namespace Sccg.Builtin.Formatters;
 /// </summary>
 public interface IVimSourceItem : IVimSourceItemBase
 {
+    /// <summary>
+    /// Extract <see cref="VimFormatter.Formattable"/> from this item.
+    /// </summary>
     public VimFormatter.Formattable Extract();
 }
 
@@ -28,6 +31,9 @@ public interface IVimSourceItem : IVimSourceItemBase
 /// </summary>
 public interface IVimArrayVariableSourceItem : IVimSourceItemBase
 {
+    /// <summary>
+    /// Extract <see cref="VimFormatter.FormattableArrayVariable"/> from this item.
+    /// </summary>
     public VimFormatter.FormattableArrayVariable? Extract();
 }
 
@@ -36,6 +42,7 @@ public interface IVimArrayVariableSourceItem : IVimSourceItemBase
 /// </summary>
 public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
 {
+    /// <inheritdoc />
     public override string Name => "Vim";
 
     /// <inheritdoc />
@@ -137,6 +144,9 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
         }
     }
 
+    /// <summary>
+    /// Formattable for Vim color scheme.
+    /// </summary>
     public readonly record struct Formattable(
         string Name,
         Style? Style,
@@ -144,6 +154,9 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
         bool Default = false
     );
 
+    /// <summary>
+    /// Formattable for Vim array variable.
+    /// </summary>
     public readonly record struct FormattableArrayVariable(
         string Name,
         string Value,
@@ -151,7 +164,7 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
         int Length
     );
 
-    public static string? CreateAttrList(Style.Modifier? modifier)
+    internal static string? CreateAttrList(Style.Modifier? modifier)
     {
         return modifier?.DivideSingles()
                        .Select(x => x switch

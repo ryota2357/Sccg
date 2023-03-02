@@ -13,6 +13,9 @@ namespace Sccg.Builtin.Formatters;
 /// </summary>
 public interface IIterm2SourceItem : ISourceItem
 {
+    /// <summary>
+    /// Extract <see cref="Iterm2Formatter.Formattable"/> from this item.
+    /// </summary>
     public Iterm2Formatter.Formattable? Extract();
 }
 
@@ -21,6 +24,7 @@ public interface IIterm2SourceItem : ISourceItem
 /// </summary>
 public class Iterm2Formatter : Formatter<IIterm2SourceItem, SingleTextContent>
 {
+    /// <inheritdoc />
     public override string Name => "ITerm2";
 
     /// <inheritdoc />
@@ -61,6 +65,9 @@ public class Iterm2Formatter : Formatter<IIterm2SourceItem, SingleTextContent>
         );
     }
 
+    /// <summary>
+    /// Formattable item for iTerm2 color theme.
+    /// </summary>
     public readonly record struct Formattable(
         string Key,
         Color Color

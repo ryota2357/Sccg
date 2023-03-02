@@ -19,6 +19,9 @@ namespace Sccg.Builtin.Formatters;
 /// </summary>
 public interface INeovimSourceItem : INeovimSourceItemBase
 {
+    /// <summary>
+    /// Extract <see cref="NeovimFormatter.Formattable"/> from this item.
+    /// </summary>
     public NeovimFormatter.Formattable Extract();
 }
 
@@ -27,6 +30,9 @@ public interface INeovimSourceItem : INeovimSourceItemBase
 /// </summary>
 public interface INeovimVariableSourceItem : INeovimSourceItemBase
 {
+    /// <summary>
+    /// Extract <see cref="NeovimFormatter.FormattableVariable"/> from this item.
+    /// </summary>
     public NeovimFormatter.FormattableVariable? Extract();
 }
 
@@ -35,6 +41,7 @@ public interface INeovimVariableSourceItem : INeovimSourceItemBase
 /// </summary>
 public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextContent>
 {
+    /// <inheritdoc />
     public override string Name => "Neovim";
 
     /// <inheritdoc />
@@ -82,9 +89,6 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
                     var code = c.IsNone ? "NONE" : c.HexCode;
                     sb.Append($" {name} = '{code}',");
                     break;
-                case int i:
-                    sb.Append($" {name} = {i},");
-                    break;
                 case string s:
                     sb.Append($" {name} = '{s}',");
                     break;
@@ -109,7 +113,6 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
                 Set("fg", formattable.Style?.Foreground);
                 Set("bg", formattable.Style?.Background);
                 Set("sp", formattable.Style?.Special);
-                Set("blend", formattable.Blend);
                 Set("bold", formattable.Style?.Modifiers.Contains(Style.Modifier.Bold));
                 Set("standout", formattable.Standout);
                 Set("underline", formattable.Style?.Modifiers.Contains(Style.Modifier.Underline));
@@ -158,6 +161,9 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
         }
     }
 
+    /// <summary>
+    /// Formattable item for Neovim color scheme.
+    /// </summary>
     public readonly record struct Formattable(
         int Id,
         string Name,
@@ -167,23 +173,11 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
         bool? Reverse,
         bool? Nocombine,
         bool? Default
-    )
-    {
-        private readonly int? _blend = null;
+    );
 
-        public int? Blend
-        {
-            get => _blend;
-            init =>
-                _blend = value switch
-                {
-                    < 0 or > 100 => throw new ArgumentOutOfRangeException(nameof(value),
-                        "Blend must be between 0 and 100"),
-                    _ => value
-                };
-        }
-    }
-
+    /// <summary>
+    /// Formattable item for Neovim color scheme variable.
+    /// </summary>
     public readonly record struct FormattableVariable(
         string Name,
         string Value

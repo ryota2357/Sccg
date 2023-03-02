@@ -9,6 +9,7 @@ namespace Sccg.Builtin.Writers;
 /// </summary>
 public class ConsoleWriter : IWriter
 {
+    /// <inheritdoc />
     public string Name => "Console";
 
     /// <inheritdoc />

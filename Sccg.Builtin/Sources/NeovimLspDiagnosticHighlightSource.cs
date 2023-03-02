@@ -6,11 +6,15 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Sources;
 
+/// <summary>
+/// Source for Neovim LSP diagnostic highlight.
+/// </summary>
 public class NeovimLspDiagnosticHighlightSource
     : Source<NeovimLspDiagnosticHighlightSource.Group, NeovimLspDiagnosticHighlightSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
+    /// <inheritdoc />
     public override string Name => "NeovimLspDiagnosticHighlight";
 
     /// <inheritdoc />
@@ -52,45 +56,66 @@ public class NeovimLspDiagnosticHighlightSource
     /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
+    /// <summary>
+    /// SourceItem for Neovim LSP diagnostic highlight.
+    /// </summary>
     public class Item : INeovimSourceItem
     {
         private readonly Kind _kind;
 
-        public readonly Group FromGroup;
-        public readonly Style? Style;
-        public readonly Group? ToGroup;
+        /// <summary>
+        /// Gets the group to set.
+        /// </summary>
+        public readonly Group Group;
 
+        /// <summary>
+        /// Gets the style to set.
+        /// </summary>
+        public readonly Style? Style;
+
+        /// <summary>
+        /// Gets the group to link.
+        /// </summary>
+        public readonly Group? Link;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Style style)
         {
             _kind = Kind.Set;
-            FromGroup = group;
+            Group = group;
             Style = style;
-            ToGroup = null;
+            Link = null;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group from, Group to, Style? style = null)
         {
             _kind = Kind.Link;
-            FromGroup = from;
+            Group = from;
             Style = style;
-            ToGroup = to;
+            Link = to;
         }
 
+        /// <inheritdoc />
         public NeovimFormatter.Formattable Extract()
         {
             return _kind switch
             {
                 Kind.Set => new NeovimFormatter.Formattable
                 {
-                    Name = FromGroup.ToString(),
+                    Name = Group.ToString(),
                     Id = 0,
                     Style = Style
                 },
                 Kind.Link => new NeovimFormatter.Formattable
                 {
-                    Name = FromGroup.ToString(),
+                    Name = Group.ToString(),
                     Id = 0,
-                    Link = ToGroup!.Value.ToString()
+                    Link = Link!.Value.ToString()
                 },
                 _ => throw new ArgumentOutOfRangeException()
             };
@@ -103,6 +128,10 @@ public class NeovimLspDiagnosticHighlightSource
         }
     }
 
+    /// <summary>
+    /// :h diagnostic-highlights
+    /// </summary>
+    /// https://github.com/neovim/neovim/blob/master/runtime/doc/diagnostic.txt#L176
     public enum Group
     {
         /// <summary>

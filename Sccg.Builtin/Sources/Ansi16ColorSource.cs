@@ -7,10 +7,14 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Sources;
 
+/// <summary>
+/// Source for 16 ANSI colors.
+/// </summary>
 public abstract class Ansi16ColorSource : SourceColorOnly<Ansi16ColorSource.Group, Ansi16ColorSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
+    /// <inheritdoc />
     public override string Name => "Ansi16Color";
 
     /// <inheritdoc />
@@ -63,11 +67,22 @@ public abstract class Ansi16ColorSource : SourceColorOnly<Ansi16ColorSource.Grou
     public sealed class Item : IVimArrayVariableSourceItem, INeovimVariableSourceItem, IIterm2SourceItem,
         IAlacrittySourceItem
     {
+
+        /// <summary>
+        /// Gets the group.
+        /// </summary>
         public readonly Group Group;
+
+        /// <summary>
+        /// Gets the color.
+        /// </summary>
         public readonly Color Color;
 
         private Target _target;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Color color, Target target)
         {
             Group = group;
@@ -75,6 +90,12 @@ public abstract class Ansi16ColorSource : SourceColorOnly<Ansi16ColorSource.Grou
             _target = target;
         }
 
+        /// <summary>
+        /// Tests this item is specified ANSI code color.
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public bool IsAnsi(int code)
         {
             if ((uint)code > 15)
@@ -173,6 +194,9 @@ public abstract class Ansi16ColorSource : SourceColorOnly<Ansi16ColorSource.Grou
         }
     }
 
+    /// <summary>
+    /// Color group (ANSI)
+    /// </summary>
     public enum Group
     {
         /// <summary>

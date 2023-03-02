@@ -10,10 +10,14 @@ namespace Sccg.Builtin.Sources;
 
 // ITermColorsSource looks like interface...
 
+/// <summary>
+/// Source for iTerm2 colors.
+/// </summary>
 public abstract class Iterm2ColorsSource : SourceColorOnly<Iterm2ColorsSource.Group, Iterm2ColorsSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
+    /// <inheritdoc />
     public override string Name => "ITerm2Colors";
 
     /// <inheritdoc />
@@ -45,18 +49,32 @@ public abstract class Iterm2ColorsSource : SourceColorOnly<Iterm2ColorsSource.Gr
     /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
+    /// <summary>
+    /// SourceItem for iTerm2.
+    /// </summary>
     public class Item : IIterm2SourceItem
     {
+        /// <summary>
+        /// Gets the group.
+        /// </summary>
         public readonly Group Group;
+
+        /// <summary>
+        /// Gets the color.
+        /// </summary>
         public readonly Color Color;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Color color)
         {
             Group = group;
             Color = color;
         }
 
-        Iterm2Formatter.Formattable? IIterm2SourceItem.Extract()
+        /// <inheritdoc />
+        public Iterm2Formatter.Formattable? Extract()
         {
             return new Iterm2Formatter.Formattable
             {
@@ -91,6 +109,9 @@ public abstract class Iterm2ColorsSource : SourceColorOnly<Iterm2ColorsSource.Gr
                     .ToString();
     }
 
+    /// <summary>
+    /// Color group for iTerm2.
+    /// </summary>
     public enum Group
     {
         /// <summary>

@@ -6,10 +6,14 @@ using Sccg.Core;
 
 namespace Sccg.Builtin.Sources;
 
+/// <summary>
+/// Source for Vim/Neovim syntax group.
+/// </summary>
 public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, VimSyntaxGroupSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
 
+    /// <inheritdoc />
     public override string Name => "VimSyntaxGroup";
 
     /// <inheritdoc />
@@ -51,14 +55,31 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
     /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
+    /// <summary>
+    /// SourceItem for Vim/Neovim syntax group.
+    /// </summary>
     public sealed class Item : IVimSourceItem, INeovimSourceItem
     {
         private readonly Kind _kind;
 
+        /// <summary>
+        /// Gets the group to set.
+        /// </summary>
         public readonly Group Group;
+
+        /// <summary>
+        /// Gets the style to set.
+        /// </summary>
         public readonly Style? Style;
+
+        /// <summary>
+        /// Gets the group to link.
+        /// </summary>
         public readonly Group? Link;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Style style)
         {
             _kind = Kind.Set;
@@ -66,6 +87,9 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
             Style = style;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Item"/> class.
+        /// </summary>
         public Item(Group group, Group link, Style? style = null)
         {
             _kind = Kind.Link;
