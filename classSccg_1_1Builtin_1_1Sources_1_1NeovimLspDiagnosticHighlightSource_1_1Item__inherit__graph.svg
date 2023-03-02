@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="SourceItem for Neovim LSP diagnostic highlight.">
 <polygon fill="#999999" stroke="#666666" points="170,-30 0,-30 0,0 170,0 170,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
 <text text-anchor="middle" x="85" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">LspDiagnosticHighlightSource.Item</text>

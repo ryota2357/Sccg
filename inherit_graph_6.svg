@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classSccg_1_1Builtin_1_1Develop_1_1StdSourceImpl.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="classSccg_1_1Builtin_1_1Develop_1_1StdSourceImpl.html" target="_top" xlink:title="A standard implementation of ISource.">
 <polygon fill="white" stroke="#666666" points="123,-30 0,-30 0,0 123,0 123,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Develop.Std</text>
 <text text-anchor="middle" x="61.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">SourceImpl&lt; TGroup &gt;</text>

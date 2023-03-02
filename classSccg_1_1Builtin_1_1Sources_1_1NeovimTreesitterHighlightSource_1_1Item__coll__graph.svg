@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 732;
+var viewWidth = 739;
 var viewHeight = 113;
 var sectionId = 'dynsection-1';
 </script>
@@ -57,10 +57,10 @@ var sectionId = 'dynsection-1';
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="724,-73 575,-73 575,-43 724,-43 724,-73"/>
-<text text-anchor="start" x="583" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
-<text text-anchor="middle" x="649.5" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">TreesitterHighlightSource.Item</text>
+<g id="a_node1"><a xlink:title="SourceItem for Neovim Treesitter highlight.">
+<polygon fill="#999999" stroke="#666666" points="731,-73 582,-73 582,-43 731,-43 731,-73"/>
+<text text-anchor="start" x="590" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
+<text text-anchor="middle" x="656.5" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">TreesitterHighlightSource.Item</text>
 </a>
 </g>
 </g>
@@ -76,8 +76,8 @@ var sectionId = 'dynsection-1';
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#63b8ff" d="M452.44,-87.25C483.85,-83.23 522.47,-78.1 557,-73 562.73,-72.15 568.66,-71.25 574.62,-70.32"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="452.2,-83.75 442.72,-88.49 453.08,-90.69 452.2,-83.75"/>
+<path fill="none" stroke="#63b8ff" d="M452.81,-87.62C485.93,-83.59 527.21,-78.34 564,-73 569.73,-72.17 575.67,-71.27 581.63,-70.35"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="452.47,-84.14 442.96,-88.81 453.31,-91.09 452.47,-84.14"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -121,9 +121,9 @@ var sectionId = 'dynsection-1';
 <!-- Node5&#45;&gt;Node1 -->
 <g id="edge4" class="edge">
 <title>Node5&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M432.22,-58C470.72,-58 528.46,-58 574.59,-58"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="432.44,-54.5 422.44,-58 432.44,-61.5 432.44,-54.5"/>
-<text text-anchor="middle" x="513.5" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00"> Style</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M432.46,-58C472.56,-58 533.55,-58 581.62,-58"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="432.49,-54.5 422.49,-58 432.49,-61.5 432.49,-54.5"/>
+<text text-anchor="middle" x="517" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00"> Style</text>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
@@ -143,7 +143,7 @@ var sectionId = 'dynsection-1';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html" target="_top" xlink:title="Source for Vim/Neovim syntax group.">
 <polygon fill="white" stroke="#666666" points="452,-30 326,-30 326,0 452,0 452,-30"/>
 <text text-anchor="start" x="334" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
 <text text-anchor="middle" x="389" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">SyntaxGroupSource</text>
@@ -153,9 +153,9 @@ var sectionId = 'dynsection-1';
 <!-- Node7&#45;&gt;Node1 -->
 <g id="edge6" class="edge">
 <title>Node7&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M463.33,-27.2C498.24,-33.01 539.9,-39.94 574.86,-45.75"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="464.18,-23.79 453.74,-25.6 463.03,-30.7 464.18,-23.79"/>
-<text text-anchor="middle" x="513.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00"> ToVimSyntaxGroup</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M463.58,-26.79C494.58,-31.77 531.05,-37.65 564,-43 569.72,-43.93 575.64,-44.89 581.59,-45.86"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="464.34,-23.37 453.92,-25.24 463.23,-30.28 464.34,-23.37"/>
+<text text-anchor="middle" x="517" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00"> LinkVimSyntaxGroup</text>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">

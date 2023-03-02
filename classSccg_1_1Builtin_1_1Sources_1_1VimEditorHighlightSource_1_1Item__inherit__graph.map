@@ -1,5 +1,5 @@
 <map id="Sccg.Builtin.Sources.VimEditorHighlightSource.Item" name="Sccg.Builtin.Sources.VimEditorHighlightSource.Item">
-<area shape="rect" id="node1" title=" " alt="" coords="5,225,181,265"/>
+<area shape="rect" id="node1" title="SourceItem for Vim editor highlight." alt="" coords="5,225,181,265"/>
 <area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" title="SourceItem for Vim color scheme." alt="" coords="35,152,151,177"/>
 <area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" title="Base SourceItem for Vim." alt="" coords="20,79,167,104"/>
 <area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="47,5,140,31"/>

@@ -114,7 +114,7 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" target="_top" xlink:title="SourceItem for Neovim&#39;s editor highlight&#45;groups.">
 <polygon fill="white" stroke="#666666" points="616.5,-222 473.5,-222 473.5,-192 616.5,-192 616.5,-222"/>
 <text text-anchor="start" x="481.5" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
 <text text-anchor="middle" x="545" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">EditorHighlightSource.Item</text>
@@ -130,7 +130,7 @@ var sectionId = 'dynsection-0';
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" target="_top" xlink:title="SourceItem for Neovim LSP diagnostic highlight.">
 <polygon fill="white" stroke="#666666" points="630,-174 460,-174 460,-144 630,-144 630,-174"/>
 <text text-anchor="start" x="468" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
 <text text-anchor="middle" x="545" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">LspDiagnosticHighlightSource.Item</text>
@@ -146,7 +146,7 @@ var sectionId = 'dynsection-0';
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" target="_top" xlink:title="SourceItem for Neovim Treesitter highlight.">
 <polygon fill="white" stroke="#666666" points="619.5,-126 470.5,-126 470.5,-96 619.5,-96 619.5,-126"/>
 <text text-anchor="start" x="478.5" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
 <text text-anchor="middle" x="545" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">TreesitterHighlightSource.Item</text>
@@ -162,7 +162,7 @@ var sectionId = 'dynsection-0';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title="SourceItem for Vim/Neovim syntax group.">
 <polygon fill="white" stroke="#666666" points="608,-78 482,-78 482,-48 608,-48 608,-78"/>
 <text text-anchor="start" x="490" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
 <text text-anchor="middle" x="545" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">SyntaxGroupSource.Item</text>
@@ -178,7 +178,7 @@ var sectionId = 'dynsection-0';
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node9"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" target="_top" xlink:title="SourceItem for 16 ANSI colors.">
 <polygon fill="white" stroke="#666666" points="614.5,-30 475.5,-30 475.5,0 614.5,0 614.5,-30"/>
 <text text-anchor="start" x="483.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Ansi16</text>
 <text text-anchor="middle" x="545" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ColorSource.Item</text>

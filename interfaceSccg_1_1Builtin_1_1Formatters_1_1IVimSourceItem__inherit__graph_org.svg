@@ -21,7 +21,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource_1_1Item.html" target="_top" xlink:title="SourceItem for Vim editor highlight.">
 <polygon fill="white" stroke="#666666" points="540,-78 408,-78 408,-48 540,-48 540,-78"/>
 <text text-anchor="start" x="416" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
 <text text-anchor="middle" x="474" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">EditorHighlightSource.Item</text>
@@ -37,7 +37,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title="SourceItem for Vim/Neovim syntax group.">
 <polygon fill="white" stroke="#666666" points="537,-30 411,-30 411,0 537,0 537,-30"/>
 <text text-anchor="start" x="419" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
 <text text-anchor="middle" x="474" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">SyntaxGroupSource.Item</text>

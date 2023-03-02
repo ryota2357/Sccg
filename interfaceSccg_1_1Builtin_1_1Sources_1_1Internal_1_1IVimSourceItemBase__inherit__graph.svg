@@ -114,7 +114,7 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" target="_top" xlink:title="SourceItem for 16 ANSI colors.">
 <polygon fill="white" stroke="#666666" points="605,-126 466,-126 466,-96 605,-96 605,-126"/>
 <text text-anchor="start" x="474" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Ansi16</text>
 <text text-anchor="middle" x="535.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">ColorSource.Item</text>
@@ -130,7 +130,7 @@ var sectionId = 'dynsection-0';
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource_1_1Item.html" target="_top" xlink:title="SourceItem for Vim editor highlight.">
 <polygon fill="white" stroke="#666666" points="601.5,-78 469.5,-78 469.5,-48 601.5,-48 601.5,-78"/>
 <text text-anchor="start" x="477.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
 <text text-anchor="middle" x="535.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">EditorHighlightSource.Item</text>
@@ -146,7 +146,7 @@ var sectionId = 'dynsection-0';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title="SourceItem for Vim/Neovim syntax group.">
 <polygon fill="white" stroke="#666666" points="598.5,-30 472.5,-30 472.5,0 598.5,0 598.5,-30"/>
 <text text-anchor="start" x="480.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
 <text text-anchor="middle" x="535.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">SyntaxGroupSource.Item</text>

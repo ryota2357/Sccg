@@ -1,5 +1,6 @@
 <map id="Sccg.Builtin.Formatters.IAlacrittySourceItem" name="Sccg.Builtin.Formatters.IAlacrittySourceItem">
-<area shape="rect" id="node1" title="SourceItem for Alacritty config." alt="" coords="21,79,181,119"/>
-<area shape="rect" id="node3" href="$classSccg_1_1Builtin_1_1Sources_1_1AlacrittyColorsSource_1_1Item.html" title=" " alt="" coords="5,167,197,207"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="55,5,148,31"/>
+<area shape="rect" id="node1" title="SourceItem for Alacritty config." alt="" coords="147,37,307,77"/>
+<area shape="rect" id="node3" href="$classSccg_1_1Builtin_1_1Sources_1_1AlacrittyColorsSource_1_1Item.html" title="SourceItem for Alacritty." alt="" coords="355,5,547,45"/>
+<area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" title="SourceItem for 16 ANSI colors." alt="" coords="358,69,543,109"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="5,45,99,70"/>
 </map>

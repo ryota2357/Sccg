@@ -21,7 +21,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" target="_top" xlink:title="SourceItem for Neovim&#39;s editor highlight&#45;groups.">
 <polygon fill="white" stroke="#666666" points="580.5,-174 437.5,-174 437.5,-144 580.5,-144 580.5,-174"/>
 <text text-anchor="start" x="445.5" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
 <text text-anchor="middle" x="509" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">EditorHighlightSource.Item</text>
@@ -37,7 +37,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" target="_top" xlink:title="SourceItem for Neovim LSP diagnostic highlight.">
 <polygon fill="white" stroke="#666666" points="594,-126 424,-126 424,-96 594,-96 594,-126"/>
 <text text-anchor="start" x="432" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
 <text text-anchor="middle" x="509" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">LspDiagnosticHighlightSource.Item</text>
@@ -53,7 +53,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" target="_top" xlink:title="SourceItem for Neovim Treesitter highlight.">
 <polygon fill="white" stroke="#666666" points="583.5,-78 434.5,-78 434.5,-48 583.5,-48 583.5,-78"/>
 <text text-anchor="start" x="442.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Neovim</text>
 <text text-anchor="middle" x="509" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">TreesitterHighlightSource.Item</text>
@@ -69,7 +69,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" target="_top" xlink:title="SourceItem for Vim/Neovim syntax group.">
 <polygon fill="white" stroke="#666666" points="572,-30 446,-30 446,0 572,0 572,-30"/>
 <text text-anchor="start" x="454" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
 <text text-anchor="middle" x="509" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">SyntaxGroupSource.Item</text>

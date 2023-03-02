@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="SourceItem for Vim/Neovim syntax group.">
 <polygon fill="#999999" stroke="#666666" points="186,-30 60,-30 60,0 186,0 186,-30"/>
 <text text-anchor="start" x="68" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Builtin.Sources.Vim</text>
 <text text-anchor="middle" x="123" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">SyntaxGroupSource.Item</text>

@@ -1,5 +1,5 @@
 <map id="Sccg.Builtin.Sources.NeovimEditorHighlightSource.Item" name="Sccg.Builtin.Sources.NeovimEditorHighlightSource.Item">
-<area shape="rect" id="node1" title=" " alt="" coords="86,243,277,283"/>
+<area shape="rect" id="node1" title="SourceItem for Neovim&#39;s editor highlight&#45;groups." alt="" coords="86,243,277,283"/>
 <area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title="SourceItem for Neovim color scheme." alt="" coords="45,155,184,180"/>
 <area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title="Base SourceItem for Neovim." alt="" coords="5,80,173,105"/>
 <area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="43,5,136,31"/>
