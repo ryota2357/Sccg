@@ -12,10 +12,16 @@ public static class UtilityExtensions
     /// <summary>
     /// Filter null values.
     /// </summary>
-    public static IEnumerable<T> WhereNotNull<T>(this IEnumerable<T?>? source)
+    public static IEnumerable<T> WhereNotNull<T>(this IEnumerable<T?>? source) where T : class
     {
         // NOTE: If use OfType<T>, Rider shows warning.
         return source == null ? Enumerable.Empty<T>() : source.Where(x => x is not null).Select(x => x!);
+    }
+
+    /// <inheritdoc cref="WhereNotNull{T}(System.Collections.Generic.IEnumerable{T?}?)"/>
+    public static IEnumerable<T> WhereNotNull<T>(this IEnumerable<T?>? source) where T : struct
+    {
+        return source == null ? Enumerable.Empty<T>() : source.Where(x => x.HasValue).Select(x => x!.Value);
     }
 
     public static bool Contains(this Style.Modifier e, Style.Modifier t)

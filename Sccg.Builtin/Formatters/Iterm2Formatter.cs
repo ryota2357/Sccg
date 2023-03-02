@@ -1,8 +1,10 @@
 using System;
 using System.Text;
 using System.Collections.Generic;
+using System.Linq;
 using Sccg.Builtin.Writers;
 using Sccg.Core;
+using Sccg.Utility;
 
 namespace Sccg.Builtin.Formatters;
 
@@ -11,7 +13,7 @@ namespace Sccg.Builtin.Formatters;
 /// </summary>
 public interface IIterm2SourceItem : ISourceItem
 {
-    public Iterm2Formatter.Formattable Extract();
+    public Iterm2Formatter.Formattable? Extract();
 }
 
 /// <summary>
@@ -25,9 +27,8 @@ public class Iterm2Formatter : Formatter<IIterm2SourceItem, SingleTextContent>
     protected override SingleTextContent Format(IEnumerable<IIterm2SourceItem> items, BuilderQuery query)
     {
         var sb = new StringBuilder();
-        foreach (var item in items)
+        foreach (var e in items.Select(x => x.Extract()).WhereNotNull())
         {
-            var e = item.Extract();
             sb.AppendLine($"""
             {"\t"}<key>{e.Key}</key>
             {"\t"}<dict>

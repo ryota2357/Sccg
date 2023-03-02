@@ -28,7 +28,7 @@ public interface IVimSourceItem : IVimSourceItemBase
 /// </summary>
 public interface IVimArrayVariableSourceItem : IVimSourceItemBase
 {
-    public VimFormatter.FormattableArrayVariable Extract();
+    public VimFormatter.FormattableArrayVariable? Extract();
 }
 
 /// <summary>
@@ -112,6 +112,7 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
         // let g:* = []
         var arrayItem = items.OfType<IVimArrayVariableSourceItem>()
                              .Select(x => x.Extract())
+                             .WhereNotNull()
                              .GroupBy(x => x.Name);
         foreach (var one in arrayItem)
         {

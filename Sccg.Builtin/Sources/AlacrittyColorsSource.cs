@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -55,28 +56,42 @@ public abstract partial class AlacrittyColorsSource : SourceColorOnly<AlacrittyC
             Color = color;
         }
 
-        public AlacrittyFormatter.Formattable Extract()
+        AlacrittyFormatter.Formattable? IAlacrittySourceItem.Extract()
         {
-            if (Color.IsDefault)
-            {
-                throw new NotSupportedException("Alacritty does not support Color.Default.");
-            }
             return new AlacrittyFormatter.Formattable(
-                Keys: LargeChar().Replace(Group.ToString(), ".$1")
-                                 .Split('.')
-                                 .Skip(1)
-                                 .Select(s => s.ToLower())
-                                 .Prepend("colors")
-                                 .ToArray()
-                                 .AsReadOnly(),
-                Value: Color.IsNone ? "None" : $"'{Color.HexCode}'"
+                Keys: CreateKeys(Group),
+                Value: CreateValue(Color)
             );
         }
 
-        [GeneratedRegex("([A-Z])")]
-        private static partial Regex LargeChar();
     }
 
+    internal static ReadOnlyCollection<string> CreateKeys(Group group)
+    {
+        return LargeChar().Replace(group.ToString(), ".$1")
+                          .Split('.')
+                          .Skip(1)
+                          .Select(s => s.ToLower())
+                          .Prepend("colors")
+                          .ToArray()
+                          .AsReadOnly();
+    }
+
+    internal static string CreateValue(Color color)
+    {
+        if (color.IsDefault)
+        {
+            throw new NotSupportedException("Alacritty does not support Color.Default.");
+        }
+        return color.IsNone ? "None" : $"'{color.HexCode}'";
+    }
+
+    [GeneratedRegex("([A-Z])")]
+    private static partial Regex LargeChar();
+
+    /// <summary>
+    /// Color group for Alacritty.
+    /// </summary>
     public enum Group
     {
         /// <summary>

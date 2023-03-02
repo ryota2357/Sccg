@@ -133,6 +133,8 @@ file class Colors : Iterm2ColorsSource
 
 file class Ansi16Colors : Ansi16ColorSource
 {
+    protected override Target ItemTarget => Target.None;
+
     protected override void Custom()
     {
         Set(Group.Ansi0, "000000");

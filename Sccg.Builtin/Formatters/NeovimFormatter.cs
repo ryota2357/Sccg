@@ -27,7 +27,7 @@ public interface INeovimSourceItem : INeovimSourceItemBase
 /// </summary>
 public interface INeovimVariableSourceItem : INeovimSourceItemBase
 {
-    public NeovimFormatter.FormattableVariable Extract();
+    public NeovimFormatter.FormattableVariable? Extract();
 }
 
 /// <summary>
@@ -149,7 +149,9 @@ public class NeovimFormatter : Formatter<INeovimSourceItemBase, SingleTextConten
         }
 
         // vim.g.* = { *, *, ...}
-        var variableItem = items.OfType<INeovimVariableSourceItem>().Select(x => x.Extract());
+        var variableItem = items.OfType<INeovimVariableSourceItem>()
+                                .Select(x => x.Extract())
+                                .WhereNotNull();
         foreach (var (name, value) in variableItem)
         {
             yield return $"vim.g.{name} = '{value}'";

@@ -6,6 +6,7 @@ using System.Text;
 using Sccg.Builtin.Develop;
 using Sccg.Builtin.Writers;
 using Sccg.Core;
+using Sccg.Utility;
 
 namespace Sccg.Builtin.Formatters;
 
@@ -14,7 +15,7 @@ namespace Sccg.Builtin.Formatters;
 /// </summary>
 public interface IAlacrittySourceItem : ISourceItem
 {
-    public AlacrittyFormatter.Formattable Extract();
+    public AlacrittyFormatter.Formattable? Extract();
 }
 
 /// <summary>
@@ -29,7 +30,7 @@ public class AlacrittyFormatter : Formatter<IAlacrittySourceItem, SingleTextCont
     {
         var metadata = query.GetMetadata();
         var header = StdFormatterImpl.CreateHeader(metadata, "#");
-        var body = CreateBody(items.Select(i => i.Extract()).ToList());
+        var body = CreateBody(items.Select(i => i.Extract()).WhereNotNull().ToList());
         return new SingleTextContent($"{metadata.ThemeName}.yaml", $"{string.Join('\n', header)}\n{body}");
     }
 

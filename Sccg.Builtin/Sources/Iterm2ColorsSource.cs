@@ -56,35 +56,39 @@ public abstract class Iterm2ColorsSource : SourceColorOnly<Iterm2ColorsSource.Gr
             Color = color;
         }
 
-        public Iterm2Formatter.Formattable Extract()
+        Iterm2Formatter.Formattable? IIterm2SourceItem.Extract()
         {
-            var key = Group.ToString()
-                            .Aggregate(new List<StringBuilder>() { new() }, (list, next) =>
-                            {
-                                if (list[^1].Length == 0)
-                                {
-                                    list[^1].Append(next);
-                                }
-                                else if (char.IsLower(list[^1][^1]) && (char.IsUpper(next) || char.IsNumber(next)))
-                                {
-                                    list.Add(new StringBuilder(next.ToString()));
-                                }
-                                else
-                                {
-                                    list[^1].Append(next);
-                                }
-
-                                return list;
-                            })
-                            .Aggregate(new StringBuilder(), (builder, next) => builder.Append(next).Append(' '))
-                            .Append("Color")
-                            .ToString();
             return new Iterm2Formatter.Formattable
             {
-                Key = key,
+                Key = CreateKey(Group),
                 Color = Color
             };
         }
+    }
+
+    internal static string CreateKey(Group group)
+    {
+        return group.ToString()
+                    .Aggregate(new List<StringBuilder>() { new() }, (list, next) =>
+                    {
+                        if (list[^1].Length == 0)
+                        {
+                            list[^1].Append(next);
+                        }
+                        else if (char.IsLower(list[^1][^1]) && (char.IsUpper(next) || char.IsNumber(next)))
+                        {
+                            list.Add(new StringBuilder(next.ToString()));
+                        }
+                        else
+                        {
+                            list[^1].Append(next);
+                        }
+
+                        return list;
+                    })
+                    .Aggregate(new StringBuilder(), (builder, next) => builder.Append(next).Append(' '))
+                    .Append("Color")
+                    .ToString();
     }
 
     public enum Group
