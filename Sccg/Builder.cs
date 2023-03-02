@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using System.Reflection;
 using Sccg.Core;
 
@@ -18,8 +19,8 @@ public class Builder
     private readonly Container<IWriter> _writers = new(ContainerType.Writer);
     private readonly Container<ISourceItemConverter> _sourceItemConverters = new(ContainerType.SourceItemConverter);
     private readonly Container<IContentConverter> _contentConverters = new(ContainerType.ContentConverter);
-    private readonly List<ISourceItem> _sourceItems = new();
-    private readonly List<IContent> _contents = new();
+    private List<ISourceItem> _sourceItems = new();
+    private List<IContent> _contents = new();
     private readonly BuilderQuery _query;
     private State _state = State.NotStarted;
 
@@ -80,9 +81,7 @@ public class Builder
         {
             try
             {
-                var items = converter.Convert(_sourceItems, _query);
-                _sourceItems.Clear();
-                _sourceItems.AddRange(items);
+                _sourceItems = converter.Convert(_sourceItems, _query).ToList();
             }
             catch (Exception e)
             {
@@ -109,9 +108,7 @@ public class Builder
         {
             try
             {
-                var contents = converter.Convert(_contents, _query);
-                _contents.Clear();
-                _contents.AddRange(contents);
+                _contents = converter.Convert(_contents, _query).ToList();
             }
             catch (Exception e)
             {
