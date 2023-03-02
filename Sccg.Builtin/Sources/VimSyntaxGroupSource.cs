@@ -16,6 +16,7 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
+        var save = new Dictionary<Group, Style>();
 
         foreach (var id in ids)
         {
@@ -28,9 +29,15 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
                 switch (to)
                 {
                     case Group toGroup:
-                        yield return new Item(fromGroup, toGroup);
+                        Style? sty = save.ContainsKey(toGroup) ? save[toGroup] : null;
+                        if (sty is not null)
+                        {
+                            save[fromGroup] = sty.Value;
+                        }
+                        yield return new Item(fromGroup, toGroup, sty);
                         break;
                     case Style style:
+                        save[fromGroup] = style;
                         yield return new Item(fromGroup, style);
                         break;
                 }
@@ -59,11 +66,12 @@ public abstract class VimSyntaxGroupSource : Source<VimSyntaxGroupSource.Group, 
             Style = style;
         }
 
-        public Item(Group group, Group link)
+        public Item(Group group, Group link, Style? style = null)
         {
             _kind = Kind.Link;
             Group = group;
             Link = link;
+            Style = style;
         }
 
         VimFormatter.Formattable IVimSourceItem.Extract()

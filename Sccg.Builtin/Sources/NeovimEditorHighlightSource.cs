@@ -17,6 +17,7 @@ public abstract class NeovimEditorHighlightSource
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
+        var save = new Dictionary<Group, Style>();
 
         foreach (var id in ids)
         {
@@ -29,9 +30,15 @@ public abstract class NeovimEditorHighlightSource
                 switch (to)
                 {
                     case Group toGroup:
-                        yield return new Item(fromGroup, toGroup);
+                        Style? sty = save.ContainsKey(toGroup) ? save[toGroup] : null;
+                        if (sty is not null)
+                        {
+                            save[fromGroup] = sty.Value;
+                        }
+                        yield return new Item(fromGroup, toGroup, sty);
                         break;
                     case Style style:
+                        save[fromGroup] = style;
                         yield return new Item(fromGroup, style);
                         break;
                 }
@@ -61,11 +68,11 @@ public abstract class NeovimEditorHighlightSource
             ToGroup = null;
         }
 
-        public Item(Group from, Group to)
+        public Item(Group from, Group to, Style? style = null)
         {
             _kind = Kind.Link;
             FromGroup = from;
-            Style = null;
+            Style = style;
             ToGroup = to;
         }
 
