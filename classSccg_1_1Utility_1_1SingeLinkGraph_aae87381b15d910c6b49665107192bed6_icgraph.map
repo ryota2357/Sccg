@@ -1,5 +1,5 @@
 <map id="Sccg.Utility.SingeLinkGraph.GetLink" name="Sccg.Utility.SingeLinkGraph.GetLink">
-<area shape="rect" id="node1" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" id="node1" title="Get the vertex number that from links to." alt="" coords="240,37,427,77"/>
 <area shape="rect" id="node2" href="$classSccg_1_1Utility_1_1SingeLinkGraph.html#a0e9b3a553d560fb6d4c9a3d650ab1f19" title="Get an array of all vertex numbers in topological order. &#160;&#160;Note: This method throws InvalidOperationE..." alt="" coords="5,5,192,45"/>
-<area shape="rect" id="node3" href="$classSccg_1_1Utility_1_1SingeLinkGraph.html#a6569fc2a11b6bc09505ec7c269d80d28" title=" " alt="" coords="5,69,192,109"/>
+<area shape="rect" id="node3" href="$classSccg_1_1Utility_1_1SingeLinkGraph.html#a6569fc2a11b6bc09505ec7c269d80d28" title="Get the vertex number that from links to." alt="" coords="5,69,192,109"/>
 </map>

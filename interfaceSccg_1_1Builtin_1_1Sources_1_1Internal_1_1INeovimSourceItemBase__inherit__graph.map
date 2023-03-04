@@ -1,11 +1,12 @@
 <map id="Sccg.Builtin.Sources.Internal.INeovimSourceItemBase" name="Sccg.Builtin.Sources.Internal.INeovimSourceItemBase">
-<area shape="rect" id="node1" title="Base SourceItem for Neovim." alt="" coords="147,165,337,205"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title="SourceItem for Neovim color scheme." alt="" coords="398,133,558,173"/>
-<area shape="rect" id="node8" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" title="SourceItem for Neovim color scheme." alt="" coords="385,229,571,269"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="5,173,99,198"/>
+<area shape="rect" id="node1" title="Base SourceItem for Neovim." alt="" coords="147,229,337,269"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title="SourceItem for Neovim color scheme." alt="" coords="398,165,558,205"/>
+<area shape="rect" id="node9" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimVariableSourceItem.html" title="SourceItem for Neovim color scheme." alt="" coords="385,293,571,333"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="5,237,99,262"/>
 <area shape="rect" id="node4" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource_1_1Item.html" title="SourceItem for Neovim&#39;s editor highlight&#45;groups." alt="" coords="637,5,827,45"/>
 <area shape="rect" id="node5" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource_1_1Item.html" title="SourceItem for Neovim LSP diagnostic highlight." alt="" coords="619,69,845,109"/>
 <area shape="rect" id="node6" href="$classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource_1_1Item.html" title="SourceItem for Neovim Treesitter highlight." alt="" coords="633,133,831,173"/>
-<area shape="rect" id="node7" href="$classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" title="SourceItem for Vim/Neovim syntax group." alt="" coords="648,197,816,237"/>
-<area shape="rect" id="node9" href="$classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" title="SourceItem for 16 ANSI colors." alt="" coords="639,261,825,301"/>
+<area shape="rect" id="node7" href="$classSccg_1_1Builtin_1_1Sources_1_1VimCustomGroupSource_1_1Item.html" title="SourceItem for Vim/Neovim custom highlight group." alt="" coords="646,197,818,237"/>
+<area shape="rect" id="node8" href="$classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource_1_1Item.html" title="SourceItem for Vim/Neovim syntax group." alt="" coords="648,261,816,301"/>
+<area shape="rect" id="node10" href="$classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html" title="SourceItem for 16 ANSI colors." alt="" coords="639,325,825,365"/>
 </map>

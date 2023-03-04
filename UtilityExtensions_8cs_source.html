@@ -95,21 +95,21 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">return</span> source == <span class="keyword">null</span> ? Enumerable.Empty&lt;T&gt;() : source.Where(x =&gt; x.HasValue).Select(x =&gt; x!.Value);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> Contains(<span class="keyword">this</span> Style.Modifier e, Style.Modifier t)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> t <span class="keywordflow">switch</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            Style.Modifier.Default =&gt; e == Style.Modifier.Default,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            Style.Modifier.None =&gt; e == Style.Modifier.None,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            _ =&gt; (e &amp; t) == t</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        };</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">public</span> <span class="keyword">static</span> IEnumerable&lt;Style.Modifier&gt; DivideSingles(<span class="keyword">this</span> Style.Modifier e)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> Enum.GetValues&lt;Style.Modifier&gt;().Where(x =&gt; e.Contains(x));</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> Contains(<span class="keyword">this</span> Style.Modifier e, Style.Modifier t)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">return</span> t <span class="keywordflow">switch</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            Style.Modifier.Default =&gt; e == Style.Modifier.Default,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            Style.Modifier.None =&gt; e == Style.Modifier.None,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            _ =&gt; (e &amp; t) == t</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        };</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span> <span class="keyword">static</span> IEnumerable&lt;Style.Modifier&gt; DivideSingles(<span class="keyword">this</span> Style.Modifier e)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> Enum.GetValues&lt;Style.Modifier&gt;().Where(x =&gt; e.Contains(x));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="ttc" id="anamespaceSccg_1_1Utility_html"><div class="ttname"><a href="namespaceSccg_1_1Utility.html">Sccg.Utility</a></div><div class="ttdef"><b>Definition:</b> <a href="ObjectStore_8cs_source.html#l00005">ObjectStore.cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

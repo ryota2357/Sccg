@@ -130,7 +130,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a1e3778ad53dab91fcec398f1914fca90"><td class="memItemLeft" align="right" valign="top">abstract string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Source.html#a1e3778ad53dab91fcec398f1914fca90">Name</a><code> [get]</code></td></tr>
-<tr class="memdesc:a1e3778ad53dab91fcec398f1914fca90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the source name.  <br /></td></tr>
+<tr class="memdesc:a1e3778ad53dab91fcec398f1914fca90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the source name.<a class="el" href="classSccg_1_1Builder.html" title="The builder of color configuration.">Builder</a> cannot have more than one <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html" title="Represents a source that provides source items.">ISource</a> with the same <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html#a6cf1cc9559ca3031496704e1591a605b" title="Gets the source name.">Name</a> to avoid creating duplicate <a class="el" href="interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item.">ISourceItem</a>.   <br /></td></tr>
 <tr class="separator:a1e3778ad53dab91fcec398f1914fca90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad8882be8ea6aa004ec7ca0be5b0ef07"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSccg_1_1Core_1_1Source.html#aad8882be8ea6aa004ec7ca0be5b0ef07">Priority</a><code> [get]</code></td></tr>
 <tr class="memdesc:aad8882be8ea6aa004ec7ca0be5b0ef07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the order in which the source is applied. The lower the number, the earlier the source is applied.  <br /></td></tr>
@@ -185,7 +185,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html#a208690ba90e8346c49bc063d99e78328">Sccg.Core.ISource</a>.</p>
 
-<p>Implemented in <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a3c3f00609e03f192279fdaa7f89df94d">Sccg.Builtin.Sources.NeovimEditorHighlightSource</a>, <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource.html#a0347296d5f149206c94625e12ca0407c">Sccg.Builtin.Sources.NeovimLspDiagnosticHighlightSource</a>, <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#a159d3b7ab69c76ea5aaefc9ec300dc40">Sccg.Builtin.Sources.NeovimTreesitterHighlightSource</a>, <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a282c265d8ce456c6291151e4607b7a13">Sccg.Builtin.Sources.VimEditorHighlightSource</a>, and <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html#a2ef2595faa3801f2d7faa4e927e304f0">Sccg.Builtin.Sources.VimSyntaxGroupSource</a>.</p>
+<p>Implemented in <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a3c3f00609e03f192279fdaa7f89df94d">Sccg.Builtin.Sources.NeovimEditorHighlightSource</a>, <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimLspDiagnosticHighlightSource.html#a0347296d5f149206c94625e12ca0407c">Sccg.Builtin.Sources.NeovimLspDiagnosticHighlightSource</a>, <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#a159d3b7ab69c76ea5aaefc9ec300dc40">Sccg.Builtin.Sources.NeovimTreesitterHighlightSource</a>, <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1VimCustomGroupSource.html#aaeabc4579a7d1ff05d9957de0d09cb1c">Sccg.Builtin.Sources.VimCustomGroupSource</a>, <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a282c265d8ce456c6291151e4607b7a13">Sccg.Builtin.Sources.VimEditorHighlightSource</a>, and <a class="el" href="classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html#a2ef2595faa3801f2d7faa4e927e304f0">Sccg.Builtin.Sources.VimSyntaxGroupSource</a>.</p>
 
 </div>
 </div>
@@ -524,7 +524,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the source name. </p>
+<p>Gets the source name.<a class="el" href="classSccg_1_1Builder.html" title="The builder of color configuration.">Builder</a> cannot have more than one <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html" title="Represents a source that provides source items.">ISource</a> with the same <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html#a6cf1cc9559ca3031496704e1591a605b" title="Gets the source name.">Name</a> to avoid creating duplicate <a class="el" href="interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item.">ISourceItem</a>.  </p>
 
 <p>Implements <a class="el" href="interfaceSccg_1_1Core_1_1ISource.html#a6cf1cc9559ca3031496704e1591a605b">Sccg.Core.ISource</a>.</p>
 

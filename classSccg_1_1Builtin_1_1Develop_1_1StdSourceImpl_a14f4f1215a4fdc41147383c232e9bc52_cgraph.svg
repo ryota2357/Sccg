@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Utility_1_1SingeLinkGraph.html#aa9117b90b8e20cb87a0f3a004641976e" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Utility_1_1SingeLinkGraph.html#aa9117b90b8e20cb87a0f3a004641976e" target="_top" xlink:title="Create a link from from to to.">
 <polygon fill="white" stroke="#666666" points="301.5,-85.5 161.5,-85.5 161.5,-55.5 301.5,-55.5 301.5,-85.5"/>
 <text text-anchor="start" x="169.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Utility.SingeLinkGraph.</text>
 <text text-anchor="middle" x="231.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">CreateLink</text>
@@ -37,7 +37,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classSccg_1_1Utility_1_1ObjectStore.html#a06da64733dd49f82e10804407346c6ef" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classSccg_1_1Utility_1_1ObjectStore.html#a06da64733dd49f82e10804407346c6ef" target="_top" xlink:title="Save data to store then return the id.">
 <polygon fill="white" stroke="#666666" points="304,-19 159,-19 159,0 304,0 304,-19"/>
 <text text-anchor="middle" x="231.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Utility.ObjectStore.Save</text>
 </a>

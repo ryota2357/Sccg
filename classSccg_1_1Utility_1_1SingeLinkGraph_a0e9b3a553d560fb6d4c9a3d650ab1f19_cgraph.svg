@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classSccg_1_1Utility_1_1SingeLinkGraph.html#aae87381b15d910c6b49665107192bed6" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classSccg_1_1Utility_1_1SingeLinkGraph.html#aae87381b15d910c6b49665107192bed6" target="_top" xlink:title="Get the vertex number that from links to.">
 <polygon fill="white" stroke="#666666" points="316,-30 176,-30 176,0 316,0 316,-30"/>
 <text text-anchor="start" x="184" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Sccg.Utility.SingeLinkGraph.</text>
 <text text-anchor="middle" x="246" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">GetLink</text>
