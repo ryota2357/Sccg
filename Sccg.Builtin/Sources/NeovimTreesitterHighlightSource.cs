@@ -13,7 +13,14 @@ namespace Sccg.Builtin.Sources;
 public abstract partial class NeovimTreesitterHighlightSource
     : Source<NeovimTreesitterHighlightSource.Group, NeovimTreesitterHighlightSource.Item>
 {
-    private readonly StdSourceImpl<Group> _impl = new();
+    private record FiletypedGroup(Group Name, string? Filetype)
+    {
+        public (Group name, string? filetyp) Deconstruct() => (Name, Filetype);
+        public static implicit operator FiletypedGroup((Group name, string? filetyp) value) => new(value.name, value.filetyp);
+    }
+
+    private readonly StdSourceImpl<FiletypedGroup> _impl = new();
+    private string? _filetype;
 
     /// <inheritdoc />
     public override string Name => "NeovimTreesitterHighlight";
@@ -22,32 +29,32 @@ public abstract partial class NeovimTreesitterHighlightSource
     protected override IEnumerable<Item> CollectItems()
     {
         var ids = _impl.Graph.TopologicalOrderList();
-        var save = new Dictionary<Group, Style>();
+        var save = new Dictionary<FiletypedGroup, Style>();
 
         foreach (var id in ids)
         {
             var data = _impl.Store.Load(id).data;
             var next = _impl.Graph.GetLink(id);
 
-            if (data is Group fromGroup && next is not null)
+            if (data is FiletypedGroup fromGroup && next is not null)
             {
                 var to = _impl.Store.Load(next.Value).data;
                 switch (to)
                 {
-                    case Group toGroup:
+                    case FiletypedGroup toGroup:
                         Style? sty = save.ContainsKey(toGroup) ? save[toGroup] : null;
                         if (sty is not null)
                         {
                             save[fromGroup] = sty.Value;
                         }
-                        yield return new Item(fromGroup, toGroup, sty);
+                        yield return new Item(fromGroup.Deconstruct(), toGroup.Deconstruct(), sty);
                         break;
                     case Style style:
                         save[fromGroup] = style;
-                        yield return new Item(fromGroup, style);
+                        yield return new Item(fromGroup.Deconstruct(), style);
                         break;
                     case VimSyntaxGroupSource.Group vimSyntaxGroup:
-                        yield return new Item(fromGroup, vimSyntaxGroup);
+                        yield return new Item(fromGroup.Deconstruct(), vimSyntaxGroup);
                         break;
                 }
             }
@@ -55,10 +62,45 @@ public abstract partial class NeovimTreesitterHighlightSource
     }
 
     /// <inheritdoc />
-    protected override void Set(Group group, Style style) => _impl.Set(group, style);
+    protected override void Set(Group group, Style style)
+    {
+        _impl.Set((group, _filetype), style);
+    }
 
     /// <inheritdoc />
-    protected override void Link(Group from, Group to) => _impl.Link(from, to);
+    /// <remarks>
+    /// If you want to link to filetype specific group, use <see cref="Link(Group, Group, string)"/>.
+    /// </remarks>
+    protected override void Link(Group from, Group to)
+    {
+        _impl.Link((from, _filetype), (to, null));
+    }
+
+    /// <summary>
+    /// Link `from` group to `to` filetype specific group.
+    /// </summary>
+    /// <param name="from">A syntax/design group name.</param>
+    /// <param name="to">A syntax/design group name.</param>
+    /// <param name="filetype">A filetype name.</param>
+    protected void Link(Group from, Group to, string filetype)
+    {
+        _impl.Link((from, _filetype), (to, filetype));
+    }
+
+    /// <summary>
+    /// Custom for the specified filetype.
+    /// </summary>
+    /// <exception cref="InvalidOperationException">Attempt to enter a nested filetype section.</exception>
+    protected void Filetype(string filetype, Action custom)
+    {
+        if (_filetype is not null)
+        {
+            throw new InvalidOperationException("Already in filetype section.");
+        }
+        _filetype = filetype;
+        custom();
+        _filetype = null;
+    }
 
     /// <inheritdoc cref="Link(Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group)"/>
     protected void Link(Group from, VimSyntaxGroupSource.Group to)
@@ -78,11 +120,13 @@ public abstract partial class NeovimTreesitterHighlightSource
     public class Item : INeovimSourceItem
     {
         private readonly Kind _kind;
+        private readonly FiletypedGroup _group;
+        private readonly FiletypedGroup? _link;
 
         /// <summary>
         /// Gets the group to set.
         /// </summary>
-        public readonly Group Group;
+        public (Group name, string? filetype) Group => _group.Deconstruct();
 
         /// <summary>
         /// Gets the style to set.
@@ -92,7 +136,7 @@ public abstract partial class NeovimTreesitterHighlightSource
         /// <summary>
         /// Gets the group to link.
         /// </summary>
-        public readonly Group? Link;
+        public (Group name, string? filetype)? Link => _link?.Deconstruct();
 
         /// <summary>
         /// Gets the vim syntax group to link.
@@ -102,34 +146,34 @@ public abstract partial class NeovimTreesitterHighlightSource
         /// <summary>
         /// Initializes a new instance of the <see cref="Item"/> class.
         /// </summary>
-        public Item(Group group, Style style)
+        public Item((Group, string?) group, Style style)
         {
             _kind = Kind.Set;
-            Group = group;
+            _group = group;
             Style = style;
-            Link = null;
+            _link = null;
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Item"/> class.
         /// </summary>
-        public Item(Group from, Group to, Style? style = null)
+        public Item((Group, string?) from, (Group, string?) to, Style? style = null)
         {
             _kind = Kind.Link;
-            Group = from;
+            _group = from;
             Style = style;
-            Link = to;
+            _link = to;
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Item"/> class.
         /// </summary>
-        public Item(Group from, VimSyntaxGroupSource.Group link)
+        public Item((Group, string?) from, VimSyntaxGroupSource.Group link)
         {
             _kind = Kind.VimSyntaxLink;
-            Group = from;
+            _group = from;
             Style = null;
-            Link = null;
+            _link = null;
             LinkVimSyntaxGroup = link;
         }
 
@@ -140,19 +184,19 @@ public abstract partial class NeovimTreesitterHighlightSource
             {
                 Kind.Set => new NeovimFormatter.Formattable
                 {
-                    Name = CreateGroupString(Group),
+                    Name = CreateGroupString(_group),
                     Id = 0,
                     Style = Style
                 },
                 Kind.Link => new NeovimFormatter.Formattable
                 {
-                    Name = CreateGroupString(Group),
+                    Name = CreateGroupString(_group),
                     Id = 0,
-                    Link = CreateGroupString(Link!.Value)
+                    Link = CreateGroupString(_link!)
                 },
                 Kind.VimSyntaxLink => new NeovimFormatter.Formattable
                 {
-                    Name = CreateGroupString(Group),
+                    Name = CreateGroupString(_group),
                     Id = 0,
                     Link = LinkVimSyntaxGroup!.Value.ToString()
                 },
@@ -561,9 +605,11 @@ public abstract partial class NeovimTreesitterHighlightSource
         Nospell,
     }
 
-    private static string CreateGroupString(Group group)
+    private static string CreateGroupString(FiletypedGroup group)
     {
-        return $"@{UpperCharRegex().Replace(group.ToString(), ".$1").ToLower()[1..]}";
+        var name = $"@{UpperCharRegex().Replace(group.Name.ToString(), ".$1").ToLower()[1..]}";
+        var ft = group.Filetype is null ? "" : $".{group.Filetype}";
+        return $"{name}{ft}";
     }
 
     [GeneratedRegex("([A-Z])")]

@@ -57,7 +57,11 @@ public class NeovimTest
             vim.api.nvim_set_hl(0, '@keyword.function', { bg = '#fffac9', italic = true, cterm = { italic = true } })
             vim.api.nvim_set_hl(0, '@text.environment.name', { bold = true, underline = true, cterm = { bold = true, underline = true } })
             vim.api.nvim_set_hl(0, '@character', { link = '@keyword.function' })
+            vim.api.nvim_set_hl(0, '@keyword.function.test', { fg = '#ff0000' })
+            vim.api.nvim_set_hl(0, '@boolean.test', { bg = '#fffac9', italic = true, cterm = { italic = true } })
+            vim.api.nvim_set_hl(0, '@comment.test', { link = '@character' })
             vim.api.nvim_set_hl(0, '@constant', { })
+            vim.api.nvim_set_hl(0, '@conceal', { link = '@boolean.test' })
             -- Built with Sccg
             """
         );
@@ -118,7 +122,16 @@ file class TreesitterHighlight : NeovimTreesitterHighlightSource
         Set(Group.KeywordFunction, bg: "fffac9", italic: true);
         Set(Group.TextEnvironmentName, bold: true, underline: true);
         Link(Group.Character, Group.KeywordFunction);
+
+        Filetype("test", () =>
+        {
+            Set(Group.KeywordFunction, fg: "ff0000");
+            Set(Group.Boolean, bg: "fffac9", italic: true);
+            Link(Group.Comment, Group.Character);
+        });
+
         Set(Group.Constant, Style.Default);
+        Link(Group.Conceal, Group.Boolean, "test");
     }
 }
 
