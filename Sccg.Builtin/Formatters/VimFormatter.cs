@@ -102,6 +102,12 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
                 continue;
             }
 
+            if (formattable.Style == Style.Default)
+            {
+                yield return $"\" hi {formattable.Name}";
+                continue;
+            }
+
             sb.Clear();
             sb.Append($"hi {formattable.Name}{(formattable.Default ? " default" : "")}");
             Set("ctermfg", formattable.Style?.Foreground.TerminalColorCode);
