@@ -80,6 +80,21 @@ public class ColorTest
     }
 
     [Fact]
+    public void AlphaBlend()
+    {
+        var fg = new Color("#8000ff");
+        var bg = new Color("#ff8000");
+        Color.AlphaBlend(fg, bg, 0.5f).HexCode.Should().Be("#c04080");
+        Color.AlphaBlend(fg, bg, 0.0f).HexCode.Should().Be("#ff8000");
+        Color.AlphaBlend(fg, bg, 1.0f).HexCode.Should().Be("#8000ff");
+
+        Assert.Throws<ArgumentException>(() => Color.AlphaBlend(Color.None, bg, 1));
+        Assert.Throws<ArgumentException>(() => Color.AlphaBlend(Color.Default, bg, 1));
+        Assert.Throws<ArgumentException>(() => Color.AlphaBlend(fg, Color.None, 1));
+        Assert.Throws<ArgumentException>(() => Color.AlphaBlend(fg, Color.Default, 1));
+    }
+
+    [Fact]
     public void Equal()
     {
         var a = new Color("1234Ab");

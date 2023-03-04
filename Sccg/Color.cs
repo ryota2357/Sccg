@@ -138,6 +138,35 @@ public readonly partial struct Color : IEquatable<Color>
     }
 
     /// <summary>
+    /// Blend two colors.
+    /// </summary>
+    /// <param name="foreground">Added color to blend.</param>
+    /// <param name="background">Base color to blend.</param>
+    /// <param name="alpha">Blend rate: 0 to 1 (0 is not blend, 1 is full blend).</param>
+    /// <returns>Blended color.</returns>
+    /// <exception cref="ArgumentException"><paramref name="foreground"/> or <paramref name="background"/> is Color.Default or Color.None</exception>
+    public static Color AlphaBlend(Color foreground, Color background, float alpha)
+    {
+        if (foreground.IsDefault || background.IsDefault || foreground.IsNone || background.IsNone)
+        {
+            throw new ArgumentException("Color.Default and Color.None cannot be used for blending.");
+        }
+
+        alpha = Math.Clamp(alpha, 0, 1);
+        var fg = foreground.HexCode[1..];
+        var bg = background.HexCode[1..];
+
+        var rgb = new byte[3];
+        for (var i = 0; i < 3; i++)
+        {
+            var f = Convert.ToByte(fg[(2 * i)..(2 * (i + 1))], 16);
+            var b = Convert.ToByte(bg[(2 * i)..(2 * (i + 1))], 16);
+            rgb[i] = (byte)Math.Round(b + (f - b) * alpha);
+        }
+        return new Color(rgb[0], rgb[1], rgb[2]);
+    }
+
+    /// <summary>
     /// Converts this <see cref="Color"/> structure to a human-readable string.
     /// </summary>
     public override string ToString()
