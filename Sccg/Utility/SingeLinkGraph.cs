@@ -5,14 +5,23 @@ using System.Linq;
 
 namespace Sccg.Utility;
 
+/// <summary>
+/// Represents a graph that out-degree is 1, in-degree is n.
+/// </summary>
 public class SingeLinkGraph
 {
     private readonly List<int?> _adjacentList;
 
-    public SingeLinkGraph() : this(capacity: 0)
+    /// <summary>
+    /// Create a new instance of <see cref="SingeLinkGraph"/> with default capacity.
+    /// </summary>
+    public SingeLinkGraph() : this(capacity: 4)
     {
     }
 
+    /// <summary>
+    /// Create a new instance of <see cref="SingeLinkGraph"/> with specified capacity.
+    /// </summary>
     public SingeLinkGraph(int capacity)
     {
         if (capacity < 0)
@@ -22,6 +31,9 @@ public class SingeLinkGraph
         _adjacentList = new List<int?>(capacity);
     }
 
+    /// <summary>
+    /// Create a link from `from` to `to`.
+    /// </summary>
     public bool CreateLink(int from, int to, bool overwrite = false)
     {
         if (from < 0 || to < 0)
@@ -46,6 +58,9 @@ public class SingeLinkGraph
         return true;
     }
 
+    /// <summary>
+    /// Get the vertex number that `from` links to.
+    /// </summary>
     public int? GetLink(int from)
     {
         if (from < 0)
@@ -55,6 +70,9 @@ public class SingeLinkGraph
         return _adjacentList.Count <= from ? null : _adjacentList[from];
     }
 
+    /// <summary>
+    /// Get the vertex number that `from` links to.
+    /// </summary>
     public bool TryGetLink(int from, [NotNullWhen(true)] out int? to)
     {
         to = GetLink(from);

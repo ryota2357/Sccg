@@ -10,6 +10,10 @@ public interface ISource
     /// <summary>
     /// Gets the source name.
     /// </summary>
+    /// <remarks>
+    /// <see cref="Builder"/> cannot have more than one <see cref="ISource"/> with the same <see cref="Name"/> to avoid
+    /// creating duplicate <see cref="ISourceItem"/>.
+    /// </remarks>
     public string Name { get; }
 
     /// <summary>

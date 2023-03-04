@@ -10,6 +10,10 @@ public interface IContentConverter
     /// <summary>
     /// Gets the converter name.
     /// </summary>
+    /// <remarks>
+    /// <see cref="Builder"/> cannot have more than one <see cref="IContentConverter"/> with the same <see cref="Name"/>
+    /// to prevent multiple convert.
+    /// </remarks>
     public string Name { get; }
 
     /// <summary>

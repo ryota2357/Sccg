@@ -4,14 +4,23 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Sccg.Utility;
 
+/// <summary>
+/// A simple object store.
+/// </summary>
 public class ObjectStore
 {
     private readonly SortedDictionary<string, int> _idStore = new();
     private readonly List<object> _objStore = new();
     private readonly List<Type> _typeStore = new();
 
+    /// <summary>
+    /// Get the number of objects in store.
+    /// </summary>
     public int Count { get; private set; } = 0;
 
+    /// <summary>
+    /// Save data to store then return the id.
+    /// </summary>
     public int Save(in object obj)
     {
         var objId = obj.GetType() + obj.ToString() + obj.GetHashCode();
@@ -19,6 +28,9 @@ public class ObjectStore
         return Save(obj, objId, objType);
     }
 
+    /// <summary>
+    /// Load data from store with specified id.
+    /// </summary>
     public (object data, Type type) Load(int id)
     {
         if ((uint)id >= _objStore.Count)
@@ -28,6 +40,9 @@ public class ObjectStore
         return (_objStore[id], _typeStore[id]);
     }
 
+    /// <summary>
+    /// Load data from store with specified id.
+    /// </summary>
     public T Load<T>(int id)
     {
         var (data, type) = Load(id);
@@ -41,6 +56,9 @@ public class ObjectStore
         }
     }
 
+    /// <summary>
+    /// Try to load data from store with specified id.
+    /// </summary>
     public bool TryLoad<T>(int id, [NotNullWhen(true)] out T? data)
     {
         if ((uint)id >= _objStore.Count)

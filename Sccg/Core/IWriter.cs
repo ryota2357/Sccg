@@ -10,6 +10,10 @@ public interface IWriter
     /// <summary>
     /// Gets the writer name.
     /// </summary>
+    /// <remarks>
+    /// <see cref="Builder"/> cannot have more than one <see cref="IWriter"/> with the same <see cref="Name"/> to avoid
+    /// creating duplicate output.
+    /// </remarks>
     public string Name { get; }
 
     /// <summary>

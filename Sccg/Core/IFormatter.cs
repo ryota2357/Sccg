@@ -10,6 +10,10 @@ public interface IFormatter
     /// <summary>
     /// Gets the formatter name.
     /// </summary>
+    /// <remarks>
+    /// <see cref="Builder"/> cannot have more than one <see cref="IFormatter"/> with the same <see cref="Name"/> to
+    /// avoid creating duplicate <see cref="IContent"/>.
+    /// </remarks>
     public string Name { get; }
 
     /// <summary>

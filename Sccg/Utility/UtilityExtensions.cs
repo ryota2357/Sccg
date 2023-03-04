@@ -24,6 +24,12 @@ public static class UtilityExtensions
         return source == null ? Enumerable.Empty<T>() : source.Where(x => x.HasValue).Select(x => x!.Value);
     }
 
+    /// <summary>
+    /// Check if the <see cref="Style.Modifier"/> contains the specified value.
+    /// </summary>
+    /// <param name="e"></param>
+    /// <param name="t"></param>
+    /// <returns></returns>
     public static bool Contains(this Style.Modifier e, Style.Modifier t)
     {
         return t switch
@@ -34,6 +40,9 @@ public static class UtilityExtensions
         };
     }
 
+    /// <summary>
+    /// Divide the <see cref="Style.Modifier"/> into single flag values.
+    /// </summary>
     public static IEnumerable<Style.Modifier> DivideSingles(this Style.Modifier e)
     {
         return Enum.GetValues<Style.Modifier>().Where(x => e.Contains(x));
