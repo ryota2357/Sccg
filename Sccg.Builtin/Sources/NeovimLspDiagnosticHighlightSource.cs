@@ -9,7 +9,7 @@ namespace Sccg.Builtin.Sources;
 /// <summary>
 /// Source for Neovim LSP diagnostic highlight.
 /// </summary>
-public class NeovimLspDiagnosticHighlightSource
+public abstract class NeovimLspDiagnosticHighlightSource
     : Source<NeovimLspDiagnosticHighlightSource.Group, NeovimLspDiagnosticHighlightSource.Item>
 {
     private readonly StdSourceImpl<Group> _impl = new();
