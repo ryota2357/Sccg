@@ -17,6 +17,8 @@ public abstract partial class NeovimTreesitterHighlightSource
     {
         public (Group name, string? filetyp) Deconstruct() => (Name, Filetype);
         public static implicit operator FiletypedGroup((Group name, string? filetyp) value) => new(value.name, value.filetyp);
+
+        public override string ToString() => Filetype is null ? Name.ToString() : $"{Name}.{Filetype}";
     }
 
     private readonly StdSourceImpl<FiletypedGroup> _impl = new();

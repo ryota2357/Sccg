@@ -7,7 +7,7 @@ public class UtilityExtensionsTest
     [Fact]
     public void WhereNotNull()
     {
-        var res0 = UtilityExtensions.WhereNotNull<string?>(null);
+        var res0 = UtilityExtensions.WhereNotNull<string>(null);
         res0.Should().BeEmpty();
 
         var res1 = new int?[] { 1, null, 2, null, 3 }.WhereNotNull();

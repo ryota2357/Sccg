@@ -168,7 +168,7 @@ public sealed class BuilderQuery
     {
         if (value.Count == 0)
         {
-            throw new InvalidOperationException($"No {type} of type {typeof(T).Name} was found.");
+            throw new InvalidOperationException($"No {type} of type `{typeof(T).FullName}` was found.");
         }
         return value;
     }

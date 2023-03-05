@@ -25,6 +25,7 @@ public class TextFileWriter : Writer<SingleTextContent>
                 Directory.CreateDirectory(directory);
             }
             File.WriteAllText(path, content.Text);
+            Log.Info($"Wrote {path}");
         }
     }
 }
