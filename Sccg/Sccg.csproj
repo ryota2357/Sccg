@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
-        <Version>0.0.1</Version>
+        <Version>0.1.0</Version>
         <Title>Sccg</Title>
         <Authors>ryota2357</Authors>
         <PackageProjectUrl>https://sccg.ryota2357.com/</PackageProjectUrl>
@@ -13,6 +13,7 @@
         <Description>Scriptable Color Configuration Generator.</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageLicenseUrl>https://github.com/ryota2357/Sccg/blob/main/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

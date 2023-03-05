@@ -1,0 +1,39 @@
+name: Publish to Nuget
+
+on:
+  push:
+
+env:
+  DOTNET_VERSION: '7.x'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
+
+      - name: Generate nuget package.
+        run: dotnet pack --configuration Release -o packages
+
+      - name: Publish to nuget
+        run: >
+            find . -type f -name *.nupkg -print0 |
+            xargs -0 -I pkg dotnet nuget push pkg -k $NUGET_API_KEY -s "https://api.nuget.org/v3/index.json" --skip-duplicate
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        working-directory: ./packages
