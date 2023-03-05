@@ -1,15 +1,7 @@
 var searchData=
 [
-  ['get_3c_20t_20_3e_0',['Get&lt; T &gt;',['../classSccg_1_1MetadataContext.html#ab6d96da512a2cfceac03b0b1c52dda01',1,'Sccg::MetadataContext']]],
-  ['getcontentconverters_3c_20t_20_3e_1',['GetContentConverters&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a39050c1a8518920cc344d09565c64399',1,'Sccg::BuilderQuery']]],
-  ['getcontents_3c_20t_20_3e_2',['GetContents&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#aca23822a737b77446af5be9f5f6c2b3e',1,'Sccg::BuilderQuery']]],
-  ['getenumerator_3',['GetEnumerator',['../classSccg_1_1MetadataContext.html#a24f1ddef6d180e151448858cbe2f720b',1,'Sccg::MetadataContext']]],
-  ['getformatters_3c_20t_20_3e_4',['GetFormatters&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a2714ea1aea87155585f12aba843d5b0d',1,'Sccg::BuilderQuery']]],
-  ['gethashcode_5',['GetHashCode',['../structSccg_1_1Style.html#a63c9a3b8fe5a4dbc724d8514f2883021',1,'Sccg::Style']]],
-  ['getlink_6',['GetLink',['../classSccg_1_1Utility_1_1SingeLinkGraph.html#aae87381b15d910c6b49665107192bed6',1,'Sccg::Utility::SingeLinkGraph']]],
-  ['getmetadata_7',['GetMetadata',['../classSccg_1_1BuilderQuery.html#adcf97ab9667e39324d2cd972ecccaf6b',1,'Sccg::BuilderQuery']]],
-  ['getsourceitemconverters_3c_20t_20_3e_8',['GetSourceItemConverters&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#af8d41b874d03d11841a20b0da57f8abd',1,'Sccg::BuilderQuery']]],
-  ['getsourceitems_3c_20t_20_3e_9',['GetSourceItems&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a2127c5c3ab5c264105c80240bf3e7e48',1,'Sccg::BuilderQuery']]],
-  ['getsources_3c_20t_20_3e_10',['GetSources&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#af06a1eefa5412680ca29175f04257c92',1,'Sccg::BuilderQuery']]],
-  ['getwriters_3c_20t_20_3e_11',['GetWriters&lt; T &gt;',['../classSccg_1_1BuilderQuery.html#a187e5322252848e9457c1f218c8e63a2',1,'Sccg::BuilderQuery']]]
+  ['filetype_0',['Filetype',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#af472456ea64a093f355407b321cbac87',1,'Sccg::Builtin::Sources::NeovimTreesitterHighlightSource']]],
+  ['format_1',['Format',['../classSccg_1_1Core_1_1Formatter.html#a9dd24757fc25189ddcd2c381b82b812d',1,'Sccg.Core.Formatter.Format(IEnumerable&lt; TSourceItem &gt; items)'],['../classSccg_1_1Core_1_1Formatter.html#a6287a9456b34fa158f1b8aa5def209a3',1,'Sccg.Core.Formatter.Format(IEnumerable&lt; TSourceItem &gt; items, BuilderQuery query)'],['../interfaceSccg_1_1Core_1_1IFormatter.html#a4879a474c5a8dc7cba06ab83c01f1407',1,'Sccg.Core.IFormatter.Format()'],['../classSccg_1_1Builtin_1_1Formatters_1_1AlacrittyFormatter.html#acd909019cbea9ab15d827f68f9f8198d',1,'Sccg.Builtin.Formatters.AlacrittyFormatter.Format()'],['../classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a8b77f0d86f6cc179b1997007c6b646e9',1,'Sccg.Builtin.Formatters.VimFormatter.Format()']]],
+  ['formattable_2',['Formattable',['../classSccg_1_1Builtin_1_1Formatters_1_1AlacrittyFormatter.html#a95e9a5a3c47986e115fd9c9cac507965',1,'Sccg.Builtin.Formatters.AlacrittyFormatter.Formattable()'],['../classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#a4daba0150f1ec50288ebacaaace7b441',1,'Sccg.Builtin.Formatters.VimFormatter.Formattable(string Name, Style? Style, string? Link, bool Default=false)']]],
+  ['formattablearrayvariable_3',['FormattableArrayVariable',['../classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html#ac59aab832a5b9589a5c8aad5fe6e130b',1,'Sccg::Builtin::Formatters::VimFormatter']]]
 ];
