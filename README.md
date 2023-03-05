@@ -25,15 +25,40 @@ Sccg is a tool to generate color schemes for your terminal, editor, etc.
 
 TODO
 
-## Builtin Support
+## Builtin
+
+### Sources
 
 - Vim
-  - Editor/Syntax highlight
+  - [VimEditorHighlightSource](./Sccg.Builtin/Sources/VimEditorHighlightSource.cs)
+  - [VimSyntaxGroupSource](./Sccg.Builtin/Sources/VimSyntaxGroupSource.cs)
+  - [VimCustomGroupSource](./Sccg.Builtin/Sources/VimCustomGroupSource.cs)
 - Neovim
-  - Editor/Syntax highlight
-  - Treesitter highlight
-- Terminal
-  - Iterm2
+  - [NeovimEditorHighlightSource](./Sccg.Builtin/Sources/NeovimEditorHighlightSource.cs)
+  - [VimSyntaxGroupSource](./Sccg.Builtin/Sources/VimSyntaxGroupSource.cs)
+  - [NeovimTreesitterHighlightSource](./Sccg.Builtin/Sources/NeovimTreesitterHighlightSource.cs)
+  - [NeovimLspDiagnosticHighlightSource](./Sccg.Builtin/Sources/NeovimLspDiagnosticHighlightSource.cs)
+  - [VimCustomGroupSource](./Sccg.Builtin/Sources/VimCustomGroupSource.cs)
+- Iterm2
+  - [Iterm2ColorsSource](./Sccg.Builtin/Sources/Iterm2ColorsSource.cs)
+- Alacritty
+  - [AlacrittyColorsSource](./Sccg.Builtin/Sources/AlacrittyColorsSource.cs)
+
+### Formatters
+
+- Vim
+  - [VimFormatter](./Sccg.Builtin/Formatters/VimFormatter.cs)
+- Neovim
+  - [NeovimFormatter](./Sccg.Builtin/Formatters/NeovimFormatter.cs)
+- Iterm2
+  - [Iterm2Formatter](./Sccg.Builtin/Formatters/Iterm2Formatter.cs)
+- Alacritty
+  - [AlacrittyFormatter](./Sccg.Builtin/Formatters/AlacrittyFormatter.cs)
+
+### Writers
+
+- Vim/Neovim/Iterm2/Alacritty
+  - [TextFileWriter](./Sccg.Builtin/Writers/TextFileWriter.cs)
 
 ## Examples
 
