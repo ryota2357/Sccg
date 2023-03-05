@@ -357,6 +357,11 @@ public abstract partial class NeovimTreesitterHighlightSource
         Keyword,
 
         /// <summary>
+        /// @keyword.coroutine ; keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
+        /// </summary>
+        KeywordCoroutine,
+
+        /// <summary>
         /// @keyword.function ; keywords that define a function (e.g. `func` in Go, `def` in Python)
         /// </summary>
         KeywordFunction,
