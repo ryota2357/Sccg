@@ -13,7 +13,6 @@
         <Description>Sccg builtin Source/Formatter/Converter/Writer library.</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageLicenseUrl>https://github.com/ryota2357/Sccg/blob/main/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
