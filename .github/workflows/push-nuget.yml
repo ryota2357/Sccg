@@ -2,7 +2,8 @@ name: Publish to Nuget
 
 on:
   push:
-  workflow_dispatch:
+    branches:
+      - main
 
 env:
   DOTNET_VERSION: '7.x'
@@ -32,9 +33,7 @@ jobs:
         run: dotnet pack --configuration Release -o packages
 
       - name: Publish to nuget
-        run: >
-            find . -type f -name *.nupkg -print0 |
-            xargs -0 -I pkg dotnet nuget push pkg -k $NUGET_API_KEY -s "https://api.nuget.org/v3/index.json" --skip-duplicate
+        run: dotnet nuget push "*.nupkg" -k $NUGET_API_KEY -s "https://api.nuget.org/v3/index.json" --skip-duplicate
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
         working-directory: ./packages
