@@ -227,6 +227,11 @@ public abstract partial class NeovimTreesitterHighlightSource
         Comment,
 
         /// <summary>
+        /// @comment.documentation ; comments documenting code
+        /// </summary>
+        CommentDocumentation,
+
+        /// <summary>
         /// @error ; syntax/parser errors
         /// </summary>
         Error,
