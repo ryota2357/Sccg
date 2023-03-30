@@ -14,13 +14,15 @@ public readonly partial struct Color : IEquatable<Color>
     private const string _none = "__NONE__";
 
     /// <summary>
-    /// TODO: doc
+    /// Represents the default color.
     /// </summary>
+    /// <remarks>This color depends on the platform (formatter).</remarks>
     public static Color Default => new(_default);
 
     /// <summary>
-    /// TODO: doc
+    /// Represents the no color.
     /// </summary>
+    /// <remarks>This color depends on the platform (formatter).</remarks>
     public static Color None => new(_none);
 
     /// <summary>
