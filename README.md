@@ -7,7 +7,7 @@
 
 Sccg is a tool to generate color schemes for your terminal, editor, etc.
 
-## Goals
+## Goals and Features
 
 - Fully scriptable
   - Separate the each generation logic, `Source`, `Formatter`, `Converter` and `Writer`.
@@ -19,47 +19,27 @@ Sccg is a tool to generate color schemes for your terminal, editor, etc.
 - Foolproof
   - There are may color groups, such as 'Comment', '@type.builtin', 'Ansi 0 Color', etc.
   - All color groups are defined in the `Source`, so you get completion, type check and so on.
-  - Cycle reference will be detected by `Source`.
+  - Cycle reference will be detected by `Source`, then Sccg warn you or failed to build.
+
+The relation of `Source`, `Formatter`, `Converter` and `Writer`.
+
+![sccg-structure](images/sccg-structure.svg)
 
 ## Usage
 
 TODO
 
-## Builtin
+## Builtin Support
 
-### Sources
-
-- Vim
-  - [VimEditorHighlightSource](./Sccg.Builtin/Sources/VimEditorHighlightSource.cs)
-  - [VimSyntaxGroupSource](./Sccg.Builtin/Sources/VimSyntaxGroupSource.cs)
-  - [VimCustomGroupSource](./Sccg.Builtin/Sources/VimCustomGroupSource.cs)
-- Neovim
-  - [NeovimEditorHighlightSource](./Sccg.Builtin/Sources/NeovimEditorHighlightSource.cs)
-  - [VimSyntaxGroupSource](./Sccg.Builtin/Sources/VimSyntaxGroupSource.cs)
-  - [NeovimTreesitterHighlightSource](./Sccg.Builtin/Sources/NeovimTreesitterHighlightSource.cs)
-  - [NeovimLspDiagnosticHighlightSource](./Sccg.Builtin/Sources/NeovimLspDiagnosticHighlightSource.cs)
-  - [VimCustomGroupSource](./Sccg.Builtin/Sources/VimCustomGroupSource.cs)
-- Iterm2
-  - [Iterm2ColorsSource](./Sccg.Builtin/Sources/Iterm2ColorsSource.cs)
-- Alacritty
-  - [AlacrittyColorsSource](./Sccg.Builtin/Sources/AlacrittyColorsSource.cs)
-
-### Formatters
-
-- Vim
-  - [VimFormatter](./Sccg.Builtin/Formatters/VimFormatter.cs)
-- Neovim
-  - [NeovimFormatter](./Sccg.Builtin/Formatters/NeovimFormatter.cs)
-- Iterm2
-  - [Iterm2Formatter](./Sccg.Builtin/Formatters/Iterm2Formatter.cs)
-- Alacritty
-  - [AlacrittyFormatter](./Sccg.Builtin/Formatters/AlacrittyFormatter.cs)
-
-### Writers
-
-- Vim/Neovim/Iterm2/Alacritty
-  - [TextFileWriter](./Sccg.Builtin/Writers/TextFileWriter.cs)
+- [Vim](DevelopWithSccg.md#Vim)
+- [Neovim](DevelopWithSccg.md#Neovim)
+- VS Code (comming soon)
+- CotEditor (comming soon)
+- [iTerm2](DevelopWithSccg.md#iTerm2)
+- [Alacritty](DevelopWithSccg.md#Alacritty)
 
 ## Examples
 
-TODO
+I created color scheme with Sccg.
+
+[necodark (https://github.com/ryota2357/necodark)](https://github.com/ryota2357/necodark)
