@@ -8,6 +8,7 @@ namespace Sccg.Core;
 /// The base class of the <see cref="ISource"/>. This class provides some helper methods and standard implementation of <see cref="ISource"/>.
 /// </summary>
 public abstract class Source<TGroup, TItem> : ISource
+    where TItem : ISourceItem
 {
     /// <inheritdoc />
     public abstract string Name { get; }
