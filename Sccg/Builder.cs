@@ -97,7 +97,7 @@ public class Builder
             Log.Debug($"Formatting source items with {formatter.Name}({formatter.GetType().Name}).");
             try
             {
-                var content = formatter.Format(_sourceItems, _query);
+                var content = formatter.Format(_sourceItems.AsReadOnly(), _query);
                 _contents.Add(content);
             }
             catch (Exception e)
@@ -126,7 +126,7 @@ public class Builder
             Log.Debug($"Writing contents with {writer.Name}({writer.GetType().Name}).");
             try
             {
-                writer.Write(_contents, _query);
+                writer.Write(_contents.AsReadOnly(), _query);
             }
             catch (Exception e)
             {
