@@ -13,16 +13,18 @@ public class TestWriter : IWriter
 
     public void Write(IEnumerable<IContent> contents, BuilderQuery query)
     {
-        foreach (var content in contents)
+        var contentsArray = contents as IContent[] ?? contents.ToArray();
+        var originalLength = contentsArray.Length;
+        var singleTextContents = contentsArray.OfType<SingleTextContent>()
+                                           .OrderBy(x => x.Filename)
+                                           .ToArray();
+        if (singleTextContents.Length != originalLength)
         {
-            if (content is SingleTextContent singleTextContent)
-            {
-                Output.Add(singleTextContent.Text);
-            }
-            else
-            {
-                throw new NotImplementedException();
-            }
+            throw new Exception("TestWriter can only handle SingleTextContent");
+        }
+        foreach (var content in singleTextContents)
+        {
+            Output.Add(content.Text);
         }
     }
 }
