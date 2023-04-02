@@ -4,6 +4,7 @@ using System.Text;
 using Sccg.Builtin.Sources.Internal;
 using Sccg.Builtin.Writers;
 using Sccg.Core;
+using Sccg.Utility;
 
 namespace Sccg.Builtin.Formatters;
 
@@ -58,7 +59,7 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
 
         // colors
         sb.AppendLine("  \"colors\": {");
-        foreach(var item in items.OfType<IVSCodeColorSourceItem>())
+        foreach (var item in items.OfType<IVSCodeColorSourceItem>())
         {
             var data = item.Extract();
             sb.Append("    ");
@@ -71,17 +72,26 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
         sb.AppendLine("  \"tokenColors\": [");
         var tokenColors = items.OfType<IVSCodeTokenColorSourceItem>()
                                .Select(i => i.Extract())
-                               .GroupBy(i => i.Style);
+                               .GroupBy(i => i.Style)
+                               .ToArray();
         foreach (var item in tokenColors)
         {
             sb.AppendLine("    {");
-            sb.AppendLine("      \"scope\": [");
-            foreach (var scope in item)
+            if (item.Count() == 1)
             {
-                sb.AppendLine($"        \"{scope.Name}\",");
+                var scope = item.First().Name;
+                sb.AppendLine($"      \"scope\": \"{scope}\",");
             }
-            sb.Remove(sb.Length - 2, 1); // remove last comma
-            sb.AppendLine("      ],");
+            else
+            {
+                sb.AppendLine("      \"scope\": [");
+                foreach (var scope in item)
+                {
+                    sb.AppendLine($"        \"{scope.Name}\",");
+                }
+                sb.Remove(sb.Length - 2, 1); // remove last comma
+                sb.AppendLine("      ],");
+            }
             sb.AppendLine("      \"settings\": {");
             var style = item.Key;
             var hasSettings = false;
@@ -90,17 +100,32 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
                 sb.AppendLine($"        \"foreground\": \"{style.Foreground.HexCode}\",");
                 hasSettings = true;
             }
-            if (style.Background is { IsDefault: false, IsNone: false })
+            // NOTE: VSCode does not support `background` for `tokenColors`
+            if (!style.Modifiers.Contains(Style.Modifier.Default) && !style.Modifiers.Contains(Style.Modifier.None))
             {
-                sb.AppendLine($"        \"background\": \"{style.Background.HexCode}\",");
-                hasSettings = true;
+                // NOTE: only support `bold`, `strikethrough`, `underline`, `italic`
+                var styles = new List<string>();
+                if (style.Modifiers.Contains(Style.Modifier.Bold)) styles.Add("bold");
+                if (style.Modifiers.Contains(Style.Modifier.Strikethrough)) styles.Add("strikethrough");
+                if (style.Modifiers.Contains(Style.Modifier.Underline)) styles.Add("underline");
+                if (style.Modifiers.Contains(Style.Modifier.Italic)) styles.Add("italic");
+                if (styles.Count != 0)
+                {
+                    var fontStyle = string.Join(" ", styles);
+                    sb.AppendLine($"        \"fontStyle\": \"{fontStyle}\",");
+                    hasSettings = true;
+                }
             }
-            // TODO: support `fontStyle`
             if (hasSettings)
             {
                 sb.Remove(sb.Length - 2, 1); // remove last comma
             }
-            sb.AppendLine("    }");
+            sb.AppendLine("      }");
+            sb.AppendLine("    },");
+        }
+        if (tokenColors.Any())
+        {
+            sb.Remove(sb.Length - 2, 1); // remove last comma
         }
         sb.AppendLine("  ]");
 
@@ -121,12 +146,14 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
         var engines = metadata.Context.Get(_contextKey_vscode_engines, "*");
 
         var sb = new StringBuilder();
+
         void AppendIfNotNull(int indent, string key, string? value)
         {
             if (value is null) return;
             var indentStr = new string(' ', indent);
             sb.AppendLine($"{indentStr}\"{key}\": \"{value}\",");
         }
+
         sb.AppendLine("{");
         AppendIfNotNull(2, "name", name);
         AppendIfNotNull(2, "displayName", displayName);
@@ -151,6 +178,13 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
         return new SingleTextContent("package.json", sb.ToString()[..^1]); // remove last newline
     }
 
+    /// <summary>
+    /// Formattable for VS Code "colors".
+    /// </summary>
     public readonly record struct ColorFormattable(string Name, Color Color);
+
+    /// <summary>
+    /// Formattable for VS Code "tokenColors".
+    /// </summary>
     public readonly record struct TokenColorFormattable(string Name, Style Style);
 }
