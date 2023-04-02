@@ -52,7 +52,7 @@ public abstract partial class AlacrittyColorsSource : SourceColorOnly<AlacrittyC
     /// <summary>
     /// SourceItem for Alacritty.
     /// </summary>
-    public partial class Item : IAlacrittySourceItem
+    public class Item : IAlacrittySourceItem
     {
         /// <summary>
         /// Gets the group.
