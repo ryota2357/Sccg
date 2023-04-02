@@ -73,10 +73,10 @@ public class ColorTest
         Assert.Equal(Color.None, none.HexCode);
         Assert.False(deft == none);
 
-        deft.IsDefault.Should().BeTrue();
-        deft.IsNone.Should().BeFalse();
-        none.IsDefault.Should().BeFalse();
-        none.IsNone.Should().BeTrue();
+        deft.IsDefault().Should().BeTrue();
+        deft.IsNone().Should().BeFalse();
+        none.IsDefault().Should().BeFalse();
+        none.IsNone().Should().BeTrue();
     }
 
     [Fact]

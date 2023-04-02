@@ -43,16 +43,31 @@ public readonly partial struct Color : IEquatable<Color>
     public byte? TerminalColorCode { get; } = null;
 
     /// <summary>
-    /// Check if the color is default.
+    /// Check if the color is <see cref="Default"/>.
     /// </summary>
     /// <returns>ture if it is <see cref="Default">Color.Default</see>.</returns>
-    public bool IsDefault => HexCode == _default;
+    public bool IsDefault()
+    {
+        return HexCode == _default;
+    }
 
     /// <summary>
-    /// TODO:
+    /// Check if the color is <see cref="None"/>.
     /// </summary>
     /// <returns>ture if it is <see cref="None">Color.None</see>.</returns>
-    public bool IsNone => HexCode == _none;
+    public bool IsNone()
+    {
+        return HexCode == _none;
+    }
+
+    /// <summary>
+    /// Check if the color has hex code. (not <see cref="IsDefault"/> and not <see cref="IsNone"/>)
+    /// </summary>
+    /// <returns>ture if it has hex code.</returns>
+    public bool HasHexCode()
+    {
+        return !IsDefault() && !IsNone();
+    }
 
     /// <summary>
     /// Initialize a new instance of <see cref="Color"/> with the specified hex code.
@@ -149,7 +164,7 @@ public readonly partial struct Color : IEquatable<Color>
     /// <exception cref="ArgumentException"><paramref name="foreground"/> or <paramref name="background"/> is Color.Default or Color.None</exception>
     public static Color AlphaBlend(Color foreground, Color background, float alpha)
     {
-        if (foreground.IsDefault || background.IsDefault || foreground.IsNone || background.IsNone)
+        if (foreground.IsDefault() || background.IsDefault() || foreground.IsNone() || background.IsNone())
         {
             throw new ArgumentException("Color.Default and Color.None cannot be used for blending.");
         }

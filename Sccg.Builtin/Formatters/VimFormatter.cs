@@ -79,8 +79,8 @@ public class VimFormatter : Formatter<IVimSourceItemBase, SingleTextContent>
             switch (value)
             {
                 case Color c:
-                    if (c.IsDefault) return;
-                    var code = c.IsNone ? "NONE" : c.HexCode;
+                    if (c.IsDefault()) return;
+                    var code = c.IsNone() ? "NONE" : c.HexCode;
                     sb.Append($" {name}={code}");
                     break;
                 case string s:

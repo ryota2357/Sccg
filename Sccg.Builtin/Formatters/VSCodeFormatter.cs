@@ -101,7 +101,7 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
             sb.AppendLine("      \"settings\": {");
             var style = item.Key;
             var hasSettings = false;
-            if (style.Foreground is { IsDefault: false, IsNone: false })
+            if (style.Foreground.HasHexCode())
             {
                 sb.AppendLine($"        \"foreground\": \"{style.Foreground.HexCode}\",");
                 hasSettings = true;

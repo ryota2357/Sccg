@@ -97,11 +97,11 @@ public abstract partial class AlacrittyColorsSource : SourceColorOnly<AlacrittyC
 
     internal static string CreateValue(Color color)
     {
-        if (color.IsDefault)
+        if (color.IsDefault())
         {
             throw new NotSupportedException("Alacritty does not support Color.Default.");
         }
-        return color.IsNone ? "None" : $"'{color.HexCode}'";
+        return color.IsNone() ? "None" : $"'{color.HexCode}'";
     }
 
     [GeneratedRegex("([A-Z])")]
