@@ -1,0 +1,8 @@
+<map id="Sccg.Builtin.Sources.TextMateElementSource.Item" name="Sccg.Builtin.Sources.TextMateElementSource.Item">
+<area shape="rect" id="node1" title="SourceItem for TextMate Element." alt="" coords="107,243,278,283"/>
+<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVSCodeTokenColorSourceItem.html" title="SourceItem for VSCode color theme json (tokenColors)." alt="" coords="5,155,212,180"/>
+<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVSCodeSourceItemBase.html" title="Base SourceItem for VSCode." alt="" coords="18,80,189,105"/>
+<area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="57,5,150,31"/>
+<area shape="rect" id="node5" href="$structSccg_1_1Style.html" title="Represents a style of text." alt="" coords="237,155,321,180"/>
+<area shape="rect" id="node6" title=" " alt="" coords="213,80,348,105"/>
+</map>

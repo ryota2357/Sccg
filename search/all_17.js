@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['values_0',['Values',['../classSccg_1_1MetadataContext.html#a5e43f219f762fc951134bb68d76c0130',1,'Sccg::MetadataContext']]],
+  ['variable_1',['Variable',['../classSccg_1_1Builtin_1_1Sources_1_1TextMateElementSource.html#a1ec76ac2c7c5b504518097913c8a1fbaa47c14840d8e15331fa420b9b2f757cd9',1,'Sccg.Builtin.Sources.TextMateElementSource.Variable()'],['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043a47c14840d8e15331fa420b9b2f757cd9',1,'Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Variable()']]],
+  ['variablebuiltin_2',['VariableBuiltin',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043a0718804efab6d588b89d6aa40ad1afae',1,'Sccg::Builtin::Sources::NeovimTreesitterHighlightSource']]],
+  ['variablelanguage_3',['VariableLanguage',['../classSccg_1_1Builtin_1_1Sources_1_1TextMateElementSource.html#a1ec76ac2c7c5b504518097913c8a1fbaa6238642fa4446b6af98bc8e57b2e9ef0',1,'Sccg::Builtin::Sources::TextMateElementSource']]],
+  ['variableother_4',['VariableOther',['../classSccg_1_1Builtin_1_1Sources_1_1TextMateElementSource.html#a1ec76ac2c7c5b504518097913c8a1fbaade19e5a9ddbf76998d12c9d185e0fa3d',1,'Sccg::Builtin::Sources::TextMateElementSource']]],
+  ['variableparameter_5',['VariableParameter',['../classSccg_1_1Builtin_1_1Sources_1_1TextMateElementSource.html#a1ec76ac2c7c5b504518097913c8a1fbaac313e9b08caae737c06241d163d0e660',1,'Sccg::Builtin::Sources::TextMateElementSource']]],
+  ['vertsplit_6',['VertSplit',['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1eaa6f8d9699b00cb290a9448de9848ee59',1,'Sccg::Builtin::Sources::VimEditorHighlightSource']]],
+  ['vim_7',['Vim',['../classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource.html#a70b875e78c129478d542363cea3a1d86a944037673fd019101da363c74a0feed9',1,'Sccg::Builtin::Sources::Ansi16ColorSource']]],
+  ['vimcustomgroupsource_8',['VimCustomGroupSource',['../classSccg_1_1Builtin_1_1Sources_1_1VimCustomGroupSource.html',1,'Sccg::Builtin::Sources']]],
+  ['vimcustomgroupsource_2ecs_9',['VimCustomGroupSource.cs',['../VimCustomGroupSource_8cs.html',1,'']]],
+  ['vimeditorhighlightsource_10',['VimEditorHighlightSource',['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html',1,'Sccg::Builtin::Sources']]],
+  ['vimeditorhighlightsource_2ecs_11',['VimEditorHighlightSource.cs',['../VimEditorHighlightSource_8cs.html',1,'']]],
+  ['vimformatter_12',['VimFormatter',['../classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html',1,'Sccg::Builtin::Formatters']]],
+  ['vimformatter_2ecs_13',['VimFormatter.cs',['../VimFormatter_8cs.html',1,'']]],
+  ['vimsyntaxgroupsource_14',['VimSyntaxGroupSource',['../classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html',1,'Sccg::Builtin::Sources']]],
+  ['vimsyntaxgroupsource_2ecs_15',['VimSyntaxGroupSource.cs',['../VimSyntaxGroupSource_8cs.html',1,'']]],
+  ['visual_16',['Visual',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98a4557e77491fe3dbd9a6055aeb0ed00d7',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.Visual()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1ea4557e77491fe3dbd9a6055aeb0ed00d7',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.Visual()']]],
+  ['visualnos_17',['VisualNOS',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98aa42c87af908dca2dfee2f4da876f457b',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.VisualNOS()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1eaa42c87af908dca2dfee2f4da876f457b',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.VisualNOS()']]],
+  ['vscodeeditorthemecolorsource_18',['VSCodeEditorThemeColorSource',['../classSccg_1_1Builtin_1_1Sources_1_1VSCodeEditorThemeColorSource.html',1,'Sccg::Builtin::Sources']]],
+  ['vscodeeditorthemecolorsource_2ecs_19',['VSCodeEditorThemeColorSource.cs',['../VSCodeEditorThemeColorSource_8cs.html',1,'']]],
+  ['vscodeformatter_20',['VSCodeFormatter',['../classSccg_1_1Builtin_1_1Formatters_1_1VSCodeFormatter.html',1,'Sccg::Builtin::Formatters']]],
+  ['vscodeformatter_2ecs_21',['VSCodeFormatter.cs',['../VSCodeFormatter_8cs.html',1,'']]]
+];

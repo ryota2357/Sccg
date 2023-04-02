@@ -124,7 +124,7 @@ $(function() {
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        _state = State.CollectingSourceItems;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">while</span> (_sources.TryPop(out var source))</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            Log.Debug($<span class="stringliteral">&quot;Collecting source items from {source.Name}({source.GetType().Name}).&quot;</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            Log.Debug(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Collecting source items from {source.Name}({source.GetType().Name}).&quot;</span>);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            {</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                source.Custom(_query);</div>
@@ -133,64 +133,64 @@ $(function() {
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Source {source.Name}({source.GetType().Name}) failed.&quot;</span>, e);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Source {source.Name}({source.GetType().Name}) failed.&quot;</span>, e);</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        _state = State.ConvertingSourceItems;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">while</span> (_sourceItemConverters.TryPop(out var converter))</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            Log.Debug($<span class="stringliteral">&quot;Converting source items with {converter.Name}({converter.GetType().Name}).&quot;</span>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            Log.Debug(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Converting source items with {converter.Name}({converter.GetType().Name}).&quot;</span>);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                _sourceItems = converter.Convert(_sourceItems, _query).ToList();</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Source item converter {converter.Name}({converter.GetType().Name}) failed.&quot;</span>, e);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Source item converter {converter.Name}({converter.GetType().Name}) failed.&quot;</span>, e);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        _state = State.FormattingSourceItems;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">while</span> (_formatters.TryPop(out var formatter))</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            Log.Debug($<span class="stringliteral">&quot;Formatting source items with {formatter.Name}({formatter.GetType().Name}).&quot;</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            Log.Debug(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Formatting source items with {formatter.Name}({formatter.GetType().Name}).&quot;</span>);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                var content = formatter.Format(_sourceItems, _query);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                var content = formatter.Format(_sourceItems.AsReadOnly(), _query);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                _contents.Add(content);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            }</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Formatter {formatter.Name}({formatter.GetType().Name}) failed.&quot;</span>, e);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Formatter {formatter.Name}({formatter.GetType().Name}) failed.&quot;</span>, e);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            }</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        _state = State.ConvertingContents;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">while</span> (_contentConverters.TryPop(out var converter))</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            Log.Debug($<span class="stringliteral">&quot;Converting contents with {converter.Name}({converter.GetType().Name}).&quot;</span>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            Log.Debug(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Converting contents with {converter.Name}({converter.GetType().Name}).&quot;</span>);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            {</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                _contents = converter.Convert(_contents, _query).ToList();</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            }</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            {</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Content converter {converter.Name}({converter.GetType().Name}) failed.&quot;</span>, e);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Content converter {converter.Name}({converter.GetType().Name}) failed.&quot;</span>, e);</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            }</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        _state = State.WritingContents;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">while</span> (_writers.TryPop(out var writer))</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            Log.Debug($<span class="stringliteral">&quot;Writing contents with {writer.Name}({writer.GetType().Name}).&quot;</span>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            Log.Debug(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Writing contents with {writer.Name}({writer.GetType().Name}).&quot;</span>);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            {</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                writer.Write(_contents, _query);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                writer.Write(_contents.AsReadOnly(), _query);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            }</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;Writer {writer.Name}({writer.GetType().Name}) failed.&quot;</span>, e);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Writer {writer.Name}({writer.GetType().Name}) failed.&quot;</span>, e);</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            }</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
@@ -279,7 +279,7 @@ $(function() {
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        {</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            instance = Activator.CreateInstance(</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                type: typeof(T),</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                <a class="code hl_variable" href="VSCodeFormatter_8cs.html#ad71d0035e02a970143b41001bf846110">type</a>: typeof(T),</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                bindingAttr: BindingFlags.CreateInstance</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                             | BindingFlags.Public</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                             | BindingFlags.Instance</div>
@@ -291,7 +291,7 @@ $(function() {
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        }</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException($<span class="stringliteral">&quot;Failed to create instance of {typeof(T).Name}&quot;</span>, e);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Failed to create instance of {typeof(T).Name}&quot;</span>, e);</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">if</span> (instance is T t)</div>
@@ -299,7 +299,7 @@ $(function() {
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <span class="keywordflow">return</span> t;</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        }</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> ConstraintException($<span class="stringliteral">&quot;Created instance is null: {typeof(T).Name} with args: {args}&quot;</span>);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordflow">throw</span> <span class="keyword">new</span> ConstraintException(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Created instance is null: {typeof(T).Name} with args: {args}&quot;</span>);</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    }</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keyword">private</span> <span class="keyword">enum</span> State</div>
@@ -338,15 +338,15 @@ $(function() {
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            Items = <span class="keyword">new</span> ReadOnlyCollection&lt;T&gt;(_items);</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        }</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        <span class="keyword">public</span> <span class="keywordtype">void</span> Push(T item, <span class="keywordtype">int</span> priority, <span class="keywordtype">string</span> name)</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        <span class="keyword">public</span> <span class="keywordtype">void</span> Push(T item, <span class="keywordtype">int</span> priority, <span class="keywordtype">string</span> <a class="code hl_variable" href="VSCodeFormatter_8cs.html#a79ece3db8cdf4373e67efac4a05f017b">name</a>)</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        {</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            <span class="keywordflow">if</span> (_names.Contains(name))</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            <span class="keywordflow">if</span> (_names.Contains(<a class="code hl_variable" href="VSCodeFormatter_8cs.html#a79ece3db8cdf4373e67efac4a05f017b">name</a>))</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            {</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException($<span class="stringliteral">&quot;Duplicate {_containerType.ToString()}: {name}&quot;</span>);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Duplicate {_containerType.ToString()}: {name}&quot;</span>);</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            }</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            _items.Add(item);</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            _queue.Enqueue(item, priority);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            _names.Add(name);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            _names.Add(<a class="code hl_variable" href="VSCodeFormatter_8cs.html#a79ece3db8cdf4373e67efac4a05f017b">name</a>);</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        }</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="Builder_8cs.html#a0501fe939bec664c3456bef52879cb8e">  317</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> TryPop([MaybeNullWhen(<span class="keyword">false</span>)] out T item)</div>
@@ -355,6 +355,9 @@ $(function() {
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        }</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    }</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>}</div>
+<div class="ttc" id="aVSCodeFormatter_8cs_html_a6e1be1b95a8ae40dbf962380bbbdbfe3"><div class="ttname"><a href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a></div><div class="ttdeci">$ metadata.?? ThemeName $ $</div><div class="ttdef"><b>Definition:</b> <a href="VSCodeFormatter_8cs_source.html#l00142">VSCodeFormatter.cs:142</a></div></div>
+<div class="ttc" id="aVSCodeFormatter_8cs_html_a79ece3db8cdf4373e67efac4a05f017b"><div class="ttname"><a href="VSCodeFormatter_8cs.html#a79ece3db8cdf4373e67efac4a05f017b">name</a></div><div class="ttdeci">$ name</div><div class="ttdef"><b>Definition:</b> <a href="VSCodeFormatter_8cs_source.html#l00142">VSCodeFormatter.cs:142</a></div></div>
+<div class="ttc" id="aVSCodeFormatter_8cs_html_ad71d0035e02a970143b41001bf846110"><div class="ttname"><a href="VSCodeFormatter_8cs.html#ad71d0035e02a970143b41001bf846110">type</a></div><div class="ttdeci">$ metadata.?? ThemeName $ type</div><div class="ttdef"><b>Definition:</b> <a href="VSCodeFormatter_8cs_source.html#l00142">VSCodeFormatter.cs:142</a></div></div>
 <div class="ttc" id="aclassSccg_1_1BuilderQuery_html"><div class="ttname"><a href="classSccg_1_1BuilderQuery.html">Sccg.BuilderQuery</a></div><div class="ttdoc">A query class for Builder.</div><div class="ttdef"><b>Definition:</b> <a href="BuilderQuery_8cs_source.html#l00012">BuilderQuery.cs:13</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Builder_html"><div class="ttname"><a href="classSccg_1_1Builder.html">Sccg.Builder</a></div><div class="ttdoc">The builder of color configuration.</div><div class="ttdef"><b>Definition:</b> <a href="Builder_8cs_source.html#l00015">Builder.cs:16</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Builder_html_a152c5735b879d1cdbf3aa7132fcb05ee"><div class="ttname"><a href="classSccg_1_1Builder.html#a152c5735b879d1cdbf3aa7132fcb05ee">Sccg.Builder.Build</a></div><div class="ttdeci">void Build()</div><div class="ttdoc">Starts to build the color configuration.</div><div class="ttdef"><b>Definition:</b> <a href="Builder_8cs_source.html#l00059">Builder.cs:59</a></div></div>
@@ -363,7 +366,7 @@ $(function() {
 <div class="ttc" id="aclassSccg_1_1Builder_html_ab3982912be970e6244d31ab6b7abf77a"><div class="ttname"><a href="classSccg_1_1Builder.html#ab3982912be970e6244d31ab6b7abf77a">Sccg.Builder.Builder</a></div><div class="ttdeci">Builder()</div><div class="ttdoc">Initializes a new instance of the Builder class.</div><div class="ttdef"><b>Definition:</b> <a href="Builder_8cs_source.html#l00030">Builder.cs:30</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Builder_html_af77f4b41916612a9c8b241b3d3df61d3"><div class="ttname"><a href="classSccg_1_1Builder.html#af77f4b41916612a9c8b241b3d3df61d3">Sccg.Builder.LogFile</a></div><div class="ttdeci">string? LogFile</div><div class="ttdoc">The log file for Build.</div><div class="ttdef"><b>Definition:</b> <a href="Builder_8cs_source.html#l00051">Builder.cs:52</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Core_1_1Formatter_html"><div class="ttname"><a href="classSccg_1_1Core_1_1Formatter.html">Sccg.Core.Formatter</a></div><div class="ttdoc">The base class of IFormatter.</div><div class="ttdef"><b>Definition:</b> <a href="Formatter_8cs_source.html#l00010">Formatter.cs:13</a></div></div>
-<div class="ttc" id="aclassSccg_1_1Core_1_1Source_html"><div class="ttname"><a href="classSccg_1_1Core_1_1Source.html">Sccg.Core.Source</a></div><div class="ttdoc">The base class of the ISource. This class provides some helper methods and standard implementation of...</div><div class="ttdef"><b>Definition:</b> <a href="Source_8cs_source.html#l00010">Source.cs:11</a></div></div>
+<div class="ttc" id="aclassSccg_1_1Core_1_1Source_html"><div class="ttname"><a href="classSccg_1_1Core_1_1Source.html">Sccg.Core.Source</a></div><div class="ttdoc">The base class of the ISource. This class provides some helper methods and standard implementation of...</div><div class="ttdef"><b>Definition:</b> <a href="Source_8cs_source.html#l00010">Source.cs:12</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Core_1_1Writer_html"><div class="ttname"><a href="classSccg_1_1Core_1_1Writer.html">Sccg.Core.Writer</a></div><div class="ttdoc">The base class of IContent.</div><div class="ttdef"><b>Definition:</b> <a href="Writer_8cs_source.html#l00010">Writer.cs:11</a></div></div>
 <div class="ttc" id="ainterfaceSccg_1_1Core_1_1IContentConverter_html"><div class="ttname"><a href="interfaceSccg_1_1Core_1_1IContentConverter.html">Sccg.Core.IContentConverter</a></div><div class="ttdoc">Represents a converter that converts a IContent.</div><div class="ttdef"><b>Definition:</b> <a href="IContentConverter_8cs_source.html#l00008">IContentConverter.cs:9</a></div></div>
 <div class="ttc" id="ainterfaceSccg_1_1Core_1_1IFormatter_html"><div class="ttname"><a href="interfaceSccg_1_1Core_1_1IFormatter.html">Sccg.Core.IFormatter</a></div><div class="ttdoc">Represents a formatter for ISource.</div><div class="ttdef"><b>Definition:</b> <a href="IFormatter_8cs_source.html#l00008">IFormatter.cs:9</a></div></div>

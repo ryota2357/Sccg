@@ -114,9 +114,9 @@ $(function() {
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        var footer = StdFormatterImpl.CreateFooter(metadata, <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        var body = CreateBody(items.ToArray());</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html">SingleTextContent</a>($<span class="stringliteral">&quot;colors/{metadata.ThemeName}.vim&quot;</span>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html">SingleTextContent</a>(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;colors/{metadata.ThemeName}.vim&quot;</span>,</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordtype">string</span>.Join(<span class="charliteral">&#39;\n&#39;</span>, header),</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $<span class="stringliteral">&quot;&quot;</span><span class="stringliteral">&quot;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;&quot;</span><span class="stringliteral">&quot;</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="stringliteral">            set background={(metadata.ThemeType == ThemeType.Light ? &quot;</span>light<span class="stringliteral">&quot; : &quot;</span>dark<span class="stringliteral">&quot;)}</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="stringliteral">            highlight clear</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="stringliteral">            if exists(&#39;syntax_on&#39;)</span></div>
@@ -134,21 +134,21 @@ $(function() {
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        var sb = <span class="keyword">new</span> StringBuilder();</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">void</span> Set&lt;T&gt;(<span class="keywordtype">string</span> name, T? value)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">void</span> Set&lt;T&gt;(<span class="keywordtype">string</span> <a class="code hl_variable" href="VSCodeFormatter_8cs.html#a79ece3db8cdf4373e67efac4a05f017b">name</a>, T? value)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        {</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">if</span> (value is <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">switch</span> (value)</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            {</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">case</span> Color c:</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    <span class="keywordflow">if</span> (c.IsDefault) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    var code = c.IsNone ? <span class="stringliteral">&quot;NONE&quot;</span> : c.HexCode;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    sb.Append($<span class="stringliteral">&quot; {name}={code}&quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    <span class="keywordflow">if</span> (c.IsDefault()) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    var code = c.IsNone() ? <span class="stringliteral">&quot;NONE&quot;</span> : c.HexCode;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    sb.Append(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot; {name}={code}&quot;</span>);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">case</span> <span class="keywordtype">string</span> s:</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    sb.Append($<span class="stringliteral">&quot; {name}={s}&quot;</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    sb.Append(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot; {name}={s}&quot;</span>);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NotSupportedException($<span class="stringliteral">&quot;NeovimFormatter does not support type {typeof(T).Name}&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NotSupportedException(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;NeovimFormatter does not support type {typeof(T).Name}&quot;</span>);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
@@ -159,18 +159,18 @@ $(function() {
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">if</span> (formattable.Link is not <span class="keyword">null</span>)</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                yield <span class="keywordflow">return</span> $<span class="stringliteral">&quot;hi link {formattable.Name} {formattable.Link}&quot;</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                yield <span class="keywordflow">return</span> <a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;hi link {formattable.Name} {formattable.Link}&quot;</span>;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            }</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">if</span> (formattable.Style == <a class="code hl_struct" href="structSccg_1_1Style.html">Style</a>.<a class="code hl_property" href="structSccg_1_1Style.html#aaa1e85687ea1f54d0d1a7ff8232f5ddc">Default</a>)</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            {</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                yield <span class="keywordflow">return</span> $<span class="stringliteral">&quot;\&quot; hi {formattable.Name}&quot;</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                yield <span class="keywordflow">return</span> <a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;\&quot; hi {formattable.Name}&quot;</span>;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            sb.Clear();</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            sb.Append($<span class="stringliteral">&quot;hi {formattable.Name}{(formattable.Default ? &quot;</span> <span class="keywordflow">default</span><span class="stringliteral">&quot; : &quot;</span><span class="stringliteral">&quot;)}&quot;</span>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            sb.Append(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;hi {formattable.Name}{(formattable.Default ? &quot;</span> <span class="keywordflow">default</span><span class="stringliteral">&quot; : &quot;</span><span class="stringliteral">&quot;)}&quot;</span>);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            Set(<span class="stringliteral">&quot;ctermfg&quot;</span>, formattable.Style?.Foreground.TerminalColorCode);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            Set(<span class="stringliteral">&quot;ctermbg&quot;</span>, formattable.Style?.Background.TerminalColorCode);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            Set(<span class="stringliteral">&quot;ctermul&quot;</span>, formattable.Style?.Special.TerminalColorCode);</div>
@@ -190,14 +190,14 @@ $(function() {
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                             .GroupBy(x =&gt; x.Name);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">foreach</span> (var one <span class="keywordflow">in</span> arrayItem)</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            var name = one.Key;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            var <a class="code hl_variable" href="VSCodeFormatter_8cs.html#a79ece3db8cdf4373e67efac4a05f017b">name</a> = one.Key;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            var data = one.OrderBy(x =&gt; x.Index)</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                          .Select(x =&gt; (x.Value, x.Index, x.Length))</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                          .ToArray();</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordflow">if</span> (data.Select(x =&gt; x.Length).Distinct().Count() != 1)</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException($<span class="stringliteral">&quot;Vim-array: {name} has different length.&quot;</span>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException(<a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;Vim-array: {name} has different length.&quot;</span>);</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            }</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            var idx = data.Select(x =&gt; x.Index).Distinct().ToArray();</div>
@@ -206,8 +206,8 @@ $(function() {
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidDataException(<span class="stringliteral">&quot;Vim-array: Index is not unique.&quot;</span>);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            }</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            var formattedValues = <span class="keywordtype">string</span>.Join(<span class="stringliteral">&quot;, &quot;</span>, data.Select(x =&gt; $<span class="stringliteral">&quot;&#39;{x.Value}&#39;&quot;</span>));</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            yield <span class="keywordflow">return</span> $<span class="stringliteral">&quot;let g:{name} = [{formattedValues}]&quot;</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            var formattedValues = <span class="keywordtype">string</span>.Join(<span class="stringliteral">&quot;, &quot;</span>, data.Select(x =&gt; <a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;&#39;{x.Value}&#39;&quot;</span>));</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            yield <span class="keywordflow">return</span> <a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;let g:{name} = [{formattedValues}]&quot;</span>;</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        }</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
@@ -242,9 +242,11 @@ $(function() {
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                       })</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                       .WhereNotNull()</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                       .DefaultIfEmpty(<span class="keyword">null</span>)</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                       .Aggregate((x, y) =&gt; $<span class="stringliteral">&quot;{x},{y}&quot;</span>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                       .Aggregate((x, y) =&gt; <a class="code hl_property" href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a><span class="stringliteral">&quot;{x},{y}&quot;</span>);</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>}</div>
+<div class="ttc" id="aVSCodeFormatter_8cs_html_a6e1be1b95a8ae40dbf962380bbbdbfe3"><div class="ttname"><a href="VSCodeFormatter_8cs.html#a6e1be1b95a8ae40dbf962380bbbdbfe3">$</a></div><div class="ttdeci">$ metadata.?? ThemeName $ $</div><div class="ttdef"><b>Definition:</b> <a href="VSCodeFormatter_8cs_source.html#l00142">VSCodeFormatter.cs:142</a></div></div>
+<div class="ttc" id="aVSCodeFormatter_8cs_html_a79ece3db8cdf4373e67efac4a05f017b"><div class="ttname"><a href="VSCodeFormatter_8cs.html#a79ece3db8cdf4373e67efac4a05f017b">name</a></div><div class="ttdeci">$ name</div><div class="ttdef"><b>Definition:</b> <a href="VSCodeFormatter_8cs_source.html#l00142">VSCodeFormatter.cs:142</a></div></div>
 <div class="ttc" id="aclassSccg_1_1BuilderQuery_html"><div class="ttname"><a href="classSccg_1_1BuilderQuery.html">Sccg.BuilderQuery</a></div><div class="ttdoc">A query class for Builder.</div><div class="ttdef"><b>Definition:</b> <a href="BuilderQuery_8cs_source.html#l00012">BuilderQuery.cs:13</a></div></div>
 <div class="ttc" id="aclassSccg_1_1BuilderQuery_html_adcf97ab9667e39324d2cd972ecccaf6b"><div class="ttname"><a href="classSccg_1_1BuilderQuery.html#adcf97ab9667e39324d2cd972ecccaf6b">Sccg.BuilderQuery.GetMetadata</a></div><div class="ttdeci">Metadata GetMetadata()</div><div class="ttdoc">Gets the metadata of the builder.</div><div class="ttdef"><b>Definition:</b> <a href="BuilderQuery_8cs_source.html#l00091">BuilderQuery.cs:91</a></div></div>
 <div class="ttc" id="aclassSccg_1_1Builtin_1_1Formatters_1_1VimFormatter_html"><div class="ttname"><a href="classSccg_1_1Builtin_1_1Formatters_1_1VimFormatter.html">Sccg.Builtin.Formatters.VimFormatter</a></div><div class="ttdoc">Vim color scheme with Vim script.</div><div class="ttdef"><b>Definition:</b> <a href="VimFormatter_8cs_source.html#l00043">VimFormatter.cs:44</a></div></div>

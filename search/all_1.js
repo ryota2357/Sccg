@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5binstance_20initializer_5d_0',['[instance initializer]',['../Builder_8cs.html#acc6beb405ec2bd5b453b0bba03e4a3b4',1,'Builder.cs']]]
+  ['_3bsimilar_20to_20_60_20_40field_60_0',[';similar to ` @field`',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043af3b8fd716c4cb58e8a739443d2cd2f0f',1,'Sccg::Builtin::Sources::NeovimTreesitterHighlightSource']]]
 ];

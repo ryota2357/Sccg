@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSccg_1_1Core_1_1SourceColorOnly.html" title=" " alt="" coords="5,5,205,60"/>
-<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Sources_1_1AlacrittyColorsSource.html" title="Source for Alacritty colors." alt="" coords="253,13,445,53"/>
+<area shape="rect" id="node1" href="$classSccg_1_1Core_1_1Source.html" title=" " alt="" coords="5,5,215,45"/>
+<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Sources_1_1VimCustomGroupSource.html" title="Source for Vim/Neovim custom highlight group." alt="" coords="263,5,431,45"/>
 </map>

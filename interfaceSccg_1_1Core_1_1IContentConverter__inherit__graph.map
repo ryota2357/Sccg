@@ -1,0 +1,4 @@
+<map id="Sccg.Core.IContentConverter" name="Sccg.Core.IContentConverter">
+<area shape="rect" id="node1" title="Represents a converter that converts a IContent." alt="" coords="5,5,196,31"/>
+<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Converters_1_1MultiTextContentSplitter.html" title="Converter (ContentConverter) that splits MultiTextContent into SingleTextContent." alt="" coords="20,79,181,119"/>
+</map>

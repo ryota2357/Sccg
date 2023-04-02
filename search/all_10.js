@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['question_0',['Question',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98aa97ea56b0e00b2379736ae60869ff66a',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.Question()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1eaa97ea56b0e00b2379736ae60869ff66a',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.Question()']]],
-  ['quickfixline_1',['QuickFixLine',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimEditorHighlightSource.html#a44bb8dafad080059f17f03f9df997e98ae54006019a1fe42b8133b6bd900150a1',1,'Sccg.Builtin.Sources.NeovimEditorHighlightSource.QuickFixLine()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimEditorHighlightSource.html#a449e8f984578ed36a6f965665bd7dd1eae54006019a1fe42b8133b6bd900150a1',1,'Sccg.Builtin.Sources.VimEditorHighlightSource.QuickFixLine()']]]
+  ['objectstore_0',['ObjectStore',['../classSccg_1_1Utility_1_1ObjectStore.html',1,'Sccg::Utility']]],
+  ['objectstore_2ecs_1',['ObjectStore.cs',['../ObjectStore_8cs.html',1,'']]],
+  ['operator_2',['Operator',['../classSccg_1_1Builtin_1_1Sources_1_1NeovimTreesitterHighlightSource.html#adf166af15d4e2db26c880ae661ec9043ae1b3ec89ead7f83a9245ed5c9cacfdbf',1,'Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Operator()'],['../classSccg_1_1Builtin_1_1Sources_1_1VimSyntaxGroupSource.html#a7e48fad59659d439124ad7ae7a511053ae1b3ec89ead7f83a9245ed5c9cacfdbf',1,'Sccg.Builtin.Sources.VimSyntaxGroupSource.Operator()']]],
+  ['operator_21_3d_3',['operator!=',['../structSccg_1_1Style.html#a822438e392ac9b98ac5d43c6b54dd67f',1,'Sccg::Style']]],
+  ['operator_3d_3d_4',['operator==',['../structSccg_1_1Style.html#adf499e9138045f0e89ea896cafcd8a27',1,'Sccg::Style']]]
 ];

@@ -10,5 +10,6 @@ var searchData=
   ['iterm2colorssource_2ecs_7',['Iterm2ColorsSource.cs',['../Iterm2ColorsSource_8cs.html',1,'']]],
   ['iterm2formatter_2ecs_8',['Iterm2Formatter.cs',['../Iterm2Formatter_8cs.html',1,'']]],
   ['ivimsourceitembase_2ecs_9',['IVimSourceItemBase.cs',['../IVimSourceItemBase_8cs.html',1,'']]],
-  ['iwriter_2ecs_10',['IWriter.cs',['../IWriter_8cs.html',1,'']]]
+  ['ivscodesourceitembase_2ecs_10',['IVSCodeSourceItemBase.cs',['../IVSCodeSourceItemBase_8cs.html',1,'']]],
+  ['iwriter_2ecs_11',['IWriter.cs',['../IWriter_8cs.html',1,'']]]
 ];
