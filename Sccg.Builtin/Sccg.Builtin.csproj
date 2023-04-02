@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
-        <Version>0.1.1</Version>
+        <Version>0.2.0</Version>
         <Title>Sccg Builtin Library</Title>
         <Authors>ryota2357</Authors>
         <PackageProjectUrl>https://sccg.ryota2357.com/</PackageProjectUrl>
