@@ -57,6 +57,9 @@ public abstract partial class TextMateElementSource : Source<TextMateElementSour
     /// <inheritdoc />
     protected override void Link(Group from, Group to) => _impl.Link(from, to);
 
+    /// <summary>
+    /// SourceItem for TextMate Element.
+    /// </summary>
     public class Item : IVSCodeTokenColorSourceItem
     {
         /// <summary>
@@ -78,6 +81,7 @@ public abstract partial class TextMateElementSource : Source<TextMateElementSour
             Style = style;
         }
 
+        /// <inheritdoc />
         public VSCodeFormatter.TokenColorFormattable Extract()
         {
             return new VSCodeFormatter.TokenColorFormattable

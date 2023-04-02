@@ -79,6 +79,7 @@ public class VSCodeEditorThemeColorSource : SourceColorOnly<VSCodeEditorThemeCol
             Color = color;
         }
 
+        /// <inheritdoc />
         public VSCodeFormatter.ColorFormattable Extract()
         {
             return new VSCodeFormatter.ColorFormattable {

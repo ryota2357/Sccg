@@ -115,9 +115,9 @@ public class ObjectStoreTest
     {
         var a = new TestClass(3);
         var aId = _store.Save(a);
-        _store.TryLoad<TestClass>(aId, out var aData).Should().BeTrue();
-        _store.TryLoad<TestClass>(aId + 1, out var aData2).Should().BeFalse();
-        _store.TryLoad<TestStruct>(aId, out var aData3).Should().BeFalse();
+        _store.TryLoad<TestClass>(aId, out _).Should().BeTrue();
+        _store.TryLoad<TestClass>(aId + 1, out _).Should().BeFalse();
+        _store.TryLoad<TestStruct>(aId, out _).Should().BeFalse();
     }
 }
 

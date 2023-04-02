@@ -13,6 +13,9 @@ namespace Sccg.Builtin.Formatters;
 /// </summary>
 public interface IVSCodeColorSourceItem : IVSCodeSourceItemBase
 {
+    /// <summary>
+    /// Extracts <see cref="VSCodeFormatter.ColorFormattable"/> from this item.
+    /// </summary>
     public VSCodeFormatter.ColorFormattable Extract();
 }
 
@@ -21,6 +24,9 @@ public interface IVSCodeColorSourceItem : IVSCodeSourceItemBase
 /// </summary>
 public interface IVSCodeTokenColorSourceItem : IVSCodeSourceItemBase
 {
+    /// <summary>
+    /// Extracts <see cref="VSCodeFormatter.TokenColorFormattable"/> from this item.
+    /// </summary>
     public VSCodeFormatter.TokenColorFormattable Extract();
 }
 
