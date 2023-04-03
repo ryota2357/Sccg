@@ -1,0 +1,62 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Sccg/Sccg.csproj",
+            "Sccg.Builtin/Sccg.Builtin.csproj"
+          ]
+        }
+      ],
+      "dest": "api",
+      "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "noRestore": false,
+      "namespaceLayout": "flattened",
+      "memberLayout": "separatePages",
+      "allowCompilationErrors": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "*.md",
+          "toc.yml"
+        ]
+      },
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "exclude": [
+          "public/**"
+        ]
+      }
+    ],
+    "dest": "public",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "modern"
+    ],
+    "postProcessors": [],
+    "keepFileLink": false,
+    "disableGitFeatures": false
+  }
+}
