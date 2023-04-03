@@ -181,8 +181,19 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
             sb.AppendLine("  },");
         }
         sb.AppendLine("  \"engines\": {");
-        AppendIfNotNull(4, "vscode", engines);
-        sb.Remove(sb.Length - 2, 1); // remove last comma
+        sb.AppendLine($"    \"vscode\": \"{engines}\"");
+        sb.AppendLine("  },");
+        sb.AppendLine("  \"categories\": [");
+        sb.AppendLine("    \"Themes\"");
+        sb.AppendLine("  ],");
+        sb.AppendLine("  \"contributes\": {");
+        sb.AppendLine("    \"themes\": [");
+        sb.AppendLine("      {");
+        sb.AppendLine($"        \"label\": \"{name}\",");
+        sb.AppendLine($"        \"uiTheme\": \"{(metadata.ThemeType == ThemeType.Dark ? "vs-dark" : "vs")}\",");
+        sb.AppendLine($"        \"path\": \"./themes/{name}-color-theme.json\"");
+        sb.AppendLine("      }");
+        sb.AppendLine("    ]");
         sb.AppendLine("  }");
         sb.AppendLine("}");
 

@@ -42,6 +42,18 @@ public class VSCodeTest
           "publisher": "ryota2357",
           "engines": {
             "vscode": "*"
+          },
+          "categories": [
+            "Themes"
+          ],
+          "contributes": {
+            "themes": [
+              {
+                "label": "unknown",
+                "uiTheme": "vs-dark",
+                "path": "./themes/unknown-color-theme.json"
+              }
+            ]
           }
         }
         """);
