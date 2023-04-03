@@ -176,8 +176,8 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
         if (repository is not null)
         {
             sb.AppendLine("  \"repository\": {");
-            AppendIfNotNull(4, "type", "git");
-            AppendIfNotNull(4, "url", repository);
+            sb.AppendLine("    \"type\": \"git\",");
+            sb.AppendLine($"    \"url\": \"{repository}\"");
             sb.AppendLine("  },");
         }
         sb.AppendLine("  \"engines\": {");
