@@ -1,5 +1,0 @@
-<map id="Sccg.Builtin.Formatters.IVimArrayVariableSourceItem" name="Sccg.Builtin.Formatters.IVimArrayVariableSourceItem">
-<area shape="rect" id="node1" title="SourceItem for Vim color scheme." alt="" coords="5,152,199,192"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" title="Base SourceItem for Vim." alt="" coords="29,79,175,104"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="55,5,149,31"/>
-</map>

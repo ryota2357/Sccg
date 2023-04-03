@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum NeovimLspDiagnosticHighlightSource.Group
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum NeovimLspDiagnosticHighlightSource.Group
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ryota2357/Sccg/new/main/apiSpec/new?filename=Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group.md&amp;value=---%0Auid%3A%20Sccg.Builtin.Sources.NeovimLspDiagnosticHighlightSource.Group%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="d-flex ms-auto" role="search" id="search">
+              <i class="bi bi-search"></i>
+              <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sccg.Builtin.Sources.NeovimLspDiagnosticHighlightSource.Group">
+
+
+
+
+  <h1 id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group" data-uid="Sccg.Builtin.Sources.NeovimLspDiagnosticHighlightSource.Group" class="text-break">
+    Enum NeovimLspDiagnosticHighlightSource.Group
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg.Builtin/Sources/NeovimLspDiagnosticHighlightSource.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sccg.html">Sccg</a>.<span class="xref">Builtin</span>.<a class="xref" href="Sccg.Builtin.Sources.html">Sources</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>Sccg.Builtin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>:h diagnostic-highlights</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum NeovimLspDiagnosticHighlightSource.Group</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticError"><code>DiagnosticError = 0</code></dt>
+    <dd><p>Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticFloatingError"><code>DiagnosticFloatingError = 15</code></dt>
+    <dd><p>Used to color &quot;Error&quot; diagnostic messages in diagnostics float. See |vim.diagnostic.open_float()|</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticFloatingHint"><code>DiagnosticFloatingHint = 18</code></dt>
+    <dd><p>Used to color &quot;Hint&quot; diagnostic messages in diagnostics float.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticFloatingInfo"><code>DiagnosticFloatingInfo = 17</code></dt>
+    <dd><p>Used to color &quot;Info&quot; diagnostic messages in diagnostics float.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticFloatingOk"><code>DiagnosticFloatingOk = 19</code></dt>
+    <dd><p>Used to color &quot;Ok&quot; diagnostic messages in diagnostics float.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticFloatingWarn"><code>DiagnosticFloatingWarn = 16</code></dt>
+    <dd><p>Used to color &quot;Warn&quot; diagnostic messages in diagnostics float.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticHint"><code>DiagnosticHint = 3</code></dt>
+    <dd><p>Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticInfo"><code>DiagnosticInfo = 2</code></dt>
+    <dd><p>Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticOk"><code>DiagnosticOk = 4</code></dt>
+    <dd><p>Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticSignError"><code>DiagnosticSignError = 20</code></dt>
+    <dd><p>Used for &quot;Error&quot; signs in sign column.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticSignHint"><code>DiagnosticSignHint = 23</code></dt>
+    <dd><p>Used for &quot;Hint&quot; signs in sign column.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticSignInfo"><code>DiagnosticSignInfo = 22</code></dt>
+    <dd><p>Used for &quot;Info&quot; signs in sign column.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticSignOk"><code>DiagnosticSignOk = 24</code></dt>
+    <dd><p>Used for &quot;Ok&quot; signs in sign column.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticSignWarn"><code>DiagnosticSignWarn = 21</code></dt>
+    <dd><p>Used for &quot;Warn&quot; signs in sign column.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticUnderlineError"><code>DiagnosticUnderlineError = 10</code></dt>
+    <dd><p>Used to underline &quot;Error&quot; diagnostics.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticUnderlineHint"><code>DiagnosticUnderlineHint = 13</code></dt>
+    <dd><p>Used to underline &quot;Hint&quot; diagnostics.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticUnderlineInfo"><code>DiagnosticUnderlineInfo = 12</code></dt>
+    <dd><p>Used to underline &quot;Info&quot; diagnostics.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticUnderlineOk"><code>DiagnosticUnderlineOk = 14</code></dt>
+    <dd><p>Used to underline &quot;Ok&quot; diagnostics.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticUnderlineWarn"><code>DiagnosticUnderlineWarn = 11</code></dt>
+    <dd><p>Used to underline &quot;Warn&quot; diagnostics.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticVirtualTextError"><code>DiagnosticVirtualTextError = 5</code></dt>
+    <dd><p>Used for &quot;Error&quot; diagnostic virtual text.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticVirtualTextHint"><code>DiagnosticVirtualTextHint = 8</code></dt>
+    <dd><p>Used for &quot;Hint&quot; diagnostic virtual text.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticVirtualTextInfo"><code>DiagnosticVirtualTextInfo = 7</code></dt>
+    <dd><p>Used for &quot;Info&quot; diagnostic virtual text.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticVirtualTextOk"><code>DiagnosticVirtualTextOk = 9</code></dt>
+    <dd><p>Used for &quot;Ok&quot; diagnostic virtual text.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticVirtualTextWarn"><code>DiagnosticVirtualTextWarn = 6</code></dt>
+    <dd><p>Used for &quot;Warn&quot; diagnostic virtual text.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group_DiagnosticWarn"><code>DiagnosticWarn = 1</code></dt>
+    <dd><p>Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ryota2357/Sccg/new/main/apiSpec/new?filename=Sccg_Builtin_Sources_NeovimLspDiagnosticHighlightSource_Group.md&amp;value=---%0Auid%3A%20Sccg.Builtin.Sources.NeovimLspDiagnosticHighlightSource.Group%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+        </div>
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

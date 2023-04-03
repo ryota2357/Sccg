@@ -1,5 +1,0 @@
-<map id="Sccg.Core.ISource" name="Sccg.Core.ISource">
-<area shape="rect" id="node1" title="Represents a source that provides source items." alt="" coords="136,5,267,31"/>
-<area shape="rect" id="node2" href="$classSccg_1_1Core_1_1Source.html" title="The base class of the ISource. This class provides some helper methods and standard implementation of..." alt="" coords="5,79,189,119"/>
-<area shape="rect" id="node3" href="$classSccg_1_1Core_1_1SourceColorOnly.html" title="The base class of the ISource. This class provides some helper methods and standard implementation of..." alt="" coords="214,79,397,119"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="Sccg.Builtin.Writers.ConsoleWriter" name="Sccg.Builtin.Writers.ConsoleWriter">
-<area shape="rect" id="node1" title="A writer that writes to the console." alt="" coords="5,79,191,119"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Core_1_1IWriter.html" title="Represents a writer that writes the content to some form." alt="" coords="68,5,128,31"/>
-</map>

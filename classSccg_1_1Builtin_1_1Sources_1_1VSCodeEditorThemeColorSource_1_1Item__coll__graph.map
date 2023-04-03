@@ -1,7 +1,0 @@
-<map id="Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Item" name="Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Item">
-<area shape="rect" id="node1" title="SourceItem for VSCode editor theme color." alt="" coords="99,257,293,297"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVSCodeColorSourceItem.html" title="SourceItem for VSCode color theme json (colors)." alt="" coords="5,162,176,187"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVSCodeSourceItemBase.html" title="Base SourceItem for VSCode." alt="" coords="5,80,176,105"/>
-<area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="44,5,137,31"/>
-<area shape="rect" id="node5" title=" " alt="" coords="201,155,405,195"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="Sccg.Builtin.Sources.VimSyntaxGroupSource.Item" name="Sccg.Builtin.Sources.VimSyntaxGroupSource.Item">
-<area shape="rect" id="node1" title="SourceItem for Vim/Neovim syntax group." alt="" coords="85,225,253,265"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1IVimSourceItem.html" title="SourceItem for Vim color scheme." alt="" coords="35,152,151,177"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1IVimSourceItemBase.html" title="Base SourceItem for Vim." alt="" coords="5,79,152,104"/>
-<area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="123,5,216,31"/>
-<area shape="rect" id="node6" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title="Base SourceItem for Neovim." alt="" coords="176,79,344,104"/>
-<area shape="rect" id="node5" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title="SourceItem for Neovim color scheme." alt="" coords="183,152,321,177"/>
-</map>

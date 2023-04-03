@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum TextMateElementSource.Group
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum TextMateElementSource.Group
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ryota2357/Sccg/new/main/apiSpec/new?filename=Sccg_Builtin_Sources_TextMateElementSource_Group.md&amp;value=---%0Auid%3A%20Sccg.Builtin.Sources.TextMateElementSource.Group%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="d-flex ms-auto" role="search" id="search">
+              <i class="bi bi-search"></i>
+              <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sccg.Builtin.Sources.TextMateElementSource.Group">
+
+
+
+
+  <h1 id="Sccg_Builtin_Sources_TextMateElementSource_Group" data-uid="Sccg.Builtin.Sources.TextMateElementSource.Group" class="text-break">
+    Enum TextMateElementSource.Group
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg.Builtin/Sources/TextMateElementSource.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sccg.html">Sccg</a>.<span class="xref">Builtin</span>.<a class="xref" href="Sccg.Builtin.Sources.html">Sources</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>Sccg.Builtin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://macromates.com/manual/en/language_grammars#naming_conventions">https://macromates.com/manual/en/language_grammars#naming_conventions</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum TextMateElementSource.Group</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Comment"><code>Comment = 0</code></dt>
+    <dd><p>comment ― for comments.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_CommentBlock"><code>CommentBlock = 7</code></dt>
+    <dd><p>comment.block ― multi-line comments like /* … */ and <!-- … -->.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_CommentBlockDocumentation"><code>CommentBlockDocumentation = 8</code></dt>
+    <dd><p>comment.block.documentation ― embedded documentation.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_CommentLine"><code>CommentLine = 1</code></dt>
+    <dd><p>comment.line ― line comments, we specialize further so that the type of comment start character(s) can be extracted from the scope.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_CommentLineCharacter"><code>CommentLineCharacter = 6</code></dt>
+    <dd><p>comment.line.character ― other types of line comments.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_CommentLineDouble_dash"><code>CommentLineDouble_dash = 3</code></dt>
+    <dd><p>comment.line.double-dash ― -- comment</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_CommentLineDouble_slash"><code>CommentLineDouble_slash = 2</code></dt>
+    <dd><p>comment.line.double-slash ― // comment</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_CommentLineNumber_sign"><code>CommentLineNumber_sign = 4</code></dt>
+    <dd><p>comment.line.number-sign ― # comment</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_CommentLinePercentage"><code>CommentLinePercentage = 5</code></dt>
+    <dd><p>comment.line.percentage ― % comment</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Constant"><code>Constant = 9</code></dt>
+    <dd><p>constant ― various forms of constants.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_ConstantCharacter"><code>ConstantCharacter = 11</code></dt>
+    <dd><p>constant.character ― those which represent characters, e.g. &lt;, \e, \031.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_ConstantCharacterEscape"><code>ConstantCharacterEscape = 12</code></dt>
+    <dd><p>constant.character.escape ― escape sequences like \e would be constant.character.escape.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_ConstantLanguage"><code>ConstantLanguage = 13</code></dt>
+    <dd><p>constant.language ― constants (generally) provided by the language which are “special” like true, false, nil, YES, NO, etc.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_ConstantNumeric"><code>ConstantNumeric = 10</code></dt>
+    <dd><p>constant.numeric ― those which represent numbers, e.g. 42, 1.3f, 0x4AB1U.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_ConstantOther"><code>ConstantOther = 14</code></dt>
+    <dd><p>constant.other ― other constants, e.g. colors in CSS.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Entity"><code>Entity = 15</code></dt>
+    <dd><p>entity ― an entity refers to a larger part of the document, for example a chapter, class, function, or tag. We do not scope the entire entity as entity.* (we use meta.* for that). But we do use entity.* for the “placeholders” in the larger entity, e.g. if the entity is a chapter, we would use entity.name.section for the chapter title.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_EntityName"><code>EntityName = 16</code></dt>
+    <dd><p>entity.name ― we are naming the larger entity.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_EntityNameFunction"><code>EntityNameFunction = 17</code></dt>
+    <dd><p>entity.name.function ― the name of a function.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_EntityNameSection"><code>EntityNameSection = 20</code></dt>
+    <dd><p>entity.name.section ― the name is the name of a section/heading.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_EntityNameTag"><code>EntityNameTag = 19</code></dt>
+    <dd><p>entity.name.tag ― a tag name.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_EntityNameType"><code>EntityNameType = 18</code></dt>
+    <dd><p>entity.name.type ― the name of a type declaration or class.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_EntityOther"><code>EntityOther = 21</code></dt>
+    <dd><p>entity.other ― other entities.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_EntityOtherAttribute_name"><code>EntityOtherAttribute_name = 23</code></dt>
+    <dd><p>entity.other.attribute-name ― the name of an attribute (mainly in tags).</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_EntityOtherInherited_class"><code>EntityOtherInherited_class = 22</code></dt>
+    <dd><p>entity.other.inherited-class ― the superclass/baseclass name.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Invalid"><code>Invalid = 24</code></dt>
+    <dd><p>invalid ― stuff which is “invalid”.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_InvalidDeprecated"><code>InvalidDeprecated = 26</code></dt>
+    <dd><p>invalid.deprecated ― for deprecated stuff e.g. using an API function which is deprecated or using styling with strict HTML.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_InvalidIllegal"><code>InvalidIllegal = 25</code></dt>
+    <dd><p>invalid.illegal ― illegal, e.g. an ampersand or lower-than character in HTML (which is not part of an entity/tag).</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Keyword"><code>Keyword = 27</code></dt>
+    <dd><p>keyword ― keywords (when these do not fall into the other groups).</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_KeywordControl"><code>KeywordControl = 28</code></dt>
+    <dd><p>keyword.control ― mainly related to flow control like continue, while, return, etc.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_KeywordOperator"><code>KeywordOperator = 29</code></dt>
+    <dd><p>keyword.operator ― operators can either be textual (e.g. or) or be characters.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_KeywordOther"><code>KeywordOther = 30</code></dt>
+    <dd><p>keyword.other ― other keywords.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Markup"><code>Markup = 31</code></dt>
+    <dd><p>markup ― this is for markup languages and generally applies to larger subsets of the text.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupBold"><code>MarkupBold = 34</code></dt>
+    <dd><p>markup.bold ― bold text (text which is strong and similar should preferably be derived from this name).</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupHeading"><code>MarkupHeading = 35</code></dt>
+    <dd><p>markup.heading ― a section header. Optionally provide the heading level as the next element, for example markup.heading.2.html for <h2>…</h2> in HTML.
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupItalic"><code>MarkupItalic = 36</code></dt>
+    <dd><p>markup.italic ― italic text (text which is emphasized and similar should preferably be derived from this name).</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupList"><code>MarkupList = 37</code></dt>
+    <dd><p>markup.list ― list items.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupListNumbered"><code>MarkupListNumbered = 38</code></dt>
+    <dd><p>markup.list.numbered ― numbered list items.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupListUnnumbered"><code>MarkupListUnnumbered = 39</code></dt>
+    <dd><p>markup.list.unnumbered ― unnumbered list items.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupOther"><code>MarkupOther = 42</code></dt>
+    <dd><p>markup.other ― other markup constructs.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupQuote"><code>MarkupQuote = 40</code></dt>
+    <dd><p>markup.quote ― quoted (sometimes block quoted) text.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupRaw"><code>MarkupRaw = 41</code></dt>
+    <dd><p>markup.raw ― text which is verbatim, e.g. code listings. Normally spell checking is disabled for markup.raw.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupUnderline"><code>MarkupUnderline = 32</code></dt>
+    <dd><p>markup.underline ― underlined text.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_MarkupUnderlineLink"><code>MarkupUnderlineLink = 33</code></dt>
+    <dd><p>markup.underline.link ― this is for links, as a convenience this is derived from markup.underline so that if there is no theme rule which specifically targets markup.underline.link then it will inherit the underline style.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Meta"><code>Meta = 43</code></dt>
+    <dd><p>meta ― the meta scope is generally used to markup larger parts of the document. For example the entire line which declares a function would be meta.function and the subsets would be storage.type, entity.name.function, variable.parameter etc. and only the latter would be styled. Sometimes the meta part of the scope will be used only to limit the more general element that is styled, most of the time meta scopes are however used in scope selectors for activation of bundle items. For example in Objective-C there is a meta scope for the interface declaration of a class and the implementation, allowing the same tab-triggers to expand differently, depending on context.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Storage"><code>Storage = 44</code></dt>
+    <dd><p>storage ― things relating to “storage”.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StorageModifier"><code>StorageModifier = 46</code></dt>
+    <dd><p>storage.modifier ― a storage modifier like static, final, abstract, etc.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StorageType"><code>StorageType = 45</code></dt>
+    <dd><p>storage.type ― the type of something, class, function, int, var, etc.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_String"><code>String = 47</code></dt>
+    <dd><p>string ― strings.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringInterpolated"><code>StringInterpolated = 54</code></dt>
+    <dd><p>string.interpolated ― strings which are “evaluated”: <code>date</code>, $(pwd).</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringOther"><code>StringOther = 56</code></dt>
+    <dd><p>string.other ― other types of strings (should rarely be used).</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringQuoted"><code>StringQuoted = 48</code></dt>
+    <dd><p>string.quoted ― quoted strings.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringQuotedDouble"><code>StringQuotedDouble = 50</code></dt>
+    <dd><p>string.quoted.double ― double quoted strings: &quot;foo&quot;.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringQuotedOther"><code>StringQuotedOther = 52</code></dt>
+    <dd><p>string.quoted.other ― other types of quoting: $'shell', %s{...}.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringQuotedSingle"><code>StringQuotedSingle = 49</code></dt>
+    <dd><p>string.quoted.single ― single quoted strings: 'foo'.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringQuotedTriple"><code>StringQuotedTriple = 51</code></dt>
+    <dd><p>string.quoted.triple ― triple quoted strings: &quot;&quot;&quot;Python&quot;&quot;&quot;.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringRegexp"><code>StringRegexp = 55</code></dt>
+    <dd><p>string.regexp ― regular expressions: /(\w+)/.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_StringUnquoted"><code>StringUnquoted = 53</code></dt>
+    <dd><p>string.unquoted ― for things like here-docs and here-strings.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Support"><code>Support = 57</code></dt>
+    <dd><p>support ― things provided by a framework or library should be below support.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_SupportClass"><code>SupportClass = 59</code></dt>
+    <dd><p>support.class ― when the framework/library provides classes.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_SupportConstant"><code>SupportConstant = 61</code></dt>
+    <dd><p>support.constant ― constants (magic values) provided by the framework/library.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_SupportFunction"><code>SupportFunction = 58</code></dt>
+    <dd><p>support.function ― functions provided by the framework/library. For example NSLog in Objective-C is support.function.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_SupportOther"><code>SupportOther = 63</code></dt>
+    <dd><p>support.other ― the above should be exhaustive, but for everything else use support.other.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_SupportType"><code>SupportType = 60</code></dt>
+    <dd><p>support.type ― types provided by the framework/library, this is probably only used for languages derived from C, which has typedef (and struct). Most other languages would introduce new types as classes.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_SupportVariable"><code>SupportVariable = 62</code></dt>
+    <dd><p>support.variable ― variables provided by the framework/library. For example NSApp in AppKit.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_Variable"><code>Variable = 64</code></dt>
+    <dd><p>variable ― variables. Not all languages allow easy identification (and thus markup) of these.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_VariableLanguage"><code>VariableLanguage = 66</code></dt>
+    <dd><p>variable.language ― reserved language variables like this, super, self, etc.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_VariableOther"><code>VariableOther = 67</code></dt>
+    <dd><p>variable.other ― other variables, like $some_variables.</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_TextMateElementSource_Group_VariableParameter"><code>VariableParameter = 65</code></dt>
+    <dd><p>variable.parameter ― when the variable is declared as the parameter.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ryota2357/Sccg/new/main/apiSpec/new?filename=Sccg_Builtin_Sources_TextMateElementSource_Group.md&amp;value=---%0Auid%3A%20Sccg.Builtin.Sources.TextMateElementSource.Group%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+        </div>
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

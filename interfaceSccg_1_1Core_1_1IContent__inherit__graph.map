@@ -1,5 +1,0 @@
-<map id="Sccg.Core.IContent" name="Sccg.Core.IContent">
-<area shape="rect" id="node1" title="Represents a content." alt="" coords="119,5,253,31"/>
-<area shape="rect" id="node2" href="$classSccg_1_1Builtin_1_1Writers_1_1MultiTextContent.html" title="Represents multiple file text content." alt="" coords="5,79,172,119"/>
-<area shape="rect" id="node3" href="$classSccg_1_1Builtin_1_1Writers_1_1SingleTextContent.html" title="Represents a single file text content." alt="" coords="196,79,371,119"/>
-</map>

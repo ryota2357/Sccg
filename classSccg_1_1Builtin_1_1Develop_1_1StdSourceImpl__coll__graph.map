@@ -1,5 +1,0 @@
-<map id="Sccg.Builtin.Develop.StdSourceImpl&lt; TGroup &gt;" name="Sccg.Builtin.Develop.StdSourceImpl&lt; TGroup &gt;">
-<area shape="rect" id="node1" title="A standard implementation of ISource." alt="" coords="101,93,265,133"/>
-<area shape="rect" id="node2" href="$classSccg_1_1Utility_1_1ObjectStore.html" title="A simple object store." alt="" coords="5,5,165,31"/>
-<area shape="rect" id="node3" href="$classSccg_1_1Utility_1_1SingeLinkGraph.html" title="Represents a graph that out&#45;degree is 1, in&#45;degree is n." alt="" coords="189,5,373,31"/>
-</map>

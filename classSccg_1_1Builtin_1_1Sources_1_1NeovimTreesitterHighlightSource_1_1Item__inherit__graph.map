@@ -1,6 +1,0 @@
-<map id="Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item" name="Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item">
-<area shape="rect" id="node1" title="SourceItem for Neovim Treesitter highlight." alt="" coords="5,225,204,265"/>
-<area shape="rect" id="node2" href="$interfaceSccg_1_1Builtin_1_1Formatters_1_1INeovimSourceItem.html" title="SourceItem for Neovim color scheme." alt="" coords="35,152,174,177"/>
-<area shape="rect" id="node3" href="$interfaceSccg_1_1Builtin_1_1Sources_1_1Internal_1_1INeovimSourceItemBase.html" title="Base SourceItem for Neovim." alt="" coords="21,79,189,104"/>
-<area shape="rect" id="node4" href="$interfaceSccg_1_1Core_1_1ISourceItem.html" title="Represents a source item." alt="" coords="58,5,151,31"/>
-</map>

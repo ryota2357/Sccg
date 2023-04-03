@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$interfaceSccg_1_1Core_1_1ISource.html" title="Represents a source that provides source items." alt="" coords="5,45,136,70"/>
-<area shape="rect" id="node2" href="$classSccg_1_1Core_1_1Source.html" title="The base class of the ISource. This class provides some helper methods and standard implementation of..." alt="" coords="184,5,368,45"/>
-<area shape="rect" id="node3" href="$classSccg_1_1Core_1_1SourceColorOnly.html" title="The base class of the ISource. This class provides some helper methods and standard implementation of..." alt="" coords="185,69,367,109"/>
-</map>

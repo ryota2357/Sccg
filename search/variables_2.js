@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['color_0',['Color',['../classSccg_1_1Builtin_1_1Sources_1_1AlacrittyColorsSource_1_1Item.html#aacba05ee908d357dc741ddf22b6563c9',1,'Sccg.Builtin.Sources.AlacrittyColorsSource.Item.Color()'],['../classSccg_1_1Builtin_1_1Sources_1_1Ansi16ColorSource_1_1Item.html#a6c9a780b1f9acd1163366f89b5ca0121',1,'Sccg.Builtin.Sources.Ansi16ColorSource.Item.Color()'],['../classSccg_1_1Builtin_1_1Sources_1_1Iterm2ColorsSource_1_1Item.html#a15e73667c8af267f140aebecd5fb2996',1,'Sccg.Builtin.Sources.Iterm2ColorsSource.Item.Color()'],['../classSccg_1_1Builtin_1_1Sources_1_1VSCodeEditorThemeColorSource_1_1Item.html#abb77e1b7f78b7f2239092d6fe720e7f1',1,'Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Item.Color()']]],
-  ['commoncontentbackground_1',['CommonContentBackground',['../classSccg_1_1Builtin_1_1Sources_1_1VSCodeEditorThemeColorSource_1_1Group_1_1Merge.html#a68c6fff1820c1e649753c348dc52361d',1,'Sccg::Builtin::Sources::VSCodeEditorThemeColorSource::Group::Merge']]],
-  ['commonheaderbackground_2',['CommonHeaderBackground',['../classSccg_1_1Builtin_1_1Sources_1_1VSCodeEditorThemeColorSource_1_1Group_1_1Merge.html#a63bfaf12e4e65d60a55d8ed738f2f657',1,'Sccg::Builtin::Sources::VSCodeEditorThemeColorSource::Group::Merge']]],
-  ['currentcontentbackground_3',['CurrentContentBackground',['../classSccg_1_1Builtin_1_1Sources_1_1VSCodeEditorThemeColorSource_1_1Group_1_1Merge.html#afbcf09e653bd53c69748a08f9b696b53',1,'Sccg::Builtin::Sources::VSCodeEditorThemeColorSource::Group::Merge']]],
-  ['currentheaderbackground_4',['CurrentHeaderBackground',['../classSccg_1_1Builtin_1_1Sources_1_1VSCodeEditorThemeColorSource_1_1Group_1_1Merge.html#a987a21c74703d089da9093a32bccedca',1,'Sccg::Builtin::Sources::VSCodeEditorThemeColorSource::Group::Merge']]]
-];
