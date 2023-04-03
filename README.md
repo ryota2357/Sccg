@@ -31,12 +31,12 @@ TODO
 
 ## Builtin Support
 
-- [Vim](DevelopWithSccg.md#Vim)
-- [Neovim](DevelopWithSccg.md#Neovim)
-- VS Code (comming soon)
+- [Vim](DevelopWithSccg.md#vim)
+- [Neovim](DevelopWithSccg.md#neovim)
+- [VS Code](DevelopWithSccg.md#vs-code)
 - CotEditor (comming soon)
-- [iTerm2](DevelopWithSccg.md#iTerm2)
-- [Alacritty](DevelopWithSccg.md#Alacritty)
+- [iTerm2](DevelopWithSccg.md#iterm2)
+- [Alacritty](DevelopWithSccg.md#alacritty)
 
 ## Examples
 
