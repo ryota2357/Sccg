@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "UM0FyBTHO9MU1fGYmZv0mkvjZ/VucL2GI2OuNaLK5Vw="
+          "hash": "xmNsLWDoCob8lWBknQfG3+BoEDbXGiYHgOe+VSzJuz8="
         }
       },
       "version": ""
@@ -4936,6 +4936,39 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.yml",
       "output": {
         ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.DropIntoPromptBackground.html",
+          "hash": "XmOgGMdhnrce+1mqM/H0PE4vG4Eqe7qmW7/3b0+Dt90="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.DropIntoPromptBorder.html",
+          "hash": "+ozSSlcypKSMS4QbmLL2lUz8DQ6aZWCGdzmh04rYNxQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.html",
+          "hash": "ZDFxFPWVq4a3i/7rr6DKZ6sl86AZL9d3OZpP0kjNpuo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.Border.html",
           "hash": "71/nfQQm1nEzCYjJp60u2rAgIEfjQwjzwJheJOZfUck="
         }
@@ -5026,39 +5059,6 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.DropIntoPromptForeground.html",
           "hash": "SmlE7ywTntVi9/aD7v7sn9T8lsu4dPt4yOTUCA4Lcm4="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.DropIntoPromptBackground.html",
-          "hash": "XmOgGMdhnrce+1mqM/H0PE4vG4Eqe7qmW7/3b0+Dt90="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.DropIntoPromptBorder.html",
-          "hash": "+ozSSlcypKSMS4QbmLL2lUz8DQ6aZWCGdzmh04rYNxQ="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorGroup.html",
-          "hash": "ZDFxFPWVq4a3i/7rr6DKZ6sl86AZL9d3OZpP0kjNpuo="
         }
       },
       "version": ""
@@ -5202,6 +5202,50 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.SuggestStatusForeground.html",
           "hash": "kpuA49oxFz5hZ5H1EQESeE9BBvbHfSRG4mOvGZpH8Co="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.MarkerNavigationErrorHeaderBackground.html",
+          "hash": "pIbxvjPLfs3KM8aqMbRpTAvSzMZPMH48T/1X3mcXxtM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.MarkerNavigationWarningHeaderBackground.html",
+          "hash": "YaDJO+jzTnf0WrJtJOLUTv4YPlLYVJhqfF7es8f9ynk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.MarkerNavigationInfoHeaderBackground.html",
+          "hash": "IHDsKvmQGQqxO61t6l8JTIplFsaJg9/MINAQSq4RNlM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.html",
+          "hash": "PiOKwmFieR4rTa154+ySV2IemBOBd7LTWBc+B0lfNws="
         }
       },
       "version": ""
@@ -5378,50 +5422,6 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.MarkerNavigationInfoBackground.html",
           "hash": "krFXzUNkKFqlc4nRDvtsz2kEXPRR24/FtDLRBUB01zY="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.MarkerNavigationErrorHeaderBackground.html",
-          "hash": "pIbxvjPLfs3KM8aqMbRpTAvSzMZPMH48T/1X3mcXxtM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.MarkerNavigationWarningHeaderBackground.html",
-          "hash": "YaDJO+jzTnf0WrJtJOLUTv4YPlLYVJhqfF7es8f9ynk="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.MarkerNavigationInfoHeaderBackground.html",
-          "hash": "IHDsKvmQGQqxO61t6l8JTIplFsaJg9/MINAQSq4RNlM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.EditorWidget.html",
-          "hash": "PiOKwmFieR4rTa154+ySV2IemBOBd7LTWBc+B0lfNws="
         }
       },
       "version": ""
@@ -5706,39 +5706,6 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.Background.html",
-          "hash": "q2bQoKAdO9gFzeCbZ06g8g+Fkqj66T4OrJvfK189tG4="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.Border.html",
-          "hash": "n8z38TpY+bERmtxg6MPLfCOvwlVUy3nMjWN/NMmkZzs="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.Foreground.html",
-          "hash": "qgvb3DprEOEbEZ7JCf3D/S8xU5rbn2L0SnmTmbcZ+vY="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.PlaceholderForeground.html",
           "hash": "O7W3Cxg2v30F1KCrGGCek6xPrkETPpF+sGi21f+/r3Q="
         }
@@ -5901,6 +5868,39 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.Background.html",
+          "hash": "q2bQoKAdO9gFzeCbZ06g8g+Fkqj66T4OrJvfK189tG4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.Border.html",
+          "hash": "n8z38TpY+bERmtxg6MPLfCOvwlVUy3nMjWN/NMmkZzs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Input.Foreground.html",
+          "hash": "qgvb3DprEOEbEZ7JCf3D/S8xU5rbn2L0SnmTmbcZ+vY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.KeybindingLabel.yml",
       "output": {
         ".html": {
@@ -5983,6 +5983,105 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.KeybindingTable.html",
           "hash": "OK6xTibuLApDg4xKb7+v/yV/c1EndhwwO2+GOwltUOY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.HighlightForeground.html",
+          "hash": "StVsTsb4iyelKzuoaN/CGOi4n5O9Wl+iMfNmTfj4ags="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.HoverBackground.html",
+          "hash": "4nR3aMTv7g/3e4f9XsjAHCSVnREcoDAgYRRKyZOgYRE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.HoverForeground.html",
+          "hash": "HwxEN3e7sRxzIHmbdDbCnpa5bdeBojmqA2JzbKQ3ysw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveSelectionBackground.html",
+          "hash": "3SlAHHLT8r92ZtSTW3h4li2PX5z27kgqy7SBkFt6vUs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveSelectionForeground.html",
+          "hash": "keHKbjEPxqX9W1WCTiK/sH3s0nGL6yiXH6DeJYJ/yig="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveSelectionIconForeground.html",
+          "hash": "01FXmv/2J5mp8ljGOYvWA1HI3vgPUmTvmGCUZ8yYkWM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveFocusBackground.html",
+          "hash": "G0e3/Z1iI3VVfEB+Bs6YiKHUnWJibDGowYDcPL8JSXw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveFocusOutline.html",
+          "hash": "uMOFpM9QApPFic5TUjJRwIekxZEW0DlgF/b1Usu6ueY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InvalidItemForeground.html",
+          "hash": "Tbf5ELD1wmWJ9sVVaBqFlOXujEwjab1MGSCshAN2O18="
         }
       },
       "version": ""
@@ -6146,6 +6245,17 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
       "output": {
         ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.ActiveSelectionBackground.html",
+          "hash": "nAOqZDSR3TpCy7H5oSHnQMxgi8v9DKu3+EZtbPhFevI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.ActiveSelectionForeground.html",
           "hash": "Gk28aRZcnjFCMdZi/nmmQr2cgtS33qF/8YTvTISoqfc="
         }
@@ -6225,116 +6335,6 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.FocusAndSelectionOutline.html",
           "hash": "yro1UuaOC75ITe3VKNafjscQRwUs1I0GLRepoBz43Q8="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.HighlightForeground.html",
-          "hash": "StVsTsb4iyelKzuoaN/CGOi4n5O9Wl+iMfNmTfj4ags="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.HoverBackground.html",
-          "hash": "4nR3aMTv7g/3e4f9XsjAHCSVnREcoDAgYRRKyZOgYRE="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.HoverForeground.html",
-          "hash": "HwxEN3e7sRxzIHmbdDbCnpa5bdeBojmqA2JzbKQ3ysw="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveSelectionBackground.html",
-          "hash": "3SlAHHLT8r92ZtSTW3h4li2PX5z27kgqy7SBkFt6vUs="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveSelectionForeground.html",
-          "hash": "keHKbjEPxqX9W1WCTiK/sH3s0nGL6yiXH6DeJYJ/yig="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveSelectionIconForeground.html",
-          "hash": "01FXmv/2J5mp8ljGOYvWA1HI3vgPUmTvmGCUZ8yYkWM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveFocusBackground.html",
-          "hash": "G0e3/Z1iI3VVfEB+Bs6YiKHUnWJibDGowYDcPL8JSXw="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveFocusOutline.html",
-          "hash": "uMOFpM9QApPFic5TUjJRwIekxZEW0DlgF/b1Usu6ueY="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.ActiveSelectionBackground.html",
-          "hash": "nAOqZDSR3TpCy7H5oSHnQMxgi8v9DKu3+EZtbPhFevI="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InvalidItemForeground.html",
-          "hash": "Tbf5ELD1wmWJ9sVVaBqFlOXujEwjab1MGSCshAN2O18="
         }
       },
       "version": ""
@@ -6883,94 +6883,6 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.EditorBackground.html",
-          "hash": "lFz5W9C+5yZYcjALmM2eVcrpe6XLwVFy9pPF62dsWx0="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellBorderColor.html",
-          "hash": "zS7e1YW1Tlq3SiLuawSDquliN3aORY2DilStYBgytyY="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellHoverBackground.html",
-          "hash": "Mis1yTXKTs11l2Ivs2fgzroo+c3wpxyJWo10KW9N98A="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellInsertionIndicator.html",
-          "hash": "hoUAuwpRAlG78W7Mk+IU4ClP2oGIYNchYCT3InMkwCs="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellStatusBarItemHoverBackground.html",
-          "hash": "X/ICjjDD0/eU0tyNLDMk6s0JN5GMUGgSdRjOjcTqvY8="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellToolbarSeparator.html",
-          "hash": "aDnIbC4R3XrrXSvy6Z4kjwZZLgjez8AF6KX3DEUnFxA="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellEditorBackground.html",
-          "hash": "2DZ8TGPDCC3q2W1YW4tgBaZnpvYUU0oLNijNUEbsoPs="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.FocusedCellBackground.html",
-          "hash": "QgZZQRKg4cqPGk+lK8H9ex+n3hILAcR5xBxHzoyRYb4="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.FocusedCellBorder.html",
           "hash": "lqzoyX9Rv6titdCA0ybyrUdn68qY7DeKVOQahZs/p04="
         }
@@ -7149,6 +7061,94 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.html",
           "hash": "FbL08d5IBjdOCtK4Q9xqrgoev5kVVXxZ/50Pb+1QREU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.EditorBackground.html",
+          "hash": "lFz5W9C+5yZYcjALmM2eVcrpe6XLwVFy9pPF62dsWx0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellBorderColor.html",
+          "hash": "zS7e1YW1Tlq3SiLuawSDquliN3aORY2DilStYBgytyY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellHoverBackground.html",
+          "hash": "Mis1yTXKTs11l2Ivs2fgzroo+c3wpxyJWo10KW9N98A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellInsertionIndicator.html",
+          "hash": "hoUAuwpRAlG78W7Mk+IU4ClP2oGIYNchYCT3InMkwCs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellStatusBarItemHoverBackground.html",
+          "hash": "X/ICjjDD0/eU0tyNLDMk6s0JN5GMUGgSdRjOjcTqvY8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellToolbarSeparator.html",
+          "hash": "aDnIbC4R3XrrXSvy6Z4kjwZZLgjez8AF6KX3DEUnFxA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.CellEditorBackground.html",
+          "hash": "2DZ8TGPDCC3q2W1YW4tgBaZnpvYUU0oLNijNUEbsoPs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Notebook.FocusedCellBackground.html",
+          "hash": "QgZZQRKg4cqPGk+lK8H9ex+n3hILAcR5xBxHzoyRYb4="
         }
       },
       "version": ""
@@ -7840,6 +7840,61 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
       "output": {
         ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.FocusedRowBorder.html",
+          "hash": "HSX2eDeeeb6Zj3ClODsA1MnKZ+P8lPcOF0WLphaHL+8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.HeaderBorder.html",
+          "hash": "WKQ6DFId13hOnFE/T7t46pqNYN+VBVX5Bjz6yzbjNXQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.SashBorder.html",
+          "hash": "4LJbAOKVh1C1IO+gYNp1VjjLfXr2R2iLwGidSjeLTxk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.SettingsHeaderHoverForeground.html",
+          "hash": "V8p/u0twFx00o6FgrmdaGhjpwbl/ZEN810JbENMdvwg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.html",
+          "hash": "GYVMi2lteg4buvyw9XqXD3uj9RZZOA6lOWh+tmazJbM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.HeaderForeground.html",
           "hash": "raD7veiO2N473w0tfblqEXEgNsUBb4b5BAAa1reIB8k="
         }
@@ -8024,61 +8079,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.FocusedRowBorder.html",
-          "hash": "HSX2eDeeeb6Zj3ClODsA1MnKZ+P8lPcOF0WLphaHL+8="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.HeaderBorder.html",
-          "hash": "WKQ6DFId13hOnFE/T7t46pqNYN+VBVX5Bjz6yzbjNXQ="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.SashBorder.html",
-          "hash": "4LJbAOKVh1C1IO+gYNp1VjjLfXr2R2iLwGidSjeLTxk="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.SettingsHeaderHoverForeground.html",
-          "hash": "V8p/u0twFx00o6FgrmdaGhjpwbl/ZEN810JbENMdvwg="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Settings.html",
-          "hash": "GYVMi2lteg4buvyw9XqXD3uj9RZZOA6lOWh+tmazJbM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SideBar.yml",
       "output": {
         ".html": {
@@ -8249,6 +8249,39 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SourceControl.html",
           "hash": "IupEycNxwHiYpjR41+JCcBgSdNFzYXuuw8YQ5UaKHOg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Background.html",
+          "hash": "IRMni8PiwIO2dvM/I+LVjNGLDa1peEPR4EHaSHXv/kA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Foreground.html",
+          "hash": "mSWhLofjI4jW7ZQF/tIUJkKdm5t35fI1fk84oVYKBts="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Border.html",
+          "hash": "XBKiTgfU0rrXWslSWWkMHWc8FfmLdpp/FSoRPduWScQ="
         }
       },
       "version": ""
@@ -8480,39 +8513,6 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.html",
           "hash": "ejw0KWvLPd3Km+kIFuRkdnhCpPiEIHY7LYqjQVMWYew="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Background.html",
-          "hash": "IRMni8PiwIO2dvM/I+LVjNGLDa1peEPR4EHaSHXv/kA="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Foreground.html",
-          "hash": "mSWhLofjI4jW7ZQF/tIUJkKdm5t35fI1fk84oVYKBts="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Border.html",
-          "hash": "XBKiTgfU0rrXWslSWWkMHWc8FfmLdpp/FSoRPduWScQ="
         }
       },
       "version": ""
@@ -9600,61 +9600,6 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.MessageErrorDecorationForeground.html",
-          "hash": "hBd3dE0SUccLGIBUYbyMqwPw5QHQ4fHaIrD4UG9LyK4="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.MessageErrorLineBackground.html",
-          "hash": "54lU591NV3u+zn59/AzIK8BWCZuMUEPCO0rCfBoRs5E="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.MessageInfoDecorationForeground.html",
-          "hash": "Ls0CgIMhvtmCx0u+eRIU8YVx393Ulwa8rG/CsQDKEkU="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.MessageInfoLineBackground.html",
-          "hash": "WVp9iEn5Tybj5LEWaHHrLQVWYbXnWc9BDvQ71yPrCyI="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.html",
-          "hash": "aWIJFr1irviFJFmjpXuJQHByJFzfXZCWXQ8N8lJbhu4="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.IconFailed.html",
           "hash": "S4mOKzTV83CgSe8KMNISHuvm879e0dLEYnXPpvu8Fps="
         }
@@ -9745,6 +9690,61 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.PeekHeaderBackground.html",
           "hash": "+RqNfpLFTrzIBq78VOi4YUfRdOxcIEJgcsBabaYa7qE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.MessageErrorDecorationForeground.html",
+          "hash": "hBd3dE0SUccLGIBUYbyMqwPw5QHQ4fHaIrD4UG9LyK4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.MessageErrorLineBackground.html",
+          "hash": "54lU591NV3u+zn59/AzIK8BWCZuMUEPCO0rCfBoRs5E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.MessageInfoDecorationForeground.html",
+          "hash": "Ls0CgIMhvtmCx0u+eRIU8YVx393Ulwa8rG/CsQDKEkU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.MessageInfoLineBackground.html",
+          "hash": "WVp9iEn5Tybj5LEWaHHrLQVWYbXnWc9BDvQ71yPrCyI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.Testing.html",
+          "hash": "aWIJFr1irviFJFmjpXuJQHByJFzfXZCWXQ8N8lJbhu4="
         }
       },
       "version": ""
@@ -9941,28 +9941,6 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.Background.html",
-          "hash": "sm+Ni4e87pS64clUauIULyFw1aJAIrexuaQrlRXQfAs="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.ProgressBackground.html",
-          "hash": "XQ09Gc1CxpZG6YzxYpW12qlQ4kotW/W3E7ds0+euErY="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.ProgressForeground.html",
           "hash": "u8u7bP8Nqt1W4/6vOUq1pIuJ9KuHgsbouSjufku91ag="
         }
@@ -10042,6 +10020,28 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.html",
           "hash": "al6dY+3bvGi7nJlJjqIjygSnfOPRt10Nserb+LeYmgk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.Background.html",
+          "hash": "sm+Ni4e87pS64clUauIULyFw1aJAIrexuaQrlRXQfAs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePage.ProgressBackground.html",
+          "hash": "XQ09Gc1CxpZG6YzxYpW12qlQ4kotW/W3E7ds0+euErY="
         }
       },
       "version": ""
@@ -10392,6 +10392,17 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.yml",
       "output": {
         ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.Name.html",
+          "hash": "oh19kDLqkKkbETYFV4gVduxPGBSc7mxLkTQMPTzhU/s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.CollectItems.html",
           "hash": "H5jsXbGyCTZLzYzuGyKWhTi1Yz1mKR5Vrd9mES903lA="
         }
@@ -10427,17 +10438,6 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.html",
           "hash": "GOQFAlXbCq5qbA25s0i437uPIkR2WM/aR1yYvYJ0w3w="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.Name.html",
-          "hash": "oh19kDLqkKkbETYFV4gVduxPGBSc7mxLkTQMPTzhU/s="
         }
       },
       "version": ""
@@ -11085,28 +11085,6 @@
       "source_relative_path": "api/Sccg.Core.IFormatter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Core.IFormatter.Format.html",
-          "hash": "yGobKq5FRfdAJefsBQyR3I0nzblkF3I9of+gu83L4dE="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Core.IFormatter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Core.IFormatter.html",
-          "hash": "HzilbdhELI+f295qWJu/KOHTnvVdCyRDjp/bzf3e3gw="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Core.IFormatter.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Core.IFormatter.Name.html",
           "hash": "OLPcKYum7/5FeqZypbiSNaCgH3Xz7T9O5P9wQuP6zNY="
         }
@@ -11120,6 +11098,28 @@
         ".html": {
           "relative_path": "api/Sccg.Core.IFormatter.Priority.html",
           "hash": "AL29wkAdAKNmIeatxytwdBzuzBCyQEbBTy9aKpO82fM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Core.IFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Core.IFormatter.Format.html",
+          "hash": "yGobKq5FRfdAJefsBQyR3I0nzblkF3I9of+gu83L4dE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Core.IFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Core.IFormatter.html",
+          "hash": "HzilbdhELI+f295qWJu/KOHTnvVdCyRDjp/bzf3e3gw="
         }
       },
       "version": ""
@@ -11327,6 +11327,39 @@
       "source_relative_path": "api/Sccg.Core.Source-2.yml",
       "output": {
         ".html": {
+          "relative_path": "api/Sccg.Core.Source-2.Priority.html",
+          "hash": "zDkJQM4mEPNVtfqOAQuZHv2ovF4o6dR/t0WzWV6AfgE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Core.Source-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Core.Source-2.Custom.html",
+          "hash": "1qR+ht5J5Put9WifwXUbsB+qeSWeXzKXMlg8zizLVdY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Core.Source-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Core.Source-2.html",
+          "hash": "mIziWK3jAJE0fMRjiMAiUfyzC5gqwmFIxufaDQQwJlk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Core.Source-2.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/Sccg.Core.Source-2.Name.html",
           "hash": "0D/48YyrFkORmV79/+8uVRyQOP0l16PKI0kH5/FjvXg="
         }
@@ -11362,39 +11395,6 @@
         ".html": {
           "relative_path": "api/Sccg.Core.Source-2.Link.html",
           "hash": "FvtbnY67+pI4SGbWA1fjZSXYscxF5k1vlW8ywA3SSgg="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Core.Source-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Core.Source-2.Priority.html",
-          "hash": "zDkJQM4mEPNVtfqOAQuZHv2ovF4o6dR/t0WzWV6AfgE="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Core.Source-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Core.Source-2.Custom.html",
-          "hash": "1qR+ht5J5Put9WifwXUbsB+qeSWeXzKXMlg8zizLVdY="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Core.Source-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Core.Source-2.html",
-          "hash": "mIziWK3jAJE0fMRjiMAiUfyzC5gqwmFIxufaDQQwJlk="
         }
       },
       "version": ""
