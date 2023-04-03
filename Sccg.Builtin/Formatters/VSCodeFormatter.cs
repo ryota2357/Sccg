@@ -65,13 +65,18 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
 
         // colors
         sb.AppendLine("  \"colors\": {");
-        foreach (var item in items.OfType<IVSCodeColorSourceItem>())
+        var colors = items.OfType<IVSCodeColorSourceItem>()
+                          .ToArray();
+        foreach (var item in colors)
         {
             var data = item.Extract();
             sb.Append("    ");
             sb.AppendLine($"\"{data.Name}\": \"{data.Color.HexCode}\",");
         }
-        sb.Remove(sb.Length - 2, 1); // remove last comma
+        if (colors.Any())
+        {
+            sb.Remove(sb.Length - 2, 1); // remove last comma
+        }
         sb.AppendLine("  },");
 
         // tokenColors
