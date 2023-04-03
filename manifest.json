@@ -4,15 +4,12 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "DevelopWithSccg.md",
       "output": {
         ".html": {
           "relative_path": "DevelopWithSccg.html",
-          "hash": "uZpSWrN7esuhHd6JSfJdKQiz23Kuy5V6Gc9D5T6dKmU="
+          "hash": "KKg9eRMiozxVXlt5WofZC7E7rWMq7tMGVNVSY14PtAE="
         }
       },
       "version": ""
@@ -6149,17 +6146,6 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.ActiveSelectionBackground.html",
-          "hash": "nAOqZDSR3TpCy7H5oSHnQMxgi8v9DKu3+EZtbPhFevI="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.ActiveSelectionForeground.html",
           "hash": "Gk28aRZcnjFCMdZi/nmmQr2cgtS33qF/8YTvTISoqfc="
         }
@@ -6327,6 +6313,17 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.InactiveFocusOutline.html",
           "hash": "uMOFpM9QApPFic5TUjJRwIekxZEW0DlgF/b1Usu6ueY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.List.ActiveSelectionBackground.html",
+          "hash": "nAOqZDSR3TpCy7H5oSHnQMxgi8v9DKu3+EZtbPhFevI="
         }
       },
       "version": ""
@@ -8261,39 +8258,6 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Background.html",
-          "hash": "IRMni8PiwIO2dvM/I+LVjNGLDa1peEPR4EHaSHXv/kA="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Foreground.html",
-          "hash": "mSWhLofjI4jW7ZQF/tIUJkKdm5t35fI1fk84oVYKBts="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Border.html",
-          "hash": "XBKiTgfU0rrXWslSWWkMHWc8FfmLdpp/FSoRPduWScQ="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.DebuggingBackground.html",
           "hash": "u0wfOrCY/ularRlQO1H05GejDkd88FpKhaBcbpUz3RE="
         }
@@ -8516,6 +8480,160 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.html",
           "hash": "ejw0KWvLPd3Km+kIFuRkdnhCpPiEIHY7LYqjQVMWYew="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Background.html",
+          "hash": "IRMni8PiwIO2dvM/I+LVjNGLDa1peEPR4EHaSHXv/kA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Foreground.html",
+          "hash": "mSWhLofjI4jW7ZQF/tIUJkKdm5t35fI1fk84oVYKBts="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.StatusBar.Border.html",
+          "hash": "XBKiTgfU0rrXWslSWWkMHWc8FfmLdpp/FSoRPduWScQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ArrayForeground.html",
+          "hash": "xgPMMzQPtT7rw+virXNwaouRXCKdXv5pkPEy6mxCHHM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.BooleanForeground.html",
+          "hash": "Jw7Awu4bcM0U5OBWuk0xnvS3XuNBjDYf2WeZuyr0HeE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ClassForeground.html",
+          "hash": "2jUeewrdoTCkCuEpvp5Th2hBdnZ6msqc2WB2jX5rNYI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ColorForeground.html",
+          "hash": "XwYYe0VHbZrS6iuOg8xvFtMg4jbghOEl4Q76Fb/bllw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ConstantForeground.html",
+          "hash": "YOF6KmkgXGiPZnvxI5W5ar8nBU9Wf8K/H1D789PCa+0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ConstructorForeground.html",
+          "hash": "YBdFSEu8R/K2FzfzVGGzZJ2HsCR70ZKiMMAW1kMNDY0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.EnumeratorForeground.html",
+          "hash": "/A4omr1NvdKk+KOimuHLWRv9uEjx819M87WeuLy6r8w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.EnumeratorMemberForeground.html",
+          "hash": "UhBwR90Cv8MTBOOYsiXFnT8fbtNh2FlRDrYc6Sy9nys="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.EventForeground.html",
+          "hash": "JodiwlzvICp2wGf939/VQ6ArosvlNtN/SurwUcb9jjM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.FieldForeground.html",
+          "hash": "m+F/yYMjQelrJOHofPYEHu1Qmwy6bYgNpaHJs+q1tBs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.FileForeground.html",
+          "hash": "G+cql2aDlIB6FdWZ57Iy+znT6ruF91OIBACDgcgjR18="
         }
       },
       "version": ""
@@ -8769,127 +8887,6 @@
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.html",
           "hash": "PwtmRr9s3QBe19TEgJd0pgPYFjFbDgmoEeOqQPNPGXQ="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ArrayForeground.html",
-          "hash": "xgPMMzQPtT7rw+virXNwaouRXCKdXv5pkPEy6mxCHHM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.BooleanForeground.html",
-          "hash": "Jw7Awu4bcM0U5OBWuk0xnvS3XuNBjDYf2WeZuyr0HeE="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ClassForeground.html",
-          "hash": "2jUeewrdoTCkCuEpvp5Th2hBdnZ6msqc2WB2jX5rNYI="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ColorForeground.html",
-          "hash": "XwYYe0VHbZrS6iuOg8xvFtMg4jbghOEl4Q76Fb/bllw="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ConstantForeground.html",
-          "hash": "YOF6KmkgXGiPZnvxI5W5ar8nBU9Wf8K/H1D789PCa+0="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.ConstructorForeground.html",
-          "hash": "YBdFSEu8R/K2FzfzVGGzZJ2HsCR70ZKiMMAW1kMNDY0="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.EnumeratorForeground.html",
-          "hash": "/A4omr1NvdKk+KOimuHLWRv9uEjx819M87WeuLy6r8w="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.EnumeratorMemberForeground.html",
-          "hash": "UhBwR90Cv8MTBOOYsiXFnT8fbtNh2FlRDrYc6Sy9nys="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.EventForeground.html",
-          "hash": "JodiwlzvICp2wGf939/VQ6ArosvlNtN/SurwUcb9jjM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.FieldForeground.html",
-          "hash": "m+F/yYMjQelrJOHofPYEHu1Qmwy6bYgNpaHJs+q1tBs="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIcon.FileForeground.html",
-          "hash": "G+cql2aDlIB6FdWZ57Iy+znT6ruF91OIBACDgcgjR18="
         }
       },
       "version": ""
@@ -11088,28 +11085,6 @@
       "source_relative_path": "api/Sccg.Core.IFormatter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Core.IFormatter.Name.html",
-          "hash": "OLPcKYum7/5FeqZypbiSNaCgH3Xz7T9O5P9wQuP6zNY="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Core.IFormatter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Core.IFormatter.Priority.html",
-          "hash": "AL29wkAdAKNmIeatxytwdBzuzBCyQEbBTy9aKpO82fM="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Core.IFormatter.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Core.IFormatter.Format.html",
           "hash": "yGobKq5FRfdAJefsBQyR3I0nzblkF3I9of+gu83L4dE="
         }
@@ -11123,6 +11098,28 @@
         ".html": {
           "relative_path": "api/Sccg.Core.IFormatter.html",
           "hash": "HzilbdhELI+f295qWJu/KOHTnvVdCyRDjp/bzf3e3gw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Core.IFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Core.IFormatter.Name.html",
+          "hash": "OLPcKYum7/5FeqZypbiSNaCgH3Xz7T9O5P9wQuP6zNY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Core.IFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Core.IFormatter.Priority.html",
+          "hash": "AL29wkAdAKNmIeatxytwdBzuzBCyQEbBTy9aKpO82fM="
         }
       },
       "version": ""
