@@ -190,7 +190,7 @@ public class VSCodeFormatter : Formatter<IVSCodeSourceItemBase, MultiTextContent
         sb.AppendLine("    \"themes\": [");
         sb.AppendLine("      {");
         sb.AppendLine($"        \"label\": \"{name}\",");
-        sb.AppendLine($"        \"uiTheme\": \"{(metadata.ThemeType == ThemeType.Dark ? "vs-dark" : "vs")}\",");
+        sb.AppendLine($"        \"uiTheme\": \"{(metadata.ThemeType == ThemeType.Light ? "vs" : "vs-dark")}\",");
         sb.AppendLine($"        \"path\": \"./themes/{name}-color-theme.json\"");
         sb.AppendLine("      }");
         sb.AppendLine("    ]");
