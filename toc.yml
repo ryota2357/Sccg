@@ -1,5 +1,5 @@
 - name: Readme
-  href: README.html
+  href: README.md
 
 - name: API Documentation
   href: api/

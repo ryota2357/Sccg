@@ -55,6 +55,10 @@
       "default",
       "modern"
     ],
+    "globalMetadata": {
+      "_appTitle": "Sccg",
+      "_appName": "Sccg"
+    },
     "postProcessors": [],
     "keepFileLink": false,
     "disableGitFeatures": false
