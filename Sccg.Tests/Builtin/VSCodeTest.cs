@@ -115,10 +115,10 @@ file class EditorColor : VSCodeEditorThemeColorSource
 {
     protected override void Custom()
     {
-        Set(Group.Base.Foreground, "#ffffff");
-        Set(Group.Base.WidgetShadow, "#011223");
-        Set(Group.Button.Background, "#000");
-        Link(Group.Button.CheckboxBackground, Group.Button.Background);
+        Set(Group.Foreground, "#ffffff");
+        Set(Group.WidgetShadow, "#011223");
+        Set(Group.ButtonBackground, "#000");
+        Link(Group.CheckboxBackground, Group.ButtonBackground);
     }
 }
 
