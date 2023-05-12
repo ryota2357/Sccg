@@ -115,6 +115,16 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.html">LspSemanticTokensSource</a></dt>
+      <dd><p>Source for LSP semantic tokens.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.html">LspSemanticTokensSource.Item</a></dt>
+      <dd><p>SourceItem for LSP semantic tokens.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Sccg.Builtin.Sources.NeovimEditorHighlightSource.html">NeovimEditorHighlightSource</a></dt>
       <dd><p>Source for Neovim's editor highlight-groups.</p>
 </dd>
@@ -203,6 +213,14 @@ Classes
       <dd><p>SourceItem for Vim/Neovim syntax group.</p>
 </dd>
     </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Group.html">LspSemanticTokensSource.Group</a></dt>
+      <dd><p>Group of LSP semantic tokens.</p>
+</dd>
+    </dl>
     <h3 id="enums">
 Enums
 </h3>
@@ -224,6 +242,60 @@ Enums
     <dl class="jumplist">
       <dt><a class="xref" href="Sccg.Builtin.Sources.Iterm2ColorsSource.Group.html">Iterm2ColorsSource.Group</a></dt>
       <dd><p>Color group for iTerm2.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html">LspSemanticTokensSource.Modifier</a></dt>
+      <dd><p><a href="https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_semanticTokens">https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_semanticTokens</a></p>
+<pre><code class="lang-csharp">export enum SemanticTokenModifiers {
+	declaration = 'declaration',
+	definition = 'definition',
+	readonly = 'readonly',
+	static = 'static',
+	deprecated = 'deprecated',
+	abstract = 'abstract',
+	async = 'async',
+	modification = 'modification',
+	documentation = 'documentation',
+	defaultLibrary = 'defaultLibrary'
+}</code></pre>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html">LspSemanticTokensSource.Type</a></dt>
+      <dd><p><a href="https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_semanticTokens">https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_semanticTokens</a></p>
+<pre><code class="lang-csharp">export enum SemanticTokenTypes {
+	namespace = 'namespace',
+	/**
+	 * Represents a generic type. Acts as a fallback for types which
+	 * can't be mapped to a specific type like class or enum.
+	 */
+	type = 'type',
+	class = 'class',
+	enum = 'enum',
+	interface = 'interface',
+	struct = 'struct',
+	typeParameter = 'typeParameter',
+	parameter = 'parameter',
+	variable = 'variable',
+	property = 'property',
+	enumMember = 'enumMember',
+	event = 'event',
+	function = 'function',
+	method = 'method',
+	macro = 'macro',
+	keyword = 'keyword',
+	modifier = 'modifier',
+	comment = 'comment',
+	string = 'string',
+	number = 'number',
+	regexp = 'regexp',
+	operator = 'operator',
+	/**
+	 * @since 3.17.0
+	 */
+	decorator = 'decorator'
+}</code></pre>
 </dd>
     </dl>
     <dl class="jumplist">

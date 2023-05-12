@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum LspSemanticTokensSource.Type
+ | Sccg </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum LspSemanticTokensSource.Type
+ | Sccg ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ryota2357/Sccg/new/main/apiSpec/new?filename=Sccg_Builtin_Sources_LspSemanticTokensSource_Type.md&amp;value=---%0Auid%3A%20Sccg.Builtin.Sources.LspSemanticTokensSource.Type%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+
+      <script type="module">
+        import docfx from './../public/main.js'
+        window.docfx = docfx
+        window.MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        }
+      </script>
+      <script type="text/javascript" src="../public/docfx.min.js"></script>
+  </head>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Sccg">
+            Sccg
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sccg.Builtin.Sources.LspSemanticTokensSource.Type">
+
+
+
+
+  <h1 id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type" data-uid="Sccg.Builtin.Sources.LspSemanticTokensSource.Type" class="text-break">
+    Enum LspSemanticTokensSource.Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg.Builtin/Sources/LspSemanticTokensSource.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sccg.html">Sccg</a>.<a class="xref" href="Sccg.Builtin.html">Builtin</a>.<a class="xref" href="Sccg.Builtin.Sources.html">Sources</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Sccg.Builtin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_semanticTokens">https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_semanticTokens</a></p>
+<pre><code class="lang-csharp">export enum SemanticTokenTypes {
+	namespace = 'namespace',
+	/**
+	 * Represents a generic type. Acts as a fallback for types which
+	 * can't be mapped to a specific type like class or enum.
+	 */
+	type = 'type',
+	class = 'class',
+	enum = 'enum',
+	interface = 'interface',
+	struct = 'struct',
+	typeParameter = 'typeParameter',
+	parameter = 'parameter',
+	variable = 'variable',
+	property = 'property',
+	enumMember = 'enumMember',
+	event = 'event',
+	function = 'function',
+	method = 'method',
+	macro = 'macro',
+	keyword = 'keyword',
+	modifier = 'modifier',
+	comment = 'comment',
+	string = 'string',
+	number = 'number',
+	regexp = 'regexp',
+	operator = 'operator',
+	/**
+	 * @since 3.17.0
+	 */
+	decorator = 'decorator'
+}</code></pre>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum LspSemanticTokensSource.Type</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Class"><code>Class = 2</code></dt>
+    <dd><p>SemanticTokenTypes.class</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Comment"><code>Comment = 17</code></dt>
+    <dd><p>SemanticTokenTypes.comment</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Decorator"><code>Decorator = 22</code></dt>
+    <dd><p>SemanticTokenTypes.decorator</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Enum"><code>Enum = 3</code></dt>
+    <dd><p>SemanticTokenTypes.enum</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_EnumMember"><code>EnumMember = 10</code></dt>
+    <dd><p>SemanticTokenTypes.enumMember</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Event"><code>Event = 11</code></dt>
+    <dd><p>SemanticTokenTypes.event</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Function"><code>Function = 12</code></dt>
+    <dd><p>SemanticTokenTypes.function</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Interface"><code>Interface = 4</code></dt>
+    <dd><p>SemanticTokenTypes.interface</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Keyword"><code>Keyword = 15</code></dt>
+    <dd><p>SemanticTokenTypes.keyword</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Macro"><code>Macro = 14</code></dt>
+    <dd><p>SemanticTokenTypes.macro</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Method"><code>Method = 13</code></dt>
+    <dd><p>SemanticTokenTypes.method</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Modifier"><code>Modifier = 16</code></dt>
+    <dd><p>SemanticTokenTypes.modifier</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Namespace"><code>Namespace = 0</code></dt>
+    <dd><p>SemanticTokenTypes.namespace</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Number"><code>Number = 19</code></dt>
+    <dd><p>SemanticTokenTypes.number</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Operator"><code>Operator = 21</code></dt>
+    <dd><p>SemanticTokenTypes.operator</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Parameter"><code>Parameter = 7</code></dt>
+    <dd><p>SemanticTokenTypes.parameter</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Property"><code>Property = 9</code></dt>
+    <dd><p>SemanticTokenTypes.property</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Regexp"><code>Regexp = 20</code></dt>
+    <dd><p>SemanticTokenTypes.regexp</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_String"><code>String = 18</code></dt>
+    <dd><p>SemanticTokenTypes.string</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Struct"><code>Struct = 5</code></dt>
+    <dd><p>SemanticTokenTypes.struct</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Type"><code>Type = 1</code></dt>
+    <dd><p>SemanticTokenTypes.type</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_TypeParameter"><code>TypeParameter = 6</code></dt>
+    <dd><p>SemanticTokenTypes.typeParameter</p>
+</dd>
+    <dt id="Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Variable"><code>Variable = 8</code></dt>
+    <dd><p>SemanticTokenTypes.variable</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ryota2357/Sccg/blob/main/Sccg.Builtin/Sources/LspSemanticTokensSource.cs/#L195" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

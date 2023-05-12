@@ -2136,6 +2136,417 @@ references:
   commentId: Overload:Sccg.Builtin.Sources.Iterm2ColorsSource.Set
   fullName: Sccg.Builtin.Sources.Iterm2ColorsSource.Set
   nameWithType: Iterm2ColorsSource.Set
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource
+  name: LspSemanticTokensSource
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.html
+  commentId: T:Sccg.Builtin.Sources.LspSemanticTokensSource
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource
+  nameWithType: LspSemanticTokensSource
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.CollectItems
+  name: CollectItems()
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.CollectItems.html#Sccg_Builtin_Sources_LspSemanticTokensSource_CollectItems
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.CollectItems
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.CollectItems()
+  nameWithType: LspSemanticTokensSource.CollectItems()
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.CollectItems*
+  name: CollectItems
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.CollectItems.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.CollectItems
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.CollectItems
+  nameWithType: LspSemanticTokensSource.CollectItems
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  name: LspSemanticTokensSource.Group
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.html
+  commentId: T:Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  nameWithType: LspSemanticTokensSource.Group
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.#ctor(System.Nullable{Sccg.Builtin.Sources.LspSemanticTokensSource.Type},System.Nullable{Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier})
+  name: Group(Type?, Modifier?)
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.-ctor.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Group__ctor_System_Nullable_Sccg_Builtin_Sources_LspSemanticTokensSource_Type__System_Nullable_Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier__
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.#ctor(System.Nullable{Sccg.Builtin.Sources.LspSemanticTokensSource.Type},System.Nullable{Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier})
+  name.vb: New(Type?, Modifier?)
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Group(Sccg.Builtin.Sources.LspSemanticTokensSource.Type?, Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier?)
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.New(Sccg.Builtin.Sources.LspSemanticTokensSource.Type?, Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier?)
+  nameWithType: LspSemanticTokensSource.Group.Group(LspSemanticTokensSource.Type?, LspSemanticTokensSource.Modifier?)
+  nameWithType.vb: LspSemanticTokensSource.Group.New(LspSemanticTokensSource.Type?, LspSemanticTokensSource.Modifier?)
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.#ctor*
+  name: Group
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.-ctor.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.#ctor
+  name.vb: New
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Group
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.New
+  nameWithType: LspSemanticTokensSource.Group.Group
+  nameWithType.vb: LspSemanticTokensSource.Group.New
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Modifier
+  name: Modifier
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Group_Modifier
+  commentId: P:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Modifier
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Modifier
+  nameWithType: LspSemanticTokensSource.Group.Modifier
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Modifier*
+  name: Modifier
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Modifier.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Modifier
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Modifier
+  nameWithType: LspSemanticTokensSource.Group.Modifier
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit(Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier)~Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  name: implicit operator Group(Modifier)
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Group_op_Implicit_Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier__Sccg_Builtin_Sources_LspSemanticTokensSource_Group
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit(Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier)~Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  name.vb: CType(Modifier)
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.implicit operator Sccg.Builtin.Sources.LspSemanticTokensSource.Group(Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier)
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.CType(Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier)
+  nameWithType: LspSemanticTokensSource.Group.implicit operator LspSemanticTokensSource.Group(LspSemanticTokensSource.Modifier)
+  nameWithType.vb: LspSemanticTokensSource.Group.CType(LspSemanticTokensSource.Modifier)
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit(Sccg.Builtin.Sources.LspSemanticTokensSource.Type)~Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  name: implicit operator Group(Type)
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Group_op_Implicit_Sccg_Builtin_Sources_LspSemanticTokensSource_Type__Sccg_Builtin_Sources_LspSemanticTokensSource_Group
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit(Sccg.Builtin.Sources.LspSemanticTokensSource.Type)~Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  name.vb: CType(Type)
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.implicit operator Sccg.Builtin.Sources.LspSemanticTokensSource.Group(Sccg.Builtin.Sources.LspSemanticTokensSource.Type)
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.CType(Sccg.Builtin.Sources.LspSemanticTokensSource.Type)
+  nameWithType: LspSemanticTokensSource.Group.implicit operator LspSemanticTokensSource.Group(LspSemanticTokensSource.Type)
+  nameWithType.vb: LspSemanticTokensSource.Group.CType(LspSemanticTokensSource.Type)
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit(System.ValueTuple{Sccg.Builtin.Sources.LspSemanticTokensSource.Type,Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier})~Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  name: implicit operator Group((Type type, Modifier modifier))
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Group_op_Implicit_System_ValueTuple_Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier___Sccg_Builtin_Sources_LspSemanticTokensSource_Group
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit(System.ValueTuple{Sccg.Builtin.Sources.LspSemanticTokensSource.Type,Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier})~Sccg.Builtin.Sources.LspSemanticTokensSource.Group
+  name.vb: CType((type As Type, modifier As Modifier))
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.implicit operator Sccg.Builtin.Sources.LspSemanticTokensSource.Group((Sccg.Builtin.Sources.LspSemanticTokensSource.Type type, Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier modifier))
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.CType((type As Sccg.Builtin.Sources.LspSemanticTokensSource.Type, modifier As Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier))
+  nameWithType: LspSemanticTokensSource.Group.implicit operator LspSemanticTokensSource.Group((LspSemanticTokensSource.Type type, LspSemanticTokensSource.Modifier modifier))
+  nameWithType.vb: LspSemanticTokensSource.Group.CType((type As LspSemanticTokensSource.Type, modifier As LspSemanticTokensSource.Modifier))
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit*
+  name: implicit operator
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.op_Implicit
+  name.vb: CType
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.implicit operator
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.CType
+  nameWithType: LspSemanticTokensSource.Group.implicit operator
+  nameWithType.vb: LspSemanticTokensSource.Group.CType
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Type
+  name: Type
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Group_Type
+  commentId: P:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Type
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Type
+  nameWithType: LspSemanticTokensSource.Group.Type
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Type*
+  name: Type
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Type.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Type
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Group.Type
+  nameWithType: LspSemanticTokensSource.Group.Type
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item
+  name: LspSemanticTokensSource.Item
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.html
+  commentId: T:Sccg.Builtin.Sources.LspSemanticTokensSource.Item
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item
+  nameWithType: LspSemanticTokensSource.Item
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.#ctor(Sccg.Builtin.Sources.LspSemanticTokensSource.Group,Sccg.Builtin.Sources.LspSemanticTokensSource.Group,System.Nullable{Sccg.Style})
+  name: Item(Group, Group, Style?)
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.-ctor.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Item__ctor_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_System_Nullable_Sccg_Style__
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Item.#ctor(Sccg.Builtin.Sources.LspSemanticTokensSource.Group,Sccg.Builtin.Sources.LspSemanticTokensSource.Group,System.Nullable{Sccg.Style})
+  name.vb: New(Group, Group, Style?)
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Item(Sccg.Builtin.Sources.LspSemanticTokensSource.Group, Sccg.Builtin.Sources.LspSemanticTokensSource.Group, Sccg.Style?)
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.New(Sccg.Builtin.Sources.LspSemanticTokensSource.Group, Sccg.Builtin.Sources.LspSemanticTokensSource.Group, Sccg.Style?)
+  nameWithType: LspSemanticTokensSource.Item.Item(LspSemanticTokensSource.Group, LspSemanticTokensSource.Group, Style?)
+  nameWithType.vb: LspSemanticTokensSource.Item.New(LspSemanticTokensSource.Group, LspSemanticTokensSource.Group, Style?)
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.#ctor(Sccg.Builtin.Sources.LspSemanticTokensSource.Group,Sccg.Style)
+  name: Item(Group, Style)
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.-ctor.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Item__ctor_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_Sccg_Style_
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Item.#ctor(Sccg.Builtin.Sources.LspSemanticTokensSource.Group,Sccg.Style)
+  name.vb: New(Group, Style)
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Item(Sccg.Builtin.Sources.LspSemanticTokensSource.Group, Sccg.Style)
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.New(Sccg.Builtin.Sources.LspSemanticTokensSource.Group, Sccg.Style)
+  nameWithType: LspSemanticTokensSource.Item.Item(LspSemanticTokensSource.Group, Style)
+  nameWithType.vb: LspSemanticTokensSource.Item.New(LspSemanticTokensSource.Group, Style)
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.#ctor*
+  name: Item
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.-ctor.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Item.#ctor
+  name.vb: New
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Item
+  fullName.vb: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.New
+  nameWithType: LspSemanticTokensSource.Item.Item
+  nameWithType.vb: LspSemanticTokensSource.Item.New
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract
+  name: Extract()
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Item_Extract
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract()
+  nameWithType: LspSemanticTokensSource.Item.Extract()
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract*
+  name: Extract
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract
+  nameWithType: LspSemanticTokensSource.Item.Extract
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Group
+  name: Group
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Group.html
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Group
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Group
+  nameWithType: LspSemanticTokensSource.Item.Group
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Link
+  name: Link
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Link.html
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Link
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Link
+  nameWithType: LspSemanticTokensSource.Item.Link
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Style
+  name: Style
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Style.html
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Style
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Style
+  nameWithType: LspSemanticTokensSource.Item.Style
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Link(Sccg.Builtin.Sources.LspSemanticTokensSource.Group,Sccg.Builtin.Sources.LspSemanticTokensSource.Group)
+  name: Link(Group, Group)
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Link.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Link_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Link(Sccg.Builtin.Sources.LspSemanticTokensSource.Group,Sccg.Builtin.Sources.LspSemanticTokensSource.Group)
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Link(Sccg.Builtin.Sources.LspSemanticTokensSource.Group, Sccg.Builtin.Sources.LspSemanticTokensSource.Group)
+  nameWithType: LspSemanticTokensSource.Link(LspSemanticTokensSource.Group, LspSemanticTokensSource.Group)
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Link*
+  name: Link
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Link.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Link
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Link
+  nameWithType: LspSemanticTokensSource.Link
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier
+  name: LspSemanticTokensSource.Modifier
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html
+  commentId: T:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier
+  nameWithType: LspSemanticTokensSource.Modifier
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Abstract
+  name: Abstract
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Abstract
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Abstract
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Abstract
+  nameWithType: LspSemanticTokensSource.Modifier.Abstract
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Async
+  name: Async
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Async
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Async
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Async
+  nameWithType: LspSemanticTokensSource.Modifier.Async
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Declaration
+  name: Declaration
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Declaration
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Declaration
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Declaration
+  nameWithType: LspSemanticTokensSource.Modifier.Declaration
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.DefaultLibrary
+  name: DefaultLibrary
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_DefaultLibrary
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.DefaultLibrary
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.DefaultLibrary
+  nameWithType: LspSemanticTokensSource.Modifier.DefaultLibrary
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Definition
+  name: Definition
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Definition
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Definition
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Definition
+  nameWithType: LspSemanticTokensSource.Modifier.Definition
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Deprecated
+  name: Deprecated
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Deprecated
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Deprecated
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Deprecated
+  nameWithType: LspSemanticTokensSource.Modifier.Deprecated
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Documentation
+  name: Documentation
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Documentation
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Documentation
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Documentation
+  nameWithType: LspSemanticTokensSource.Modifier.Documentation
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Modification
+  name: Modification
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Modification
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Modification
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Modification
+  nameWithType: LspSemanticTokensSource.Modifier.Modification
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Readonly
+  name: Readonly
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Readonly
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Readonly
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Readonly
+  nameWithType: LspSemanticTokensSource.Modifier.Readonly
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Static
+  name: Static
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Modifier_Static
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Static
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Modifier.Static
+  nameWithType: LspSemanticTokensSource.Modifier.Static
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Name
+  name: Name
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Name.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Name
+  commentId: P:Sccg.Builtin.Sources.LspSemanticTokensSource.Name
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Name
+  nameWithType: LspSemanticTokensSource.Name
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Name*
+  name: Name
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Name.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Name
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Name
+  nameWithType: LspSemanticTokensSource.Name
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Set(Sccg.Builtin.Sources.LspSemanticTokensSource.Group,Sccg.Style)
+  name: Set(Group, Style)
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Set.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Set_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_Sccg_Style_
+  commentId: M:Sccg.Builtin.Sources.LspSemanticTokensSource.Set(Sccg.Builtin.Sources.LspSemanticTokensSource.Group,Sccg.Style)
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Set(Sccg.Builtin.Sources.LspSemanticTokensSource.Group, Sccg.Style)
+  nameWithType: LspSemanticTokensSource.Set(LspSemanticTokensSource.Group, Style)
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Set*
+  name: Set
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Set.html
+  commentId: Overload:Sccg.Builtin.Sources.LspSemanticTokensSource.Set
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Set
+  nameWithType: LspSemanticTokensSource.Set
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type
+  name: LspSemanticTokensSource.Type
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html
+  commentId: T:Sccg.Builtin.Sources.LspSemanticTokensSource.Type
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type
+  nameWithType: LspSemanticTokensSource.Type
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Class
+  name: Class
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Class
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Class
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Class
+  nameWithType: LspSemanticTokensSource.Type.Class
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Comment
+  name: Comment
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Comment
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Comment
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Comment
+  nameWithType: LspSemanticTokensSource.Type.Comment
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Decorator
+  name: Decorator
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Decorator
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Decorator
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Decorator
+  nameWithType: LspSemanticTokensSource.Type.Decorator
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Enum
+  name: Enum
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Enum
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Enum
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Enum
+  nameWithType: LspSemanticTokensSource.Type.Enum
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.EnumMember
+  name: EnumMember
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_EnumMember
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.EnumMember
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.EnumMember
+  nameWithType: LspSemanticTokensSource.Type.EnumMember
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Event
+  name: Event
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Event
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Event
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Event
+  nameWithType: LspSemanticTokensSource.Type.Event
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Function
+  name: Function
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Function
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Function
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Function
+  nameWithType: LspSemanticTokensSource.Type.Function
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Interface
+  name: Interface
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Interface
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Interface
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Interface
+  nameWithType: LspSemanticTokensSource.Type.Interface
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Keyword
+  name: Keyword
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Keyword
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Keyword
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Keyword
+  nameWithType: LspSemanticTokensSource.Type.Keyword
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Macro
+  name: Macro
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Macro
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Macro
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Macro
+  nameWithType: LspSemanticTokensSource.Type.Macro
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Method
+  name: Method
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Method
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Method
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Method
+  nameWithType: LspSemanticTokensSource.Type.Method
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Modifier
+  name: Modifier
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Modifier
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Modifier
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Modifier
+  nameWithType: LspSemanticTokensSource.Type.Modifier
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Namespace
+  name: Namespace
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Namespace
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Namespace
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Namespace
+  nameWithType: LspSemanticTokensSource.Type.Namespace
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Number
+  name: Number
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Number
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Number
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Number
+  nameWithType: LspSemanticTokensSource.Type.Number
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Operator
+  name: Operator
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Operator
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Operator
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Operator
+  nameWithType: LspSemanticTokensSource.Type.Operator
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Parameter
+  name: Parameter
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Parameter
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Parameter
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Parameter
+  nameWithType: LspSemanticTokensSource.Type.Parameter
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Property
+  name: Property
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Property
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Property
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Property
+  nameWithType: LspSemanticTokensSource.Type.Property
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Regexp
+  name: Regexp
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Regexp
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Regexp
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Regexp
+  nameWithType: LspSemanticTokensSource.Type.Regexp
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.String
+  name: String
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_String
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.String
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.String
+  nameWithType: LspSemanticTokensSource.Type.String
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Struct
+  name: Struct
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Struct
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Struct
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Struct
+  nameWithType: LspSemanticTokensSource.Type.Struct
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Type
+  name: Type
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Type
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Type
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Type
+  nameWithType: LspSemanticTokensSource.Type.Type
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.TypeParameter
+  name: TypeParameter
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_TypeParameter
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.TypeParameter
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.TypeParameter
+  nameWithType: LspSemanticTokensSource.Type.TypeParameter
+- uid: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Variable
+  name: Variable
+  href: api/Sccg.Builtin.Sources.LspSemanticTokensSource.Type.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Type_Variable
+  commentId: F:Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Variable
+  fullName: Sccg.Builtin.Sources.LspSemanticTokensSource.Type.Variable
+  nameWithType: LspSemanticTokensSource.Type.Variable
 - uid: Sccg.Builtin.Sources.NeovimEditorHighlightSource
   name: NeovimEditorHighlightSource
   href: api/Sccg.Builtin.Sources.NeovimEditorHighlightSource.html

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Source&lt;TGroup, TItem&gt;
+      <title>Class LspSemanticTokensSource.Item
  | Sccg </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Source&lt;TGroup, TItem&gt;
+      <meta name="title" content="Class LspSemanticTokensSource.Item
  | Sccg ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/ryota2357/Sccg/new/main/apiSpec/new?filename=Sccg_Core_Source_2.md&amp;value=---%0Auid%3A%20Sccg.Core.Source%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/ryota2357/Sccg/new/main/apiSpec/new?filename=Sccg_Builtin_Sources_LspSemanticTokensSource_Item.md&amp;value=---%0Auid%3A%20Sccg.Builtin.Sources.LspSemanticTokensSource.Item%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
 
       <script type="module">
         import docfx from './../public/main.js'
@@ -73,66 +73,48 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Sccg.Core.Source`2">
+        <article data-uid="Sccg.Builtin.Sources.LspSemanticTokensSource.Item">
 
 
 
-  <h1 id="Sccg_Core_Source_2" data-uid="Sccg.Core.Source`2" class="text-break">
-    Class Source&lt;TGroup, TItem&gt;
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Core/Source.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Sccg_Builtin_Sources_LspSemanticTokensSource_Item" data-uid="Sccg.Builtin.Sources.LspSemanticTokensSource.Item" class="text-break">
+    Class LspSemanticTokensSource.Item
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg.Builtin/Sources/LspSemanticTokensSource.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Sccg.html">Sccg</a>.<a class="xref" href="Sccg.Core.html">Core</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Sccg.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sccg.html">Sccg</a>.<a class="xref" href="Sccg.Builtin.html">Builtin</a>.<a class="xref" href="Sccg.Builtin.Sources.html">Sources</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Sccg.Builtin.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The base class of the <a class="xref" href="Sccg.Core.ISource.html">ISource</a>. This class provides some helper methods and standard implementation of <a class="xref" href="Sccg.Core.ISource.html">ISource</a>.</p>
+  <div class="markdown summary"><p>SourceItem for LSP semantic tokens.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Source&lt;TGroup, TItem&gt; : ISource where TItem : ISourceItem</code></pre>
+    <pre><code class="lang-csharp hljs">public class LspSemanticTokensSource.Item : INeovimSourceItem, INeovimSourceItemBase, ISourceItem</code></pre>
   </div>
 
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TGroup</code></dt>
-    <dd></dd>
-    <dt><code>TItem</code></dt>
-    <dd></dd>
-  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Source&lt;TGroup, TItem&gt;</span></div>
+      <div><span class="xref">LspSemanticTokensSource.Item</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="Sccg.Core.ISource.html">ISource</a></div>
+      <div><a class="xref" href="Sccg.Builtin.Formatters.INeovimSourceItem.html">INeovimSourceItem</a></div>
+      <div><a class="xref" href="Sccg.Builtin.Sources.Internal.INeovimSourceItemBase.html">INeovimSourceItemBase</a></div>
+      <div><a class="xref" href="Sccg.Core.ISourceItem.html">ISourceItem</a></div>
     </dd>
   </dl>
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.html">LspSemanticTokensSource</a></div>
-      <div><a class="xref" href="Sccg.Builtin.Sources.NeovimEditorHighlightSource.html">NeovimEditorHighlightSource</a></div>
-      <div><a class="xref" href="Sccg.Builtin.Sources.NeovimLspDiagnosticHighlightSource.html">NeovimLspDiagnosticHighlightSource</a></div>
-      <div><a class="xref" href="Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.html">NeovimTreesitterHighlightSource</a></div>
-      <div><a class="xref" href="Sccg.Builtin.Sources.TextMateElementSource.html">TextMateElementSource</a></div>
-      <div><a class="xref" href="Sccg.Builtin.Sources.VimCustomGroupSource.html">VimCustomGroupSource</a></div>
-      <div><a class="xref" href="Sccg.Builtin.Sources.VimEditorHighlightSource.html">VimEditorHighlightSource</a></div>
-      <div><a class="xref" href="Sccg.Builtin.Sources.VimSyntaxGroupSource.html">VimSyntaxGroupSource</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
@@ -164,17 +146,36 @@
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="Sccg.Core.Source-2.Name.html#Sccg_Core_Source_2_Name">Name</a></dt>
-    <dd><p>Gets the source name.</p>
+    <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.-ctor.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Item__ctor_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_System_Nullable_Sccg_Style__">Item(Group, Group, Style?)</a></dt>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.html">LspSemanticTokensSource.Item</a> class.</p>
 </dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="Sccg.Core.Source-2.Priority.html#Sccg_Core_Source_2_Priority">Priority</a></dt>
-    <dd><p>Gets the order in which the source is applied. The lower the number, the earlier the source is applied.</p>
+    <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.-ctor.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Item__ctor_Sccg_Builtin_Sources_LspSemanticTokensSource_Group_Sccg_Style_">Item(Group, Style)</a></dt>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.html">LspSemanticTokensSource.Item</a> class.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Group.html">Group</a></dt>
+    <dd><p>Gets the group to set.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Link.html">Link</a></dt>
+    <dd><p>Gets the group to link.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Style.html">Style</a></dt>
+    <dd><p>Gets the style to set.</p>
 </dd>
   </dl>
 
@@ -182,33 +183,8 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="Sccg.Core.Source-2.CollectItems.html#Sccg_Core_Source_2_CollectItems">CollectItems()</a></dt>
-    <dd><p>Collects source items from the source.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="Sccg.Core.Source-2.Custom.html#Sccg_Core_Source_2_Custom">Custom()</a></dt>
-    <dd><p>You can customize your theme here.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="Sccg.Core.Source-2.Custom.html#Sccg_Core_Source_2_Custom_Sccg_BuilderQuery_">Custom(BuilderQuery)</a></dt>
-    <dd><p>You can customize your theme here.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="Sccg.Core.Source-2.Link.html#Sccg_Core_Source_2_Link__0__0_">Link(TGroup, TGroup)</a></dt>
-    <dd><p>Links style <code>from</code> group to <code>to</code> group.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="Sccg.Core.Source-2.Set.html#Sccg_Core_Source_2_Set__0_Sccg_Style_">Set(TGroup, Style)</a></dt>
-    <dd><p>Sets style to group.</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="Sccg.Core.Source-2.Set.html#Sccg_Core_Source_2_Set__0_System_Nullable_Sccg_Color__System_Nullable_Sccg_Color__System_Nullable_Sccg_Color__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">Set(TGroup, Color?, Color?, Color?, bool, bool, bool, bool, bool, bool, bool, bool, bool)</a></dt>
-    <dd><p>Sets style to group.</p>
+    <dt><a class="xref" href="Sccg.Builtin.Sources.LspSemanticTokensSource.Item.Extract.html#Sccg_Builtin_Sources_LspSemanticTokensSource_Item_Extract">Extract()</a></dt>
+    <dd><p>Extract <a class="xref" href="Sccg.Builtin.Formatters.NeovimFormatter.Formattable.html">NeovimFormatter.Formattable</a> from this item.</p>
 </dd>
   </dl>
 
@@ -217,7 +193,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Core/Source.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ryota2357/Sccg/blob/main/Sccg.Builtin/Sources/LspSemanticTokensSource.cs/#L89" class="edit-link">Edit this page</a>
         </div>
 
         
