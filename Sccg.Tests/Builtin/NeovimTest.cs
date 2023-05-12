@@ -30,6 +30,7 @@ public class NeovimTest
     {
         _builder.Use<EditorHighlight>();
         _builder.Use<TreesitterHighlight>();
+        _builder.Use<LspSemanticHighlight>();
         _builder.Build();
 
         _writer.Output.Should().HaveCount(1);
@@ -62,6 +63,10 @@ public class NeovimTest
             vim.api.nvim_set_hl(0, '@comment.test', { link = '@character' })
             vim.api.nvim_set_hl(0, '@constant', { })
             vim.api.nvim_set_hl(0, '@conceal', { link = '@boolean.test' })
+            vim.api.nvim_set_hl(0, '@lsp.type.type', { fg = '#ff0000' })
+            vim.api.nvim_set_hl(0, '@lsp.mod.async', { bg = '#00ff12' })
+            vim.api.nvim_set_hl(0, '@lsp.typemod.async.function', { fg = '#123456', bg = '#00ff00' })
+            vim.api.nvim_set_hl(0, '@lsp.mod.abstract', { link = '@lsp.mod.async' })
             -- Built with Sccg
             """
         );
@@ -134,6 +139,7 @@ public class NeovimTest
 
 file class EditorHighlight : NeovimEditorHighlightSource
 {
+    public override int Priority => 1;
     protected override void Custom()
     {
         Set(Group.lCursor, fg: "aaff00", bold: true);
@@ -146,6 +152,7 @@ file class EditorHighlight : NeovimEditorHighlightSource
 
 file class TreesitterHighlight : NeovimTreesitterHighlightSource
 {
+    public override int Priority => 2;
     protected override void Custom()
     {
         Set(Group.Attribute, fg: "ff0000");
@@ -162,6 +169,18 @@ file class TreesitterHighlight : NeovimTreesitterHighlightSource
 
         Set(Group.Constant, Style.Default);
         Link(Group.Conceal, Group.Boolean, "test");
+    }
+}
+
+file class LspSemanticHighlight : LspSemanticTokensSource
+{
+    public override int Priority => 3;
+    protected override void Custom()
+    {
+        Set(Type.Type, fg: "ff0000");
+        Set(Modifier.Async, bg: "00ff12");
+        Set((Type.Function, Modifier.Async), fg: "123456", bg: "00ff00");
+        Link(Modifier.Abstract,Modifier.Async);
     }
 }
 

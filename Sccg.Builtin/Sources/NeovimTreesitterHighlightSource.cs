@@ -23,7 +23,7 @@ public abstract partial class NeovimTreesitterHighlightSource
     }
 
     private readonly StdSourceImpl<FiletypedGroup> _impl = new();
-    private string? _filetype;
+    private string? _filetype = null;
     private BuilderQuery? _builderQuery = null;
 
     /// <inheritdoc />
