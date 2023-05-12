@@ -2952,6 +2952,18 @@ references:
   commentId: Overload:Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.CollectItems
   fullName: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.CollectItems
   nameWithType: NeovimTreesitterHighlightSource.CollectItems
+- uid: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink(Sccg.BuilderQuery)
+  name: EnableVimSyntaxLink(BuilderQuery)
+  href: api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink.html#Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_EnableVimSyntaxLink_Sccg_BuilderQuery_
+  commentId: M:Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink(Sccg.BuilderQuery)
+  fullName: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink(Sccg.BuilderQuery)
+  nameWithType: NeovimTreesitterHighlightSource.EnableVimSyntaxLink(BuilderQuery)
+- uid: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink*
+  name: EnableVimSyntaxLink
+  href: api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink.html
+  commentId: Overload:Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink
+  fullName: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink
+  nameWithType: NeovimTreesitterHighlightSource.EnableVimSyntaxLink
 - uid: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Filetype(System.String,System.Action)
   name: Filetype(string, Action)
   href: api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Filetype.html#Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Filetype_System_String_System_Action_
@@ -3255,6 +3267,12 @@ references:
   commentId: F:Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group.String
   fullName: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group.String
   nameWithType: NeovimTreesitterHighlightSource.Group.String
+- uid: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group.StringDocumentation
+  name: StringDocumentation
+  href: api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group.html#Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Group_StringDocumentation
+  commentId: F:Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group.StringDocumentation
+  fullName: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group.StringDocumentation
+  nameWithType: NeovimTreesitterHighlightSource.Group.StringDocumentation
 - uid: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group.StringEscape
   name: StringEscape
   href: api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group.html#Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Group_StringEscape
@@ -3453,15 +3471,15 @@ references:
   commentId: T:Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item
   fullName: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item
   nameWithType: NeovimTreesitterHighlightSource.Item
-- uid: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.#ctor(System.ValueTuple{Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,System.String},Sccg.Builtin.Sources.VimSyntaxGroupSource.Group)
-  name: Item((Group, string?), Group)
-  href: api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.-ctor.html#Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Item__ctor_System_ValueTuple_Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Group_System_String__Sccg_Builtin_Sources_VimSyntaxGroupSource_Group_
-  commentId: M:Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.#ctor(System.ValueTuple{Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,System.String},Sccg.Builtin.Sources.VimSyntaxGroupSource.Group)
-  name.vb: New((Group, String), Group)
-  fullName: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.Item((Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group, string?), Sccg.Builtin.Sources.VimSyntaxGroupSource.Group)
-  fullName.vb: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.New((Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group, String), Sccg.Builtin.Sources.VimSyntaxGroupSource.Group)
-  nameWithType: NeovimTreesitterHighlightSource.Item.Item((NeovimTreesitterHighlightSource.Group, string?), VimSyntaxGroupSource.Group)
-  nameWithType.vb: NeovimTreesitterHighlightSource.Item.New((NeovimTreesitterHighlightSource.Group, String), VimSyntaxGroupSource.Group)
+- uid: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.#ctor(System.ValueTuple{Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,System.String},Sccg.Builtin.Sources.VimSyntaxGroupSource.Group,System.Nullable{Sccg.Style})
+  name: Item((Group, string?), Group, Style?)
+  href: api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.-ctor.html#Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Item__ctor_System_ValueTuple_Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Group_System_String__Sccg_Builtin_Sources_VimSyntaxGroupSource_Group_System_Nullable_Sccg_Style__
+  commentId: M:Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.#ctor(System.ValueTuple{Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,System.String},Sccg.Builtin.Sources.VimSyntaxGroupSource.Group,System.Nullable{Sccg.Style})
+  name.vb: New((Group, String), Group, Style?)
+  fullName: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.Item((Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group, string?), Sccg.Builtin.Sources.VimSyntaxGroupSource.Group, Sccg.Style?)
+  fullName.vb: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.New((Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group, String), Sccg.Builtin.Sources.VimSyntaxGroupSource.Group, Sccg.Style?)
+  nameWithType: NeovimTreesitterHighlightSource.Item.Item((NeovimTreesitterHighlightSource.Group, string?), VimSyntaxGroupSource.Group, Style?)
+  nameWithType.vb: NeovimTreesitterHighlightSource.Item.New((NeovimTreesitterHighlightSource.Group, String), VimSyntaxGroupSource.Group, Style?)
 - uid: Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.#ctor(System.ValueTuple{Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,System.String},Sccg.Style)
   name: Item((Group, string?), Style)
   href: api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Item.-ctor.html#Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Item__ctor_System_ValueTuple_Sccg_Builtin_Sources_NeovimTreesitterHighlightSource_Group_System_String__Sccg_Style_

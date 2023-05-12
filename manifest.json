@@ -1888,6 +1888,16 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.yml",
       "output": {
         ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.EnableVimSyntaxLink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.html"
         }
       },
@@ -2348,7 +2358,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultLineForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotebookStatusRunningIconForeground.html"
         }
       },
       "version": ""
@@ -2358,7 +2368,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultMatchHighlightBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotebookStatusSuccessIconForeground.html"
         }
       },
       "version": ""
@@ -2368,7 +2378,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultSelectionBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationCenterBorder.html"
         }
       },
       "version": ""
@@ -2378,7 +2388,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultSelectionForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationCenterHeaderBackground.html"
         }
       },
       "version": ""
@@ -2388,7 +2398,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewTitleBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationCenterHeaderForeground.html"
         }
       },
       "version": ""
@@ -2398,7 +2408,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewTitleDescriptionForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationLinkForeground.html"
         }
       },
       "version": ""
@@ -2408,7 +2418,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewTitleLabelForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationToastBorder.html"
         }
       },
       "version": ""
@@ -2418,7 +2428,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PickerGroupBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsBackground.html"
         }
       },
       "version": ""
@@ -2428,7 +2438,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PickerGroupForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsBorder.html"
         }
       },
       "version": ""
@@ -2438,7 +2448,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PortsIconRunningProcessForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsForeground.html"
         }
       },
       "version": ""
@@ -2448,7 +2458,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProblemsErrorIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsErrorIconForeground.html"
         }
       },
       "version": ""
@@ -2458,7 +2468,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProblemsInfoIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsInfoIconForeground.html"
         }
       },
       "version": ""
@@ -2468,7 +2478,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProblemsWarningIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsWarningIconForeground.html"
         }
       },
       "version": ""
@@ -2478,7 +2488,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProfileBadgeBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelBackground.html"
         }
       },
       "version": ""
@@ -2488,7 +2498,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProfileBadgeForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelBorder.html"
         }
       },
       "version": ""
@@ -2498,7 +2508,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProgressBarBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelDropBorder.html"
         }
       },
       "version": ""
@@ -2508,7 +2518,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelInputBorder.html"
         }
       },
       "version": ""
@@ -2518,7 +2528,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionBorder.html"
         }
       },
       "version": ""
@@ -2528,7 +2538,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputListFocusBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionDropBackground.html"
         }
       },
       "version": ""
@@ -2538,7 +2548,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputListFocusForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionHeaderBackground.html"
         }
       },
       "version": ""
@@ -2548,7 +2558,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputListFocusIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionHeaderBorder.html"
         }
       },
       "version": ""
@@ -2558,7 +2568,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputTitleBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionHeaderForeground.html"
         }
       },
       "version": ""
@@ -2568,7 +2578,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SashHoverBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelTitleActiveBorder.html"
         }
       },
       "version": ""
@@ -2578,7 +2588,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScmProviderBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelTitleActiveForeground.html"
         }
       },
       "version": ""
@@ -2588,7 +2598,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScrollbarShadow.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelTitleInactiveForeground.html"
         }
       },
       "version": ""
@@ -2598,7 +2608,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScrollbarSliderActiveBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewBorder.html"
         }
       },
       "version": ""
@@ -2608,7 +2618,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScrollbarSliderBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewEditorBackground.html"
         }
       },
       "version": ""
@@ -2618,7 +2628,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScrollbarSliderHoverBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewEditorMatchHighlightBackground.html"
         }
       },
       "version": ""
@@ -2628,7 +2638,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SearchResultsInfoForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewEditorMatchHighlightBorder.html"
         }
       },
       "version": ""
@@ -2638,7 +2648,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SearchEditorFindMatchBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewEditorGutterBackground.html"
         }
       },
       "version": ""
@@ -2648,7 +2658,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SearchEditorFindMatchBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultBackground.html"
         }
       },
       "version": ""
@@ -2658,167 +2668,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SearchEditorTextInputBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SelectionBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsCheckboxBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsCheckboxBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsCheckboxForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsDropdownBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsDropdownBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsDropdownForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsDropdownListBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsFocusedRowBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsFocusedRowBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsHeaderBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsHeaderForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsModifiedItemIndicator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsNumberInputBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsNumberInputBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsNumberInputForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultFileForeground.html"
         }
       },
       "version": ""
@@ -3468,486 +3318,6 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconReferenceForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconSnippetForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconStringForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconStructForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconTextForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconTypeParameterForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconUnitForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconVariableForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveBorderTop.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveModifiedBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabHoverBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabHoverBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabHoverForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabInactiveBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabInactiveForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabInactiveModifiedBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabLastPinnedBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveBorderTop.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveModifiedBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedHoverBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedHoverBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedHoverForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedInactiveBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedInactiveForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedInactiveModifiedBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBlack.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBlue.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightBlack.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightBlue.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightCyan.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightGreen.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightMagenta.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightRed.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightWhite.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightYellow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiCyan.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiGreen.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiMagenta.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiRed.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiWhite.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiYellow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalBackground.html"
         }
       },
@@ -4259,326 +3629,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TestingPeekHeaderBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TestingRunAction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextBlockQuoteBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextBlockQuoteBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextCodeBlockBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextLinkActiveForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextLinkForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextPreformatForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextSeparatorForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarActiveBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarActiveForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarInactiveBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarInactiveForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ToolbarActiveBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ToolbarHoverBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ToolbarHoverOutline.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TreeInactiveIndentGuidesStroke.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TreeIndentGuidesStroke.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TreeTableColumnsBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TreeTableOddRowsBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WalkThroughEmbeddedEditorBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WalkthroughStepTitleForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageProgressBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageProgressForeground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageTileBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageTileBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageTileHoverBackground.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WidgetBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WidgetShadow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WindowActiveBorder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WindowInactiveBorder.html"
         }
       },
       "version": ""
@@ -8398,7 +7448,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotebookStatusRunningIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultLineForeground.html"
         }
       },
       "version": ""
@@ -8408,7 +7458,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotebookStatusSuccessIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultMatchHighlightBackground.html"
         }
       },
       "version": ""
@@ -8418,7 +7468,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationCenterBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultSelectionBackground.html"
         }
       },
       "version": ""
@@ -8428,7 +7478,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationCenterHeaderBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultSelectionForeground.html"
         }
       },
       "version": ""
@@ -8438,7 +7488,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationCenterHeaderForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewTitleBackground.html"
         }
       },
       "version": ""
@@ -8448,7 +7498,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationLinkForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewTitleDescriptionForeground.html"
         }
       },
       "version": ""
@@ -8458,7 +7508,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationToastBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewTitleLabelForeground.html"
         }
       },
       "version": ""
@@ -8468,7 +7518,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PickerGroupBorder.html"
         }
       },
       "version": ""
@@ -8478,7 +7528,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PickerGroupForeground.html"
         }
       },
       "version": ""
@@ -8488,7 +7538,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PortsIconRunningProcessForeground.html"
         }
       },
       "version": ""
@@ -8498,7 +7548,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsErrorIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProblemsErrorIconForeground.html"
         }
       },
       "version": ""
@@ -8508,7 +7558,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsInfoIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProblemsInfoIconForeground.html"
         }
       },
       "version": ""
@@ -8518,7 +7568,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.NotificationsWarningIconForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProblemsWarningIconForeground.html"
         }
       },
       "version": ""
@@ -8528,7 +7578,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProfileBadgeBackground.html"
         }
       },
       "version": ""
@@ -8538,7 +7588,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProfileBadgeForeground.html"
         }
       },
       "version": ""
@@ -8548,7 +7598,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelDropBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ProgressBarBackground.html"
         }
       },
       "version": ""
@@ -8558,7 +7608,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelInputBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputBackground.html"
         }
       },
       "version": ""
@@ -8568,7 +7618,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputForeground.html"
         }
       },
       "version": ""
@@ -8578,7 +7628,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionDropBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputListFocusBackground.html"
         }
       },
       "version": ""
@@ -8588,7 +7638,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionHeaderBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputListFocusForeground.html"
         }
       },
       "version": ""
@@ -8598,7 +7648,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionHeaderBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputListFocusIconForeground.html"
         }
       },
       "version": ""
@@ -8608,7 +7658,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelSectionHeaderForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.QuickInputTitleBackground.html"
         }
       },
       "version": ""
@@ -8618,7 +7668,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelTitleActiveBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SashHoverBorder.html"
         }
       },
       "version": ""
@@ -8628,7 +7678,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelTitleActiveForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScmProviderBorder.html"
         }
       },
       "version": ""
@@ -8638,7 +7688,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PanelTitleInactiveForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScrollbarShadow.html"
         }
       },
       "version": ""
@@ -8648,7 +7698,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScrollbarSliderActiveBackground.html"
         }
       },
       "version": ""
@@ -8658,7 +7708,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewEditorBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScrollbarSliderBackground.html"
         }
       },
       "version": ""
@@ -8668,7 +7718,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewEditorMatchHighlightBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ScrollbarSliderHoverBackground.html"
         }
       },
       "version": ""
@@ -8678,7 +7728,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewEditorMatchHighlightBorder.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SearchResultsInfoForeground.html"
         }
       },
       "version": ""
@@ -8688,7 +7738,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewEditorGutterBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SearchEditorFindMatchBackground.html"
         }
       },
       "version": ""
@@ -8698,7 +7748,7 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultBackground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SearchEditorFindMatchBorder.html"
         }
       },
       "version": ""
@@ -8708,7 +7758,967 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.PeekViewResultFileForeground.html"
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SearchEditorTextInputBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SelectionBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsCheckboxBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsCheckboxBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsCheckboxForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsDropdownBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsDropdownBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsDropdownForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsDropdownListBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsFocusedRowBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsFocusedRowBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsHeaderBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsHeaderForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsModifiedItemIndicator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsNumberInputBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsNumberInputBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SettingsNumberInputForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconReferenceForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconSnippetForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconStringForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconStructForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconTextForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconTypeParameterForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconUnitForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.SymbolIconVariableForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveBorderTop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabActiveModifiedBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabHoverBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabHoverBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabHoverForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabInactiveBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabInactiveForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabInactiveModifiedBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabLastPinnedBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveBorderTop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedActiveModifiedBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedHoverBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedHoverBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedHoverForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedInactiveBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedInactiveForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TabUnfocusedInactiveModifiedBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBlack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBlue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightBlack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightBlue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightCyan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightGreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightMagenta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightRed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightWhite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiBrightYellow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiCyan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiGreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiMagenta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiRed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiWhite.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TerminalAnsiYellow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TestingRunAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextBlockQuoteBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextBlockQuoteBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextCodeBlockBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextLinkActiveForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextLinkForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextPreformatForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TextSeparatorForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarActiveBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarActiveForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarInactiveBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TitleBarInactiveForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ToolbarActiveBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ToolbarHoverBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.ToolbarHoverOutline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TreeInactiveIndentGuidesStroke.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TreeIndentGuidesStroke.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TreeTableColumnsBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.TreeTableOddRowsBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WalkThroughEmbeddedEditorBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WalkthroughStepTitleForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageProgressBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageProgressForeground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageTileBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageTileBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WelcomePageTileHoverBackground.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WidgetBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WidgetShadow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WindowActiveBorder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VSCodeEditorThemeColorSource.Group.WindowInactiveBorder.html"
         }
       },
       "version": ""
@@ -8988,16 +8998,6 @@
       "source_relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.Name.html"
         }
       },
@@ -9029,6 +9029,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.Link.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Builtin.Sources.VimEditorHighlightSource.html"
         }
       },
       "version": ""
@@ -9328,6 +9338,16 @@
       "source_relative_path": "api/Sccg.Builtin.Writers.TextFileWriter.yml",
       "output": {
         ".html": {
+          "relative_path": "api/Sccg.Builtin.Writers.TextFileWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Builtin.Writers.TextFileWriter.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/Sccg.Builtin.Writers.TextFileWriter.Name.html"
         }
       },
@@ -9339,16 +9359,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Sccg.Builtin.Writers.TextFileWriter.Write.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Builtin.Writers.TextFileWriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Builtin.Writers.TextFileWriter.html"
         }
       },
       "version": ""
@@ -9978,16 +9988,6 @@
       "source_relative_path": "api/Sccg.Core.Writer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sccg.Core.Writer-1.Name.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Core.Writer-1.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/Sccg.Core.Writer-1.Priority.html"
         }
       },
@@ -10009,6 +10009,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Sccg.Core.Writer-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Core.Writer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sccg.Core.Writer-1.Name.html"
         }
       },
       "version": ""
@@ -10578,6 +10588,16 @@
       "source_relative_path": "api/Sccg.Utility.SingeLinkGraph.yml",
       "output": {
         ".html": {
+          "relative_path": "api/Sccg.Utility.SingeLinkGraph.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sccg.Utility.SingeLinkGraph.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/Sccg.Utility.SingeLinkGraph.-ctor.html"
         }
       },
@@ -10619,16 +10639,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Sccg.Utility.SingeLinkGraph.TopologicalOrderList.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sccg.Utility.SingeLinkGraph.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sccg.Utility.SingeLinkGraph.html"
         }
       },
       "version": ""
