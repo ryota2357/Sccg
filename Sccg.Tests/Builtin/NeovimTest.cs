@@ -100,6 +100,36 @@ public class NeovimTest
             """
         );
     }
+
+    [Fact]
+    public void TestWithVimSyntax()
+    {
+        _builder.Use<TreesitterWithVimSyntax.TreesitterHighlight>();
+        _builder.Use<TreesitterWithVimSyntax.VimSyntaxHighlight>();
+        _builder.Build();
+
+        _writer.Output.Should().HaveCount(1);
+        var output = _writer.Output.First();
+        output.Should().Be(
+            """
+            -- Version:     1.0.0
+            -- Author:      ryota2357
+            -- Last change: 2023-01-23 Monday
+            vim.cmd [[
+              set background=dark
+              highlight clear
+              if exists('syntax_on')
+                syntax reset
+              endif
+              set t_Co=256
+            ]]
+            vim.g.colors_name = 'sccg_default'
+            vim.api.nvim_set_hl(0, 'Comment', { fg = '#ff0000' })
+            vim.api.nvim_set_hl(0, '@comment', { link = 'Comment' })
+            -- Built with Sccg
+            """
+        );
+    }
 }
 
 file class EditorHighlight : NeovimEditorHighlightSource
@@ -146,5 +176,25 @@ file class Ansi16Color : Ansi16ColorSource
         Set(Group.Ansi8, "#002b36");
         Set(Group.Ansi10, "#586e75");
         Set(Group.Ansi15, "#fdf6e3");
+    }
+}
+
+file class TreesitterWithVimSyntax
+{
+    public class VimSyntaxHighlight : VimSyntaxGroupSource
+    {
+        protected override void Custom()
+        {
+            Set(Group.Comment, fg: "ff0000");
+        }
+    }
+    public class TreesitterHighlight : NeovimTreesitterHighlightSource
+    {
+        public override int Priority => 100;
+        protected override void Custom(BuilderQuery query)
+        {
+            EnableVimSyntaxLink(query);
+            Link(Group.Comment, VimSyntaxGroupSource.Group.Comment);
+        }
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using Sccg.Builtin.Develop;
 using Sccg.Builtin.Formatters;
@@ -23,6 +24,7 @@ public abstract partial class NeovimTreesitterHighlightSource
 
     private readonly StdSourceImpl<FiletypedGroup> _impl = new();
     private string? _filetype;
+    private BuilderQuery? _builderQuery = null;
 
     /// <inheritdoc />
     public override string Name => "NeovimTreesitterHighlight";
@@ -44,20 +46,36 @@ public abstract partial class NeovimTreesitterHighlightSource
                 switch (to)
                 {
                     case FiletypedGroup toGroup:
-                        Style? sty = save.ContainsKey(toGroup) ? save[toGroup] : null;
-                        if (sty is not null)
+                    {
+                        Style? style = save.TryGetValue(toGroup, out var value) ? value : null;
+                        if (style is not null)
                         {
-                            save[fromGroup] = sty.Value;
+                            save[fromGroup] = style.Value;
                         }
-                        yield return new Item(fromGroup.Deconstruct(), toGroup.Deconstruct(), sty);
+                        yield return new Item(fromGroup.Deconstruct(), toGroup.Deconstruct(), style);
                         break;
+                    }
                     case Style style:
+                    {
                         save[fromGroup] = style;
                         yield return new Item(fromGroup.Deconstruct(), style);
                         break;
+                    }
                     case VimSyntaxGroupSource.Group vimSyntaxGroup:
-                        yield return new Item(fromGroup.Deconstruct(), vimSyntaxGroup);
+                    {
+                        Style? style = null;
+                        if (_builderQuery is not null)
+                        {
+                            var styles = _builderQuery?.GetSourceItems<VimSyntaxGroupSource.Item>(allowEmptyReturn: true);
+                            style = styles?.FirstOrDefault(x => x!.Group == vimSyntaxGroup, null)?.Style;
+                            if (style is not null)
+                            {
+                                save[fromGroup] = style.Value;
+                            }
+                        }
+                        yield return new Item(fromGroup.Deconstruct(), vimSyntaxGroup, style);
                         break;
+                    }
                 }
             }
         }
@@ -107,13 +125,29 @@ public abstract partial class NeovimTreesitterHighlightSource
     /// <inheritdoc cref="Link(Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group,Sccg.Builtin.Sources.NeovimTreesitterHighlightSource.Group)"/>
     protected void Link(Group from, VimSyntaxGroupSource.Group to)
     {
-        var fromId = _impl.Store.Save(from);
+        if (_builderQuery is null)
+        {
+            Log.Warn(
+                "The Link feature of VimSyntaxGroupSource is not enabled. Unintended behavior may occur",
+                "Please call EnableVimSyntaxLink(BuilderQuery) in Custom()."
+            );
+        }
+        var fromId = _impl.Store.Save(new FiletypedGroup(from, _filetype));
         var toId = _impl.Store.Save(to);
         var status = _impl.Graph.CreateLink(fromId, toId);
         if (status == false)
         {
             Log.Warn($"Ignored duplicate. Link({from}, {to})");
         }
+    }
+
+    /// <summary>
+    /// Enable safe link feature for VimSyntaxGroupSource.
+    /// If you want to link to VimSyntaxGroupSource, call this method in Custom().
+    /// </summary>
+    protected void EnableVimSyntaxLink(BuilderQuery builderQuery)
+    {
+        _builderQuery = builderQuery;
     }
 
     /// <summary>
@@ -170,11 +204,11 @@ public abstract partial class NeovimTreesitterHighlightSource
         /// <summary>
         /// Initializes a new instance of the <see cref="Item"/> class.
         /// </summary>
-        public Item((Group, string?) from, VimSyntaxGroupSource.Group link)
+        public Item((Group, string?) from, VimSyntaxGroupSource.Group link, Style? style = null)
         {
             _kind = Kind.VimSyntaxLink;
             _group = from;
-            Style = null;
+            Style = style;
             _link = null;
             LinkVimSyntaxGroup = link;
         }
@@ -275,6 +309,11 @@ public abstract partial class NeovimTreesitterHighlightSource
         /// @string ; string literals
         /// </summary>
         String,
+
+        /// <summary>
+        /// @string.documentation ; string documenting code (e.g. Python docstrings)
+        /// </summary>
+        StringDocumentation,
 
         /// <summary>
         /// @string.regex ; regular expressions
