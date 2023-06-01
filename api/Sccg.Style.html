@@ -18,18 +18,18 @@
       
       
       <meta name="docfx:docurl" content="https://github.com/ryota2357/Sccg/new/main/apiSpec/new?filename=Sccg_Style.md&amp;value=---%0Auid%3A%20Sccg.Style%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-
-      <script type="module">
-        import docfx from './../public/main.js'
-        window.docfx = docfx
-        window.MathJax = {
-          options: {
-            processHtmlClass: ['tex2jax_process', 'math']
-          }
-        }
-      </script>
-      <script type="text/javascript" src="../public/docfx.min.js"></script>
   </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
 
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
@@ -213,15 +213,18 @@
 
   <dl class="jumplist">
     <dt><a class="xref" href="Sccg.Style.Equals.html#Sccg_Style_Equals_Sccg_Style_">Equals(Style)</a></dt>
-    <dd></dd>
+    <dd><p>Indicates whether the current object is equal to another object of the same type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Sccg.Style.Equals.html#Sccg_Style_Equals_System_Object_">Equals(object?)</a></dt>
-    <dd></dd>
+    <dd><p>Indicates whether this instance and a specified object are equal.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Sccg.Style.GetHashCode.html#Sccg_Style_GetHashCode">GetHashCode()</a></dt>
-    <dd></dd>
+    <dd><p>Returns the hash code for this instance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Sccg.Style.ToString.html#Sccg_Style_ToString">ToString()</a></dt>
