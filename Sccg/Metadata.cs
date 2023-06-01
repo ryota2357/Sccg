@@ -30,7 +30,7 @@ public sealed record Metadata(
     /// <summary>
     /// Sccg version.
     /// </summary>
-    public const string __SccgVersion = "0.2.1";
+    public const string __SccgVersion = "0.3.1";
 
     /// <summary>
     /// Empty metadata. All properties are null or default object.
