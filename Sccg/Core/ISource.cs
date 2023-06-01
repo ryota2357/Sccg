@@ -5,21 +5,25 @@ namespace Sccg.Core;
 /// <summary>
 /// Represents a source that provides  source items.
 /// </summary>
-public interface ISource
+public interface ISource : IBuildUnit
 {
+    string IBuildUnit.Name => Name;
+    int IBuildUnit.Priority => Priority;
+
     /// <summary>
     /// Gets the source name.
     /// </summary>
     /// <remarks>
-    /// <see cref="Builder"/> cannot have more than one <see cref="ISource"/> with the same <see cref="Name"/> to avoid
-    /// creating duplicate <see cref="ISourceItem"/>.
+    /// <see cref="Builder"/> cannot have more than one <see cref="ISource"/> with the same <see cref="ISource.Name"/>to
+    /// avoid creating duplicate <see cref="ISourceItem"/>.
     /// </remarks>
-    public string Name { get; }
+    public new string Name { get; }
 
     /// <summary>
-    /// Gets the order in which the source is applied. The lower the number, the earlier the source is applied.
+    /// Gets the order in which the <see cref="ISource"/> is applied.
+    /// The lower the number, the earlier the <see cref="ISource"/> is applied.
     /// </summary>
-    public int Priority { get; }
+    public new int Priority { get; }
 
     /// <summary>
     /// Collects source items from the source.

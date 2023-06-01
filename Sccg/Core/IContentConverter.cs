@@ -5,21 +5,25 @@ namespace Sccg.Core;
 /// <summary>
 /// Represents a converter that converts a <see cref="IContent"/>.
 /// </summary>
-public interface IContentConverter
+public interface IContentConverter : IBuildUnit
 {
+    string IBuildUnit.Name => Name;
+    int IBuildUnit.Priority => Priority;
+
     /// <summary>
     /// Gets the converter name.
     /// </summary>
     /// <remarks>
-    /// <see cref="Builder"/> cannot have more than one <see cref="IContentConverter"/> with the same <see cref="Name"/>
-    /// to prevent multiple convert.
+    /// <see cref="Builder"/> cannot have more than one <see cref="IContentConverter"/> with the same
+    /// <see cref="IContentConverter.Name"/> to prevent multiple convert.
     /// </remarks>
-    public string Name { get; }
+    public new string Name { get; }
 
     /// <summary>
-    /// Gets the order in which the converter is applied. The lower the number, the earlier the converter is applied.
+    /// Gets the order in which the <see cref="IContentConverter"/> is applied.
+    /// The lower the number, the earlier the <see cref="IContentConverter"/> is applied.
     /// </summary>
-    public int Priority { get; }
+    public new int Priority { get; }
 
     /// <summary>
     /// Converts a <see cref="IContent"/>.

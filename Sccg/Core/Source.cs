@@ -126,7 +126,7 @@ public abstract class Source<TGroup, TItem> : ISource
 /// <remarks>Unlike <see cref="Source{TGroup,TItem}"/>, This class does not have Set(TGroup, Style), but has <see cref="Set"/></remarks>
 public abstract class SourceColorOnly<TGroup, TItem> : ISource
 {
-    /// <inheritdoc />
+    /// <inheritdoc cref="ISource.Name"/>
     public abstract string Name { get; }
 
     /// <inheritdoc cref="Source{TGroup,TItem}.CollectItems()"/>
@@ -146,7 +146,7 @@ public abstract class SourceColorOnly<TGroup, TItem> : ISource
     /// <param name="to">A syntax/design group name.</param>
     protected abstract void Link(TGroup from, TGroup to);
 
-    /// <inheritdoc />
+    /// <inheritdoc cref="ISource.Priority"/>
     public virtual int Priority => 10;
 
     /// <inheritdoc cref="Source{TGroup,TItem}.Custom()"/>

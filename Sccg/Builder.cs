@@ -139,21 +139,22 @@ public class Builder
     }
 
     /// <summary>
-    /// Registers the Source, Formatter, Writer instance.
+    /// Registers the <see cref="IBuildUnit"/>(Source, Formatter, Writer, etc) instance.
     /// </summary>
-    /// <param name="instance">The instance of Source, Formatter, Writer.</param>
-    /// <typeparam name="T"><see cref="ISource"/>, <see cref="IFormatter"/>, <see cref="IWriter"/></typeparam>
+    /// <param name="instance">The instance of <see cref="IBuildUnit"/>.</param>
     /// <exception cref="InvalidOperationException">
     ///   <list type="bullet">
-    ///     <item>Added source after collecting source items.</item>
-    ///     <item>Added formatter after formatting source items.</item>
-    ///     <item>Added writer after writing contents.</item>
-    ///     <item>Added source item converter after converting source items.</item>
-    ///     <item>Added content converter after converting content.</item>
+    ///     <item>Added <see cref="ISource">source</see> after collecting source items.</item>
+    ///     <item>Added <see cref="IFormatter">formatter</see> after formatting source items.</item>
+    ///     <item>Added <see cref="IWriter">writer</see> after writing contents.</item>
+    ///     <item>Added <see cref="ISourceItemConverter">source item converter</see> after converting source items.</item>
+    ///     <item>Added <see cref="IContentConverter">content converter</see> after converting content.</item>
     ///   </list>
     /// </exception>
-    /// <exception cref="ArgumentException">Argument is not <see cref="ISource"/> or <see cref="IFormatter"/> or <see cref="IWriter"/></exception>
-    public void Use<T>(T instance) where T : class
+    /// <exception cref="ArgumentException">
+    /// Argument is not <see cref="ISource"/> or <see cref="IFormatter"/> or <see cref="IWriter"/> or <see cref="ISourceItemConverter"/> or <see cref="IContentConverter"/>.
+    /// </exception>
+    public void Use<T>(T instance) where T : IBuildUnit
     {
         switch (instance)
         {
@@ -199,11 +200,9 @@ public class Builder
     }
 
     /// <summary>
-    /// Registers multiple the Source, Formatter, Writer.
+    /// Registers multiple <see cref="IBuildUnit"/>(Source, Formatter, Writer, etc).
     /// </summary>
-    /// <param name="instances">The instances of Source, Formatter, Writer.</param>
-    /// <typeparam name="T"><see cref="ISource"/>, <see cref="IFormatter"/>, <see cref="IWriter"/></typeparam>
-    public void Use<T>(T[] instances) where T : class
+    public void Use<T>(T[] instances) where T : IBuildUnit
     {
         // NOTE: The argument type is T[], not IEnumerable<T>.
         //       If the argument type is IEnumerable<T>, this method is not called, call Use<T>(T instance)
@@ -214,11 +213,10 @@ public class Builder
     }
 
     /// <summary>
-    /// Registers the Source, Formatter, Writer.
+    /// Registers <see cref="IBuildUnit"/>(Source, Formatter, Writer, etc).
     /// </summary>
     /// <param name="args">The argument of its constructor.</param>
-    /// <typeparam name="T"><see cref="ISource"/>, <see cref="IFormatter"/>, <see cref="IWriter"/></typeparam>
-    public void Use<T>(params object[] args) where T : class
+    public void Use<T>(params object[] args) where T : class, IBuildUnit
     {
         var instance = CreateInstance<T>(args);
         Use(instance);

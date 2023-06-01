@@ -5,21 +5,25 @@ namespace Sccg.Core;
 /// <summary>
 /// Represents a writer that writes the content to some form.
 /// </summary>
-public interface IWriter
+public interface IWriter : IBuildUnit
 {
+    string IBuildUnit.Name => Name;
+    int IBuildUnit.Priority => Priority;
+
     /// <summary>
     /// Gets the writer name.
     /// </summary>
     /// <remarks>
-    /// <see cref="Builder"/> cannot have more than one <see cref="IWriter"/> with the same <see cref="Name"/> to avoid
-    /// creating duplicate output.
+    /// <see cref="Builder"/> cannot have more than one <see cref="IWriter"/> with the same <see cref="IWriter.Name"/>
+    /// to avoid creating duplicate output.
     /// </remarks>
-    public string Name { get; }
+    public new string Name { get; }
 
     /// <summary>
-    /// Gets the order in which the writer is applied. The lower the number, the earlier the writer is applied.
+    /// Gets the order in which the <see cref="IWriter"/> is applied.
+    /// The lower the number, the earlier the <see cref="IWriter"/> is applied.
     /// </summary>
-    public int Priority { get; }
+    public new int Priority { get; }
 
     /// <summary>
     /// Writes the specified content.

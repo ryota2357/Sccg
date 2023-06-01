@@ -9,10 +9,10 @@ namespace Sccg.Core;
 /// </summary>
 public abstract class Writer<TContent> : IWriter where TContent : IContent
 {
-    /// <inheritdoc />
+    /// <inheritdoc cref="IWriter.Name"/>
     public abstract string Name { get; }
 
-    /// <inheritdoc />
+    /// <inheritdoc cref="IWriter.Priority"/>
     public virtual int Priority => 10;
 
     /// <summary>

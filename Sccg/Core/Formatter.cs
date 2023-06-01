@@ -11,10 +11,10 @@ public abstract class Formatter<TSourceItem, TContent> : IFormatter
     where TSourceItem : ISourceItem
     where TContent : IContent
 {
-    /// <inheritdoc />
+    /// <inheritdoc cref="IFormatter.Name"/>
     public abstract string Name { get; }
 
-    /// <inheritdoc />
+    /// <inheritdoc cref="IFormatter.Priority"/>
     public virtual int Priority => 10;
 
     /// <summary>
