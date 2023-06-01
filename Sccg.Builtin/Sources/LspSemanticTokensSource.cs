@@ -158,6 +158,7 @@ public class LspSemanticTokensSource : Source<LspSemanticTokensSource.Group, Lsp
     /// <summary>
     /// https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_semanticTokens
     /// <code>
+    /// // TypeScript
     /// export enum SemanticTokenTypes {
     /// 	namespace = 'namespace',
     /// 	/**
@@ -314,6 +315,7 @@ public class LspSemanticTokensSource : Source<LspSemanticTokensSource.Group, Lsp
     /// <summary>
     /// https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_semanticTokens
     /// <code>
+    /// // TypeScript
     /// export enum SemanticTokenModifiers {
     /// 	declaration = 'declaration',
     /// 	definition = 'definition',
@@ -384,8 +386,18 @@ public class LspSemanticTokensSource : Source<LspSemanticTokensSource.Group, Lsp
 
     private static string CreateGroupString(Group group)
     {
-        string StrT(Type? type) => type!.Value.ToString().ToLower();
-        string StrM(Modifier? mod) => mod!.Value.ToString().ToLower();
+        // Fix fist only char to lower case
+        string StrT(Type? type)
+        {
+            var str = type!.Value.ToString();
+            return char.ToLower(str[0]) + str[1..];
+        }
+
+        string StrM(Modifier? mod)
+        {
+            var str = mod!.Value.ToString();
+            return char.ToLower(str[0]) + str[1..];
+        }
 
         return group switch
         {

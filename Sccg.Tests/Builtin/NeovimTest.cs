@@ -65,8 +65,8 @@ public class NeovimTest
             vim.api.nvim_set_hl(0, '@conceal', { link = '@boolean.test' })
             vim.api.nvim_set_hl(0, '@lsp.type.type', { fg = '#ff0000' })
             vim.api.nvim_set_hl(0, '@lsp.mod.async', { bg = '#00ff12' })
-            vim.api.nvim_set_hl(0, '@lsp.typemod.async.function', { fg = '#123456', bg = '#00ff00' })
-            vim.api.nvim_set_hl(0, '@lsp.mod.abstract', { link = '@lsp.mod.async' })
+            vim.api.nvim_set_hl(0, '@lsp.typemod.async.enumMember', { fg = '#123456', bg = '#00ff00' })
+            vim.api.nvim_set_hl(0, '@lsp.mod.defaultLibrary', { link = '@lsp.mod.async' })
             -- Built with Sccg
             """
         );
@@ -179,8 +179,8 @@ file class LspSemanticHighlight : LspSemanticTokensSource
     {
         Set(Type.Type, fg: "ff0000");
         Set(Modifier.Async, bg: "00ff12");
-        Set((Type.Function, Modifier.Async), fg: "123456", bg: "00ff00");
-        Link(Modifier.Abstract,Modifier.Async);
+        Set((Type.EnumMember, Modifier.Async), fg: "123456", bg: "00ff00");
+        Link(Modifier.DefaultLibrary,Modifier.Async);
     }
 }
 
