@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Formatter&lt;TSourceItem, TContent&gt; : IFormatter where TSourceItem : ISourceItem where TContent : IContent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Formatter&lt;TSourceItem, TContent&gt; : IFormatter, IBuildUnit where TSourceItem : ISourceItem where TContent : IContent</code></pre>
   </div>
 
 
@@ -117,6 +117,7 @@
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Sccg.Core.IFormatter.html">IFormatter</a></div>
+      <div><a class="xref" href="Sccg.Core.IBuildUnit.html">IBuildUnit</a></div>
     </dd>
   </dl>
 
@@ -171,7 +172,8 @@
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Sccg.Core.Formatter-2.Priority.html#Sccg_Core_Formatter_2_Priority">Priority</a></dt>
-    <dd><p>Gets the order in which the formatter is applied. The lower the number, the earlier the formatter is applied.</p>
+    <dd><p>Gets the order in which the <a class="xref" href="Sccg.Core.IFormatter.html">IFormatter</a> is applied.
+The lower the number, the earlier the <a class="xref" href="Sccg.Core.IFormatter.html">IFormatter</a> is applied.</p>
 </dd>
   </dl>
 

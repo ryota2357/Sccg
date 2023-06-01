@@ -10201,6 +10201,42 @@ references:
   fullName.vb: Sccg.Core.Formatter(Of TSourceItem, TContent).Priority
   nameWithType: Formatter<TSourceItem, TContent>.Priority
   nameWithType.vb: Formatter(Of TSourceItem, TContent).Priority
+- uid: Sccg.Core.IBuildArtifact
+  name: IBuildArtifact
+  href: api/Sccg.Core.IBuildArtifact.html
+  commentId: T:Sccg.Core.IBuildArtifact
+  fullName: Sccg.Core.IBuildArtifact
+  nameWithType: IBuildArtifact
+- uid: Sccg.Core.IBuildUnit
+  name: IBuildUnit
+  href: api/Sccg.Core.IBuildUnit.html
+  commentId: T:Sccg.Core.IBuildUnit
+  fullName: Sccg.Core.IBuildUnit
+  nameWithType: IBuildUnit
+- uid: Sccg.Core.IBuildUnit.Name
+  name: Name
+  href: api/Sccg.Core.IBuildUnit.Name.html#Sccg_Core_IBuildUnit_Name
+  commentId: P:Sccg.Core.IBuildUnit.Name
+  fullName: Sccg.Core.IBuildUnit.Name
+  nameWithType: IBuildUnit.Name
+- uid: Sccg.Core.IBuildUnit.Name*
+  name: Name
+  href: api/Sccg.Core.IBuildUnit.Name.html
+  commentId: Overload:Sccg.Core.IBuildUnit.Name
+  fullName: Sccg.Core.IBuildUnit.Name
+  nameWithType: IBuildUnit.Name
+- uid: Sccg.Core.IBuildUnit.Priority
+  name: Priority
+  href: api/Sccg.Core.IBuildUnit.Priority.html#Sccg_Core_IBuildUnit_Priority
+  commentId: P:Sccg.Core.IBuildUnit.Priority
+  fullName: Sccg.Core.IBuildUnit.Priority
+  nameWithType: IBuildUnit.Priority
+- uid: Sccg.Core.IBuildUnit.Priority*
+  name: Priority
+  href: api/Sccg.Core.IBuildUnit.Priority.html
+  commentId: Overload:Sccg.Core.IBuildUnit.Priority
+  fullName: Sccg.Core.IBuildUnit.Priority
+  nameWithType: IBuildUnit.Priority
 - uid: Sccg.Core.IContent
   name: IContent
   href: api/Sccg.Core.IContent.html

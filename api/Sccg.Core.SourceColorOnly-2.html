@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SourceColorOnly&lt;TGroup, TItem&gt; : ISource</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SourceColorOnly&lt;TGroup, TItem&gt; : ISource, IBuildUnit</code></pre>
   </div>
 
 
@@ -117,6 +117,7 @@
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Sccg.Core.ISource.html">ISource</a></div>
+      <div><a class="xref" href="Sccg.Core.IBuildUnit.html">IBuildUnit</a></div>
     </dd>
   </dl>
 
@@ -173,7 +174,8 @@
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Sccg.Core.SourceColorOnly-2.Priority.html#Sccg_Core_SourceColorOnly_2_Priority">Priority</a></dt>
-    <dd><p>Gets the order in which the source is applied. The lower the number, the earlier the source is applied.</p>
+    <dd><p>Gets the order in which the <a class="xref" href="Sccg.Core.ISource.html">ISource</a> is applied.
+The lower the number, the earlier the <a class="xref" href="Sccg.Core.ISource.html">ISource</a> is applied.</p>
 </dd>
   </dl>
 

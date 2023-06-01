@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Ansi16ColorSource : SourceColorOnly&lt;Ansi16ColorSource.Group, Ansi16ColorSource.Item&gt;, ISource</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Ansi16ColorSource : SourceColorOnly&lt;Ansi16ColorSource.Group, Ansi16ColorSource.Item&gt;, ISource, IBuildUnit</code></pre>
   </div>
 
 
@@ -111,6 +111,7 @@
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Sccg.Core.ISource.html">ISource</a></div>
+      <div><a class="xref" href="Sccg.Core.IBuildUnit.html">IBuildUnit</a></div>
     </dd>
   </dl>
 
@@ -181,7 +182,8 @@
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Sccg.Builtin.Sources.Ansi16ColorSource.Priority.html#Sccg_Builtin_Sources_Ansi16ColorSource_Priority">Priority</a></dt>
-    <dd><p>Gets the order in which the source is applied. The lower the number, the earlier the source is applied.</p>
+    <dd><p>Gets the order in which the <a class="xref" href="Sccg.Core.ISource.html">ISource</a> is applied.
+The lower the number, the earlier the <a class="xref" href="Sccg.Core.ISource.html">ISource</a> is applied.</p>
 </dd>
   </dl>
 

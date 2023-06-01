@@ -81,7 +81,7 @@
 
 <h1 id="Sccg_Builder_Use_" data-uid="Sccg.Builder.Use*" class="text-break">
   Method Use
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L157"><i class="bi bi-code-slash"></i></a>
 </h1>
 
 <div class="facts text-secondary">
@@ -111,21 +111,21 @@
 
 <h3 id="Sccg_Builder_Use__1___0_" data-uid="Sccg.Builder.Use``1(``0)">
   Use&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L157"><i class="bi bi-code-slash"></i></a>
 </h3>
 
-<div class="markdown level1 summary"><p>Registers the Source, Formatter, Writer instance.</p>
+<div class="markdown level1 summary"><p>Registers the <a class="xref" href="Sccg.Core.IBuildUnit.html">IBuildUnit</a>(Source, Formatter, Writer, etc) instance.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Use&lt;T&gt;(T instance) where T : class</code></pre>
+  <pre><code class="lang-csharp hljs">public void Use&lt;T&gt;(T instance) where T : IBuildUnit</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>instance</code> <span class="xref">T</span></dt>
-  <dd><p>The instance of Source, Formatter, Writer.</p>
+  <dd><p>The instance of <a class="xref" href="Sccg.Core.IBuildUnit.html">IBuildUnit</a>.</p>
 </dd>
 </dl>
 
@@ -133,8 +133,7 @@
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>T</code></dt>
-  <dd><p><a class="xref" href="Sccg.Core.ISource.html">ISource</a>, <a class="xref" href="Sccg.Core.IFormatter.html">IFormatter</a>, <a class="xref" href="Sccg.Core.IWriter.html">IWriter</a></p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -146,10 +145,10 @@
 <h4 class="section">Exceptions</h4>
 <dl class="parameters">
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-  <dd><ul><li>Added source after collecting source items.</li><li>Added formatter after formatting source items.</li><li>Added writer after writing contents.</li><li>Added source item converter after converting source items.</li><li>Added content converter after converting content.</li></ul>
+  <dd><ul><li>Added <a class="xref" href="Sccg.Core.ISource.html">source</a> after collecting source items.</li><li>Added <a class="xref" href="Sccg.Core.IFormatter.html">formatter</a> after formatting source items.</li><li>Added <a class="xref" href="Sccg.Core.IWriter.html">writer</a> after writing contents.</li><li>Added <a class="xref" href="Sccg.Core.ISourceItemConverter.html">source item converter</a> after converting source items.</li><li>Added <a class="xref" href="Sccg.Core.IContentConverter.html">content converter</a> after converting content.</li></ul>
 </dd>
   <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-  <dd><p>Argument is not <a class="xref" href="Sccg.Core.ISource.html">ISource</a> or <a class="xref" href="Sccg.Core.IFormatter.html">IFormatter</a> or <a class="xref" href="Sccg.Core.IWriter.html">IWriter</a></p>
+  <dd><p>Argument is not <a class="xref" href="Sccg.Core.ISource.html">ISource</a> or <a class="xref" href="Sccg.Core.IFormatter.html">IFormatter</a> or <a class="xref" href="Sccg.Core.IWriter.html">IWriter</a> or <a class="xref" href="Sccg.Core.ISourceItemConverter.html">ISourceItemConverter</a> or <a class="xref" href="Sccg.Core.IContentConverter.html">IContentConverter</a>.</p>
 </dd>
 </dl>
 
@@ -159,30 +158,28 @@
 
 <h3 id="Sccg_Builder_Use__1___0___" data-uid="Sccg.Builder.Use``1(``0[])">
   Use&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L205"><i class="bi bi-code-slash"></i></a>
 </h3>
 
-<div class="markdown level1 summary"><p>Registers multiple the Source, Formatter, Writer.</p>
+<div class="markdown level1 summary"><p>Registers multiple <a class="xref" href="Sccg.Core.IBuildUnit.html">IBuildUnit</a>(Source, Formatter, Writer, etc).</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Use&lt;T&gt;(T[] instances) where T : class</code></pre>
+  <pre><code class="lang-csharp hljs">public void Use&lt;T&gt;(T[] instances) where T : IBuildUnit</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>instances</code> T[]</dt>
-  <dd><p>The instances of Source, Formatter, Writer.</p>
-</dd>
+  <dd></dd>
 </dl>
 
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>T</code></dt>
-  <dd><p><a class="xref" href="Sccg.Core.ISource.html">ISource</a>, <a class="xref" href="Sccg.Core.IFormatter.html">IFormatter</a>, <a class="xref" href="Sccg.Core.IWriter.html">IWriter</a></p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -198,15 +195,15 @@
 
 <h3 id="Sccg_Builder_Use__1_System_Object___" data-uid="Sccg.Builder.Use``1(System.Object[])">
   Use&lt;T&gt;(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L219"><i class="bi bi-code-slash"></i></a>
 </h3>
 
-<div class="markdown level1 summary"><p>Registers the Source, Formatter, Writer.</p>
+<div class="markdown level1 summary"><p>Registers <a class="xref" href="Sccg.Core.IBuildUnit.html">IBuildUnit</a>(Source, Formatter, Writer, etc).</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void Use&lt;T&gt;(params object[] args) where T : class</code></pre>
+  <pre><code class="lang-csharp hljs">public void Use&lt;T&gt;(params object[] args) where T : class, IBuildUnit</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
@@ -220,8 +217,7 @@
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>T</code></dt>
-  <dd><p><a class="xref" href="Sccg.Core.ISource.html">ISource</a>, <a class="xref" href="Sccg.Core.IFormatter.html">IFormatter</a>, <a class="xref" href="Sccg.Core.IWriter.html">IWriter</a></p>
-</dd>
+  <dd></dd>
 </dl>
 
 
@@ -236,7 +232,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L156" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ryota2357/Sccg/blob/main/Sccg/Builder.cs/#L157" class="edit-link">Edit this page</a>
         </div>
 
         

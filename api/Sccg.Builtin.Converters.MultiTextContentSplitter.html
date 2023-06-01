@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MultiTextContentSplitter : IContentConverter</code></pre>
+    <pre><code class="lang-csharp hljs">public class MultiTextContentSplitter : IContentConverter, IBuildUnit</code></pre>
   </div>
 
 
@@ -110,6 +110,7 @@
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Sccg.Core.IContentConverter.html">IContentConverter</a></div>
+      <div><a class="xref" href="Sccg.Core.IBuildUnit.html">IBuildUnit</a></div>
     </dd>
   </dl>
 
@@ -154,7 +155,8 @@
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Sccg.Builtin.Converters.MultiTextContentSplitter.Priority.html#Sccg_Builtin_Converters_MultiTextContentSplitter_Priority">Priority</a></dt>
-    <dd><p>Gets the order in which the converter is applied. The lower the number, the earlier the converter is applied.</p>
+    <dd><p>Gets the order in which the <a class="xref" href="Sccg.Core.IContentConverter.html">IContentConverter</a> is applied.
+The lower the number, the earlier the <a class="xref" href="Sccg.Core.IContentConverter.html">IContentConverter</a> is applied.</p>
 </dd>
   </dl>
 
