@@ -64,7 +64,7 @@ public class Builder
         _state = State.CollectingSourceItems;
         while (_sources.TryPop(out var source))
         {
-            Log.Debug($"Collecting source items from {source.Name}({source.GetType().Name}).");
+            Log.Debug($"Collecting source items from {source.Name}({source.GetType().Name})");
             try
             {
                 source.Custom(_query);
@@ -80,7 +80,7 @@ public class Builder
         _state = State.ConvertingSourceItems;
         while (_sourceItemConverters.TryPop(out var converter))
         {
-            Log.Debug($"Converting source items with {converter.Name}({converter.GetType().Name}).");
+            Log.Debug($"Converting source items with {converter.Name}({converter.GetType().Name})");
             try
             {
                 _sourceItems = converter.Convert(_sourceItems, _query).ToList();
@@ -94,7 +94,7 @@ public class Builder
         _state = State.FormattingSourceItems;
         while (_formatters.TryPop(out var formatter))
         {
-            Log.Debug($"Formatting source items with {formatter.Name}({formatter.GetType().Name}).");
+            Log.Debug($"Formatting source items with {formatter.Name}({formatter.GetType().Name})");
             try
             {
                 var content = formatter.Format(_sourceItems.AsReadOnly(), _query);
@@ -109,7 +109,7 @@ public class Builder
         _state = State.ConvertingContents;
         while (_contentConverters.TryPop(out var converter))
         {
-            Log.Debug($"Converting contents with {converter.Name}({converter.GetType().Name}).");
+            Log.Debug($"Converting contents with {converter.Name}({converter.GetType().Name})");
             try
             {
                 _contents = converter.Convert(_contents, _query).ToList();
@@ -123,7 +123,7 @@ public class Builder
         _state = State.WritingContents;
         while (_writers.TryPop(out var writer))
         {
-            Log.Debug($"Writing contents with {writer.Name}({writer.GetType().Name}).");
+            Log.Debug($"Writing contents with {writer.Name}({writer.GetType().Name})");
             try
             {
                 writer.Write(_contents.AsReadOnly(), _query);
@@ -135,7 +135,7 @@ public class Builder
         }
 
         _state = State.Completed;
-        Log.Info("Build completed.");
+        Log.Info("Build completed");
     }
 
     /// <summary>
