@@ -9,10 +9,10 @@ namespace Sccg.Builtin.Converters;
 /// </summary>
 public class MultiTextContentSplitter : IContentConverter
 {
-    /// <inheritdoc />
+    /// <inheritdoc cref="IContentConverter.Name"/>
     public string Name => "MultiTextContentSplitter";
 
-    /// <inheritdoc />
+    /// <inheritdoc cref="IContentConverter.Priority"/>
     public int Priority => 10;
 
     /// <inheritdoc />

@@ -10,7 +10,7 @@ namespace Sccg.Core;
 public abstract class Source<TGroup, TItem> : ISource
     where TItem : ISourceItem
 {
-    /// <inheritdoc />
+    /// <inheritdoc cref="ISource.Name"/>
     public abstract string Name { get; }
 
     /// <summary>
@@ -33,7 +33,7 @@ public abstract class Source<TGroup, TItem> : ISource
     /// <param name="to">A syntax/design group name.</param>
     protected abstract void Link(TGroup from, TGroup to);
 
-    /// <inheritdoc />
+    /// <inheritdoc cref="ISource.Priority"/>
     public virtual int Priority => 10;
 
     /// <summary>
